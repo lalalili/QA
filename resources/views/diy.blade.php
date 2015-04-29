@@ -8,19 +8,19 @@
                 <div class="form-group">
                     <div class="col-lg-4">
                         <label>StoreID</label>
-                        <input name="StoreID" class="form-control" placeholder="ablejeans^特殊渠道^特殊渠道^百货商场">
+                        <input name="StoreID" class="form-control" placeholder="格式：ablejeans^特殊渠道^特殊渠道^百货商场">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-lg-2">
                         <label>PeriodType</label>
-                        <input name="PeriodType" class="form-control" placeholder="L31D">
+                        <input name="PeriodType" class="form-control" placeholder="格式：L31D">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-lg-2">
                         <label>CalDate</label>
-                        <input name="CalDate" class="form-control" placeholder="2015-01-31">
+                        <input name="CalDate" class="form-control" placeholder="格式：2015-01-31">
                     </div>
                 </div>
                 <div class="col-lg-2">
