@@ -7,20 +7,20 @@
             <form role="form" action="/diy" method="POST">
                 <div class="form-group">
                     <div class="col-lg-4">
-                        <label>StoreID: {{ $StoreID }}</label>
-                        <input name="StoreID" class="form-control" placeholder="格式：ablejeans^特殊渠道^特殊渠道^百货商场">
+                        <label>StoreID: (格式：ablejeans^特殊渠道^特殊渠道^百货商场)</label>
+                        <input name="StoreID" class="form-control" placeholder="" value="{{ $StoreID }}">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-lg-2">
-                        <label>PeriodType: {{ $PeriodType }}</label>
-                        <input name="PeriodType" class="form-control" placeholder="格式：L31D">
+                        <label>PeriodType: (格式：L31D)</label>
+                        <input name="PeriodType" class="form-control" placeholder="" value="{{ $PeriodType }}">
                     </div>
                 </div>
                 <div class="form-group">
-                    <div class="col-lg-2">
-                        <label>CalDate: {{ $CalDate }}</label>
-                        <input name="CalDate" class="form-control" placeholder="格式：2015-01-31">
+                    <div class="col-lg-3">
+                        <label>CalDate: (格式：2015-01-31)</label>
+                        <input name="CalDate" class="form-control" placeholder="" value="{{ $CalDate }}">
                     </div>
                 </div>
                 <div class="col-lg-2">

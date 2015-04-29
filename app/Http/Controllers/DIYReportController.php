@@ -16,7 +16,7 @@ class DIYReportController extends Controller
     public function index()
     {
         $StoreID ='';
-        $PeriodType = '';
+        $PeriodType ='';
         $CalDate ='';
         $DIYReports = DIYReport::where('StoreID', 'ablejeans^特殊渠道^特殊渠道^百货商场')->where('PeriodType', 'L31D')->where('CalDate', new DateTime('2015-01-31'))->get();
         foreach ($DIYReports as $DIYReport) {
@@ -50,23 +50,36 @@ class DIYReportController extends Controller
         $CalDate = Request::input('CalDate');
         //dd($StoreID);
         //dd($PeriodType);
-        //($CalDate);
+        //dd($CalDate);
         if(!$StoreID | !$PeriodType | !$CalDate)
         {
             Session::flash('error', 'Resource was not found');
             return Redirect::to('/diy');
         }
         $DIYReports = DIYReport::where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
+        //dd($DIYReports);
+        if(!$DIYReports)
+        {
+            Session::flash('error', 'Resource was not found');
+            return Redirect::to('/diy');
+        }
         foreach ($DIYReports as $DIYReport) {
             $report = $DIYReport['PeriodRecords'];
             //dd($DIYReports);
         }
         $KPIAlerts = KPIAlert::where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
+        if(!$KPIAlerts)
+        {
+            Session::flash('error', 'Resource was not found');
+            return Redirect::to('/diy');
+        }
         foreach ($KPIAlerts as $KPIAlert) {
             $alert = $KPIAlert['KPIAlert'];
             //dd($alert);
         }
+
         return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate'))->with('diy', new DIYReportController);
+
 
     }
 
