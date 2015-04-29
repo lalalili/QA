@@ -7,19 +7,19 @@
             <form role="form" action="/diy" method="POST">
                 <div class="form-group">
                     <div class="col-lg-4">
-                        <label>StoreID</label>
+                        <label>StoreID: {{ $StoreID }}</label>
                         <input name="StoreID" class="form-control" placeholder="格式：ablejeans^特殊渠道^特殊渠道^百货商场">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-lg-2">
-                        <label>PeriodType</label>
+                        <label>PeriodType: {{ $PeriodType }}</label>
                         <input name="PeriodType" class="form-control" placeholder="格式：L31D">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-lg-2">
-                        <label>CalDate</label>
+                        <label>CalDate: {{ $CalDate }}</label>
                         <input name="CalDate" class="form-control" placeholder="格式：2015-01-31">
                     </div>
                 </div>
@@ -199,7 +199,7 @@
             <div class="col-lg-2">
                 <div class="panel panel-info">
                     <div class="panel-body">
-                        <p>客單價: {{$report['ARPU']['0']}}</p>
+                        <p>客單價: {{$diy->formatter($report['ARPU']['0'])}}</p>
                         <p>環  比: {{$diy->formatter($alert['ARPU']['N']['3'])}} %</p>
                         <p>同  比: {{$diy->formatter($alert['ARPU']['N']['2'])}} %</p>
                         <p>Alert: {{$alert['ARPU']['N']['4']}}</p>
@@ -209,7 +209,7 @@
             <div class="col-lg-2">
                 <div class="panel panel-info">
                     <div class="panel-body">
-                        <p>客單價: {{$report['ARPU']['1']}}</p>
+                        <p>客單價: {{$diy->formatter($report['ARPU']['1'])}}</p>
                         <p>環  比: {{$diy->formatter($alert['ARPU']['E0']['3'])}} %</p>
                         <p>同  比: {{$diy->formatter($alert['ARPU']['E0']['2'])}} %</p>
                         <p>Alert: {{$alert['ARPU']['E0']['4']}}</p>
