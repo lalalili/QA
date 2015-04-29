@@ -45,7 +45,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">QA Admin v1.2</a>
+        <a class="navbar-brand" href="index.html">QA Admin v2.0</a>
     </div>
     <!-- /.navbar-header -->
     <!-- /.navbar-top-links -->

@@ -23,7 +23,7 @@ class DIYReportController extends Controller
             $alert = $KPIAlert['KPIAlert'];
             //dd($alert);
         }
-        return view('diy', compact('report', 'alert'));
+        return view('diy', compact('report', 'alert'))->with('diy', new DIYReportController);
     }
 
     public function report()
@@ -57,5 +57,11 @@ class DIYReportController extends Controller
         }
         return view('diy', compact('report','alert'));
 
+    }
+
+    public function formatter($original)
+    {
+        //dd($original);
+        return number_format(($original*100),4);
     }
 }
