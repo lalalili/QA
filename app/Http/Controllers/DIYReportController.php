@@ -55,7 +55,7 @@ class DIYReportController extends Controller
         foreach ($KPIAlerts as $KPIAlert) {
             $alert = $KPIAlert['KPIAlert'];
         }
-        return view('diy', compact('report','alert'));
+        return view('diy', compact('report','alert'))->with('diy', new DIYReportController);
 
     }
 
