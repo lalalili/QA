@@ -62,6 +62,6 @@ class DIYReportController extends Controller
     public function formatter($original)
     {
         //dd($original);
-        return number_format(($original*100),4);
+        return number_format(($original*100),2);
     }
 }
