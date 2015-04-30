@@ -136,6 +136,8 @@ return [
         'Illuminate\Validation\ValidationServiceProvider',
         'Illuminate\View\ViewServiceProvider',
         'Jenssegers\Mongodb\MongodbServiceProvider',
+        'Laracasts\Flash\FlashServiceProvider',
+
 
         /*
          * Application Service Providers...
@@ -194,6 +196,7 @@ return [
         'Validator' => 'Illuminate\Support\Facades\Validator',
         'View' => 'Illuminate\Support\Facades\View',
         'Moloquent' => 'Jenssegers\Mongodb\Model',
+        'Flash' => 'Laracasts\Flash\Flash',
     ],
 
 ];

@@ -86,6 +86,10 @@
 
 <!-- BAT JavaScript -->
 <script src="{{ asset('/js/bat.js') }}"></script>
+
+<script>
+    $('#flash-overlay-modal').modal();
+</script>
 </body>
 
 </html>

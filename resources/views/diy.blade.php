@@ -34,6 +34,8 @@
                     <div><h1></h1></div>
                 </div>
             </form>
+            @include('flash::message')
+
         </div>
         <div class="row">
             <div class="col-lg-2">

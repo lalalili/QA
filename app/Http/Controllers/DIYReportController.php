@@ -3,6 +3,7 @@
 use App\Http\Controllers\Controller;
 
 use Session;
+use Flash;
 use Redirect;
 use DateTime;
 use Request;
@@ -55,13 +56,13 @@ class DIYReportController extends Controller
         //dd($PeriodType);
         //dd($CalDate);
         if (!$StoreID | !$PeriodType | !$CalDate) {
-            Session::flash('error', 'Resource was not found');
+            Flash::overlay('請填入完整查詢條件', '提示');
             return Redirect::to('/diy');
         }
         $DIYReports = DIYReport::where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
-        //dd($DIYReports);
-        if (!$DIYReports) {
-            Session::flash('error', 'Resource was not found');
+        ///dd(count($DIYReports));
+        if (count($DIYReports) == '0') {
+            Flash::overlay('查無資料', '提示');
             return Redirect::to('/diy');
         }
         foreach ($DIYReports as $DIYReport) {
@@ -70,8 +71,8 @@ class DIYReportController extends Controller
         }
         $KPIAlerts = KPIAlert::where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
         //dd($KPIAlerts);
-        if (!$KPIAlerts) {
-            Session::flash('error', 'Resource was not found');
+        if (count($KPIAlerts) == '0') {
+            Flash::overlay('查無資料', '提示');
             return Redirect::to('/diy');
         }
         foreach ($KPIAlerts as $KPIAlert) {
