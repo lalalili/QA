@@ -108,9 +108,9 @@
             <div class="col-lg-2">
                 <div class="panel panel-info">
                     <div class="panel-body">
-                        <p>新增率: {{$diy->formatter($report['AddedRate']['0'])}} %</p>
-                        <p>環 比: {{$diy->formatter($alert['AddedRate']['N']['3'])}} %</p>
-                        <p>同 比: {{$diy->formatter($alert['AddedRate']['N']['2'])}} %</p>
+                        <p>新增率: {{$diy->percent_formatter($report['AddedRate']['0'])}} %</p>
+                        <p>環 比: {{$diy->percent_formatter($alert['AddedRate']['N']['3'])}} %</p>
+                        <p>同 比: {{$diy->percent_formatter($alert['AddedRate']['N']['2'])}} %</p>
                         <p>Alert: {{$alert['AddedRate']['N']['4']}}</p>
                     </div>
                 </div>
@@ -118,9 +118,9 @@
             <div class="col-lg-2">
                 <div class="panel panel-info">
                     <div class="panel-body">
-                        <p>變動率: {{$diy->formatter($report['AddedRate']['1'])}} %</p>
-                        <p>環  比: {{$diy->formatter($alert['AddedRate']['E0']['3'])}} %</p>
-                        <p>同  比: {{$diy->formatter($alert['AddedRate']['E0']['2'])}} %</p>
+                        <p>變動率: {{$diy->percent_formatter($report['AddedRate']['1'])}} %</p>
+                        <p>環  比: {{$diy->percent_formatter($alert['AddedRate']['E0']['3'])}} %</p>
+                        <p>同  比: {{$diy->percent_formatter($alert['AddedRate']['E0']['2'])}} %</p>
                         <p>Alert: {{$alert['AddedRate']['E0']['4']}}</p>
                     </div>
                 </div>
@@ -134,9 +134,9 @@
             <div class="col-lg-2">
                 <div class="panel panel-info">
                     <div class="panel-body">
-                        <p>流失率: {{$diy->formatter($report['ChurnRate']['4'])}} %</p>
-                        <p>環  比: {{$diy->formatter($alert['ChurnRate']['S3']['3'])}} %</p>
-                        <p>同  比: {{$diy->formatter($alert['ChurnRate']['S3']['2'])}} %</p>
+                        <p>流失率: {{$diy->percent_formatter($report['ChurnRate']['4'])}} %</p>
+                        <p>環  比: {{$diy->percent_formatter($alert['ChurnRate']['S3']['3'])}} %</p>
+                        <p>同  比: {{$diy->percent_formatter($alert['ChurnRate']['S3']['2'])}} %</p>
                         <p>Alert: {{$alert['ChurnRate']['S3']['4']}}</p>
                     </div>
                 </div>
@@ -146,9 +146,9 @@
             <div class="col-lg-2">
                 <div class="panel panel-info">
                     <div class="panel-body">
-                        <p>轉化率: {{$diy->formatter($report['ConversionRate']['0'])}} %</p>
-                        <p>環  比: {{$diy->formatter($alert['ConversionRate']['N']['3'])}} %</p>
-                        <p>同  比: {{$diy->formatter($alert['ConversionRate']['N']['2'])}} %</p>
+                        <p>轉化率: {{$diy->percent_formatter($report['ConversionRate']['0'])}} %</p>
+                        <p>環  比: {{$diy->percent_formatter($alert['ConversionRate']['N']['3'])}} %</p>
+                        <p>同  比: {{$diy->percent_formatter($alert['ConversionRate']['N']['2'])}} %</p>
                         <p>Alert: {{$alert['ConversionRate']['N']['4']}}</p>
 
                     </div>
@@ -157,9 +157,9 @@
             <div class="col-lg-2">
                 <div class="panel panel-info">
                     <div class="panel-body">
-                        <p>活躍度: {{$diy->formatter($report['Active']['1'])}} %</p>
-                        <p>環  比: {{$diy->formatter($alert['Active']['E0']['3'])}} %</p>
-                        <p>同  比: {{$diy->formatter($alert['Active']['E0']['2'])}} %</p>
+                        <p>活躍度: {{$diy->percent_formatter($report['Active']['1'])}} %</p>
+                        <p>環  比: {{$diy->percent_formatter($alert['Active']['E0']['3'])}} %</p>
+                        <p>同  比: {{$diy->percent_formatter($alert['Active']['E0']['2'])}} %</p>
                         <p>Alert: {{$alert['Active']['E0']['4']}}</p>
                     </div>
                 </div>
@@ -167,9 +167,9 @@
             <div class="col-lg-2">
                 <div class="panel panel-info">
                     <div class="panel-body">
-                        <p>喚醒率: {{$diy->formatter($report['WakeUpRate']['2'])}} %</p>
-                        <p>環  比: {{$diy->formatter($alert['WakeUpRate']['S1']['3'])}} %</p>
-                        <p>同  比: {{$diy->formatter($alert['WakeUpRate']['S1']['2'])}} %</p>
+                        <p>喚醒率: {{$diy->percent_formatter($report['WakeUpRate']['2'])}} %</p>
+                        <p>環  比: {{$diy->percent_formatter($alert['WakeUpRate']['S1']['3'])}} %</p>
+                        <p>同  比: {{$diy->percent_formatter($alert['WakeUpRate']['S1']['2'])}} %</p>
                         <p>Alert: {{$alert['WakeUpRate']['S1']['4']}}</p>
                     </div>
                 </div>
@@ -177,9 +177,9 @@
             <div class="col-lg-2">
                 <div class="panel panel-info">
                     <div class="panel-body">
-                        <p>喚醒率: {{$diy->formatter($report['WakeUpRate']['3'])}} %</p>
-                        <p>環  比: {{$diy->formatter($alert['WakeUpRate']['S2']['3'])}} %</p>
-                        <p>同  比: {{$diy->formatter($alert['WakeUpRate']['S2']['2'])}} %</p>
+                        <p>喚醒率: {{$diy->percent_formatter($report['WakeUpRate']['3'])}} %</p>
+                        <p>環  比: {{$diy->percent_formatter($alert['WakeUpRate']['S2']['3'])}} %</p>
+                        <p>同  比: {{$diy->percent_formatter($alert['WakeUpRate']['S2']['2'])}} %</p>
                         <p>Alert: {{$alert['WakeUpRate']['S2']['4']}}</p>
                     </div>
                 </div>
@@ -187,9 +187,9 @@
             <div class="col-lg-2">
                 <div class="panel panel-info">
                     <div class="panel-body">
-                        <p>喚醒率: {{$diy->formatter($report['WakeUpRate']['4'])}} %</p>
-                        <p>環  比: {{$diy->formatter($alert['WakeUpRate']['S3']['3'])}} %</p>
-                        <p>同  比: {{$diy->formatter($alert['WakeUpRate']['S3']['2'])}} %</p>
+                        <p>喚醒率: {{$diy->percent_formatter($report['WakeUpRate']['4'])}} %</p>
+                        <p>環  比: {{$diy->percent_formatter($alert['WakeUpRate']['S3']['3'])}} %</p>
+                        <p>同  比: {{$diy->percent_formatter($alert['WakeUpRate']['S3']['2'])}} %</p>
                         <p>Alert: {{$alert['WakeUpRate']['S3']['4']}}</p>
                     </div>
                 </div>
@@ -199,9 +199,9 @@
             <div class="col-lg-2">
                 <div class="panel panel-info">
                     <div class="panel-body">
-                        <p>客單價: {{$diy->formatter($report['ARPU']['0'])}}</p>
-                        <p>環  比: {{$diy->formatter($alert['ARPU']['N']['3'])}} %</p>
-                        <p>同  比: {{$diy->formatter($alert['ARPU']['N']['2'])}} %</p>
+                        <p>客單價: {{$diy->arpu_formatter($report['ARPU']['0'])}}</p>
+                        <p>環  比: {{$diy->percent_formatter($alert['ARPU']['N']['3'])}} %</p>
+                        <p>同  比: {{$diy->percent_formatter($alert['ARPU']['N']['2'])}} %</p>
                         <p>Alert: {{$alert['ARPU']['N']['4']}}</p>
                     </div>
                 </div>
@@ -209,9 +209,9 @@
             <div class="col-lg-2">
                 <div class="panel panel-info">
                     <div class="panel-body">
-                        <p>客單價: {{$diy->formatter($report['ARPU']['1'])}}</p>
-                        <p>環  比: {{$diy->formatter($alert['ARPU']['E0']['3'])}} %</p>
-                        <p>同  比: {{$diy->formatter($alert['ARPU']['E0']['2'])}} %</p>
+                        <p>客單價: {{$diy->arpu_formatter($report['ARPU']['1'])}}</p>
+                        <p>環  比: {{$diy->percent_formatter($alert['ARPU']['E0']['3'])}} %</p>
+                        <p>同  比: {{$diy->percent_formatter($alert['ARPU']['E0']['2'])}} %</p>
                         <p>Alert: {{$alert['ARPU']['E0']['4']}}</p>
                     </div>
                 </div>

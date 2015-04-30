@@ -15,9 +15,9 @@ class DIYReportController extends Controller
 
     public function index()
     {
-        $StoreID ='';
-        $PeriodType ='';
-        $CalDate ='';
+        $StoreID = '';
+        $PeriodType = '';
+        $CalDate = '';
         $DIYReports = DIYReport::where('StoreID', 'ablejeans^特殊渠道^特殊渠道^百货商场')->where('PeriodType', 'L31D')->where('CalDate', new DateTime('2015-01-31'))->get();
         foreach ($DIYReports as $DIYReport) {
             $report = $DIYReport['PeriodRecords'];
@@ -51,15 +51,13 @@ class DIYReportController extends Controller
         //dd($StoreID);
         //dd($PeriodType);
         //dd($CalDate);
-        if(!$StoreID | !$PeriodType | !$CalDate)
-        {
+        if (!$StoreID | !$PeriodType | !$CalDate) {
             Session::flash('error', 'Resource was not found');
             return Redirect::to('/diy');
         }
         $DIYReports = DIYReport::where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
         //dd($DIYReports);
-        if(!$DIYReports)
-        {
+        if (!$DIYReports) {
             Session::flash('error', 'Resource was not found');
             return Redirect::to('/diy');
         }
@@ -68,8 +66,7 @@ class DIYReportController extends Controller
             //dd($DIYReports);
         }
         $KPIAlerts = KPIAlert::where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
-        if(!$KPIAlerts)
-        {
+        if (!$KPIAlerts) {
             Session::flash('error', 'Resource was not found');
             return Redirect::to('/diy');
         }
@@ -77,21 +74,25 @@ class DIYReportController extends Controller
             $alert = $KPIAlert['KPIAlert'];
             //dd($alert);
         }
-
         return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate'))->with('diy', new DIYReportController);
-
-
     }
 
-    public function formatter($original)
+    public function percent_formatter($original)
     {
         //dd($original);
-        if($original == '-999')
-        {
+        if ($original == '-999') {
             //dd($original);
             return ($original);
         }
-        return number_format(($original*100),2);
-
+        return number_format(($original * 100), 2);
+    }
+    public function arpu_formatter($original)
+    {
+        //dd($original);
+        if ($original == '-999') {
+            //dd($original);
+            return ($original);
+        }
+        return number_format(($original), 1);
     }
 }
