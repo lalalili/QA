@@ -69,6 +69,7 @@ class DIYReportController extends Controller
             //dd($DIYReports);
         }
         $KPIAlerts = KPIAlert::where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
+        //dd($KPIAlerts);
         if (!$KPIAlerts) {
             Session::flash('error', 'Resource was not found');
             return Redirect::to('/diy');
@@ -105,7 +106,7 @@ class DIYReportController extends Controller
         //dd($original);
         if ($original == 'True') {
             //dd($original);
-            $display = 'panel-red';
+            $display = 'panel-alert';
             return ($display);
         }
         $display = 'panel-info';

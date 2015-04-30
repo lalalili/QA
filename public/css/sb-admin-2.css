@@ -363,6 +363,15 @@ table.dataTable thead .sorting:after {
     color: #3d8b3d;
 }
 
+.panel-alert {
+    border-color: #d9534f;
+    border-image-source: url(../images/alert.png);
+    border-image-slice: 20;
+    border-image-width: 2em;
+    border-image-repeat: stretch;
+
+}
+
 .panel-red {
     border-color: #d9534f;
 }
