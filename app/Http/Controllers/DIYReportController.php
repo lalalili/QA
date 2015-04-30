@@ -18,6 +18,7 @@ class DIYReportController extends Controller
         $StoreID = '';
         $PeriodType = '';
         $CalDate = '';
+        $status = '預設值';
         $DIYReports = DIYReport::where('StoreID', 'ablejeans^特殊渠道^特殊渠道^百货商场')->where('PeriodType', 'L31D')->where('CalDate', new DateTime('2015-01-31'))->get();
         foreach ($DIYReports as $DIYReport) {
             $report = $DIYReport['PeriodRecords'];
@@ -28,7 +29,7 @@ class DIYReportController extends Controller
             $alert = $KPIAlert['KPIAlert'];
             //dd($alert);
         }
-        return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate'))->with('diy', new DIYReportController);
+        return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status'))->with('diy', new DIYReportController);
     }
 
     public function report()
@@ -48,6 +49,7 @@ class DIYReportController extends Controller
         $StoreID = Request::input('StoreID');
         $PeriodType = Request::input('PeriodType');
         $CalDate = Request::input('CalDate');
+        $status = '查詢完成';
         //dd($StoreID);
         //dd($PeriodType);
         //dd($CalDate);
@@ -74,7 +76,7 @@ class DIYReportController extends Controller
             $alert = $KPIAlert['KPIAlert'];
             //dd($alert);
         }
-        return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate'))->with('diy', new DIYReportController);
+        return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status'))->with('diy', new DIYReportController);
     }
 
     public function percent_formatter($original)

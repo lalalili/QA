@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2">
-                    <label></label>
+                    <label>狀態： {{ $status }}</label>
 
                     <div>
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
