@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <div class="col-lg-3">
+                    <div class="col-lg-2">
                         <label>CalDate: (2015-01-31)</label>
                         <input name="CalDate" class="form-control" placeholder="" value="{{ $CalDate }}">
                     </div>
