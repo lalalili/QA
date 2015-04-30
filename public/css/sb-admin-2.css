@@ -15,10 +15,10 @@ body {
 #page-wrapper {
     padding: 0 15px;
     min-height: 568px;
-    background-color: #fff;
+    background-color: #dee5eb;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
     #page-wrapper {
         position: inherit;
         margin: 0 0 0 150px;
@@ -106,13 +106,13 @@ body {
     content: "\f104";
 }
 
-.sidebar .active>a>.fa.arrow:before {
+.sidebar .active > a > .fa.arrow:before {
     content: "\f107";
 }
 
 .sidebar .nav-second-level li,
 .sidebar .nav-third-level li {
-    border-bottom: 0!important;
+    border-bottom: 0 !important;
 }
 
 .sidebar .nav-second-level li a {
@@ -123,7 +123,7 @@ body {
     padding-left: 52px;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
     .sidebar {
         z-index: 1;
         position: absolute;
@@ -244,7 +244,7 @@ table.dataTable thead .sorting:after {
     content: "\f0dc";
     float: right;
     font-family: fontawesome;
-    color: rgba(50,50,50,.5);
+    color: rgba(50, 50, 50, .5);
 }
 
 .btn-circle {
@@ -279,7 +279,7 @@ table.dataTable thead .sorting:after {
     padding-top: 10px;
     padding-bottom: 10px;
     border: 1px solid #ddd;
-    background-color: #eee!important;
+    background-color: #eee !important;
 }
 
 .show-grid {
@@ -288,6 +288,61 @@ table.dataTable thead .sorting:after {
 
 .huge {
     font-size: 40px;
+}
+
+.panel-new .panel-heading {
+    border-color: #f472a0;
+    color: #fff;
+    text-align: center;
+    background-color: #f472a0;
+}
+
+.panel-new {
+    border-color: #f472a0;
+}
+
+.panel-e0 .panel-heading {
+    border-color: #1A85B3;
+    color: #fff;
+    text-align: center;
+    background-color: #1A85B3;
+}
+
+.panel-e0 {
+    border-color: #f472a0;
+}
+
+.panel-s1 .panel-heading {
+    border-color: #1A85B3;
+    color: #fff;
+    text-align: center;
+    background-color: #1A85B3;
+}
+
+.panel-s1 {
+    border-color: #1A85B3;
+}
+
+.panel-s2 .panel-heading {
+    border-color: #20D6BF;
+    color: #fff;
+    text-align: center;
+    background-color: #20D6BF;
+}
+
+.panel-s2 {
+    border-color: #20D6BF;
+}
+
+.panel-s3 .panel-heading {
+    border-color: #F4805B;
+    color: #fff;
+    text-align: center;
+    background-color: #F4805B;
+}
+
+.panel-s3 {
+    border-color: #F4805B;
 }
 
 .panel-green {

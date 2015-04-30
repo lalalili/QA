@@ -19,6 +19,7 @@ class DIYReportController extends Controller
         $PeriodType = '';
         $CalDate = '';
         $status = '預設值';
+        $display = 'panel-info';
         $DIYReports = DIYReport::where('StoreID', 'ablejeans^特殊渠道^特殊渠道^百货商场')->where('PeriodType', 'L31D')->where('CalDate', new DateTime('2015-01-31'))->get();
         foreach ($DIYReports as $DIYReport) {
             $report = $DIYReport['PeriodRecords'];
@@ -29,7 +30,7 @@ class DIYReportController extends Controller
             $alert = $KPIAlert['KPIAlert'];
             //dd($alert);
         }
-        return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status'))->with('diy', new DIYReportController);
+        return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'display'))->with('diy', new DIYReportController);
     }
 
     public function report()
@@ -88,6 +89,7 @@ class DIYReportController extends Controller
         }
         return number_format(($original * 100), 2);
     }
+
     public function arpu_formatter($original)
     {
         //dd($original);
@@ -96,5 +98,17 @@ class DIYReportController extends Controller
             return ($original);
         }
         return number_format(($original), 1);
+    }
+
+    public function alert_formatter($original)
+    {
+        //dd($original);
+        if ($original == 'True') {
+            //dd($original);
+            $display = 'panel-red';
+            return ($display);
+        }
+        $display = 'panel-info';
+        return ($display);
     }
 }
