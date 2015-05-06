@@ -3,8 +3,7 @@
 use Illuminate\Database\Eloquent\Model;
 use Jenssegers\Mongodb\Model as Eloquent;
 
-class DIYReport extends \Moloquent {
-
-    protected $collection = 'DIYReport';
-
+class DIYReport extends \Moloquent
+{
+    public $collection = 'DIYReport';
 }

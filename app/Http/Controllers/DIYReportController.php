@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Controller;
 
+use DB;
 use Session;
 use Flash;
 use Redirect;
@@ -21,37 +22,42 @@ class DIYReportController extends Controller
         $CalDate = '';
         $status = '預設值';
         $display = 'panel-info';
-        $DIYReports = DIYReport::where('StoreID', 'ablejeans^特殊渠道^特殊渠道^百货商场')->where('PeriodType', 'L31D')->where('CalDate', new DateTime('2015-01-31'))->get();
+        $DIYReports = DIYReport::where('StoreID', 'ablejeans^特殊渠道^特殊渠道')->where('PeriodType', 'L31D')->where('CalDate', new DateTime('2015-01-31'))->get();
+        //dd($DIYReports);
         foreach ($DIYReports as $DIYReport) {
             $report = $DIYReport['PeriodRecords'];
         }
 
-        $KPIAlerts = KPIAlert::where('StoreID', 'ablejeans^特殊渠道^特殊渠道^百货商场')->where('PeriodType', 'L31D')->where('CalDate', new DateTime('2015-01-31'))->get();
+        $KPIAlerts = KPIAlert::where('StoreID', 'ablejeans^特殊渠道^特殊渠道')->where('PeriodType', 'L31D')->where('CalDate', new DateTime('2015-01-31'))->get();
         foreach ($KPIAlerts as $KPIAlert) {
             $alert = $KPIAlert['KPIAlert'];
             //dd($alert);
         }
-        return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'display'))->with('diy', new DIYReportController);
+        return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'display', 'Server'))->with('diy', new DIYReportController);
     }
 
     public function report()
     {
-        $DIYReports = DIYReport::where('StoreID', 'ablejeans^特殊渠道^特殊渠道^百货商场')->where('PeriodType', 'L31D')->where('CalDate', new DateTime('2015-01-31'))->get();
+        $DIYReports = DIYReport::where('StoreID', 'ablejeans^特殊渠道^特殊渠道')->where('PeriodType', 'L31D')->where('CalDate', new DateTime('2015-01-31'))->get();
         return $DIYReports;
     }
 
     public function alert()
     {
-        $KPIAlerts = KPIAlert::where('StoreID', 'ablejeans^特殊渠道^特殊渠道^百货商场')->where('PeriodType', 'L31D')->where('CalDate', new DateTime('2015-01-31'))->get();
+        $KPIAlerts = KPIAlert::where('StoreID', 'ablejeans^特殊渠道^特殊渠道')->where('PeriodType', 'L31D')->where('CalDate', new DateTime('2015-01-31'))->get();
         return $KPIAlerts;
     }
 
     public function query()
     {
+        $Server = Request::input('Server');
         $StoreID = Request::input('StoreID');
         $PeriodType = Request::input('PeriodType');
         $CalDate = Request::input('CalDate');
         $status = '查詢完成';
+        $DIYReport = new DIYReport;
+        $KPIAlert = new KPIAlert;
+        //dd($Server);
         //dd($StoreID);
         //dd($PeriodType);
         //dd($CalDate);
@@ -59,27 +65,45 @@ class DIYReportController extends Controller
             Flash::overlay('請填入完整查詢條件', '提示');
             return Redirect::to('/diy');
         }
-        $DIYReports = DIYReport::where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
+        if ($Server == 'CN') {
+            $DIYReports = DB::connection('mongocn')->table($DIYReport->collection)->where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
+            $cn = 'CN';
+            //dd($DIYReports);
+        } else {
+            $DIYReports = DB::connection('mongotw')->table($DIYReport->collection)->where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
+            $tw = 'TW';
+            //dd($DIYReports);
+        }
         ///dd(count($DIYReports));
         if (count($DIYReports) == '0') {
-            Flash::overlay('查無資料', '提示');
+            Flash::overlay('DIYReport查無資料', '提示');
             return Redirect::to('/diy');
         }
         foreach ($DIYReports as $DIYReport) {
             $report = $DIYReport['PeriodRecords'];
             //dd($DIYReports);
         }
-        $KPIAlerts = KPIAlert::where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
+        if ($Server == 'CN') {
+            $KPIAlerts = DB::connection('mongocn')->table($KPIAlert->collection)->where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
+            $cn = 'CN';
+        } else {
+            $KPIAlerts = DB::connection('mongotw')->table($KPIAlert->collection)->where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
+            $tw = 'TW';
+        }
         //dd($KPIAlerts);
         if (count($KPIAlerts) == '0') {
-            Flash::overlay('查無資料', '提示');
+            Flash::overlay('KPIAlert查無資料', '提示');
             return Redirect::to('/diy');
         }
         foreach ($KPIAlerts as $KPIAlert) {
             $alert = $KPIAlert['KPIAlert'];
             //dd($alert);
         }
-        return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status'))->with('diy', new DIYReportController);
+        if ($Server == 'CN') {
+            return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'cn'))->with('diy', new DIYReportController);
+        } else {
+            return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'tw'))->with('diy', new DIYReportController);
+        }
     }
 
     public function percent_formatter($original)

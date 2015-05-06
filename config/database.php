@@ -26,7 +26,7 @@ return [
 	|
 	*/
 
-	'default' => 'mongodb',
+	'default' => 'mongocn',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -84,13 +84,22 @@ return [
 			'prefix'   => '',
 		],
 
-        'mongodb' => [
+        'mongocn' => [
             'driver'   => 'mongodb',
-            'host'     => env('DB_HOST', 'localhost'),
+            'host'     => env('DB_CN', 'localhost'),
             'port'     => 27017,
             'username' => '',
             'password' => '',
-            'database' => env('DB_DATABASE', 'forge'),
+            'database' => env('DB_CN_DATABASE', 'forge'),
+        ],
+
+        'mongotw' => [
+            'driver'   => 'mongodb',
+            'host'     => env('DB_TW', 'localhost'),
+            'port'     => 27017,
+            'username' => '',
+            'password' => '',
+            'database' => env('DB_TW_DATABASE', 'forge'),
         ],
 
 	],

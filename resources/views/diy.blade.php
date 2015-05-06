@@ -6,8 +6,17 @@
         <div class="row">
             <form role="form" action="/diy" method="POST">
                 <div class="form-group">
-                    <div class="col-lg-4">
-                        <label>StoreID: (ablejeans^特殊渠道^特殊渠道^百货商场)</label>
+                    <div class="col-lg-1">
+                        <label>Server</label>
+                        <select name="Server" class="form-control">
+                            <option value="CN" {{ isset($cn) ? 'selected=selected' : '' }}>CN</option>
+                            <option value="TW" {{ isset($tw) ? 'selected="selected' : '' }}>TW</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-3">
+                        <label>StoreID: (ablejeans^特殊渠道^特殊渠道)</label>
                         <input name="StoreID" class="form-control" placeholder="" value="{{ $StoreID }}">
                     </div>
                 </div>
@@ -260,7 +269,6 @@
 
             </div>
             <div class="col-lg-2">
-
             </div>
         </div>
         <!-- /#page-wrapper -->
