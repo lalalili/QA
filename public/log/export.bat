@@ -1,4 +1,4 @@
 @echo off
 cd d:\svn
 d:
-svn log -v > D:\Dropbox\autotest\www\log\updatelog.txt
+svn log -v > D:\git\diy\public\log\updatelog.txt

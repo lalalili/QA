@@ -1,4 +1,102 @@
 ------------------------------------------------------------------------
+r1922 | Duncan_Du@MIGOSOFT | 2015-05-05 18:01:27 +0800 (週二, 05 五月 2015) | 2 lines
+Changed paths:
+   M /WebHome/WebMAX/js/gda/dimfilter.js
+
+mantis #3942
+修正若自訂為預設條件，開啟後，點選日期，會沒有日期可選的問題
+------------------------------------------------------------------------
+r1921 | Duncan_Du@MIGOSOFT | 2015-05-04 18:10:01 +0800 (週一, 04 五月 2015) | 2 lines
+Changed paths:
+   M /WebHome/WebMAX/js/gda/dimfilter.js
+
+mantis #3942 
+修正結束日時間
+------------------------------------------------------------------------
+r1920 | piggy_liu@MIGOSOFT | 2015-05-04 16:39:09 +0800 (週一, 04 五月 2015) | 3 lines
+Changed paths:
+   M /WebHome/Tracking/bin/EDMServiceLib.dll
+   M /WebHome/WebMAX/bin/EDMServiceLib.dll
+   M /WebHome/WebMAX_service/eDMSenderService/EDMServiceLib.dll
+
+2015-05-04 (Piggy)
+Mantis 0003940: (雀巢)名單篩選，找不到 edm 發送記錄
+--> 當專案名稱與id不同時, 修改 eDM 名稱後, 發送狀態與點選狀態名稱未跟著修改
+------------------------------------------------------------------------
+r1919 | Duncan_Du@MIGOSOFT | 2015-05-04 16:04:23 +0800 (週一, 04 五月 2015) | 2 lines
+Changed paths:
+   M /WebHome/WebMAX/js/gda/dimfilter.js
+
+mantis #3942  
+修正選擇問提
+------------------------------------------------------------------------
+r1918 | Duncan_Du@MIGOSOFT | 2015-04-30 17:49:10 +0800 (週四, 30 四月 2015) | 1 line
+Changed paths:
+   M /WebHome/WebMAX/js/gda/dimfilter.js
+
+修正初始值是年季月的問題
+------------------------------------------------------------------------
+r1917 | piggy_liu@MIGOSOFT | 2015-04-30 17:32:00 +0800 (週四, 30 四月 2015) | 7 lines
+Changed paths:
+   M /WebHome/WebMAX/js/gda/comm.js
+
+2015-04-28 (Piggy)
+Mantis 0003912: (巨思)資料表無法修改問題，處理資料表無法修改的問題
+--> 非PK的必填欄位值未修改, 按更新卻會出現必填欄位未填的錯誤, 
+2014-12-22(Piggy) for Mantis 0003282: 資料-欄位不可為null檢核檢核應由前端而非後端db 修改造成,
+增加了非PK的必填欄位的檢查, 但原維護為了密碼欄位有加密, 改其他欄位也會造成密碼錯誤問題,
+將值未修改的欄位不放入, 造成之後程式在檢核判斷會誤認為值未填
+
+------------------------------------------------------------------------
+r1916 | Duncan_Du@MIGOSOFT | 2015-04-30 15:50:31 +0800 (週四, 30 四月 2015) | 1 line
+Changed paths:
+   M /WebHome/WebMAX/js/gda/dimfilter.js
+
+修正時間週期切換選擇的問題
+------------------------------------------------------------------------
+r1915 | Duncan_Du@MIGOSOFT | 2015-04-30 11:04:41 +0800 (週四, 30 四月 2015) | 1 line
+Changed paths:
+   M /WebHome/WebMAX/gda/report/reportanalysis.aspx
+   M /WebHome/WebMAX/js/gda/dimfilter.js
+
+報表 時間週期針對月季週時，將日期選項隱藏無法點選
+------------------------------------------------------------------------
+r1914 | kency_huang@MIGOSOFT | 2015-04-29 17:10:16 +0800 (週三, 29 四月 2015) | 4 lines
+Changed paths:
+   M /WebHome/WebMAX/gda/report/rptmain.aspx
+
+0003916: (天下)報表的原順序，經 Patch 後，順序是報表編號，不符合預期
+--> 原來在 SVN#1717 的修改未將修改後的呼叫參數設定因此沒有將 sort 參數傳入,
+    因此使用了預設 sort 為 "gda_regtime DESC",
+    現在修改 sort 為 "groupname ASC, gda_regtime DESC"
+------------------------------------------------------------------------
+r1913 | peter@MIGOSOFT | 2015-04-29 16:09:43 +0800 (週三, 29 四月 2015) | 1 line
+Changed paths:
+   M /WebHome/WebMAX/Query360/qiz.aspx
+
+解決 option value 與 GDA field sequence 混用造成無法更新資料的問題
+------------------------------------------------------------------------
+r1912 | kency_huang@MIGOSOFT | 2015-04-29 10:03:10 +0800 (週三, 29 四月 2015) | 2 lines
+Changed paths:
+   M /WebHome/WebMAX/Query360/main.aspx
+
+再次加入 #1909 的需求修改,
+因為 #1910 將此修改還原了
+------------------------------------------------------------------------
+r1911 | peter@MIGOSOFT | 2015-04-28 17:28:35 +0800 (週二, 28 四月 2015) | 1 line
+Changed paths:
+   M /WebHome/WebMAX/Query360/qiz.aspx
+
+處理 Qiz.aspx 縣市的Value 與GDA city欄位的Sequence不match的問題, 原設定從1開始, 改為由0開始
+------------------------------------------------------------------------
+r1910 | peter@MIGOSOFT | 2015-04-28 15:16:26 +0800 (週二, 28 四月 2015) | 3 lines
+Changed paths:
+   M /WebHome/WebMAX/Query360/main.aspx
+
+Update Q360 main.aspx
+- when item click on pagelist component, the customized plug-in popup not function well.
+
+------------------------------------------------------------------------
 r1909 | Jim_Kang@MIGOSOFT | 2015-04-22 14:43:24 +0800 (週三, 22 四月 2015) | 1 line
 Changed paths:
    M /WebHome/WebMAX/Query360/main.aspx
