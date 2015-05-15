@@ -16,6 +16,8 @@ Route::get('version', 'StaticController@version');
 Route::get('patch', 'StaticController@patch');
 Route::get('diy', 'DIYReportController@index');
 Route::post('diy', 'DIYReportController@query');
+Route::get('store', 'StoreController@index');
+Route::post('store', 'StoreController@query');
 Route::get('system', 'StaticController@system');
 
 

@@ -30,7 +30,7 @@
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/.env.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
@@ -63,6 +63,9 @@
                     <a href="diy"><i class="fa fa-bar-chart fa-fw"></i> Mongo通</a>
                 </li>
                 <li>
+                    <a href="store"><i class="fa fa-bar-chart fa-fw"></i> 門店通</a>
+                </li>
+                <li>
                     <a href="system"><i class="fa fa-wrench fa-fw"></i> QA System</a>
                 </li>
             </ul>
@@ -72,7 +75,7 @@
     <!-- /.navbar-static-side -->
 </nav>
 @yield('content')
-<!-- jQuery Version 1.11.0 -->
+<!-- jQuery Version .env.11.0 -->
 <script src="{{ asset('/js/jquery-1.11.0.js') }}"></script>
 
 <!-- Bootstrap Core JavaScript -->

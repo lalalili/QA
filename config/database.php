@@ -102,6 +102,24 @@ return [
             'database' => env('DB_TW_DATABASE', 'forge'),
         ],
 
+        'mongocn_store' => [
+            'driver'   => 'mongodb',
+            'host'     => env('DB_CN_Store', 'localhost'),
+            'port'     => 27017,
+            'username' => '',
+            'password' => '',
+            'database' => env('DB_CN_Store_DATABASE', 'forge'),
+        ],
+
+        'mongotw_store' => [
+            'driver'   => 'mongodb',
+            'host'     => env('DB_TW_Store', 'localhost'),
+            'port'     => 27017,
+            'username' => '',
+            'password' => '',
+            'database' => env('DB_TW_Store_DATABASE', 'forge'),
+        ],
+
 	],
 
 	/*

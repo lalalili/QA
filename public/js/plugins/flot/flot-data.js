@@ -30,7 +30,7 @@ $(document).ready(function() {
             },
             tooltip: true,
             tooltipOpts: {
-                content: "'%s' of %x.1 is %y.4",
+                content: "'%s' of %x..env is %y.4",
                 shifts: {
                     x: -60,
                     y: 25
@@ -56,7 +56,7 @@ $(function() {
         label: "Series 0",
         data: 1
     }, {
-        label: "Series 1",
+        label: "Series .env",
         data: 3
     }, {
         label: "Series 2",

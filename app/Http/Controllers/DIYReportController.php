@@ -17,10 +17,35 @@ class DIYReportController extends Controller
 
     public function index()
     {
-        $StoreID = '';
-        $PeriodType = '';
-        $CalDate = '';
-        $status = '預設值';
+
+        $saveStoreID = Session::pull('saveStoreID');
+        $queryServer = Session::pull('queryServer');
+        $queryStoreID = Session::pull('queryStoreID');
+        $queryPeriodType = Session::pull('queryPeriodType');
+        $queryCalDat = Session::pull('queryCalDate');
+        //dd($saveStoreID);
+        //dd(isset($StoreID));
+        if (count($saveStoreID) <> '0') {
+            $Server = 'CN';
+            $StoreID = $saveStoreID;
+            $PeriodType = '';
+            $CalDate = '';
+            $status = '門店層級已讀取';
+        } else if (count($queryStoreID) <> '0') {
+            $Server = $queryServer;
+            $StoreID = $queryStoreID;
+            $PeriodType = $queryPeriodType;
+            $CalDate = $queryCalDat;
+            $status = '查無資料';
+        } else {
+            $Server = 'CN';
+            $StoreID = '';
+            $PeriodType = '';
+            $CalDate = '';
+            $status = '預設值';
+        }
+
+
         $display = 'panel-info';
         $DIYReports = DIYReport::where('StoreID', 'ablejeans^特殊渠道^特殊渠道')->where('PeriodType', 'L31D')->where('CalDate', new DateTime('2015-01-31'))->get();
         //dd($DIYReports);
@@ -76,6 +101,10 @@ class DIYReportController extends Controller
         }
         ///dd(count($DIYReports));
         if (count($DIYReports) == '0') {
+            Session::put('queryServer', $Server);
+            Session::put('queryStoreID', $StoreID);
+            Session::put('queryPeriodType', $PeriodType);
+            Session::put('queryCalDate', $CalDate);
             Flash::overlay('DIYReport查無資料', '提示');
             return Redirect::to('/diy');
         }
@@ -92,6 +121,10 @@ class DIYReportController extends Controller
         }
         //dd($KPIAlerts);
         if (count($KPIAlerts) == '0') {
+            Session::put('queryServer', $Server);
+            Session::put('queryStoreID', $StoreID);
+            Session::put('queryPeriodType', $PeriodType);
+            Session::put('queryCalDate', $CalDate);
             Flash::overlay('KPIAlert查無資料', '提示');
             return Redirect::to('/diy');
         }

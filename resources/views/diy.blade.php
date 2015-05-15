@@ -4,7 +4,7 @@
     <!-- Page Content -->
     <div id="page-wrapper">
         <div class="row">
-            <form role="form" action="/diy" method="POST">
+            <form role="form" action="{{url('/diy')}}" method="POST">
                 <div class="form-group">
                     <div class="col-lg-1">
                         <label>Server</label>

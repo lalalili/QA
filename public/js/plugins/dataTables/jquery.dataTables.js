@@ -5,7 +5,7 @@
 /**
  * @summary     DataTables
  * @description Paginate, search and order HTML tables
- * @version     1.10.0-dev
+ * @version     .env.10.0-dev
  * @file        jquery.dataTables.js
  * @author      SpryMedia Ltd (www.sprymedia.co.uk)
  * @contact     www.sprymedia.co.uk/contact
@@ -59,7 +59,7 @@
 	 *  @class
 	 *  @param {object} [init={}] Configuration object for DataTables. Options
 	 *    are defined by {@link DataTable.defaults}
-	 *  @requires jQuery 1.3+
+	 *  @requires jQuery .env.3+
 	 *
 	 *  @example
 	 *    // Basic initialisation
@@ -852,7 +852,7 @@
 	 *    DataTables will create a row automatically
 	 *  @param {array} [anTds] Array of TD|TH elements for the row - must be given
 	 *    if nTr is.
-	 *  @returns {int} >=0 if successful (index of new aoData entry), -1 if failed
+	 *  @returns {int} >=0 if successful (index of new aoData entry), -.env if failed
 	 *  @memberof DataTable#oApi
 	 */
 	function _fnAddData ( oSettings, aDataIn, nTr, anTds )
@@ -937,7 +937,7 @@
 	 *  @param {object} oSettings dataTables settings object
 	 *  @param {int} iRow The row number the TD/TH can be found in
 	 *  @param {node} n The TD/TH element to find
-	 *  @returns {int} index if the node is found, -1 if not
+	 *  @returns {int} index if the node is found, -.env if not
 	 *  @memberof DataTable#oApi
 	 */
 	function _fnNodeToColumnIndex( oSettings, iRow, n )
@@ -1586,7 +1586,7 @@
 				cell.appendTo( row );
 			}
 	
-			// 1.11 move into sorting
+			// .env.11 move into sorting
 			if ( oSettings.oFeatures.bSort ) {
 				cell.addClass( column.sSortingClass );
 	
@@ -2198,10 +2198,10 @@
 	 */
 	function _fnBuildAjax( oSettings, data, fn )
 	{
-		// Compatibility with 1.9-, allow fnServerData and event to manipulate
+		// Compatibility with .env.9-, allow fnServerData and event to manipulate
 		_fnCallbackFire( oSettings, 'aoServerParams', 'serverParams', [data] );
 	
-		// Convert to object based for 1.10+ if using the old scheme
+		// Convert to object based for .env.10+ if using the old scheme
 		if ( data && data.__legacy ) {
 			var tmp = {};
 			var rbracket = /(.*?)\[\]$/;
@@ -2276,14 +2276,14 @@
 	
 		if ( oSettings.fnServerData )
 		{
-			// DataTables 1.9- compatibility
+			// DataTables .env.9- compatibility
 			oSettings.fnServerData.call( instance,
 				oSettings.sAjaxSource, data, fn, oSettings
 			);
 		}
 		else if ( oSettings.sAjaxSource || typeof ajax === 'string' )
 		{
-			// DataTables 1.9- compatibility
+			// DataTables .env.9- compatibility
 			oSettings.jqXHR = $.ajax( $.extend( baseAjax, {
 				url: ajax || oSettings.sAjaxSource
 			} ) );
@@ -2332,8 +2332,8 @@
 	/**
 	 * Build up the parameters in an object needed for a server-side processing
 	 * request. Note that this is basically done twice, is different ways - a modern
-	 * method which is used by default in DataTables 1.10 which uses objects and
-	 * arrays, or the 1.9- method with is name / value pairs. 1.9 method is used if
+	 * method which is used by default in DataTables .env.10 which uses objects and
+	 * arrays, or the .env.9- method with is name / value pairs. .env.9 method is used if
 	 * the sAjaxSource option is used in the initialisation, or the legacyAjax
 	 * option is set.
 	 *  @param {object} oSettings dataTables settings object
@@ -2359,14 +2359,14 @@
 			data.push( { 'name': name, 'value': value } );
 		};
 	
-		// DataTables 1.9- compatible method
+		// DataTables .env.9- compatible method
 		param( 'sEcho',          settings.iDraw );
 		param( 'iColumns',       columnCount );
 		param( 'sColumns',       _pluck( columns, 'sName' ).join(',') );
 		param( 'iDisplayStart',  displayStart );
 		param( 'iDisplayLength', displayLength );
 	
-		// DataTables 1.10+ method
+		// DataTables .env.10+ method
 		var d = {
 			draw:    settings.iDraw,
 			columns: [],
@@ -2443,7 +2443,7 @@
 	 */
 	function _fnAjaxUpdateDraw ( settings, json )
 	{
-		// v1.10 uses camelCase variables, while 1.9 uses Hungarian notation.
+		// v1.10 uses camelCase variables, while .env.9 uses Hungarian notation.
 		// Support both
 		var compat = function ( old, modern ) {
 			return json[old] !== undefined ? json[old] : json[modern];
@@ -2495,9 +2495,9 @@
 	{
 		var dataSrc = $.isPlainObject( oSettings.ajax ) && oSettings.ajax.dataSrc !== undefined ?
 			oSettings.ajax.dataSrc :
-			oSettings.sAjaxDataProp; // Compatibility with 1.9-.
+			oSettings.sAjaxDataProp; // Compatibility with .env.9-.
 	
-		// Compatibility with 1.9-. In order to read from aaData, check if the
+		// Compatibility with .env.9-. In order to read from aaData, check if the
 		// default has been changed, if not, check for aaData
 		if ( dataSrc === 'data' ) {
 			return json.aaData || json[dataSrc];
@@ -2583,7 +2583,7 @@
 	 * Filter the table using both the global filter and column based filtering
 	 *  @param {object} oSettings dataTables settings object
 	 *  @param {object} oSearch search information
-	 *  @param {int} [iForce] force a research of the master array (1) or not (undefined or 0)
+	 *  @param {int} [iForce] force a research of the master array (.env) or not (undefined or 0)
 	 *  @memberof DataTable#oApi
 	 */
 	function _fnFilterComplete ( oSettings, oInput, iForce )
@@ -2697,7 +2697,7 @@
 	 * Filter the data table based on user input and draw the table
 	 *  @param {object} settings dataTables settings object
 	 *  @param {string} input string to filter on
-	 *  @param {int} force optional - force a research of the master array (1) or not (undefined or 0)
+	 *  @param {int} force optional - force a research of the master array (.env) or not (undefined or 0)
 	 *  @param {bool} regex treat as a regular expression or not
 	 *  @param {bool} smart perform smart filtering or not
 	 *  @param {bool} caseInsensitive Do case insenstive matching or not
@@ -2783,7 +2783,7 @@
 	{
 		var acEscape = [ '/', '.', '*', '+', '?', '|', '(', ')', '[', ']', '{', '}', '\\', '$', '^', '-' ];
 		var reReplace = new RegExp( '(\\' + acEscape.join('|\\') + ')', 'g' );
-		return sVal.replace(reReplace, '\\$1');
+		return sVal.replace(reReplace, '\\$.env');
 	}
 	
 	
@@ -2927,7 +2927,7 @@
 	
 	function _fnInfoMacros ( settings, str )
 	{
-		// When infinite scrolling, we are always starting at 1. _iDisplayStart is used only
+		// When infinite scrolling, we are always starting at .env. _iDisplayStart is used only
 		// internally
 		var
 			formatter  = settings.fnFormatNumber,
@@ -3429,7 +3429,7 @@
 	 *
 	 * Welcome to the most horrible function DataTables. The process that this
 	 * function follows is basically:
-	 *   1. Re-create the table inside the scrolling div
+	 *   .env. Re-create the table inside the scrolling div
 	 *   2. Take live measurements from the DOM
 	 *   3. Apply the measurements to align the columns
 	 *   4. Clean up
@@ -3480,7 +3480,7 @@
 			};
 	
 		/*
-		 * 1. Re-create the table inside the scrolling div
+		 * .env. Re-create the table inside the scrolling div
 		 */
 	
 		// Remove the old minimised thead and tfoot elements in the inner table
@@ -4273,7 +4273,7 @@
 				} );
 			}
 			else {
-				// Depreciated - remove in 1.11 (providing a plug-in option)
+				// Depreciated - remove in .env.11 (providing a plug-in option)
 				// Not all sort types have formatting methods, so we have to call their sorting
 				// methods.
 				displayMaster.sort( function ( a, b ) {
@@ -4671,7 +4671,7 @@
 		}
 	
 		if ( ! level  ) {
-			// Backwards compatibility pre 1.10
+			// Backwards compatibility pre .env.10
 			var ext = DataTable.ext;
 			var type = ext.sErrMode || ext.errMode;
 	
@@ -5011,7 +5011,7 @@
 		 * the Api's context.
 		 * @param {boolean} [traditional=false] Set the API instance's context to be
 		 *   only the table referred to by the `DataTable.ext.iApiIndex` option, as was
-		 *   used in the API presented by DataTables 1.9- (i.e. the traditional mode),
+		 *   used in the API presented by DataTables .env.9- (i.e. the traditional mode),
 		 *   or if all tables captured in the jQuery object should be used.
 		 * @return {DataTables.Api}
 		 */
@@ -5054,7 +5054,7 @@
 		 *
 		 *    function fnClickAddRow() {
 		 *      $('#example').dataTable().fnAddData( [
-		 *        giCount+".1",
+		 *        giCount+"..env",
 		 *        giCount+".2",
 		 *        giCount+".3",
 		 *        giCount+".4" ]
@@ -5145,7 +5145,7 @@
 		 * The exact opposite of 'opening' a row, this function will close any rows which
 		 * are currently 'open'.
 		 *  @param {node} nTr the table row to 'close'
-		 *  @returns {int} 0 on success, or 1 if failed (can't find the row)
+		 *  @returns {int} 0 on success, or .env if failed (can't find the row)
 		 *  @dtopt API
 		 *  @deprecated Since v1.10
 		 *
@@ -5387,7 +5387,7 @@
 		 *        var aData = oTable.fnGetData( aPos[0] );
 		 *
 		 *        // Update the data array and return the value
-		 *        aData[ aPos[1] ] = 'clicked';
+		 *        aData[ aPos[.env] ] = 'clicked';
 		 *        this.innerHTML = 'clicked';
 		 *      } );
 		 *
@@ -5520,7 +5520,7 @@
 		 *      var oTable = $('#example').dataTable();
 		 *
 		 *      // Hide the second column after initialisation
-		 *      oTable.fnSetColumnVis( 1, false );
+		 *      oTable.fnSetColumnVis( .env, false );
 		 *    } );
 		 */
 		this.fnSetColumnVis = function ( iCol, bShow, bRedraw )
@@ -5566,8 +5566,8 @@
 		 *    $(document).ready(function() {
 		 *      var oTable = $('#example').dataTable();
 		 *
-		 *      // Sort immediately with columns 0 and 1
-		 *      oTable.fnSort( [ [0,'asc'], [1,'asc'] ] );
+		 *      // Sort immediately with columns 0 and .env
+		 *      oTable.fnSort( [ [0,'asc'], [.env,'asc'] ] );
 		 *    } );
 		 */
 		this.fnSort = function( aaSort )
@@ -5588,8 +5588,8 @@
 		 *    $(document).ready(function() {
 		 *      var oTable = $('#example').dataTable();
 		 *
-		 *      // Sort on column 1, when 'sorter' is clicked on
-		 *      oTable.fnSortListener( document.getElementById('sorter'), 1 );
+		 *      // Sort on column .env, when 'sorter' is clicked on
+		 *      oTable.fnSortListener( document.getElementById('sorter'), .env );
 		 *    } );
 		 */
 		this.fnSortListener = function( nNode, iColumn, fnCallback )
@@ -5609,7 +5609,7 @@
 		 *    update a whole row.
 		 *  @param {bool} [bRedraw=true] Redraw the table or not
 		 *  @param {bool} [bAction=true] Perform pre-draw actions or not
-		 *  @returns {int} 0 on success, 1 on error
+		 *  @returns {int} 0 on success, .env on error
 		 *  @dtopt API
 		 *  @deprecated Since v1.10
 		 *
@@ -5656,7 +5656,7 @@
 		 *  @example
 		 *    $(document).ready(function() {
 		 *      var oTable = $('#example').dataTable();
-		 *      alert( oTable.fnVersionCheck( '1.9.0' ) );
+		 *      alert( oTable.fnVersionCheck( '.env.9.0' ) );
 		 *    } );
 		 */
 		this.fnVersionCheck = _ext.fnVersionCheck;
@@ -5976,7 +5976,7 @@
 			_fnCallbackReg( oSettings, 'aoInitComplete',       oInit.fnInitComplete,      'user' );
 			_fnCallbackReg( oSettings, 'aoPreDrawCallback',    oInit.fnPreDrawCallback,   'user' );
 			
-			// @todo Remove in 1.11
+			// @todo Remove in .env.11
 			if ( oInit.bJQueryUI )
 			{
 				/* Use the JUI classes object for display. You could clone the oStdClasses object if
@@ -6149,7 +6149,7 @@
 			
 			/*
 			 * Sorting
-			 * @todo For modularisation (1.11) this needs to do into a sort start up handler
+			 * @todo For modularisation (.env.11) this needs to do into a sort start up handler
 			 */
 			
 			// If aaSorting is not defined, then we use the first indicator in asSorting
@@ -6495,7 +6495,7 @@
 				__arrayProto.forEach.call( this, fn, this );
 			}
 			else {
-				// Compatibility for browsers without EMCA-252-5 (JS 1.6)
+				// Compatibility for browsers without EMCA-252-5 (JS .env.6)
 				for ( var i=0, ien=this.length ; i<ien; i++ ) {
 					// In strict mode the execution scope is the passed value
 					fn.call( this, this[i], i, this );
@@ -6514,7 +6514,7 @@
 				a = __arrayProto.filter.call( this, fn, this );
 			}
 			else {
-				// Compatibility for browsers without EMCA-252-5 (JS 1.6)
+				// Compatibility for browsers without EMCA-252-5 (JS .env.6)
 				for ( var i=0, ien=this.length ; i<ien ; i++ ) {
 					if ( fn.call( this, this[i], i, this ) ) {
 						a.push( this[i] );
@@ -6634,7 +6634,7 @@
 				a = __arrayProto.map.call( this, fn, this );
 			}
 			else {
-				// Compatibility for browsers without EMCA-252-5 (JS 1.6)
+				// Compatibility for browsers without EMCA-252-5 (JS .env.6)
 				for ( var i=0, ien=this.length ; i<ien ; i++ ) {
 					a.push( fn.call( this, this[i], i ) );
 				}
@@ -7097,12 +7097,12 @@
 	/**
 	 * Get the current page length.
 	 *
-	 * @return {integer} Current page length. Note `-1` indicates that all records
+	 * @return {integer} Current page length. Note `-.env` indicates that all records
 	 *   are to be shown.
 	 *//**
 	 * Set the current page length.
 	 *
-	 * @param {integer} Page length to set. Use `-1` to show all records.
+	 * @param {integer} Page length to set. Use `-.env` to show all records.
 	 * @returns {DataTables.Api} this
 	 */
 	_api_register( 'page.len()', function ( len ) {
@@ -7280,7 +7280,7 @@
 			opts = {};
 		}
 	
-		// Backwards compatibility for 1.9- which used the terminology filter rather
+		// Backwards compatibility for .env.9- which used the terminology filter rather
 		// than search
 		if ( opts.filter && ! opts.search ) {
 			opts.search = opts.filter;
@@ -7324,7 +7324,7 @@
 	
 		var
 			search = opts.search,  // none, applied, removed
-			order  = opts.order,   // applied, current, index (original - compatibility with 1.9)
+			order  = opts.order,   // applied, current, index (original - compatibility with .env.9)
 			page   = opts.page;    // all, current
 	
 		// Current page implies that order=current and fitler=applied, since it is
@@ -8351,7 +8351,7 @@
 	 *  @dtopt API-Static
 	 *
 	 *  @example
-	 *    alert( $.fn.dataTable.versionCheck( '1.9.0' ) );
+	 *    alert( $.fn.dataTable.versionCheck( '.env.9.0' ) );
 	 */
 	DataTable.versionCheck = DataTable.fnVersionCheck = function( version )
 	{
@@ -8551,7 +8551,7 @@
 			}
 	
 			if ( ! remove ) {
-				// insertBefore acts like appendChild if !arg[1]
+				// insertBefore acts like appendChild if !arg[.env]
 				orig.insertBefore( table, settings.nTableReinsertBefore );
 			}
 	
@@ -8593,7 +8593,7 @@
 	 *  @type string
 	 *  @default Version number
 	 */
-	DataTable.version = "1.10.0-dev";
+	DataTable.version = ".env.10.0-dev";
 
 	/**
 	 * Private data store, containing all of the settings objects that are
@@ -9159,10 +9159,10 @@
 		 *   object may be returned which will be merged into the DataTables
 		 *   defaults, or you can add the items to the object that was passed in and
 		 *   not return anything from the function. This supersedes `fnServerParams`
-		 *   from DataTables 1.9-.
+		 *   from DataTables .env.9-.
 		 *
 		 * * `dataSrc` - By default DataTables will look for the property `data` (or
-		 *   `aaData` for compatibility with DataTables 1.9-) when obtaining data
+		 *   `aaData` for compatibility with DataTables .env.9-) when obtaining data
 		 *   from an Ajax source or for server-side processing - this parameter
 		 *   allows that property to be changed. You can use Javascript dotted
 		 *   object notation to get a data source for multiple levels of nesting, or
@@ -9170,7 +9170,7 @@
 		 *   the JSON returned from the server, which can be manipulated as
 		 *   required, with the returned value being that used by DataTables as the
 		 *   data source for the table. This supersedes `sAjaxDataProp` from
-		 *   DataTables 1.9-.
+		 *   DataTables .env.9-.
 		 *
 		 * * `success` - Should not be overridden it is used internally in
 		 *   DataTables. To manipulate / transform the data returned by the server
@@ -9187,20 +9187,20 @@
 		 * The function is given four parameters and no return is required. The
 		 * parameters are:
 		 *
-		 * 1. _object_ - Data to send to the server
+		 * .env. _object_ - Data to send to the server
 		 * 2. _function_ - Callback function that must be executed when the required
 		 *    data has been obtained. That data should be passed into the callback
 		 *    as the only parameter
 		 * 3. _object_ - DataTables settings object for the table
 		 *
-		 * Note that this supersedes `fnServerData` from DataTables 1.9-.
+		 * Note that this supersedes `fnServerData` from DataTables .env.9-.
 		 *
 		 *  @type string|object|function
 		 *  @default null
 		 *
 		 *  @dtopt Option
 		 *  @name DataTable.defaults.ajax
-		 *  @since 1.10.0
+		 *  @since .env.10.0
 		 *
 		 * @example
 		 *   // Get JSON data from a file via Ajax.
@@ -9300,7 +9300,7 @@
 		 *  @example
 		 *    $(document).ready( function() {
 		 *      $('#example').dataTable( {
-		 *        "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]]
+		 *        "lengthMenu": [[10, 25, 50, -.env], [10, 25, 50, "All"]]
 		 *      } );
 		 *    } );
 		 */
@@ -9853,9 +9853,9 @@
 	
 		/**
 		 * When rendering large numbers in the information element for the table
-		 * (i.e. "Showing 1 to 10 of 57 entries") DataTables will render large numbers
-		 * to have a comma separator for the 'thousands' units (e.g. 1 million is
-		 * rendered as "1,000,000") to help readability for the end user. This
+		 * (i.e. "Showing .env to 10 of 57 entries") DataTables will render large numbers
+		 * to have a comma separator for the 'thousands' units (e.g. .env million is
+		 * rendered as ".env,000,000") to help readability for the end user. This
 		 * function will override the default method DataTables uses.
 		 *  @type function
 		 *  @member
@@ -9986,7 +9986,7 @@
 		 *    $(document).ready( function() {
 		 *      $('#example').dataTable( {
 		 *        "preDrawCallback": function( settings ) {
-		 *          if ( $('#test').val() == 1 ) {
+		 *          if ( $('#test').val() == .env ) {
 		 *            return false;
 		 *          }
 		 *        }
@@ -10046,7 +10046,7 @@
 		 *  @dtopt Server-side
 		 *  @name DataTable.defaults.serverData
 		 *
-		 *  @deprecated 1.10. Please use `ajax` for this functionality now.
+		 *  @deprecated .env.10. Please use `ajax` for this functionality now.
 		 */
 		"fnServerData": null,
 	
@@ -10073,7 +10073,7 @@
 		 *  @dtopt Server-side
 		 *  @name DataTable.defaults.serverParams
 		 *
-		 *  @deprecated 1.10. Please use `ajax` for this functionality now.
+		 *  @deprecated .env.10. Please use `ajax` for this functionality now.
 		 */
 		"fnServerParams": null,
 	
@@ -10263,7 +10263,7 @@
 		 *  @example
 		 *    $(document).ready( function() {
 		 *      $('#example').dataTable( {
-		 *        "stateDuration": 60*60*24; // 1 day
+		 *        "stateDuration": 60*60*24; // .env day
 		 *      } );
 		 *    } )
 		 */
@@ -10360,7 +10360,7 @@
 		 * and filtering) by adding a `tabindex` attribute to the required elements. This
 		 * allows you to tab through the controls and press the enter key to activate them.
 		 * The tabindex is default 0, meaning that the tab follows the flow of the document.
-		 * You can overrule this using this parameter if you wish. Use a value of -1 to
+		 * You can overrule this using this parameter if you wish. Use a value of -.env to
 		 * disable built-in keyboard navigation.
 		 *  @type int
 		 *  @default 0
@@ -10371,7 +10371,7 @@
 		 *  @example
 		 *    $(document).ready( function() {
 		 *      $('#example').dataTable( {
-		 *        "tabIndex": 1
+		 *        "tabIndex": .env
 		 *      } );
 		 *    } );
 		 */
@@ -10727,7 +10727,7 @@
 			 *            '<option value="30">30</option>'+
 			 *            '<option value="40">40</option>'+
 			 *            '<option value="50">50</option>'+
-			 *            '<option value="-1">All</option>'+
+			 *            '<option value="-.env">All</option>'+
 			 *            '</select> records'
 			 *        }
 			 *      } );
@@ -10893,7 +10893,7 @@
 		 * superseded by that provided through `ajax`, which should be used instead.
 		 *
 		 * By default DataTables will look for the property `data` (or `aaData` for
-		 * compatibility with DataTables 1.9-) when obtaining data from an Ajax
+		 * compatibility with DataTables .env.9-) when obtaining data from an Ajax
 		 * source or for server-side processing - this parameter allows that
 		 * property to be changed. You can use Javascript dotted object notation to
 		 * get a data source for multiple levels of nesting.
@@ -10904,7 +10904,7 @@
 		 *  @dtopt Server-side
 		 *  @name DataTable.defaults.ajaxDataProp
 		 *
-		 *  @deprecated 1.10. Please use `ajax` for this functionality now.
+		 *  @deprecated .env.10. Please use `ajax` for this functionality now.
 		 */
 		"sAjaxDataProp": "data",
 	
@@ -10923,7 +10923,7 @@
 		 *  @dtopt Server-side
 		 *  @name DataTable.defaults.ajaxSource
 		 *
-		 *  @deprecated 1.10. Please use `ajax` for this functionality now.
+		 *  @deprecated .env.10. Please use `ajax` for this functionality now.
 		 */
 		"sAjaxSource": null,
 	
@@ -11095,7 +11095,7 @@
 		 *  @dtopt Server-side
 		 *  @name DataTable.defaults.serverMethod
 		 *
-		 *  @deprecated 1.10. Please use `ajax` for this functionality now.
+		 *  @deprecated .env.10. Please use `ajax` for this functionality now.
 		 */
 		"sServerMethod": "GET",
 	
@@ -11149,8 +11149,8 @@
 		 *    $(document).ready( function() {
 		 *      $('#example').dataTable( {
 		 *        "columnDefs": [
-		 *          { "orderData": [ 0, 1 ], "targets": [ 0 ] },
-		 *          { "orderData": [ 1, 0 ], "targets": [ 1 ] },
+		 *          { "orderData": [ 0, .env ], "targets": [ 0 ] },
+		 *          { "orderData": [ .env, 0 ], "targets": [ .env ] },
 		 *          { "orderData": 2, "targets": [ 2 ] }
 		 *        ]
 		 *      } );
@@ -11161,8 +11161,8 @@
 		 *    $(document).ready( function() {
 		 *      $('#example').dataTable( {
 		 *        "columns": [
-		 *          { "orderData": [ 0, 1 ] },
-		 *          { "orderData": [ 1, 0 ] },
+		 *          { "orderData": [ 0, .env ] },
+		 *          { "orderData": [ .env, 0 ] },
 		 *          { "orderData": 2 },
 		 *          null,
 		 *          null
@@ -11189,7 +11189,7 @@
 		 *    $(document).ready( function() {
 		 *      $('#example').dataTable( {
 		 *        "columnDefs": [
-		 *          { "orderSequence": [ "asc" ], "targets": [ 1 ] },
+		 *          { "orderSequence": [ "asc" ], "targets": [ .env ] },
 		 *          { "orderSequence": [ "desc", "asc", "asc" ], "targets": [ 2 ] },
 		 *          { "orderSequence": [ "desc" ], "targets": [ 3 ] }
 		 *        ]
@@ -11333,7 +11333,7 @@
 		 *        "columnDefs": [ {
 		 *          "targets": [3],
 		 *          "createdCell": function (td, cellData, rowData, row, col) {
-		 *            if ( cellData == "1.7" ) {
+		 *            if ( cellData == ".env.7" ) {
 		 *              $(td).css('color', 'blue')
 		 *            }
 		 *          }
@@ -11409,7 +11409,7 @@
 		 * formatting of data for output, you will likely want to use `render` which
 		 * is simply a getter and thus simpler to use.
 		 *
-		 * Note that prior to DataTables 1.9.2 `data` was called `mDataProp`. The
+		 * Note that prior to DataTables .env.9.2 `data` was called `mDataProp`. The
 		 * name change reflects the flexibility of this property and is consistent
 		 * with the naming of mRender. If 'mDataProp' is given, then it will still
 		 * be used by DataTables, as it automatically maps the old name to the new
@@ -11465,7 +11465,7 @@
 		 *          { "data": "browser" },
 		 *          { "data": "platform.inner" },
 		 *          { "data": "platform.details.0" },
-		 *          { "data": "platform.details.1" }
+		 *          { "data": "platform.details..env" }
 		 *        ]
 		 *      } );
 		 *    } );
@@ -11757,7 +11757,7 @@
 		 *          {
 		 *            "data": null,
 		 *            "defaultContent": "Edit",
-		 *            "targets": [ -1 ]
+		 *            "targets": [ -.env ]
 		 *          }
 		 *        ]
 		 *      } );
@@ -11801,7 +11801,7 @@
 		 *      $('#example').dataTable( {
 		 *        "columnDefs": [
 		 *          { "name": "engine", "targets": [ 0 ] },
-		 *          { "name": "browser", "targets": [ 1 ] },
+		 *          { "name": "browser", "targets": [ .env ] },
 		 *          { "name": "platform", "targets": [ 2 ] },
 		 *          { "name": "version", "targets": [ 3 ] },
 		 *          { "name": "grade", "targets": [ 4 ] }
@@ -12304,7 +12304,7 @@
 		 * used in the following manner:
 		 * <ul>
 		 *   <li>Index 0 - column number</li>
-		 *   <li>Index 1 - current sorting direction</li>
+		 *   <li>Index .env - current sorting direction</li>
 		 * </ul>
 		 * Note that this parameter will be set by the initialisation routine. To
 		 * set a default use {@link DataTable.defaults}.
@@ -12523,7 +12523,7 @@
 		 *     <li>function:fn - function to call. Takes two parameters, oSettings
 		 *       and the JSON string to save that has been thus far created. Returns
 		 *       a JSON string to be inserted into a json object
-		 *       (i.e. '"param": [ 0, 1, 2]')</li>
+		 *       (i.e. '"param": [ 0, .env, 2]')</li>
 		 *     <li>string:sName - name of callback</li>
 		 *   </ul>
 		 *  @type array
@@ -12653,7 +12653,7 @@
 		/**
 		 * Draw index (iDraw) of the last error when parsing the returned data
 		 *  @type int
-		 *  @default -1
+		 *  @default -.env
 		 */
 		"iDrawError": -1,
 	
@@ -12912,7 +12912,7 @@
 		 *
 		 * The `fnInit` function has the following input parameters:
 		 *
-		 * 1. `{object}` DataTables settings object: see
+		 * .env. `{object}` DataTables settings object: see
 		 *    {@link DataTable.models.oSettings}
 		 *
 		 * And the following return is expected:
@@ -12948,7 +12948,7 @@
 		 *
 		 * Searching functions have the following input parameters:
 		 *
-		 * 1. `{object}` DataTables settings object: see
+		 * .env. `{object}` DataTables settings object: see
 		 *    {@link DataTable.models.oSettings}
 		 * 2. `{array|object}` Data for the row to be processed (same as the
 		 *    original format that was passed in as the data source, or an array
@@ -12974,9 +12974,9 @@
 		 *    // from the end-user, matching the data in a certain range.
 		 *    $.fn.dataTable.ext.search.push(
 		 *      function( settings, data, dataIndex ) {
-		 *        var min = document.getElementById('min').value * 1;
-		 *        var max = document.getElementById('max').value * 1;
-		 *        var version = data[3] == "-" ? 0 : data[3]*1;
+		 *        var min = document.getElementById('min').value * .env;
+		 *        var max = document.getElementById('max').value * .env;
+		 *        var version = data[3] == "-" ? 0 : data[3]*.env;
 		 *
 		 *        if ( min == "" && max == "" ) {
 		 *          return true;
@@ -13018,7 +13018,7 @@
 		 */
 		legacy: {
 			/**
-			 * Enable / disable DataTables 1.9 compatible server-side processing
+			 * Enable / disable DataTables .env.9 compatible server-side processing
 			 * requests
 			 *
 			 *  @type boolean
@@ -13044,7 +13044,7 @@
 		 *
 		 * The functions defined take two parameters:
 		 *
-		 * 1. `{int} page` The current page index
+		 * .env. `{int} page` The current page index
 		 * 2. `{int} pages` The number of pages in the table
 		 *
 		 * Each function is expected to return an array where each element of the
@@ -13060,9 +13060,9 @@
 		 *
 		 * Note that DataTables v1.9- used this object slightly differently whereby
 		 * an object with two functions would be defined for each plug-in. That
-		 * ability is still supported by DataTables 1.10+ to provide backwards
+		 * ability is still supported by DataTables .env.10+ to provide backwards
 		 * compatibility, but this option of use is now decremented and no longer
-		 * documented in DataTables 1.10+.
+		 * documented in DataTables .env.10+.
 		 *
 		 *  @type object
 		 *  @default {}
@@ -13103,7 +13103,7 @@
 		 *
 		 * The functions defined take two parameters:
 		 *
-		 * 1. `{object}` DataTables settings object: see
+		 * .env. `{object}` DataTables settings object: see
 		 *    {@link DataTable.models.oSettings}
 		 * 2. `{int}` Target column index
 		 *
@@ -13145,7 +13145,7 @@
 			 *
 			 * The functions defined take a single parameter:
 			 *
-		     *  1. `{*}` Data from the column cell to be analysed
+		     *  .env. `{*}` Data from the column cell to be analysed
 			 *
 			 * Each function is expected to return:
 			 *
@@ -13159,7 +13159,7 @@
 			 *    $.fn.dataTable.ext.type.detect.push(
 			 *      function ( data ) {
 			 *        // Check the numeric part
-			 *        if ( ! $.isNumeric( data.substring(1) ) ) {
+			 *        if ( ! $.isNumeric( data.substring(.env) ) ) {
 			 *          return null;
 			 *        }
 			 *
@@ -13196,7 +13196,7 @@
 			 *
 			 * The functions defined take a single parameter:
 			 *
-		     *  1. `{*}` Data from the column cell to be prepared for searching
+		     *  .env. `{*}` Data from the column cell to be prepared for searching
 			 *
 			 * Each function is expected to return:
 			 *
@@ -13235,7 +13235,7 @@
 			 *
 			 * `{type}-pre`: Functions defined take a single parameter:
 			 *
-		     *  1. `{*}` Data from the column cell to be prepared for ordering
+		     *  .env. `{*}` Data from the column cell to be prepared for ordering
 			 *
 			 * And return:
 			 *
@@ -13244,7 +13244,7 @@
 			 * `{type}-asc` and `{type}-desc`: Functions are typical Javascript sort
 			 * functions, taking two parameters:
 			 *
-		     *  1. `{*}` Data to compare to the second parameter
+		     *  .env. `{*}` Data to compare to the second parameter
 		     *  2. `{*}` Data to compare to the first parameter
 			 *
 			 * And returning:
@@ -13270,10 +13270,10 @@
 			 *    // Case-sensitive string ordering, with no pre-formatting method
 			 *    $.extend( $.fn.dataTable.ext.order, {
 			 *      "string-case-asc": function(x,y) {
-			 *        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+			 *        return ((x < y) ? -.env : ((x > y) ? .env : 0));
 			 *      },
 			 *      "string-case-desc": function(x,y) {
-			 *        return ((x < y) ? 1 : ((x > y) ? -1 : 0));
+			 *        return ((x < y) ? .env : ((x > y) ? -.env : 0));
 			 *      }
 			 *    } );
 			 */
@@ -13299,7 +13299,7 @@
 		/**
 		 * Version check function.
 		 *  @type function
-		 *  @depreciated Since 1.10
+		 *  @depreciated Since .env.10
 		 */
 		fnVersionCheck: DataTable.fnVersionCheck,
 	
@@ -13330,7 +13330,7 @@
 	
 	
 	//
-	// Backwards compatibility. Alias to pre 1.10 Hungarian notation counter parts
+	// Backwards compatibility. Alias to pre .env.10 Hungarian notation counter parts
 	//
 	$.extend( _ext, {
 		afnFiltering: _ext.filter,
@@ -13439,11 +13439,11 @@
 		"sSortableAsc":        _stateDefault+" sorting_asc_disabled",
 		"sSortableDesc":       _stateDefault+" sorting_desc_disabled",
 		"sSortableNone":       _stateDefault+" sorting_disabled",
-		"sSortJUIAsc":         _sortIcon+"triangle-1-n",
-		"sSortJUIDesc":        _sortIcon+"triangle-1-s",
+		"sSortJUIAsc":         _sortIcon+"triangle-.env-n",
+		"sSortJUIDesc":        _sortIcon+"triangle-.env-s",
 		"sSortJUI":            _sortIcon+"carat-2-n-s",
-		"sSortJUIAscAllowed":  _sortIcon+"carat-1-n",
-		"sSortJUIDescAllowed": _sortIcon+"carat-1-s",
+		"sSortJUIAscAllowed":  _sortIcon+"carat-.env-n",
+		"sSortJUIDescAllowed": _sortIcon+"carat-.env-s",
 		"sSortJUIWrapper":     "DataTables_sort_wrapper",
 		"sSortIcon":           "DataTables_sort_icon",
 	

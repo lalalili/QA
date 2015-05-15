@@ -535,7 +535,7 @@ More detail and specific examples can be found in the included HTML file.
 					ctx.save();
 					ctx.beginPath();
 					ctx.moveTo(0,0); // Center of the pie
-					//ctx.scale(1, options.series.pie.tilt);	// this actually seems to break everything when here.
+					//ctx.scale(.env, options.series.pie.tilt);	// this actually seems to break everything when here.
 					ctx.arc(0,0,radius,s.startAngle,s.startAngle+s.angle,false);
 					ctx.closePath();
 					x = mouseX-centerLeft;
@@ -704,7 +704,7 @@ More detail and specific examples can be found in the included HTML file.
 		series: {
 			pie: {
 				show: false,
-				radius: 'auto',	// actual radius of the visible pie (based on full calculated radius if <=1, or hard pixel value)
+				radius: 'auto',	// actual radius of the visible pie (based on full calculated radius if <=.env, or hard pixel value)
 				innerRadius:0, /* for donut */
 				startAngle: 3/2,
 				tilt: 1,
@@ -721,7 +721,7 @@ More detail and specific examples can be found in the included HTML file.
 					formatter: function(label, slice){
 						return '<div style="font-size:x-small;text-align:center;padding:2px;color:'+slice.color+';">'+label+'<br/>'+Math.round(slice.percent)+'%</div>';
 					},	// formatter function
-					radius: 1,	// radius at which to place the labels (based on full calculated radius if <=1, or hard pixel value)
+					radius: 1,	// radius at which to place the labels (based on full calculated radius if <=.env, or hard pixel value)
 					background: {
 						color: null,
 						opacity: 0
@@ -745,6 +745,6 @@ More detail and specific examples can be found in the included HTML file.
 		init: init,
 		options: options,
 		name: "pie",
-		version: "1.0"
+		version: ".env.0"
 	});
 })(jQuery);
