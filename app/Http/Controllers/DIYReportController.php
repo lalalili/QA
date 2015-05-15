@@ -8,6 +8,7 @@ use Flash;
 use Redirect;
 use DateTime;
 use Request;
+use Validator;
 use App\DIYReport;
 use App\KPIAlert;
 use Illuminate\Support\Facades\Input;
@@ -58,10 +59,10 @@ class DIYReportController extends Controller
             $alert = $KPIAlert['KPIAlert'];
             //dd($alert);
         }
-        if ($Server == 'CN'){
+        if ($Server == 'CN') {
             $cn = 'CN';
             return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'display', 'cn'))->with('diy', new DIYReportController);
-        }else{
+        } else {
             $tw = 'TW';
             return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'display', 'tw'))->with('diy', new DIYReportController);
         }
@@ -80,8 +81,18 @@ class DIYReportController extends Controller
         return $KPIAlerts;
     }
 
-    public function query()
+    public function query(\Illuminate\Http\Request $request)
     {
+        $v = Validator::make($request->all(), [
+            'StoreID' => 'required',
+            'PeriodType' => 'required',
+            'CalDate' => 'required|date',
+
+        ]);
+        if ($v->fails()) {
+            Flash::overlay('請輸入完整查詢條件', '提示');
+            return Redirect::to('/diy');
+        }
         $Server = Request::input('Server');
         $StoreID = Request::input('StoreID');
         $PeriodType = Request::input('PeriodType');
@@ -93,10 +104,8 @@ class DIYReportController extends Controller
         //dd($StoreID);
         //dd($PeriodType);
         //dd($CalDate);
-        if (!$StoreID | !$PeriodType | !$CalDate) {
-            Flash::overlay('請填入完整查詢條件', '提示');
-            return Redirect::to('/diy');
-        }
+
+
         if ($Server == 'CN') {
             $DIYReports = DB::connection('mongocn')->table($DIYReport->collection)->where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
             //dd($DIYReports);
