@@ -45,7 +45,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">QA Admin v2.2</a>
+        <a class="navbar-brand" href="{{url('/')}}">QA Admin v2.2</a>
     </div>
     <!-- /.navbar-header -->
     <!-- /.navbar-top-links -->
