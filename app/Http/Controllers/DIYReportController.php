@@ -58,7 +58,14 @@ class DIYReportController extends Controller
             $alert = $KPIAlert['KPIAlert'];
             //dd($alert);
         }
-        return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'display', 'Server'))->with('diy', new DIYReportController);
+        if ($Server == 'CN'){
+            $cn = 'CN';
+            return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'display', 'cn'))->with('diy', new DIYReportController);
+        }else{
+            $tw = 'TW';
+            return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'display', 'tw'))->with('diy', new DIYReportController);
+        }
+
     }
 
     public function report()
@@ -92,11 +99,9 @@ class DIYReportController extends Controller
         }
         if ($Server == 'CN') {
             $DIYReports = DB::connection('mongocn')->table($DIYReport->collection)->where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
-            $cn = 'CN';
             //dd($DIYReports);
         } else {
             $DIYReports = DB::connection('mongotw')->table($DIYReport->collection)->where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
-            $tw = 'TW';
             //dd($DIYReports);
         }
         ///dd(count($DIYReports));
@@ -114,10 +119,8 @@ class DIYReportController extends Controller
         }
         if ($Server == 'CN') {
             $KPIAlerts = DB::connection('mongocn')->table($KPIAlert->collection)->where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
-            $cn = 'CN';
         } else {
             $KPIAlerts = DB::connection('mongotw')->table($KPIAlert->collection)->where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
-            $tw = 'TW';
         }
         //dd($KPIAlerts);
         if (count($KPIAlerts) == '0') {
@@ -133,8 +136,10 @@ class DIYReportController extends Controller
             //dd($alert);
         }
         if ($Server == 'CN') {
+            $cn = 'CN';
             return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'cn'))->with('diy', new DIYReportController);
         } else {
+            $tw = 'TW';
             return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'tw'))->with('diy', new DIYReportController);
         }
     }

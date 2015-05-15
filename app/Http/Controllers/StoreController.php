@@ -17,18 +17,44 @@ class StoreController extends Controller
 
     public function index()
     {
-        $ShopID = '';
-        $StoreName = '';
-        $status = '預設值';
+        $queryServer = Session::pull('queryServer');
+        $queryShopID = Session::pull('queryShopID');
+        $queryStoreName = Session::pull('queryStoreName');
+        if (count('$queryShopID') <> '0') {
+            $Server = $queryServer;
+            $ShopID = $queryShopID;
+            $StoreName = $queryStoreName;
+            $status = '查無資料';
+        } else {
+            $Server = 'CN';
+            $ShopID = '';
+            $StoreName = '';
+            $status = '預設值';
+        }
+
         $Store = new Store;
-        $Server = 'CN';
         $Stores = DB::connection('mongocn_store')->table($Store->collection)->where('ShopID', 'grandpacific')->where('StoreName', '黄金')->get();
         //dd($Stores);
         foreach ($Stores as $Store) {
             //dd($Store['ShopID']);
         }
+        if ($Store['Category3'] == '-999') {
+            $StoreID = $Store['ShopID'] . '^' . $Store['Category1'] . '^' . $Store['Category2'] . '^' . $Store['StoreID'];
+        } elseif ($Store['Category2'] == '-999') {
+            $StoreID = $Store['ShopID'] . '^' . $Store['Category1'] . '^' . $Store['Category3'] . '^' . $Store['StoreID'];
+        } elseif ($Store['Category1'] == '-999') {
+            $StoreID = $Store['ShopID'] . '^' . $Store['Category2'] . '^' . $Store['Category3'] . '^' . $Store['StoreID'];
+        } else {
+            $StoreID = $Store['ShopID'] . '^' . $Store['Category1'] . '^' . $Store['Category2'] . '^' . $Store['Category3'] . '^' . $Store['StoreID'];
+        }
+        if($Server =='CN'){
+            $cn = 'CN';
+            return view('store', compact('StoreID', 'ShopID', 'StoreName', 'status', 'cn'));
+        }else{
+            $tw = 'TW';
+            return view('store', compact('StoreID', 'ShopID', 'StoreName', 'status', 'tw'));
+        }
 
-        return view('store', compact('Store', 'ShopID', 'StoreName', 'status', 'Server'));
     }
 
     public function query()
@@ -47,31 +73,42 @@ class StoreController extends Controller
         }
         if ($Server == 'CN') {
             $Stores = DB::connection('mongocn_store')->table($Store->collection)->where('ShopID', $ShopID)->where('StoreName', $StoreName)->get();
-            $cn = 'CN';
             //dd($Stores);
         } else {
             $Stores = DB::connection('mongotw_store')->table($Store->collection)->where('ShopID', $ShopID)->where('StoreName', $StoreName)->get();
-            $tw = 'TW';
             //dd($Stores);
         }
         //dd(count($Stores));
         if (count($Stores) == '0') {
+            Session::put('queryServer', $Server);
+            Session::put('queryShopID', $ShopID);
+            Session::put('queryStoreName', $StoreName);
             Flash::overlay('Store查無資料', '提示');
             return Redirect::to('/store');
         }
         foreach ($Stores as $Store) {
             //dd($Stores['ShopID');
         }
-        $saveStoreID = $Store['ShopID'].'^'.$Store['Category1'].'^'.$Store['Category2'].'^'.$Store['Category3'].'^'.$Store['StoreID'];
+        if ($Store['Category3'] == '-999') {
+            $StoreID = $Store['ShopID'] . '^' . $Store['Category1'] . '^' . $Store['Category2'] . '^' . $Store['StoreID'];
+        } elseif ($Store['Category2'] == '-999') {
+            $StoreID = $Store['ShopID'] . '^' . $Store['Category1'] . '^' . $Store['Category3'] . '^' . $Store['StoreID'];
+        } elseif ($Store['Category1'] == '-999') {
+            $StoreID = $Store['ShopID'] . '^' . $Store['Category2'] . '^' . $Store['Category3'] . '^' . $Store['StoreID'];
+        } else {
+            $StoreID = $Store['ShopID'] . '^' . $Store['Category1'] . '^' . $Store['Category2'] . '^' . $Store['Category3'] . '^' . $Store['StoreID'];
+        }
         //dd($StroeID);
-        Session::put('saveStoreID', $saveStoreID);
+        Session::put('saveStoreID', $StoreID);
 
 
         if ($Server == 'CN') {
-            return view('store', compact('Store', 'ShopID', 'StoreName', 'status', 'cn'));
+            $cn = 'CN';
+            return view('store', compact('StoreID', 'ShopID', 'StoreName', 'status', 'cn'));
         } else {
-            return view('store', compact('Store', 'ShopID', 'StoreName', 'status', 'tw'));
+            $tw = 'TW';
+            return view('store', compact('StoreID', 'ShopID', 'StoreName', 'status', 'tw'));
         }
     }
-    
+
 }

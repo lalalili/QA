@@ -45,7 +45,7 @@
                 <div class="panel panel-new">
                     <div class="panel-heading"> StoreID</div>
                     <div class="panel-body">
-                        {{ $Store['ShopID'] }}^{{$Store['Category1']}}^{{$Store['Category2']}}^{{$Store['Category3']}}^{{$Store['StoreID']}}
+                        {{ $StoreID }}
                     </div>
                 </div>
             </div>
