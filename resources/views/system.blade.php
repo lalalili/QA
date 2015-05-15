@@ -55,7 +55,7 @@
                 <div class="well">
                     <h3>QA公告系統</h3>
                     <p>祝福留言</p>
-                    <a class="alert-link" href="https://best13.migosoft.com/faq/" target="_blank">https://best13.migosoft.com/faq/</a>
+                    <a class="alert-link" href="https://best13.migosoft.com/faq/" target="_blank">https://qa.migosoft.com/</a>
                     <p><h5>部門自行開發</h5></p>
                     <p><h5>程式語言：Html前端 (Bootstrap)</h5></p>
                     <p><h5>Html與Windows排成管理工具整合</h5></p>

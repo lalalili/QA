@@ -45,7 +45,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">QA Admin v2.0</a>
+        <a class="navbar-brand" href="index.html">QA Admin v2.2</a>
     </div>
     <!-- /.navbar-header -->
     <!-- /.navbar-top-links -->
@@ -54,19 +54,57 @@
         <div class="sidebar-nav navbar-collapse">
             <ul class="nav" id="side-menu">
                 <li>
-                    <a href="version"><i class="fa fa-server fa-fw"></i> Version Status</a>
+                    <a href="{{url('/version')}}"><i class="fa fa-server fa-fw"></i> Version Status</a>
                 </li>
                 <li>
-                    <a href="patch"><i class="fa fa-check-square-o fa-fw"></i> Patch Test</a>
+                    <a href="{{url('/patch')}}"><i class="fa fa-check-square-o fa-fw"></i> Patch Test</a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-bar-chart fa-fw"></i>
+                        Mongo通
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapse in" style="">
+                        <li>
+                            <a href="{{url('/diy')}}">指標</a>
+                        </li>
+                        <li>
+                            <a href="{{url('/store')}}">門店</a>
+                        </li>
+                    </ul>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-trello fa-fw"></i>
+                        Trello
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapse in" style="">
+                        <li>
+                            <a href="https://trello.com/b/MSh6I9n4/fae-qa" target="_blank">QA</a>
+                        </li>
+                        <li>
+                            <a href="https://trello.com/b/JTbgJOQW/-" target="_blank">店客通</a>
+                        </li>
+                    </ul>
+                <li>
+                <li>
+                    <a href="http://mantis.migosoft.com" target="_blank"><i class="fa fa-bug fa-fw"></i> Mantis</a>
                 </li>
                 <li>
-                    <a href="diy"><i class="fa fa-bar-chart fa-fw"></i> Mongo通</a>
+                    <a href="http://kb.migosoft.com/doku.php?id=main" target="_blank"><i class="fa fa-pencil-square-o fa-fw"></i> 知識庫</a>
                 </li>
                 <li>
-                    <a href="store"><i class="fa fa-bar-chart fa-fw"></i> 門店通</a>
+                    <a href="http://mantis.migosoft.com/phpmyadmin/" target="_blank"><i class="fa fa-database fa-fw"></i> DB</a>
                 </li>
                 <li>
-                    <a href="system"><i class="fa fa-wrench fa-fw"></i> QA System</a>
+                    <a href="https://www.dropbox.com/s/wsmazkbvgpk6a3c/ProjectX.docx?dl=0" target="_blank"><i class="fa fa-dropbox fa-fw"></i> ProjectX</a>
+                </li>
+                <li>
+                    <a href="http://laravel-china.org/docs/5.0" target="_blank"><i class="fa fa-user-secret fa-fw"></i> Laravel</a>
+                </li>
+                <li>
+                    <a href="{{url('/system')}}"><i class="fa fa-wrench fa-fw"></i> QA Log</a>
                 </li>
             </ul>
         </div>
