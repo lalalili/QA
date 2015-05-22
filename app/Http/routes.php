@@ -20,8 +20,16 @@ Route::get('store', 'StoreController@index');
 Route::post('store', 'StoreController@query');
 Route::get('system', 'StaticController@system');
 
-
 Route::group(['prefix' => 'api'], function () {
     Route::get('alert', 'DIYReportController@alert');
     Route::get('report', 'DIYReportController@report');
+});
+
+Route::controllers([
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
+]);
+
+Route::group(['middleware' => 'auth'],function () {
+    Route::controller('bday', 'BdayController');
 });

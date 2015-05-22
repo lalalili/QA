@@ -135,8 +135,6 @@ return [
         'Illuminate\Translation\TranslationServiceProvider',
         'Illuminate\Validation\ValidationServiceProvider',
         'Illuminate\View\ViewServiceProvider',
-        'Jenssegers\Mongodb\MongodbServiceProvider',
-        'Laracasts\Flash\FlashServiceProvider',
 
 
         /*
@@ -147,6 +145,9 @@ return [
         'App\Providers\ConfigServiceProvider',
         'App\Providers\EventServiceProvider',
         'App\Providers\RouteServiceProvider',
+        'Jenssegers\Mongodb\MongodbServiceProvider',
+        'Laracasts\Flash\FlashServiceProvider',
+        'Zofe\Rapyd\RapydServiceProvider',
 
     ],
 

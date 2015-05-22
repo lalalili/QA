@@ -54,7 +54,7 @@ return [
 	|
 	*/
 
-	'from' => ['address' => null, 'name' => null],
+	'from' => ['address' => 'james_liang@migocorp.com', 'name' => 'admin'],
 
 	/*
 	|--------------------------------------------------------------------------

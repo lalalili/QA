@@ -120,6 +120,18 @@ return [
             'database' => env('DB_TW_Store_DATABASE', 'forge'),
         ],
 
+        'mysql_bday' => [
+            'driver'    => 'mysql',
+            'host'      => env('DB_bday_HOST', 'localhost'),
+            'database'  => env('DB_bday_DATABASE', 'forge'),
+            'username'  => env('DB_bday_USERNAME', 'forge'),
+            'password'  => env('DB_bday_PASSWORD', ''),
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+            'strict'    => false,
+        ],
+
 	],
 
 	/*

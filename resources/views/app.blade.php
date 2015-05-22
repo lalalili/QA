@@ -28,6 +28,8 @@
 
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
+    {!! Rapyd::styles() !!}
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -41,15 +43,39 @@
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
         <a class="navbar-brand" href="{{url('/')}}">QA Admin v2.2</a>
     </div>
     <!-- /.navbar-header -->
+    <ul class="nav navbar-top-links navbar-right">
+        @if(Auth::check())
+            {{Auth::getUser()['name']}}
+        @else
+            Guest
+        @endif
+        <li class="dropdown">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                <i class="fa fa-user fa-fw"></i>
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-user">
+                @if (Auth::check())
+                    <li>
+                        <a href="{{url('/auth/logout')}}">
+                            <i class="fa fa-sign-out fa-fw"></i>
+                            Logout
+                        </a>
+                    </li>
+                @else
+                    <li>
+                        <a href="{{url('/auth/login')}}">
+                            <i class="fa fa-sign-in fa-fw"></i>
+                            Login
+                        </a>
+                    </li>
+                @endif
+            </ul>
+        </li>
+    </ul>
     <!-- /.navbar-top-links -->
 
     <div class="navbar-default sidebar" role="navigation">
@@ -94,16 +120,19 @@
                     <a href="http://mantis.migosoft.com" target="_blank"><i class="fa fa-bug fa-fw"></i> Mantis</a>
                 </li>
                 <li>
-                    <a href="http://kb.migosoft.com/doku.php?id=main" target="_blank"><i class="fa fa-pencil-square-o fa-fw"></i> 知識庫</a>
+                    <a href="http://kb.migosoft.com/doku.php?id=main" target="_blank"><i
+                                class="fa fa-pencil-square-o fa-fw"></i> 知識庫</a>
                 </li>
                 <li>
-                    <a href="http://mantis.migosoft.com/phpmyadmin/" target="_blank"><i class="fa fa-database fa-fw"></i> DB</a>
+                    <a href="{{url('/bday/list')}}"><i class="fa fa-birthday-cake fa-fw"></i> 生日祝福名單</a>
                 </li>
                 <li>
-                    <a href="https://www.dropbox.com/s/wsmazkbvgpk6a3c/ProjectX.docx?dl=0" target="_blank"><i class="fa fa-dropbox fa-fw"></i> ProjectX</a>
+                    <a href="https://www.dropbox.com/s/wsmazkbvgpk6a3c/ProjectX.docx?dl=0" target="_blank"><i
+                                class="fa fa-dropbox fa-fw"></i> ProjectX</a>
                 </li>
                 <li>
-                    <a href="http://laravel-china.org/docs/5.0" target="_blank"><i class="fa fa-user-secret fa-fw"></i> Laravel</a>
+                    <a href="http://laravel-china.org/docs/5.0" target="_blank"><i class="fa fa-user-secret fa-fw"></i>
+                        Laravel</a>
                 </li>
                 <li>
                     <a href="{{url('/system')}}"><i class="fa fa-wrench fa-fw"></i> QA Log</a>
@@ -133,6 +162,9 @@
 <script>
     $('#flash-overlay-modal').modal();
 </script>
+
+{!! Rapyd::scripts() !!}
+
 </body>
 
 </html>
