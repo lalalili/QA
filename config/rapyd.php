@@ -14,7 +14,7 @@ return [
             'save' => 'BL', // BR = Bottom Right, BL = Bottom Left, TL, TR
             'show' => 'TR',
             'modify' => 'TR',
-            //'undo' => 'BL',
+            'undo' => 'BL',
             'delete' => 'BL',
             ],
     ],
