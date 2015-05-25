@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "hash": "4596519757277d1bce35d31875d92e17",
@@ -454,23 +454,23 @@
         },
         {
             "name": "jenssegers/mongodb",
-            "version": "v2.1.5",
+            "version": "v2.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jenssegers/laravel-mongodb.git",
-                "reference": "faba8698981e2b955700fdb5027b77d62dc7a302"
+                "reference": "db0c95256a83fcc9e6fd949b2cb105af725805f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jenssegers/laravel-mongodb/zipball/faba8698981e2b955700fdb5027b77d62dc7a302",
-                "reference": "faba8698981e2b955700fdb5027b77d62dc7a302",
+                "url": "https://api.github.com/repos/jenssegers/laravel-mongodb/zipball/db0c95256a83fcc9e6fd949b2cb105af725805f4",
+                "reference": "db0c95256a83fcc9e6fd949b2cb105af725805f4",
                 "shasum": ""
             },
             "require": {
-                "illuminate/container": "5.0.*",
-                "illuminate/database": "5.0.*",
-                "illuminate/events": "5.0.*",
-                "illuminate/support": "5.0.*",
+                "illuminate/container": "^5.0",
+                "illuminate/database": "^5.0",
+                "illuminate/events": "^5.0",
+                "illuminate/support": "^5.0",
                 "php": ">=5.4.0"
             },
             "require-dev": {
@@ -508,7 +508,7 @@
                 "mongo",
                 "mongodb"
             ],
-            "time": "2015-05-03 17:45:04"
+            "time": "2015-05-24 08:55:18"
         },
         {
             "name": "jeremeamia/SuperClosure",
@@ -2003,16 +2003,16 @@
         },
         {
             "name": "zofe/rapyd",
-            "version": "2.0.8",
+            "version": "2.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zofe/rapyd-laravel.git",
-                "reference": "b4ccb4b1151e236cfdde0abf7d9ac21969284843"
+                "reference": "fd3e3038ff624e98c0251d8e18ba1ca86101038a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zofe/rapyd-laravel/zipball/b4ccb4b1151e236cfdde0abf7d9ac21969284843",
-                "reference": "b4ccb4b1151e236cfdde0abf7d9ac21969284843",
+                "url": "https://api.github.com/repos/zofe/rapyd-laravel/zipball/fd3e3038ff624e98c0251d8e18ba1ca86101038a",
+                "reference": "fd3e3038ff624e98c0251d8e18ba1ca86101038a",
                 "shasum": ""
             },
             "require": {
@@ -2050,7 +2050,7 @@
                 "form",
                 "laravel"
             ],
-            "time": "2015-05-15 10:25:44"
+            "time": "2015-05-23 04:20:40"
         }
     ],
     "packages-dev": [
