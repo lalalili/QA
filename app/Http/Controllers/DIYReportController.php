@@ -49,6 +49,7 @@ class DIYReportController extends Controller
 
         $display = 'panel-info';
         $DIYReports = DIYReport::where('StoreID', 'ablejeans^特殊渠道^特殊渠道')->where('PeriodType', 'L31D')->where('CalDate', new DateTime('2015-01-31'))->get();
+        //dd(new DateTime('2015-01-31'));
         //dd($DIYReports);
         foreach ($DIYReports as $DIYReport) {
             $report = $DIYReport['PeriodRecords'];
