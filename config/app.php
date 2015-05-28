@@ -146,9 +146,11 @@ return [
         'App\Providers\EventServiceProvider',
         'App\Providers\RouteServiceProvider',
         'Jenssegers\Mongodb\MongodbServiceProvider',
+        'Collective\Html\HtmlServiceProvider',
         'Laracasts\Flash\FlashServiceProvider',
+        'Mitul\Generator\GeneratorServiceProvider',
         'Zofe\Rapyd\RapydServiceProvider',
-
+        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
     ],
 
     /*
@@ -198,6 +200,8 @@ return [
         'View' => 'Illuminate\Support\Facades\View',
         'Moloquent' => 'Jenssegers\Mongodb\Model',
         'Flash' => 'Laracasts\Flash\Flash',
+        'Form' => 'Collective\Html\FormFacade',
+        'Html' => 'Collective\Html\HtmlFacade',
     ],
 
 ];

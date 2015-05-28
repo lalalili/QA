@@ -46,7 +46,25 @@
         <a class="navbar-brand" href="{{url('/')}}">QA Admin v3.0</a>
     </div>
     <!-- /.navbar-header -->
+
     <ul class="nav navbar-top-links navbar-right">
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                <i class="fa fa-wrench fa-fw"></i> <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-user">
+                <li>
+                    <a href="{{url('/bday/list')}}">
+                        <div>
+                            <i class="fa fa-birthday-cake fa-fw"></i> 生日祝福名單
+                        </div>
+                    </a>
+                </li>
+                <li class="divider"></li>
+
+            </ul>
+            <!-- /.dropdown-alerts -->
+        </li>
         @if(Auth::check())
             {{Auth::getUser()['name']}}
         @else
@@ -122,9 +140,6 @@
                 <li>
                     <a href="http://kb.migosoft.com/doku.php?id=main" target="_blank"><i
                                 class="fa fa-pencil-square-o fa-fw"></i> 知識庫</a>
-                </li>
-                <li>
-                    <a href="{{url('/bday/list')}}"><i class="fa fa-birthday-cake fa-fw"></i> 生日祝福名單</a>
                 </li>
                 <li>
                     <a href="https://www.dropbox.com/s/wsmazkbvgpk6a3c/ProjectX.docx?dl=0" target="_blank"><i

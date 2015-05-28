@@ -33,3 +33,35 @@ Route::controllers([
 Route::group(['middleware' => 'auth'],function () {
     Route::controller('bday', 'BdayController');
 });
+
+
+Route::resource('sites', 'SiteController');
+
+Route::get('sites/{id}/delete', [
+    'as' => 'sites.delete',
+    'uses' => 'SiteController@destroy',
+]);
+
+
+Route::resource('versions', 'VersionController');
+
+Route::get('versions/{id}/delete', [
+    'as' => 'versions.delete',
+    'uses' => 'VersionController@destroy',
+]);
+
+
+Route::resource('subVersions', 'SubVersionController');
+
+Route::get('subVersions/{id}/delete', [
+    'as' => 'subVersions.delete',
+    'uses' => 'SubVersionController@destroy',
+]);
+
+
+Route::resource('statuses', 'StatusController');
+
+Route::get('statuses/{id}/delete', [
+    'as' => 'statuses.delete',
+    'uses' => 'StatusController@destroy',
+]);
