@@ -61,7 +61,13 @@
                     </a>
                 </li>
                 <li class="divider"></li>
-
+                <li>
+                    <a href="http://mantis.migosoft.com/phpmyadmin/" target="_blank">
+                        <div>
+                            <i class="fa fa-qq fa-fw"></i> phpMyAdmin
+                        </div>
+                    </a>
+                </li>
             </ul>
             <!-- /.dropdown-alerts -->
         </li>

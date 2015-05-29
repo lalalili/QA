@@ -53,7 +53,7 @@ class DIYReportController extends Controller
         //dd($DIYReports);
         if(count($DIYReports) == 0)
         {
-            $DIYReports = DIYReport::where('StoreID', 'ordifen')->where('PeriodType', 'L31D')->where('CalDate', new DateTime('2015-01-31'))->get();
+            $DIYReports = DIYReport::where('StoreID', 'jtwr')->where('PeriodType', 'L31D')->where('CalDate', new DateTime('2015-01-31'))->get();
         }
         foreach ($DIYReports as $DIYReport) {
             $report = $DIYReport['PeriodRecords'];
@@ -62,7 +62,7 @@ class DIYReportController extends Controller
         $KPIAlerts = KPIAlert::where('StoreID', 'ablejeans^特殊渠道^特殊渠道')->where('PeriodType', 'L31D')->where('CalDate', new DateTime('2015-01-31'))->get();
         if(count($KPIAlerts) == 0)
         {
-            $KPIAlerts = KPIAlert::where('StoreID', 'ordifen')->where('PeriodType', 'L31D')->where('CalDate', new DateTime('2015-01-31'))->get();
+            $KPIAlerts = KPIAlert::where('StoreID', 'jtwr')->where('PeriodType', 'L31D')->where('CalDate', new DateTime('2015-01-31'))->get();
         }
         foreach ($KPIAlerts as $KPIAlert) {
             $alert = $KPIAlert['KPIAlert'];
