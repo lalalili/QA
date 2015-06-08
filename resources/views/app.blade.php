@@ -43,7 +43,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
     <div class="navbar-header">
-        <a class="navbar-brand" href="{{url('/')}}">QA Admin v3.0</a>
+        <a class="navbar-brand" href="{{url('/')}}">QA Admin v3.1.1</a>
     </div>
     <!-- /.navbar-header -->
 
@@ -106,7 +106,7 @@
         <div class="sidebar-nav navbar-collapse">
             <ul class="nav" id="side-menu">
                 <li>
-                    <a href="{{url('/version')}}"><i class="fa fa-server fa-fw"></i> Version Status</a>
+                    <a href="{{url('/version/list')}}"><i class="fa fa-server fa-fw"></i> Patch Status</a>
                 </li>
                 <li>
                     <a href="{{url('/patch')}}"><i class="fa fa-check-square-o fa-fw"></i> Patch Test</a>
@@ -152,7 +152,7 @@
                                 class="fa fa-dropbox fa-fw"></i> ProjectX</a>
                 </li>
                 <li>
-                    <a href="http://laravel-china.org/docs/5.0" target="_blank"><i class="fa fa-user-secret fa-fw"></i>
+                    <a href="http://laravel.tw/docs/5.0/queries" target="_blank"><i class="fa fa-user-secret fa-fw"></i>
                         Laravel</a>
                 </li>
                 <li>

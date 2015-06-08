@@ -2,12 +2,11 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class Site extends \Eloquent
+class Regular extends Model
 {
-
     protected $connection = 'mysql';
 
-    public $table = "sites";
+    public $table = "regulars";
 
 	public $primaryKey = "id";
     
@@ -15,18 +14,21 @@ class Site extends \Eloquent
 
 	public $fillable = [
 	    "name",
-		"notes",
-		"is_active"
+		"notes"
 	];
 
 	public static $rules = [
-	    "name" => "required",
-		"is_active" => "required|boolean"
+	    "name" => "required"
 	];
 
     public function status()
     {
         return $this->hasMany('App\Models\Status');
+    }
+
+    public function subversion()
+    {
+        return $this->hasMany('App\Models\SubVersion');
     }
 
 }

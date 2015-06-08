@@ -1,160 +1,209 @@
 <?php namespace App\Http\Controllers;
 
 use App\Http\Requests;
-use App\Http\Requests\CreateVersionRequest;
-use Illuminate\Http\Request;
-use App\Libraries\Repositories\VersionRepository;
-use Mitul\Controller\AppBaseController;
-use Response;
-use Flash;
+use App\Models\Site;
+use App\Models\Status;
+use App\Models\Svn;
+use App\Models\Regular;
+use DataEdit;
+use DataFilter;
+use DataGrid;
+use Input;
+use View;
 
-class VersionController extends AppBaseController
+
+class VersionController extends Controller
 {
 
-	/** @var  VersionRepository */
-	private $versionRepository;
+    public function anyList()
+    {
 
-	function __construct(VersionRepository $versionRepo)
-	{
-		$this->versionRepository = $versionRepo;
-	}
+        $filter = DataFilter::source(Status::with('site', 'regular', 'svn'));
+        //dd($filter);
+        $filter->add('site.name', 'Site', 'text');
+        $filter->add('updated_at', 'Last Updated', 'daterange')->format('Y/m/d', 'en');
+        $filter->submit('search');
+        $filter->reset('reset');
+        $filter->build();
 
-	/**
-	 * Display a listing of the Version.
-	 *
-	 * @param Request $request
-	 *
-	 * @return Response
-	 */
-	public function index(Request $request)
-	{
-	    $input = $request->all();
+        $grid = DataGrid::source($filter);
 
-		$result = $this->versionRepository->search($input);
+        $grid->add('id', 'ID', true)->style("width:100px");
+        $grid->add('{{ $site->name }}', 'Site', 'site_id');
+        $grid->add('{{ $regular->name }}', 'Regular', 'regular_id');
+        $grid->add('{{ implode(", ", $svn->lists("name")) }}', 'SVN');
+        $grid->add('updated_at', 'Last Updated');
 
-		$versions = $result[0];
+        $grid->edit('/version/edit', 'Edit', 'show|modify');
+        $grid->link('/version/editsite', "新增Site", "TR");
+        $grid->link('/version/editregular', "新增Regular", "TR");
+        $grid->link('/version/editsvn', "新增SVN", "TR");
+        $grid->link('/version/edit', "新增Patch", "TR");
+        $grid->orderBy('site_id', 'asc');
+        $grid->paginate(10);
 
-		$attributes = $result[1];
 
-		return view('versions.index')
-		    ->with('versions', $versions)
-		    ->with('attributes', $attributes);;
-	}
+        return View::make('version.version', compact('filter', 'grid'));
+    }
 
-	/**
-	 * Show the form for creating a new Version.
-	 *
-	 * @return Response
-	 */
-	public function create()
-	{
-		return view('versions.create');
-	}
+    public function anyEdit()
+    {
+        if (Input::get('do_delete') == 1) return "not the first";
 
-	/**
-	 * Store a newly created Version in storage.
-	 *
-	 * @param CreateVersionRequest $request
-	 *
-	 * @return Response
-	 */
-	public function store(CreateVersionRequest $request)
-	{
-        $input = $request->all();
+        $edit = DataEdit::source(new Status());
+        //dd($edit);
+        $edit->link("/version/list", "Back", "BL")->back();
+        $edit->link("/version/editsite", "New", "TR");
+        $edit->label('Edit Patch');
 
-		$version = $this->versionRepository->store($input);
+        $edit->add('site_id', 'Site', 'select')->options(Site::lists("name", "id"));
+        $edit->add('regular_id', 'Version', 'select')->options(Regular::lists("name", "id"));
+        $edit->add('svn', 'SVN', 'checkboxgroup')->options(Svn::lists("name", "id"));
 
-		Flash::message('Version saved successfully.');
+        $grid = DataGrid::source(Status::with('site', 'regular', 'svn'));
+        $grid->add('id', 'ID', true)->style("width:100px");
+        $grid->add('{{ $site->name }}', 'Site', 'site_id');
+        $grid->add('{{ $regular->name }}', 'Regular', 'regular_id');
+        $grid->add('{{ implode(", ", $svn->lists("name")) }}', 'SVN');
+        $grid->add('updated_at', 'Last Updated');
 
-		return redirect(route('versions.index'));
-	}
+        $grid->edit('/version/edit', 'Edit', 'show|modify');
+        $grid->orderBy('site_id', 'asc');
+        $grid->paginate(10);
 
-	/**
-	 * Display the specified Version.
-	 *
-	 * @param  int $id
-	 *
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		$version = $this->versionRepository->findVersionById($id);
+        return $edit->view('version.detail', compact('edit', 'grid'));
+    }
 
-		if(empty($version))
-		{
-			Flash::error('Version not found');
-			return redirect(route('versions.index'));
-		}
+    public function anyEditsite()
+    {
+        if (Input::get('do_delete') == 1) return "not the first";
 
-		return view('versions.show')->with('version', $version);
-	}
+        $edit = DataEdit::source(new Site());
+        $edit->link("/version/list", "Back", "BL");
+        $edit->link("/version/editsite", "New", "TR");
+        $edit->label('Edit Site');
+        $edit->add('name', 'Site', 'text')->rule('required');
+        $edit->add('notes', 'Notes', 'text');
+        $edit->add('is_active', 'Is_Active', 'checkbox');
 
-	/**
-	 * Show the form for editing the specified Version.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		$version = $this->versionRepository->findVersionById($id);
+        $grid = DataGrid::source(new Site());
+        $grid->add('id', 'ID', true)->style("width:100px");
+        $grid->add('name', 'Site');
+        $grid->add('notes', 'Notes');
+        $grid->add('is_active', 'Active( 1 = True, 0 = False )', 'checkbox');
+        $grid->edit('/version/site', 'Edit', 'show|modify');
+        $grid->orderBy('id', 'asc');
+        $grid->paginate(10);
 
-		if(empty($version))
-		{
-			Flash::error('Version not found');
-			return redirect(route('versions.index'));
-		}
+        return $edit->view('version.detail', compact('edit', 'grid'));
+    }
 
-		return view('versions.edit')->with('version', $version);
-	}
+    public function anySite()
+    {
+        if (Input::get('do_delete') == 1) return "not the first";
 
-	/**
-	 * Update the specified Version in storage.
-	 *
-	 * @param  int    $id
-	 * @param CreateVersionRequest $request
-	 *
-	 * @return Response
-	 */
-	public function update($id, CreateVersionRequest $request)
-	{
-		$version = $this->versionRepository->findVersionById($id);
+        $edit = DataEdit::source(new Site());
+        $edit->link("/version/editsite", "Back", "BL")->back();
+        $edit->label('Edit Site');
+        $edit->add('name', 'Site', 'text')->rule('required');
+        $edit->add('notes', 'Notes', 'text');
+        $edit->add('is_active', 'Is_Active', 'checkbox');
 
-		if(empty($version))
-		{
-			Flash::error('Version not found');
-			return redirect(route('versions.index'));
-		}
+        $grid = DataGrid::source(new Site());
+        $grid->add('id', 'ID', true)->style("width:100px");
+        $grid->add('name', 'Site');
+        $grid->add('notes', 'Notes');
+        $grid->add('is_active', 'Active( 1 = True, 0 = False )', 'checkbox');
+        $grid->edit('/version/detail', 'Edit', 'show|modify');
+        $grid->orderBy('id', 'asc');
+        $grid->paginate(10);
 
-		$version = $this->versionRepository->update($version, $request->all());
+        return $edit->view('version.detail', compact('edit', 'grid'));
+    }
 
-		Flash::message('Version updated successfully.');
+    public function anyEditregular()
+    {
+        if (Input::get('do_delete') == 1) return "not the first";
 
-		return redirect(route('versions.index'));
-	}
+        $edit = DataEdit::source(new Regular());
+        $edit->link("/version/list", "Back", "BL");
+        $edit->link("/version/editregular", "New", "TR");
+        $edit->label('Edit Regular');
+        $edit->add('name', 'Name', 'text')->rule('required');
+        $edit->add('notes', 'Notes', 'text');
 
-	/**
-	 * Remove the specified Version from storage.
-	 *
-	 * @param  int $id
-	 *
-	 * @return Response
-	 */
-	public function destroy($id)
-	{
-		$version = $this->versionRepository->findVersionById($id);
+        $grid = DataGrid::source(new Regular());
+        $grid->add('id', 'ID', true)->style("width:100px");
+        $grid->add('name', 'Site');
+        $grid->add('notes', 'Notes');
+        $grid->edit('/version/regular', 'Edit', 'show|modify');
+        $grid->orderBy('id', 'asc');
+        $grid->paginate(10);
 
-		if(empty($version))
-		{
-			Flash::error('Version not found');
-			return redirect(route('versions.index'));
-		}
+        return $edit->view('version.detail', compact('edit', 'grid'));
+    }
 
-		$version->delete();
+    public function anyRegular()
+    {
+        if (Input::get('do_delete') == 1) return "not the first";
 
-		Flash::message('Version deleted successfully.');
+        $edit = DataEdit::source(new Regular());
+        $edit->link("/version/editregular", "Back", "BL")->back();
+        $edit->label('Edit Regular');
+        $edit->add('name', 'Name', 'text')->rule('required');
+        $edit->add('notes', 'Notes', 'text');
 
-		return redirect(route('versions.index'));
-	}
+        $grid = DataGrid::source(new Regular());
+        $grid->add('id', 'ID', true)->style("width:100px");
+        $grid->add('name', 'Site');
+        $grid->add('notes', 'Notes');
+        $grid->edit('/version/detail', 'Edit', 'show|modify');
+        $grid->orderBy('id', 'desc');
+        $grid->paginate(10);
 
+        return $edit->view('version.detail', compact('edit', 'grid'));
+    }
+
+    public function anyEditsvn()
+    {
+        if (Input::get('do_delete') == 1) return "not the first";
+
+        $edit = DataEdit::source(new Svn());
+        $edit->link("/version/list", "Back", "BL");
+        $edit->link("/version/editsvn", "New", "TR");
+        $edit->label('Edit Svn');
+        $edit->add('name', 'SVN', 'text')->rule('required');
+        $edit->add('notes', 'Notes', 'text');
+
+        $grid = DataGrid::source(new Svn());
+        $grid->add('id', 'ID', true)->style("width:100px");
+        $grid->add('name', 'Site');
+        $grid->add('notes', 'Notes');
+        $grid->edit('/version/svn', 'Edit', 'show|modify');
+        $grid->orderBy('id', 'desc');
+        $grid->paginate(10);
+
+        return $edit->view('version.detail', compact('edit', 'grid'));
+    }
+
+    public function anySvn()
+    {
+        if (Input::get('do_delete') == 1) return "not the first";
+
+        $edit = DataEdit::source(new Svn());
+        $edit->link("/version/editsvn", "Back", "BL")->back();
+        $edit->label('Edit Svn');
+        $edit->add('name', 'Name', 'text')->rule('required');
+        $edit->add('notes', 'Notes', 'text');
+
+        $grid = DataGrid::source(new Regular());
+        $grid->add('id', 'ID', true)->style("width:100px");
+        $grid->add('name', 'Site');
+        $grid->add('notes', 'Notes');
+        $grid->edit('/version/detail', 'Edit', 'show|modify');
+        $grid->orderBy('id', 'asc');
+        $grid->paginate(10);
+
+        return $edit->view('version.detail', compact('edit', 'grid'));
+    }
 }

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateStatusesTable extends Migration
+class CreateRegularsTable extends Migration
 {
 
 	/**
@@ -13,11 +13,10 @@ class CreateStatusesTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::connection('mysql')->create('statuses', function(Blueprint $table)
+		Schema::connection('mysql')->create('regulars', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->unsignedInteger('site_id');
-			$table->unsignedInteger('version_id');
+			$table->string('name', 255);
 			$table->string('notes', 255)->nullable();
 			$table->timestamps();
 		});
@@ -30,7 +29,7 @@ class CreateStatusesTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::connection('mysql')->drop('statuses');
+		Schema::connection('mysql')->drop('regulars');
 	}
 
 }

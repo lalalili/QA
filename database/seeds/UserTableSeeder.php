@@ -14,7 +14,7 @@ class UserTableSeeder extends Seeder
             'email' => 'james_liang@migocorp.com',
             'password' => bcrypt('admin156*'),
             'name' => 'admin',
-            'admin'=> true,
+            'is_admin'=> true,
         ]);
     }
 }

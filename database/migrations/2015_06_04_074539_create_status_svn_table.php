@@ -3,8 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateVersionsTable extends Migration
-{
+class CreateStatusSvnTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -13,11 +12,11 @@ class CreateVersionsTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::connection('mysql')->create('versions', function(Blueprint $table)
+		Schema::create('status_svn', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('name', 255);
-			$table->string('notes', 255)->nullable();
+            $table->unsignedInteger('status_id');
+            $table->unsignedInteger('svnn_id');
 			$table->timestamps();
 		});
 	}
@@ -29,7 +28,7 @@ class CreateVersionsTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::connection('mysql')->drop('versions');
+		Schema::drop('status_svn');
 	}
 
 }

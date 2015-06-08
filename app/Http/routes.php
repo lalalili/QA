@@ -11,8 +11,10 @@
 |
 */
 
-Route::get('/', 'StaticController@version');
-Route::get('version', 'StaticController@version');
+
+Route::get('/', [
+    'as' => 'version', 'uses' => 'VersionController@anyList'
+]);
 Route::get('patch', 'StaticController@patch');
 Route::get('diy', 'DIYReportController@index');
 Route::post('diy', 'DIYReportController@query');
@@ -34,34 +36,40 @@ Route::group(['middleware' => 'auth'],function () {
     Route::controller('bday', 'BdayController');
 });
 
+Route::controller('version', 'VersionController');
 
-Route::resource('sites', 'SiteController');
-
-Route::get('sites/{id}/delete', [
-    'as' => 'sites.delete',
-    'uses' => 'SiteController@destroy',
-]);
+//Route::resource('sites', 'SiteController');
 
 
-Route::resource('versions', 'VersionController');
 
-Route::get('versions/{id}/delete', [
-    'as' => 'versions.delete',
-    'uses' => 'VersionController@destroy',
-]);
+//Route::get('version', 'SvnController@index');
 
 
-Route::resource('subVersions', 'SubVersionController');
+//Route::get('sites/{id}/delete', [
+//        'as' => 'sites.delete',
+//        'uses' => 'SiteController@destroy',
+//]);
+//
+//
+//Route::resource('versions', 'VersionController');
 
-Route::get('subVersions/{id}/delete', [
-    'as' => 'subVersions.delete',
-    'uses' => 'SubVersionController@destroy',
-]);
-
-
-Route::resource('statuses', 'StatusController');
-
-Route::get('statuses/{id}/delete', [
-    'as' => 'statuses.delete',
-    'uses' => 'StatusController@destroy',
-]);
+//Route::get('versions/{id}/delete', [
+//    'as' => 'versions.delete',
+//    'uses' => 'VersionController@destroy',
+//]);
+//
+//
+//Route::resource('subVersions', 'SubVersionController');
+//
+//Route::get('subVersions/{id}/delete', [
+//    'as' => 'subVersions.delete',
+//    'uses' => 'SubVersionController@destroy',
+//]);
+//
+//
+//Route::resource('statuses', 'StatusController');
+//
+//Route::get('statuses/{id}/delete', [
+//    'as' => 'statuses.delete',
+//    'uses' => 'StatusController@destroy',
+//]);

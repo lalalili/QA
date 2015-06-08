@@ -167,6 +167,14 @@
                                     <td><button type="button" class="btn btn-danger" onclick="stopSM3()">Stop</button></td>
                                     <td><button type="button" class="btn btn-success" onclick="startSM3()">Start</button></td>
                                 </tr>
+                                <tr>
+                                    <td><h4>3</h4></td>
+                                    <td><h4>Best13</h4></td>
+                                    <td><button type="button" class="btn btn-warning" onclick="pauseBEST13()">Pause</button></td>
+                                    <td><button type="button" class="btn btn-primary" onclick="continueBEST13()">Continue</button></td>
+                                    <td><button type="button" class="btn btn-danger" onclick="stopBEST13()">Stop</button></td>
+                                    <td><button type="button" class="btn btn-success" onclick="startBEST13()">Start</button></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
