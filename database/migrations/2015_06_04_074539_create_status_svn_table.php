@@ -16,7 +16,7 @@ class CreateStatusSvnTable extends Migration {
 		{
 			$table->increments('id');
             $table->unsignedInteger('status_id');
-            $table->unsignedInteger('svnn_id');
+            $table->unsignedInteger('svn_id');
 			$table->timestamps();
 		});
 	}

@@ -17,7 +17,7 @@ class CreateStatusesTable extends Migration
 		{
 			$table->increments('id');
 			$table->unsignedInteger('site_id');
-			$table->unsignedInteger('version_id');
+			$table->unsignedInteger('regular_id');
 			$table->string('notes', 255)->nullable();
 			$table->timestamps();
 		});
