@@ -52,13 +52,17 @@ class VersionController extends Controller
 
         $edit = DataEdit::source(new Status());
         //dd($edit);
-        $edit->link("/version/list", "Back", "BL")->back();
+        $edit->link("/version/list", "Back", "BL");
         $edit->link("/version/editsite", "New", "TR");
         $edit->label('Edit Patch');
 
         $edit->add('site_id', 'Site', 'select')->options(Site::lists("name", "id"));
         $edit->add('regular_id', 'Version', 'select')->options(Regular::lists("name", "id"));
-        $edit->add('svn', 'SVN', 'checkboxgroup')->options(Svn::lists("name", "id"));
+        $svn = Svn::lists("name", "id");
+        asort($svn);
+        //dd($a);
+        $edit->add('svn', 'SVN', 'checkboxgroup')->options($svn);
+        //dd(Svn::lists("name", "id"));
 
         $grid = DataGrid::source(Status::with('site', 'regular', 'svn'));
         $grid->add('id', 'ID', true)->style("width:100px");
@@ -177,10 +181,10 @@ class VersionController extends Controller
 
         $grid = DataGrid::source(new Svn());
         $grid->add('id', 'ID', true)->style("width:100px");
-        $grid->add('name', 'SVN');
+        $grid->add('name', 'SVN', true);
         $grid->add('notes', 'Notes');
         $grid->edit('/version/svn', 'Edit', 'show|modify');
-        $grid->orderBy('id', 'desc');
+        $grid->orderBy('name', 'asc');
         $grid->paginate(10);
 
         return $edit->view('version.detail', compact('edit', 'grid'));
@@ -198,10 +202,10 @@ class VersionController extends Controller
 
         $grid = DataGrid::source(new Regular());
         $grid->add('id', 'ID', true)->style("width:100px");
-        $grid->add('name', 'SVN');
+        $grid->add('name', 'SVN', true);
         $grid->add('notes', 'Notes');
         $grid->edit('/version/detail', 'Edit', 'show|modify');
-        $grid->orderBy('id', 'asc');
+        $grid->orderBy('name', 'asc');
         $grid->paginate(10);
 
         return $edit->view('version.detail', compact('edit', 'grid'));

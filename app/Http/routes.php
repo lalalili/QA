@@ -34,42 +34,10 @@ Route::controllers([
 
 Route::group(['middleware' => 'auth'],function () {
     Route::controller('bday', 'BdayController');
+    Route::post('company', 'CompanyController@store');
 });
 
 Route::controller('version', 'VersionController');
 
-//Route::resource('sites', 'SiteController');
+Route::get('company', 'CompanyController@index');
 
-
-
-//Route::get('version', 'SvnController@index');
-
-
-//Route::get('sites/{id}/delete', [
-//        'as' => 'sites.delete',
-//        'uses' => 'SiteController@destroy',
-//]);
-//
-//
-//Route::resource('versions', 'VersionController');
-
-//Route::get('versions/{id}/delete', [
-//    'as' => 'versions.delete',
-//    'uses' => 'VersionController@destroy',
-//]);
-//
-//
-//Route::resource('subVersions', 'SubVersionController');
-//
-//Route::get('subVersions/{id}/delete', [
-//    'as' => 'subVersions.delete',
-//    'uses' => 'SubVersionController@destroy',
-//]);
-//
-//
-//Route::resource('statuses', 'StatusController');
-//
-//Route::get('statuses/{id}/delete', [
-//    'as' => 'statuses.delete',
-//    'uses' => 'StatusController@destroy',
-//]);

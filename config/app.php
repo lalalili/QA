@@ -151,6 +151,7 @@ return [
         'Mitul\Generator\GeneratorServiceProvider',
         'Zofe\Rapyd\RapydServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+        'Maatwebsite\Excel\ExcelServiceProvider',
     ],
 
     /*
@@ -202,6 +203,7 @@ return [
         'Flash' => 'Laracasts\Flash\Flash',
         'Form' => 'Collective\Html\FormFacade',
         'Html' => 'Collective\Html\HtmlFacade',
+        'Excel' => 'Maatwebsite\Excel\Facades\Excel',
     ],
 
 ];
