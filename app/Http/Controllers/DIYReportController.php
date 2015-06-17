@@ -116,10 +116,10 @@ class DIYReportController extends Controller
 
 
         if ($Server == 'CN') {
-            $DIYReports = DB::connection('mongocn')->table($DIYReport->collection)->where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
+            $DIYReports = DB::connection('mongocn')->table($DIYReport->collection)->where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->timeout(-1)->get();
             //dd($DIYReports);
         } else {
-            $DIYReports = DB::connection('mongotw')->table($DIYReport->collection)->where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
+            $DIYReports = DB::connection('mongotw')->table($DIYReport->collection)->where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->timeout(-1)->get();
             //dd($DIYReports);
         }
         ///dd(count($DIYReports));
@@ -136,9 +136,9 @@ class DIYReportController extends Controller
             //dd($DIYReports);
         }
         if ($Server == 'CN') {
-            $KPIAlerts = DB::connection('mongocn')->table($KPIAlert->collection)->where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
+            $KPIAlerts = DB::connection('mongocn')->table($KPIAlert->collection)->where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->timeout(-1)->get();
         } else {
-            $KPIAlerts = DB::connection('mongotw')->table($KPIAlert->collection)->where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->get();
+            $KPIAlerts = DB::connection('mongotw')->table($KPIAlert->collection)->where('StoreID', $StoreID)->where('PeriodType', $PeriodType)->where('CalDate', new DateTime($CalDate))->timeout(-1)->get();
         }
         //dd($KPIAlerts);
         if (count($KPIAlerts) == '0') {

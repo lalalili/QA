@@ -72,10 +72,10 @@ class StoreController extends Controller
             return Redirect::to('/store');
         }
         if ($Server == 'CN') {
-            $Stores = DB::connection('mongocn_store')->table($Store->collection)->where('ShopID', $ShopID)->where('StoreName', $StoreName)->get();
+            $Stores = DB::connection('mongocn_store')->table($Store->collection)->where('ShopID', $ShopID)->where('StoreName', $StoreName)->timeout(-1)->get();
             //dd($Stores);
         } else {
-            $Stores = DB::connection('mongotw_store')->table($Store->collection)->where('ShopID', $ShopID)->where('StoreName', $StoreName)->get();
+            $Stores = DB::connection('mongotw_store')->table($Store->collection)->where('ShopID', $ShopID)->where('StoreName', $StoreName)->timeout(-1)->get();
             //dd($Stores);
         }
         //dd(count($Stores));
