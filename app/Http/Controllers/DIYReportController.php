@@ -1,7 +1,6 @@
 <?php namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-
 use DB;
 use Session;
 use Flash;
@@ -9,8 +8,8 @@ use Redirect;
 use DateTime;
 use Request;
 use Validator;
-use App\DIYReport;
-use App\KPIAlert;
+use App\Qa\Entities\DIYReport;
+use App\Qa\Entities\KPIAlert;
 use Illuminate\Support\Facades\Input;
 
 class DIYReportController extends Controller

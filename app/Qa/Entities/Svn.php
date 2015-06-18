@@ -1,4 +1,4 @@
-<?php namespace App\Models;
+<?php namespace App\Qa\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -24,7 +24,7 @@ class Svn extends Model
 
     public function status()
     {
-        return $this->belongsToMany('App\Models\Status');
+        return $this->belongsToMany('App\Qa\Entities\Status');
     }
 
 }

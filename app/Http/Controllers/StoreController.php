@@ -1,14 +1,13 @@
 <?php namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-
 use DB;
 use Session;
 use Flash;
 use Redirect;
 use DateTime;
 use Request;
-use App\Store;
+use App\Qa\Entities\Store;
 
 use Illuminate\Support\Facades\Input;
 

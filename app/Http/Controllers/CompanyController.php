@@ -3,7 +3,7 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use App\Company;
+use App\Qa\Entities\Company;
 use Excel;
 use Flash;
 use Input;

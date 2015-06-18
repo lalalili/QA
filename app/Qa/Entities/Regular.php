@@ -1,4 +1,4 @@
-<?php namespace App\Models;
+<?php namespace App\Qa\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -23,12 +23,12 @@ class Regular extends Model
 
     public function status()
     {
-        return $this->hasMany('App\Models\Status');
+        return $this->hasMany('App\Qa\Entities\Status');
     }
 
     public function subversion()
     {
-        return $this->hasMany('App\Models\SubVersion');
+        return $this->hasMany('App\Qa\Entities\SubVersion');
     }
 
 }

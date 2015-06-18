@@ -1,6 +1,6 @@
 <?php namespace App\Http\Controllers;
 
-use App\Bday;
+use App\Qa\Entities\Bday;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use DataGrid;

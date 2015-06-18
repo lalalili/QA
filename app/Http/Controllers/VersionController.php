@@ -1,10 +1,10 @@
 <?php namespace App\Http\Controllers;
 
 use App\Http\Requests;
-use App\Models\Site;
-use App\Models\Status;
-use App\Models\Svn;
-use App\Models\Regular;
+use App\Qa\Entities\Site;
+use App\Qa\Entities\Status;
+use App\Qa\Entities\Svn;
+use App\Qa\Entities\Regular;
 use DataEdit;
 use DataFilter;
 use DataGrid;

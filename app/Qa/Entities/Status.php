@@ -1,4 +1,4 @@
-<?php namespace App\Models;
+<?php namespace App\Qa\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -26,17 +26,17 @@ class Status extends Model
 
     public function site()
     {
-        return $this->belongsTo('App\Models\Site');
+        return $this->belongsTo('App\Qa\Entities\Site');
     }
 
     public function regular()
     {
-        return $this->belongsTo('App\Models\Regular');
+        return $this->belongsTo('App\Qa\Entities\Regular');
     }
 
     public function svn()
     {
-        return $this->belongsToMany('App\Models\Svn');
+        return $this->belongsToMany('App\Qa\Entities\Svn');
     }
 
 

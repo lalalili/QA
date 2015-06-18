@@ -1,4 +1,4 @@
-<?php namespace App\Models;
+<?php namespace App\Qa\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -26,7 +26,7 @@ class Site extends \Eloquent
 
     public function status()
     {
-        return $this->hasMany('App\Models\Status');
+        return $this->hasMany('App\Qa\Entities\Status');
     }
 
 }

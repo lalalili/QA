@@ -13,7 +13,7 @@ return [
 
 	'path_migration'           => base_path('database/migrations/'),
 
-	'path_model'               => app_path('Models/'),
+	'path_model'               => app_path('entities/'),
 
 	'path_repository'          => app_path('Libraries/Repositories/'),
 
@@ -58,7 +58,7 @@ return [
 	|
 	| e.g.
 	| 'model_extend' => true,
-	| 'model_extend_namespace' => 'App\Models\AppBaseModel as AppBaseModel',
+	| 'model_extend_namespace' => 'App\entities\AppBaseModel as AppBaseModel',
 	| 'model_extend_class' => 'AppBaseModel',
 	|
 	*/

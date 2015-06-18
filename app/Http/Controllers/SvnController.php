@@ -1,6 +1,6 @@
 <?php namespace App\Http\Controllers;
 
-use App\Models\Status;
+use App\Qa\Entities\Status;
 use DB;
 
 class SvnController extends Controller {
