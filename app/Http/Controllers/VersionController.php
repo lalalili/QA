@@ -31,7 +31,7 @@ class VersionController extends Controller
         $grid->add('id', 'ID', true)->style("width:100px");
         $grid->add('{{ $site->name }}', 'Site', 'site_id');
         $grid->add('{{ $regular->name }}', 'Regular', 'regular_id');
-        $grid->add('{{ implode(", ", $svn->lists("name")) }}', 'SVN');
+        $grid->add('{{ implode(", ", $svn->lists("name")->all()) }}', 'SVN');
         $grid->add('updated_at', 'Last Updated');
 
         $grid->edit('/version/edit', 'Edit', 'show|modify');
@@ -56,9 +56,9 @@ class VersionController extends Controller
         $edit->link("/version/editsite", "New", "TR");
         $edit->label('Edit Patch');
 
-        $edit->add('site_id', 'Site', 'select')->options(Site::lists("name", "id"));
-        $edit->add('regular_id', 'Version', 'select')->options(Regular::lists("name", "id"));
-        $svn = Svn::lists("name", "id");
+        $edit->add('site_id', 'Site', 'select')->options(Site::lists("name", "id")->all());
+        $edit->add('regular_id', 'Version', 'select')->options(Regular::lists("name", "id")->all());
+        $svn = Svn::lists("name", "id")->all();
         asort($svn);
         //dd($a);
         $edit->add('svn', 'SVN', 'checkboxgroup')->options($svn);
@@ -68,7 +68,7 @@ class VersionController extends Controller
         $grid->add('id', 'ID', true)->style("width:100px");
         $grid->add('{{ $site->name }}', 'Site', 'site_id');
         $grid->add('{{ $regular->name }}', 'Regular', 'regular_id');
-        $grid->add('{{ implode(", ", $svn->lists("name")) }}', 'SVN');
+        $grid->add('{{ implode(", ", $svn->lists("name")->all()) }}', 'SVN');
         $grid->add('updated_at', 'Last Updated');
 
         $grid->edit('/version/edit', 'Edit', 'show|modify');

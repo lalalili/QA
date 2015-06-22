@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.0.33 on 2015-06-18.
+ * Generated for Laravel 5.1.2 (LTS) on 2015-06-22.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -14,10 +14,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the version number of the application.
+         *      * Get the version number of the application.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -27,11 +27,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Run the given array of bootstrap classes.
+         *      * Run the given array of bootstrap classes.
          * 
          * *
-         * 	 * @param  array  $bootstrappers
-         * 	 * @return void
+         *      * @param  array  $bootstrappers
+         *      * @return void
          *
          * @static 
          */
@@ -41,11 +41,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a callback to run after loading the environment.
+         *      * Register a callback to run after loading the environment.
          * 
          * *
-         * 	 * @param  \Closure  $callback
-         * 	 * @return void
+         *      * @param  \Closure  $callback
+         *      * @return void
          *
          * @static 
          */
@@ -55,12 +55,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a callback to run before a bootstrapper.
+         *      * Register a callback to run before a bootstrapper.
          * 
          * *
-         * 	 * @param  string  $bootstrapper
-         * 	 * @param  Closure  $callback
-         * 	 * @return void
+         *      * @param  string  $bootstrapper
+         *      * @param  Closure  $callback
+         *      * @return void
          *
          * @static 
          */
@@ -70,12 +70,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a callback to run after a bootstrapper.
+         *      * Register a callback to run after a bootstrapper.
          * 
          * *
-         * 	 * @param  string  $bootstrapper
-         * 	 * @param  Closure  $callback
-         * 	 * @return void
+         *      * @param  string  $bootstrapper
+         *      * @param  Closure  $callback
+         *      * @return void
          *
          * @static 
          */
@@ -85,10 +85,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the application has been bootstrapped before.
+         *      * Determine if the application has been bootstrapped before.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -98,11 +98,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the base path for the application.
+         *      * Set the base path for the application.
          * 
          * *
-         * 	 * @param  string  $basePath
-         * 	 * @return $this
+         *      * @param  string  $basePath
+         *      * @return $this
          *
          * @static 
          */
@@ -112,10 +112,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the path to the application "app" directory.
+         *      * Get the path to the application "app" directory.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -125,10 +125,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the base path of the Laravel installation.
+         *      * Get the base path of the Laravel installation.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -138,10 +138,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the path to the application configuration files.
+         *      * Get the path to the application configuration files.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -151,10 +151,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the path to the database directory.
+         *      * Get the path to the database directory.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -164,11 +164,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the database directory.
+         *      * Set the database directory.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @return $this
+         *      * @param  string  $path
+         *      * @return $this
          *
          * @static 
          */
@@ -178,10 +178,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the path to the language files.
+         *      * Get the path to the language files.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -191,10 +191,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the path to the public / web directory.
+         *      * Get the path to the public / web directory.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -204,10 +204,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the path to the storage directory.
+         *      * Get the path to the storage directory.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -217,11 +217,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the storage directory.
+         *      * Set the storage directory.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @return $this
+         *      * @param  string  $path
+         *      * @return $this
          *
          * @static 
          */
@@ -231,11 +231,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the environment file to be loaded during bootstrapping.
+         *      * Set the environment file to be loaded during bootstrapping.
          * 
          * *
-         * 	 * @param  string  $file
-         * 	 * @return $this
+         *      * @param  string  $file
+         *      * @return $this
          *
          * @static 
          */
@@ -245,10 +245,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the environment file the application is using.
+         *      * Get the environment file the application is using.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -258,11 +258,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get or check the current application environment.
+         *      * Get or check the current application environment.
          * 
          * *
-         * 	 * @param  mixed
-         * 	 * @return string
+         *      * @param  mixed
+         *      * @return string
          *
          * @static 
          */
@@ -272,10 +272,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if application is in local environment.
+         *      * Determine if application is in local environment.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -285,11 +285,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Detect the application's current environment.
+         *      * Detect the application's current environment.
          * 
          * *
-         * 	 * @param  \Closure  $callback
-         * 	 * @return string
+         *      * @param  \Closure  $callback
+         *      * @return string
          *
          * @static 
          */
@@ -299,10 +299,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if we are running in the console.
+         *      * Determine if we are running in the console.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -312,10 +312,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if we are running unit tests.
+         *      * Determine if we are running unit tests.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -325,10 +325,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Register all of the configured providers.
+         *      * Register all of the configured providers.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -338,13 +338,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a service provider with the application.
+         *      * Register a service provider with the application.
          * 
          * *
-         * 	 * @param  \Illuminate\Support\ServiceProvider|string  $provider
-         * 	 * @param  array  $options
-         * 	 * @param  bool   $force
-         * 	 * @return \Illuminate\Support\ServiceProvider
+         *      * @param  \Illuminate\Support\ServiceProvider|string  $provider
+         *      * @param  array  $options
+         *      * @param  bool   $force
+         *      * @return \Illuminate\Support\ServiceProvider
          *
          * @static 
          */
@@ -354,11 +354,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the registered service provider instance if it exists.
+         *      * Get the registered service provider instance if it exists.
          * 
          * *
-         * 	 * @param  \Illuminate\Support\ServiceProvider|string  $provider
-         * 	 * @return \Illuminate\Support\ServiceProvider|null
+         *      * @param  \Illuminate\Support\ServiceProvider|string  $provider
+         *      * @return \Illuminate\Support\ServiceProvider|null
          *
          * @static 
          */
@@ -368,11 +368,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Resolve a service provider instance from the class name.
+         *      * Resolve a service provider instance from the class name.
          * 
          * *
-         * 	 * @param  string  $provider
-         * 	 * @return \Illuminate\Support\ServiceProvider
+         *      * @param  string  $provider
+         *      * @return \Illuminate\Support\ServiceProvider
          *
          * @static 
          */
@@ -382,10 +382,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Load and boot all of the remaining deferred providers.
+         *      * Load and boot all of the remaining deferred providers.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -395,11 +395,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Load the provider for a deferred service.
+         *      * Load the provider for a deferred service.
          * 
          * *
-         * 	 * @param  string  $service
-         * 	 * @return void
+         *      * @param  string  $service
+         *      * @return void
          *
          * @static 
          */
@@ -409,12 +409,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a deferred provider and service.
+         *      * Register a deferred provider and service.
          * 
          * *
-         * 	 * @param  string  $provider
-         * 	 * @param  string  $service
-         * 	 * @return void
+         *      * @param  string  $provider
+         *      * @param  string  $service
+         *      * @return void
          *
          * @static 
          */
@@ -424,14 +424,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Resolve the given type from the container.
+         *      * Resolve the given type from the container.
          * 
          * *
-         * 	 * (Overriding Container::make)
-         * 	 *
-         * 	 * @param  string  $abstract
-         * 	 * @param  array   $parameters
-         * 	 * @return mixed
+         *      * (Overriding Container::make)
+         *      *
+         *      * @param  string  $abstract
+         *      * @param  array   $parameters
+         *      * @return mixed
          *
          * @static 
          */
@@ -441,13 +441,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the given abstract type has been bound.
+         *      * Determine if the given abstract type has been bound.
          * 
          * *
-         * 	 * (Overriding Container::bound)
-         * 	 *
-         * 	 * @param  string  $abstract
-         * 	 * @return bool
+         *      * (Overriding Container::bound)
+         *      *
+         *      * @param  string  $abstract
+         *      * @return bool
          *
          * @static 
          */
@@ -457,10 +457,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the application has booted.
+         *      * Determine if the application has booted.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -470,10 +470,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Boot the application's service providers.
+         *      * Boot the application's service providers.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -483,11 +483,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a new boot listener.
+         *      * Register a new boot listener.
          * 
          * *
-         * 	 * @param  mixed  $callback
-         * 	 * @return void
+         *      * @param  mixed  $callback
+         *      * @return void
          *
          * @static 
          */
@@ -497,11 +497,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a new "booted" listener.
+         *      * Register a new "booted" listener.
          * 
          * *
-         * 	 * @param  mixed  $callback
-         * 	 * @return void
+         *      * @param  mixed  $callback
+         *      * @return void
          *
          * @static 
          */
@@ -511,7 +511,7 @@ namespace {
         
         /**
          * /**
-         * 	 * {@inheritdoc}
+         *      * {@inheritdoc}
          *
          * @static 
          */
@@ -521,10 +521,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the application configuration is cached.
+         *      * Determine if the application configuration is cached.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -534,10 +534,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the path to the configuration cache file.
+         *      * Get the path to the configuration cache file.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -547,10 +547,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the application routes are cached.
+         *      * Determine if the application routes are cached.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -560,10 +560,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the path to the routes cache file.
+         *      * Get the path to the routes cache file.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -573,10 +573,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the path to the cached "compiled.php" file.
+         *      * Get the path to the cached "compiled.php" file.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -586,10 +586,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the path to the cached services.json file.
+         *      * Get the path to the cached services.json file.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -599,37 +599,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if vendor path is writable.
+         *      * Determine if the application is currently down for maintenance.
          * 
          * *
-         * 	 * @return bool
-         *
-         * @static 
-         */
-        public static function vendorIsWritableForOptimizations(){
-            return \Illuminate\Foundation\Application::vendorIsWritableForOptimizations();
-        }
-        
-        /**
-         * /**
-         * 	 * Determines if storage directory should be used for optimizations.
-         * 
-         * *
-         * 	 * @param  bool  $value
-         * 	 * @return $this
-         *
-         * @static 
-         */
-        public static function useStoragePathForOptimizations($value = true){
-            return \Illuminate\Foundation\Application::useStoragePathForOptimizations($value);
-        }
-        
-        /**
-         * /**
-         * 	 * Determine if the application is currently down for maintenance.
-         * 
-         * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -639,29 +612,15 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a maintenance mode event listener.
+         *      * Throw an HttpException with the given data.
          * 
          * *
-         * 	 * @param  \Closure  $callback
-         * 	 * @return void
-         *
-         * @static 
-         */
-        public static function down($callback){
-            return \Illuminate\Foundation\Application::down($callback);
-        }
-        
-        /**
-         * /**
-         * 	 * Throw an HttpException with the given data.
-         * 
-         * *
-         * 	 * @param  int     $code
-         * 	 * @param  string  $message
-         * 	 * @param  array   $headers
-         * 	 * @return void
-         * 	 *
-         * 	 * @throws \Symfony\Component\HttpKernel\Exception\HttpException
+         *      * @param  int     $code
+         *      * @param  string  $message
+         *      * @param  array   $headers
+         *      * @return void
+         *      *
+         *      * @throws \Symfony\Component\HttpKernel\Exception\HttpException
          *
          * @static 
          */
@@ -671,11 +630,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a terminating callback with the application.
+         *      * Register a terminating callback with the application.
          * 
          * *
-         * 	 * @param  \Closure  $callback
-         * 	 * @return $this
+         *      * @param  \Closure  $callback
+         *      * @return $this
          *
          * @static 
          */
@@ -685,10 +644,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Terminate the application.
+         *      * Terminate the application.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -698,10 +657,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the service providers that have been loaded.
+         *      * Get the service providers that have been loaded.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -711,10 +670,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the application's deferred services.
+         *      * Get the application's deferred services.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -724,11 +683,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the application's deferred services.
+         *      * Set the application's deferred services.
          * 
          * *
-         * 	 * @param  array  $services
-         * 	 * @return void
+         *      * @param  array  $services
+         *      * @return void
          *
          * @static 
          */
@@ -738,11 +697,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Add an array of services to the application's deferred services.
+         *      * Add an array of services to the application's deferred services.
          * 
          * *
-         * 	 * @param  array  $services
-         * 	 * @return void
+         *      * @param  array  $services
+         *      * @return void
          *
          * @static 
          */
@@ -752,11 +711,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the given service is a deferred service.
+         *      * Determine if the given service is a deferred service.
          * 
          * *
-         * 	 * @param  string  $service
-         * 	 * @return bool
+         *      * @param  string  $service
+         *      * @return bool
          *
          * @static 
          */
@@ -766,10 +725,50 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the current application locale.
+         *      * Define a callback to be used to configure Monolog.
          * 
          * *
-         * 	 * @return string
+         *      * @param  callable  $callback
+         *      * @return $this
+         *
+         * @static 
+         */
+        public static function configureMonologUsing($callback){
+            return \Illuminate\Foundation\Application::configureMonologUsing($callback);
+        }
+        
+        /**
+         * /**
+         *      * Determine if the application has a custom Monolog configurator.
+         * 
+         * *
+         *      * @return bool
+         *
+         * @static 
+         */
+        public static function hasMonologConfigurator(){
+            return \Illuminate\Foundation\Application::hasMonologConfigurator();
+        }
+        
+        /**
+         * /**
+         *      * Get the custom Monolog configurator for the application.
+         * 
+         * *
+         *      * @return callable
+         *
+         * @static 
+         */
+        public static function getMonologConfigurator(){
+            return \Illuminate\Foundation\Application::getMonologConfigurator();
+        }
+        
+        /**
+         * /**
+         *      * Get the current application locale.
+         * 
+         * *
+         *      * @return string
          *
          * @static 
          */
@@ -779,11 +778,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the current application locale.
+         *      * Set the current application locale.
          * 
          * *
-         * 	 * @param  string  $locale
-         * 	 * @return void
+         *      * @param  string  $locale
+         *      * @return void
          *
          * @static 
          */
@@ -793,10 +792,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Register the core class aliases in the container.
+         *      * Register the core class aliases in the container.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -806,10 +805,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Flush the container of all bindings and resolved instances.
+         *      * Flush the container of all bindings and resolved instances.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -819,11 +818,26 @@ namespace {
         
         /**
          * /**
-         * 	 * Define a contextual binding.
+         *      * Get the application namespace.
          * 
          * *
-         * 	 * @param  string  $concrete
-         * 	 * @return \Illuminate\Contracts\Container\ContextualBindingBuilder
+         *      * @return string
+         *      *
+         *      * @throws \RuntimeException
+         *
+         * @static 
+         */
+        public static function getNamespace(){
+            return \Illuminate\Foundation\Application::getNamespace();
+        }
+        
+        /**
+         * /**
+         *      * Define a contextual binding.
+         * 
+         * *
+         *      * @param  string  $concrete
+         *      * @return \Illuminate\Contracts\Container\ContextualBindingBuilder
          *
          * @static 
          */
@@ -834,11 +848,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the given abstract type has been resolved.
+         *      * Determine if the given abstract type has been resolved.
          * 
          * *
-         * 	 * @param  string  $abstract
-         * 	 * @return bool
+         *      * @param  string  $abstract
+         *      * @return bool
          *
          * @static 
          */
@@ -849,11 +863,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if a given string is an alias.
+         *      * Determine if a given string is an alias.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return bool
+         *      * @param  string  $name
+         *      * @return bool
          *
          * @static 
          */
@@ -864,13 +878,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a binding with the container.
+         *      * Register a binding with the container.
          * 
          * *
-         * 	 * @param  string|array  $abstract
-         * 	 * @param  \Closure|string|null  $concrete
-         * 	 * @param  bool  $shared
-         * 	 * @return void
+         *      * @param  string|array  $abstract
+         *      * @param  \Closure|string|null  $concrete
+         *      * @param  bool  $shared
+         *      * @return void
          *
          * @static 
          */
@@ -881,12 +895,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a contextual binding to the container.
+         *      * Add a contextual binding to the container.
          * 
          * *
-         * 	 * @param  string  $concrete
-         * 	 * @param  string  $abstract
-         * 	 * @param  \Closure|string  $implementation
+         *      * @param  string  $concrete
+         *      * @param  string  $abstract
+         *      * @param  \Closure|string  $implementation
          *
          * @static 
          */
@@ -897,13 +911,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a binding if it hasn't already been registered.
+         *      * Register a binding if it hasn't already been registered.
          * 
          * *
-         * 	 * @param  string  $abstract
-         * 	 * @param  \Closure|string|null  $concrete
-         * 	 * @param  bool  $shared
-         * 	 * @return void
+         *      * @param  string  $abstract
+         *      * @param  \Closure|string|null  $concrete
+         *      * @param  bool  $shared
+         *      * @return void
          *
          * @static 
          */
@@ -914,12 +928,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a shared binding in the container.
+         *      * Register a shared binding in the container.
          * 
          * *
-         * 	 * @param  string  $abstract
-         * 	 * @param  \Closure|string|null  $concrete
-         * 	 * @return void
+         *      * @param  string  $abstract
+         *      * @param  \Closure|string|null  $concrete
+         *      * @return void
          *
          * @static 
          */
@@ -930,11 +944,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Wrap a Closure such that it is shared.
+         *      * Wrap a Closure such that it is shared.
          * 
          * *
-         * 	 * @param  \Closure  $closure
-         * 	 * @return \Closure
+         *      * @param  \Closure  $closure
+         *      * @return \Closure
          *
          * @static 
          */
@@ -945,12 +959,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Bind a shared Closure into the container.
+         *      * Bind a shared Closure into the container.
          * 
          * *
-         * 	 * @param  string    $abstract
-         * 	 * @param  \Closure  $closure
-         * 	 * @return void
+         *      * @param  string    $abstract
+         *      * @param  \Closure  $closure
+         *      * @return void
+         *      *
+         *      * @deprecated since version 5.1. Use singleton instead.
          *
          * @static 
          */
@@ -961,14 +977,14 @@ namespace {
         
         /**
          * /**
-         * 	 * "Extend" an abstract type in the container.
+         *      * "Extend" an abstract type in the container.
          * 
          * *
-         * 	 * @param  string    $abstract
-         * 	 * @param  \Closure  $closure
-         * 	 * @return void
-         * 	 *
-         * 	 * @throws \InvalidArgumentException
+         *      * @param  string    $abstract
+         *      * @param  \Closure  $closure
+         *      * @return void
+         *      *
+         *      * @throws \InvalidArgumentException
          *
          * @static 
          */
@@ -979,12 +995,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register an existing instance as shared in the container.
+         *      * Register an existing instance as shared in the container.
          * 
          * *
-         * 	 * @param  string  $abstract
-         * 	 * @param  mixed   $instance
-         * 	 * @return void
+         *      * @param  string  $abstract
+         *      * @param  mixed   $instance
+         *      * @return void
          *
          * @static 
          */
@@ -995,12 +1011,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Assign a set of tags to a given binding.
+         *      * Assign a set of tags to a given binding.
          * 
          * *
-         * 	 * @param  array|string  $abstracts
-         * 	 * @param  array|mixed   ...$tags
-         * 	 * @return void
+         *      * @param  array|string  $abstracts
+         *      * @param  array|mixed   ...$tags
+         *      * @return void
          *
          * @static 
          */
@@ -1011,11 +1027,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Resolve all of the bindings for a given tag.
+         *      * Resolve all of the bindings for a given tag.
          * 
          * *
-         * 	 * @param  string  $tag
-         * 	 * @return array
+         *      * @param  string  $tag
+         *      * @return array
          *
          * @static 
          */
@@ -1026,12 +1042,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Alias a type to a different name.
+         *      * Alias a type to a different name.
          * 
          * *
-         * 	 * @param  string  $abstract
-         * 	 * @param  string  $alias
-         * 	 * @return void
+         *      * @param  string  $abstract
+         *      * @param  string  $alias
+         *      * @return void
          *
          * @static 
          */
@@ -1042,12 +1058,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Bind a new callback to an abstract's rebind event.
+         *      * Bind a new callback to an abstract's rebind event.
          * 
          * *
-         * 	 * @param  string    $abstract
-         * 	 * @param  \Closure  $callback
-         * 	 * @return mixed
+         *      * @param  string    $abstract
+         *      * @param  \Closure  $callback
+         *      * @return mixed
          *
          * @static 
          */
@@ -1058,13 +1074,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Refresh an instance on the given target and method.
+         *      * Refresh an instance on the given target and method.
          * 
          * *
-         * 	 * @param  string  $abstract
-         * 	 * @param  mixed   $target
-         * 	 * @param  string  $method
-         * 	 * @return mixed
+         *      * @param  string  $abstract
+         *      * @param  mixed   $target
+         *      * @param  string  $method
+         *      * @return mixed
          *
          * @static 
          */
@@ -1075,12 +1091,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Wrap the given closure such that its dependencies will be injected when executed.
+         *      * Wrap the given closure such that its dependencies will be injected when executed.
          * 
          * *
-         * 	 * @param  \Closure  $callback
-         * 	 * @param  array  $parameters
-         * 	 * @return \Closure
+         *      * @param  \Closure  $callback
+         *      * @param  array  $parameters
+         *      * @return \Closure
          *
          * @static 
          */
@@ -1091,13 +1107,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Call the given Closure / class@method and inject its dependencies.
+         *      * Call the given Closure / class@method and inject its dependencies.
          * 
          * *
-         * 	 * @param  callable|string  $callback
-         * 	 * @param  array  $parameters
-         * 	 * @param  string|null  $defaultMethod
-         * 	 * @return mixed
+         *      * @param  callable|string  $callback
+         *      * @param  array  $parameters
+         *      * @param  string|null  $defaultMethod
+         *      * @return mixed
          *
          * @static 
          */
@@ -1108,14 +1124,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Instantiate a concrete instance of the given type.
+         *      * Instantiate a concrete instance of the given type.
          * 
          * *
-         * 	 * @param  string  $concrete
-         * 	 * @param  array   $parameters
-         * 	 * @return mixed
-         * 	 *
-         * 	 * @throws BindingResolutionException
+         *      * @param  string  $concrete
+         *      * @param  array   $parameters
+         *      * @return mixed
+         *      *
+         *      * @throws \Illuminate\Contracts\Container\BindingResolutionException
          *
          * @static 
          */
@@ -1126,12 +1142,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a new resolving callback.
+         *      * Register a new resolving callback.
          * 
          * *
-         * 	 * @param  string    $abstract
-         * 	 * @param  \Closure  $callback
-         * 	 * @return void
+         *      * @param  string    $abstract
+         *      * @param  \Closure|null  $callback
+         *      * @return void
          *
          * @static 
          */
@@ -1142,12 +1158,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a new after resolving callback for all types.
+         *      * Register a new after resolving callback for all types.
          * 
          * *
-         * 	 * @param  string   $abstract
-         * 	 * @param  \Closure $callback
-         * 	 * @return void
+         *      * @param  string   $abstract
+         *      * @param  \Closure|null $callback
+         *      * @return void
          *
          * @static 
          */
@@ -1158,11 +1174,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if a given type is shared.
+         *      * Determine if a given type is shared.
          * 
          * *
-         * 	 * @param  string  $abstract
-         * 	 * @return bool
+         *      * @param  string  $abstract
+         *      * @return bool
          *
          * @static 
          */
@@ -1173,10 +1189,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the container's bindings.
+         *      * Get the container's bindings.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -1187,11 +1203,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Remove a resolved instance from the instance cache.
+         *      * Remove a resolved instance from the instance cache.
          * 
          * *
-         * 	 * @param  string  $abstract
-         * 	 * @return void
+         *      * @param  string  $abstract
+         *      * @return void
          *
          * @static 
          */
@@ -1202,10 +1218,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Clear all of the instances from the container.
+         *      * Clear all of the instances from the container.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -1216,10 +1232,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the globally available instance of the container.
+         *      * Set the globally available instance of the container.
          * 
          * *
-         * 	 * @return static
+         *      * @return static
          *
          * @static 
          */
@@ -1230,11 +1246,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the shared instance of the container.
+         *      * Set the shared instance of the container.
          * 
          * *
-         * 	 * @param  \Illuminate\Contracts\Container\Container  $container
-         * 	 * @return void
+         *      * @param  \Illuminate\Contracts\Container\Container  $container
+         *      * @return void
          *
          * @static 
          */
@@ -1245,11 +1261,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if a given offset exists.
+         *      * Determine if a given offset exists.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @return bool
+         *      * @param  string  $key
+         *      * @return bool
          *
          * @static 
          */
@@ -1260,11 +1276,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the value at a given offset.
+         *      * Get the value at a given offset.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @return mixed
+         *      * @param  string  $key
+         *      * @return mixed
          *
          * @static 
          */
@@ -1275,12 +1291,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the value at a given offset.
+         *      * Set the value at a given offset.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $value
-         * 	 * @return void
+         *      * @param  string  $key
+         *      * @param  mixed   $value
+         *      * @return void
          *
          * @static 
          */
@@ -1291,11 +1307,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Unset the value at a given offset.
+         *      * Unset the value at a given offset.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @return void
+         *      * @param  string  $key
+         *      * @return void
          *
          * @static 
          */
@@ -1311,12 +1327,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Run the console application.
+         *      * Run the console application.
          * 
          * *
-         * 	 * @param  \Symfony\Component\Console\Input\InputInterface  $input
-         * 	 * @param  \Symfony\Component\Console\Output\OutputInterface  $output
-         * 	 * @return int
+         *      * @param  \Symfony\Component\Console\Input\InputInterface  $input
+         *      * @param  \Symfony\Component\Console\Output\OutputInterface  $output
+         *      * @return int
          *
          * @static 
          */
@@ -1327,12 +1343,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Terminate the application.
+         *      * Terminate the application.
          * 
          * *
-         * 	 * @param  \Symfony\Component\Console\Input\InputInterface  $input
-         * 	 * @param  int  $status
-         * 	 * @return void
+         *      * @param  \Symfony\Component\Console\Input\InputInterface  $input
+         *      * @param  int  $status
+         *      * @return void
          *
          * @static 
          */
@@ -1343,12 +1359,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Run an Artisan console command by name.
+         *      * Run an Artisan console command by name.
          * 
          * *
-         * 	 * @param  string  $command
-         * 	 * @param  array  $parameters
-         * 	 * @return int
+         *      * @param  string  $command
+         *      * @param  array  $parameters
+         *      * @return int
          *
          * @static 
          */
@@ -1359,12 +1375,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Queue the given console command.
+         *      * Queue the given console command.
          * 
          * *
-         * 	 * @param  string  $command
-         * 	 * @param  array   $parameters
-         * 	 * @return void
+         *      * @param  string  $command
+         *      * @param  array   $parameters
+         *      * @return void
          *
          * @static 
          */
@@ -1375,10 +1391,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get all of the commands registered with the console.
+         *      * Get all of the commands registered with the console.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -1389,10 +1405,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the output for the last run command.
+         *      * Get the output for the last run command.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -1403,10 +1419,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Bootstrap the application for HTTP requests.
+         *      * Bootstrap the application for HTTP requests.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -1422,10 +1438,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Create an instance of the database driver.
+         *      * Create an instance of the database driver.
          * 
          * *
-         * 	 * @return \Illuminate\Auth\Guard
+         *      * @return \Illuminate\Auth\Guard
          *
          * @static 
          */
@@ -1435,10 +1451,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Create an instance of the Eloquent driver.
+         *      * Create an instance of the Eloquent driver.
          * 
          * *
-         * 	 * @return \Illuminate\Auth\Guard
+         *      * @return \Illuminate\Auth\Guard
          *
          * @static 
          */
@@ -1448,10 +1464,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the default authentication driver name.
+         *      * Get the default authentication driver name.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -1461,11 +1477,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the default authentication driver name.
+         *      * Set the default authentication driver name.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return void
+         *      * @param  string  $name
+         *      * @return void
          *
          * @static 
          */
@@ -1475,11 +1491,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a driver instance.
+         *      * Get a driver instance.
          * 
          * *
-         * 	 * @param  string  $driver
-         * 	 * @return mixed
+         *      * @param  string  $driver
+         *      * @return mixed
          *
          * @static 
          */
@@ -1490,12 +1506,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a custom driver creator Closure.
+         *      * Register a custom driver creator Closure.
          * 
          * *
-         * 	 * @param  string    $driver
-         * 	 * @param  \Closure  $callback
-         * 	 * @return $this
+         *      * @param  string    $driver
+         *      * @param  \Closure  $callback
+         *      * @return $this
          *
          * @static 
          */
@@ -1506,10 +1522,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get all of the created "drivers".
+         *      * Get all of the created "drivers".
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -1520,10 +1536,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the current user is authenticated.
+         *      * Determine if the current user is authenticated.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -1533,10 +1549,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the current user is a guest.
+         *      * Determine if the current user is a guest.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -1546,10 +1562,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the currently authenticated user.
+         *      * Get the currently authenticated user.
          * 
          * *
-         * 	 * @return \Illuminate\Contracts\Auth\Authenticatable|null
+         *      * @return \Illuminate\Contracts\Auth\Authenticatable|null
          *
          * @static 
          */
@@ -1559,10 +1575,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the ID for the currently authenticated user.
+         *      * Get the ID for the currently authenticated user.
          * 
          * *
-         * 	 * @return int|null
+         *      * @return int|null
          *
          * @static 
          */
@@ -1572,11 +1588,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Log a user into the application without sessions or cookies.
+         *      * Log a user into the application without sessions or cookies.
          * 
          * *
-         * 	 * @param  array  $credentials
-         * 	 * @return bool
+         *      * @param  array  $credentials
+         *      * @return bool
          *
          * @static 
          */
@@ -1586,11 +1602,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Validate a user's credentials.
+         *      * Validate a user's credentials.
          * 
          * *
-         * 	 * @param  array  $credentials
-         * 	 * @return bool
+         *      * @param  array  $credentials
+         *      * @return bool
          *
          * @static 
          */
@@ -1600,11 +1616,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Attempt to authenticate using HTTP Basic Auth.
+         *      * Attempt to authenticate using HTTP Basic Auth.
          * 
          * *
-         * 	 * @param  string  $field
-         * 	 * @return \Symfony\Component\HttpFoundation\Response|null
+         *      * @param  string  $field
+         *      * @return \Symfony\Component\HttpFoundation\Response|null
          *
          * @static 
          */
@@ -1614,11 +1630,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Perform a stateless HTTP Basic login attempt.
+         *      * Perform a stateless HTTP Basic login attempt.
          * 
          * *
-         * 	 * @param  string  $field
-         * 	 * @return \Symfony\Component\HttpFoundation\Response|null
+         *      * @param  string  $field
+         *      * @return \Symfony\Component\HttpFoundation\Response|null
          *
          * @static 
          */
@@ -1628,13 +1644,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Attempt to authenticate a user using the given credentials.
+         *      * Attempt to authenticate a user using the given credentials.
          * 
          * *
-         * 	 * @param  array  $credentials
-         * 	 * @param  bool   $remember
-         * 	 * @param  bool   $login
-         * 	 * @return bool
+         *      * @param  array  $credentials
+         *      * @param  bool   $remember
+         *      * @param  bool   $login
+         *      * @return bool
          *
          * @static 
          */
@@ -1644,11 +1660,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Register an authentication attempt event listener.
+         *      * Register an authentication attempt event listener.
          * 
          * *
-         * 	 * @param  mixed  $callback
-         * 	 * @return void
+         *      * @param  mixed  $callback
+         *      * @return void
          *
          * @static 
          */
@@ -1658,12 +1674,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Log a user into the application.
+         *      * Log a user into the application.
          * 
          * *
-         * 	 * @param  \Illuminate\Contracts\Auth\Authenticatable  $user
-         * 	 * @param  bool  $remember
-         * 	 * @return void
+         *      * @param  \Illuminate\Contracts\Auth\Authenticatable  $user
+         *      * @param  bool  $remember
+         *      * @return void
          *
          * @static 
          */
@@ -1673,12 +1689,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Log the given user ID into the application.
+         *      * Log the given user ID into the application.
          * 
          * *
-         * 	 * @param  mixed  $id
-         * 	 * @param  bool   $remember
-         * 	 * @return \Illuminate\Contracts\Auth\Authenticatable
+         *      * @param  mixed  $id
+         *      * @param  bool   $remember
+         *      * @return \Illuminate\Contracts\Auth\Authenticatable
          *
          * @static 
          */
@@ -1688,11 +1704,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Log the given user ID into the application without sessions or cookies.
+         *      * Log the given user ID into the application without sessions or cookies.
          * 
          * *
-         * 	 * @param  mixed  $id
-         * 	 * @return bool
+         *      * @param  mixed  $id
+         *      * @return bool
          *
          * @static 
          */
@@ -1702,10 +1718,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Log the user out of the application.
+         *      * Log the user out of the application.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -1715,12 +1731,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the cookie creator instance used by the guard.
+         *      * Get the cookie creator instance used by the guard.
          * 
          * *
-         * 	 * @return \Illuminate\Contracts\Cookie\QueueingFactory
-         * 	 *
-         * 	 * @throws \RuntimeException
+         *      * @return \Illuminate\Contracts\Cookie\QueueingFactory
+         *      *
+         *      * @throws \RuntimeException
          *
          * @static 
          */
@@ -1730,11 +1746,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the cookie creator instance used by the guard.
+         *      * Set the cookie creator instance used by the guard.
          * 
          * *
-         * 	 * @param  \Illuminate\Contracts\Cookie\QueueingFactory  $cookie
-         * 	 * @return void
+         *      * @param  \Illuminate\Contracts\Cookie\QueueingFactory  $cookie
+         *      * @return void
          *
          * @static 
          */
@@ -1744,10 +1760,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the event dispatcher instance.
+         *      * Get the event dispatcher instance.
          * 
          * *
-         * 	 * @return \Illuminate\Contracts\Events\Dispatcher
+         *      * @return \Illuminate\Contracts\Events\Dispatcher
          *
          * @static 
          */
@@ -1757,11 +1773,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the event dispatcher instance.
+         *      * Set the event dispatcher instance.
          * 
          * *
-         * 	 * @param  \Illuminate\Contracts\Events\Dispatcher
-         * 	 * @return void
+         *      * @param  \Illuminate\Contracts\Events\Dispatcher  $events
+         *      * @return void
          *
          * @static 
          */
@@ -1771,10 +1787,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the session store used by the guard.
+         *      * Get the session store used by the guard.
          * 
          * *
-         * 	 * @return \Illuminate\Session\Store
+         *      * @return \Illuminate\Session\Store
          *
          * @static 
          */
@@ -1784,10 +1800,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the user provider used by the guard.
+         *      * Get the user provider used by the guard.
          * 
          * *
-         * 	 * @return \Illuminate\Contracts\Auth\UserProvider
+         *      * @return \Illuminate\Contracts\Auth\UserProvider
          *
          * @static 
          */
@@ -1797,11 +1813,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the user provider used by the guard.
+         *      * Set the user provider used by the guard.
          * 
          * *
-         * 	 * @param  \Illuminate\Contracts\Auth\UserProvider  $provider
-         * 	 * @return void
+         *      * @param  \Illuminate\Contracts\Auth\UserProvider  $provider
+         *      * @return void
          *
          * @static 
          */
@@ -1811,10 +1827,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Return the currently cached user.
+         *      * Return the currently cached user.
          * 
          * *
-         * 	 * @return \Illuminate\Contracts\Auth\Authenticatable|null
+         *      * @return \Illuminate\Contracts\Auth\Authenticatable|null
          *
          * @static 
          */
@@ -1824,11 +1840,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the current user.
+         *      * Set the current user.
          * 
          * *
-         * 	 * @param  \Illuminate\Contracts\Auth\Authenticatable  $user
-         * 	 * @return void
+         *      * @param  \Illuminate\Contracts\Auth\Authenticatable  $user
+         *      * @return void
          *
          * @static 
          */
@@ -1838,10 +1854,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the current request instance.
+         *      * Get the current request instance.
          * 
          * *
-         * 	 * @return \Symfony\Component\HttpFoundation\Request
+         *      * @return \Symfony\Component\HttpFoundation\Request
          *
          * @static 
          */
@@ -1851,11 +1867,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the current request instance.
+         *      * Set the current request instance.
          * 
          * *
-         * 	 * @param  \Symfony\Component\HttpFoundation\Request
-         * 	 * @return $this
+         *      * @param  \Symfony\Component\HttpFoundation\Request  $request
+         *      * @return $this
          *
          * @static 
          */
@@ -1865,10 +1881,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the last user we attempted to authenticate.
+         *      * Get the last user we attempted to authenticate.
          * 
          * *
-         * 	 * @return \Illuminate\Contracts\Auth\Authenticatable
+         *      * @return \Illuminate\Contracts\Auth\Authenticatable
          *
          * @static 
          */
@@ -1878,10 +1894,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a unique identifier for the auth session value.
+         *      * Get a unique identifier for the auth session value.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -1891,10 +1907,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the name of the cookie used to store the "recaller".
+         *      * Get the name of the cookie used to store the "recaller".
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -1904,10 +1920,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the user was authenticated via "remember me" cookie.
+         *      * Determine if the user was authenticated via "remember me" cookie.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -1922,11 +1938,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Compile the view at the given path.
+         *      * Compile the view at the given path.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @return void
+         *      * @param  string  $path
+         *      * @return void
          *
          * @static 
          */
@@ -1936,10 +1952,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the path currently being compiled.
+         *      * Get the path currently being compiled.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -1949,11 +1965,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the path currently being compiled.
+         *      * Set the path currently being compiled.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @return void
+         *      * @param  string  $path
+         *      * @return void
          *
          * @static 
          */
@@ -1963,11 +1979,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Compile the given Blade template contents.
+         *      * Compile the given Blade template contents.
          * 
          * *
-         * 	 * @param  string  $value
-         * 	 * @return string
+         *      * @param  string  $value
+         *      * @return string
          *
          * @static 
          */
@@ -1977,11 +1993,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Compile the default values for the echo statement.
+         *      * Compile the default values for the echo statement.
          * 
          * *
-         * 	 * @param  string  $value
-         * 	 * @return string
+         *      * @param  string  $value
+         *      * @return string
          *
          * @static 
          */
@@ -1991,11 +2007,24 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a custom Blade compiler.
+         *     * Get the extensions used by the compiler.
          * 
          * *
-         * 	 * @param  callable  $compiler
-         * 	 * @return void
+         *     * @return array
+         *
+         * @static 
+         */
+        public static function getExtensions(){
+            return \Illuminate\View\Compilers\BladeCompiler::getExtensions();
+        }
+        
+        /**
+         * /**
+         *      * Register a custom Blade compiler.
+         * 
+         * *
+         *      * @param  callable  $compiler
+         *      * @return void
          *
          * @static 
          */
@@ -2005,54 +2034,40 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the regular expression for a generic Blade function.
+         *      * Register a handler for custom directives.
          * 
          * *
-         * 	 * @param  string  $function
-         * 	 * @return string
+         *      * @param  string  $name
+         *      * @param  callable  $handler
+         *      * @return void
          *
          * @static 
          */
-        public static function createMatcher($function){
-            return \Illuminate\View\Compilers\BladeCompiler::createMatcher($function);
+        public static function directive($name, $handler){
+            return \Illuminate\View\Compilers\BladeCompiler::directive($name, $handler);
         }
         
         /**
          * /**
-         * 	 * Get the regular expression for a generic Blade function.
+         *     * Gets the raw tags used by the compiler.
          * 
          * *
-         * 	 * @param  string  $function
-         * 	 * @return string
+         *     * @return array
          *
          * @static 
          */
-        public static function createOpenMatcher($function){
-            return \Illuminate\View\Compilers\BladeCompiler::createOpenMatcher($function);
+        public static function getRawTags(){
+            return \Illuminate\View\Compilers\BladeCompiler::getRawTags();
         }
         
         /**
          * /**
-         * 	 * Create a plain Blade matcher.
+         *      * Sets the raw tags used for the compiler.
          * 
          * *
-         * 	 * @param  string  $function
-         * 	 * @return string
-         *
-         * @static 
-         */
-        public static function createPlainMatcher($function){
-            return \Illuminate\View\Compilers\BladeCompiler::createPlainMatcher($function);
-        }
-        
-        /**
-         * /**
-         * 	 * Sets the raw tags used for the compiler.
-         * 
-         * *
-         * 	 * @param  string  $openTag
-         * 	 * @param  string  $closeTag
-         * 	 * @return void
+         *      * @param  string  $openTag
+         *      * @param  string  $closeTag
+         *      * @return void
          *
          * @static 
          */
@@ -2062,13 +2077,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Sets the content tags used for the compiler.
+         *      * Sets the content tags used for the compiler.
          * 
          * *
-         * 	 * @param  string  $openTag
-         * 	 * @param  string  $closeTag
-         * 	 * @param  bool    $escaped
-         * 	 * @return void
+         *      * @param  string  $openTag
+         *      * @param  string  $closeTag
+         *      * @param  bool    $escaped
+         *      * @return void
          *
          * @static 
          */
@@ -2078,12 +2093,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Sets the escaped content tags used for the compiler.
+         *      * Sets the escaped content tags used for the compiler.
          * 
          * *
-         * 	 * @param  string  $openTag
-         * 	 * @param  string  $closeTag
-         * 	 * @return void
+         *      * @param  string  $openTag
+         *      * @param  string  $closeTag
+         *      * @return void
          *
          * @static 
          */
@@ -2093,10 +2108,10 @@ namespace {
         
         /**
          * /**
-         * 	* Gets the content tags used for the compiler.
+         *      * Gets the content tags used for the compiler.
          * 
          * *
-         * 	* @return string
+         *      * @return string
          *
          * @static 
          */
@@ -2106,10 +2121,10 @@ namespace {
         
         /**
          * /**
-         * 	* Gets the escaped content tags used for the compiler.
+         *      * Gets the escaped content tags used for the compiler.
          * 
          * *
-         * 	* @return string
+         *      * @return string
          *
          * @static 
          */
@@ -2119,11 +2134,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the echo format to be used by the compiler.
+         *      * Set the echo format to be used by the compiler.
          * 
          * *
-         * 	 * @param  string  $format
-         * 	 * @return void
+         *      * @param  string  $format
+         *      * @return void
          *
          * @static 
          */
@@ -2133,11 +2148,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the path to the compiled version of a view.
+         *      * Get the path to the compiled version of a view.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @return string
+         *      * @param  string  $path
+         *      * @return string
          *
          * @static 
          */
@@ -2148,11 +2163,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the view at the given path is expired.
+         *      * Determine if the view at the given path is expired.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @return bool
+         *      * @param  string  $path
+         *      * @return bool
          *
          * @static 
          */
@@ -2168,12 +2183,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Marshal a command and dispatch it to its appropriate handler.
+         *      * Marshal a command and dispatch it to its appropriate handler.
          * 
          * *
-         * 	 * @param  mixed  $command
-         * 	 * @param  array  $array
-         * 	 * @return mixed
+         *      * @param  mixed  $command
+         *      * @param  array  $array
+         *      * @return mixed
          *
          * @static 
          */
@@ -2183,13 +2198,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Marshal a command and dispatch it to its appropriate handler.
+         *      * Marshal a command and dispatch it to its appropriate handler.
          * 
          * *
-         * 	 * @param  mixed  $command
-         * 	 * @param  \ArrayAccess  $source
-         * 	 * @param  array  $extras
-         * 	 * @return mixed
+         *      * @param  mixed  $command
+         *      * @param  \ArrayAccess  $source
+         *      * @param  array  $extras
+         *      * @return mixed
          *
          * @static 
          */
@@ -2199,12 +2214,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Dispatch a command to its appropriate handler.
+         *      * Dispatch a command to its appropriate handler.
          * 
          * *
-         * 	 * @param  mixed  $command
-         * 	 * @param  \Closure|null  $afterResolving
-         * 	 * @return mixed
+         *      * @param  mixed  $command
+         *      * @param  \Closure|null  $afterResolving
+         *      * @return mixed
          *
          * @static 
          */
@@ -2214,12 +2229,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Dispatch a command to its appropriate handler in the current process.
+         *      * Dispatch a command to its appropriate handler in the current process.
          * 
          * *
-         * 	 * @param  mixed  $command
-         * 	 * @param  \Closure|null  $afterResolving
-         * 	 * @return mixed
+         *      * @param  mixed  $command
+         *      * @param  \Closure|null  $afterResolving
+         *      * @return mixed
          *
          * @static 
          */
@@ -2229,13 +2244,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Dispatch a command to its appropriate handler behind a queue.
+         *      * Dispatch a command to its appropriate handler behind a queue.
          * 
          * *
-         * 	 * @param  mixed  $command
-         * 	 * @return mixed
-         * 	 *
-         * 	 * @throws \RuntimeException
+         *      * @param  mixed  $command
+         *      * @return mixed
+         *      *
+         *      * @throws \RuntimeException
          *
          * @static 
          */
@@ -2245,11 +2260,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the handler instance for the given command.
+         *      * Get the handler instance for the given command.
          * 
          * *
-         * 	 * @param  mixed  $command
-         * 	 * @return mixed
+         *      * @param  mixed  $command
+         *      * @return mixed
          *
          * @static 
          */
@@ -2259,11 +2274,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the handler class for the given command.
+         *      * Get the handler class for the given command.
          * 
          * *
-         * 	 * @param  mixed  $command
-         * 	 * @return string
+         *      * @param  mixed  $command
+         *      * @return string
          *
          * @static 
          */
@@ -2273,11 +2288,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the handler method for the given command.
+         *      * Get the handler method for the given command.
          * 
          * *
-         * 	 * @param  mixed  $command
-         * 	 * @return string
+         *      * @param  mixed  $command
+         *      * @return string
          *
          * @static 
          */
@@ -2287,11 +2302,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Register command-to-handler mappings.
+         *      * Register command-to-handler mappings.
          * 
          * *
-         * 	 * @param  array  $commands
-         * 	 * @return void
+         *      * @param  array  $commands
+         *      * @return void
          *
          * @static 
          */
@@ -2301,11 +2316,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a fallback mapper callback.
+         *      * Register a fallback mapper callback.
          * 
          * *
-         * 	 * @param  \Closure  $mapper
-         * 	 * @return void
+         *      * @param  \Closure  $mapper
+         *      * @return void
          *
          * @static 
          */
@@ -2315,13 +2330,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Map the command to a handler within a given root namespace.
+         *      * Map the command to a handler within a given root namespace.
          * 
          * *
-         * 	 * @param  mixed  $command
-         * 	 * @param  string  $commandNamespace
-         * 	 * @param  string  $handlerNamespace
-         * 	 * @return string
+         *      * @param  mixed  $command
+         *      * @param  string  $commandNamespace
+         *      * @param  string  $handlerNamespace
+         *      * @return string
          *
          * @static 
          */
@@ -2331,11 +2346,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the pipes through which commands should be piped before dispatching.
+         *      * Set the pipes through which commands should be piped before dispatching.
          * 
          * *
-         * 	 * @param  array  $pipes
-         * 	 * @return $this
+         *      * @param  array  $pipes
+         *      * @return $this
          *
          * @static 
          */
@@ -2350,11 +2365,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a cache store instance by name.
+         *      * Get a cache store instance by name.
          * 
          * *
-         * 	 * @param  string|null  $name
-         * 	 * @return mixed
+         *      * @param  string|null  $name
+         *      * @return mixed
          *
          * @static 
          */
@@ -2364,11 +2379,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a cache driver instance.
+         *      * Get a cache driver instance.
          * 
          * *
-         * 	 * @param  string  $driver
-         * 	 * @return mixed
+         *      * @param  string  $driver
+         *      * @return mixed
          *
          * @static 
          */
@@ -2378,11 +2393,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new cache repository with the given implementation.
+         *      * Create a new cache repository with the given implementation.
          * 
          * *
-         * 	 * @param  \Illuminate\Contracts\Cache\Store  $store
-         * 	 * @return \Illuminate\Cache\Repository
+         *      * @param  \Illuminate\Contracts\Cache\Store  $store
+         *      * @return \Illuminate\Cache\Repository
          *
          * @static 
          */
@@ -2392,10 +2407,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the default cache driver name.
+         *      * Get the default cache driver name.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -2405,11 +2420,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the default cache driver name.
+         *      * Set the default cache driver name.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return void
+         *      * @param  string  $name
+         *      * @return void
          *
          * @static 
          */
@@ -2419,12 +2434,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a custom driver creator Closure.
+         *      * Register a custom driver creator Closure.
          * 
          * *
-         * 	 * @param  string    $driver
-         * 	 * @param  \Closure  $callback
-         * 	 * @return $this
+         *      * @param  string    $driver
+         *      * @param  \Closure  $callback
+         *      * @return $this
          *
          * @static 
          */
@@ -2434,11 +2449,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the event dispatcher instance.
+         *      * Set the event dispatcher instance.
          * 
          * *
-         * 	 * @param  \Illuminate\Contracts\Events\Dispatcher
-         * 	 * @return void
+         *      * @param  \Illuminate\Contracts\Events\Dispatcher  $events
+         *      * @return void
          *
          * @static 
          */
@@ -2448,11 +2463,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if an item exists in the cache.
+         *      * Determine if an item exists in the cache.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @return bool
+         *      * @param  string  $key
+         *      * @return bool
          *
          * @static 
          */
@@ -2462,12 +2477,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve an item from the cache by key.
+         *      * Retrieve an item from the cache by key.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return mixed
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return mixed
          *
          * @static 
          */
@@ -2477,12 +2492,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve an item from the cache and delete it.
+         *      * Retrieve an item from the cache and delete it.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return mixed
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return mixed
          *
          * @static 
          */
@@ -2492,13 +2507,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Store an item in the cache.
+         *      * Store an item in the cache.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $value
-         * 	 * @param  \DateTime|int  $minutes
-         * 	 * @return void
+         *      * @param  string  $key
+         *      * @param  mixed   $value
+         *      * @param  \DateTime|int  $minutes
+         *      * @return void
          *
          * @static 
          */
@@ -2508,13 +2523,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Store an item in the cache if the key does not exist.
+         *      * Store an item in the cache if the key does not exist.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $value
-         * 	 * @param  \DateTime|int  $minutes
-         * 	 * @return bool
+         *      * @param  string  $key
+         *      * @param  mixed   $value
+         *      * @param  \DateTime|int  $minutes
+         *      * @return bool
          *
          * @static 
          */
@@ -2524,12 +2539,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Store an item in the cache indefinitely.
+         *      * Store an item in the cache indefinitely.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $value
-         * 	 * @return void
+         *      * @param  string  $key
+         *      * @param  mixed   $value
+         *      * @return void
          *
          * @static 
          */
@@ -2539,13 +2554,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Get an item from the cache, or store the default value.
+         *      * Get an item from the cache, or store the default value.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  \DateTime|int  $minutes
-         * 	 * @param  \Closure  $callback
-         * 	 * @return mixed
+         *      * @param  string  $key
+         *      * @param  \DateTime|int  $minutes
+         *      * @param  \Closure  $callback
+         *      * @return mixed
          *
          * @static 
          */
@@ -2555,12 +2570,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get an item from the cache, or store the default value forever.
+         *      * Get an item from the cache, or store the default value forever.
          * 
          * *
-         * 	 * @param  string   $key
-         * 	 * @param  \Closure  $callback
-         * 	 * @return mixed
+         *      * @param  string   $key
+         *      * @param  \Closure  $callback
+         *      * @return mixed
          *
          * @static 
          */
@@ -2570,12 +2585,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get an item from the cache, or store the default value forever.
+         *      * Get an item from the cache, or store the default value forever.
          * 
          * *
-         * 	 * @param  string   $key
-         * 	 * @param  \Closure  $callback
-         * 	 * @return mixed
+         *      * @param  string   $key
+         *      * @param  \Closure  $callback
+         *      * @return mixed
          *
          * @static 
          */
@@ -2585,11 +2600,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Remove an item from the cache.
+         *      * Remove an item from the cache.
          * 
          * *
-         * 	 * @param  string $key
-         * 	 * @return bool
+         *      * @param  string $key
+         *      * @return bool
          *
          * @static 
          */
@@ -2599,10 +2614,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the default cache time.
+         *      * Get the default cache time.
          * 
          * *
-         * 	 * @return int
+         *      * @return int
          *
          * @static 
          */
@@ -2612,11 +2627,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the default cache time in minutes.
+         *      * Set the default cache time in minutes.
          * 
          * *
-         * 	 * @param  int   $minutes
-         * 	 * @return void
+         *      * @param  int   $minutes
+         *      * @return void
          *
          * @static 
          */
@@ -2626,10 +2641,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the cache store implementation.
+         *      * Get the cache store implementation.
          * 
          * *
-         * 	 * @return \Illuminate\Contracts\Cache\Store
+         *      * @return \Illuminate\Contracts\Cache\Store
          *
          * @static 
          */
@@ -2639,11 +2654,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if a cached value exists.
+         *      * Determine if a cached value exists.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @return bool
+         *      * @param  string  $key
+         *      * @return bool
          *
          * @static 
          */
@@ -2653,11 +2668,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve an item from the cache by key.
+         *      * Retrieve an item from the cache by key.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @return mixed
+         *      * @param  string  $key
+         *      * @return mixed
          *
          * @static 
          */
@@ -2667,12 +2682,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Store an item in the cache for the default time.
+         *      * Store an item in the cache for the default time.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $value
-         * 	 * @return void
+         *      * @param  string  $key
+         *      * @param  mixed   $value
+         *      * @return void
          *
          * @static 
          */
@@ -2682,11 +2697,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Remove an item from the cache.
+         *      * Remove an item from the cache.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @return void
+         *      * @param  string  $key
+         *      * @return void
          *
          * @static 
          */
@@ -2696,12 +2711,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a custom macro.
+         *      * Register a custom macro.
          * 
          * *
-         * 	 * @param  string    $name
-         * 	 * @param  callable  $macro
-         * 	 * @return void
+         *      * @param  string    $name
+         *      * @param  callable  $macro
+         *      * @return void
          *
          * @static 
          */
@@ -2711,11 +2726,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Checks if macro is registered.
+         *      * Checks if macro is registered.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return bool
+         *      * @param  string  $name
+         *      * @return bool
          *
          * @static 
          */
@@ -2725,14 +2740,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Dynamically handle calls to the class.
+         *      * Dynamically handle calls to the class.
          * 
          * *
-         * 	 * @param  string  $method
-         * 	 * @param  array   $parameters
-         * 	 * @return mixed
-         * 	 *
-         * 	 * @throws \BadMethodCallException
+         *      * @param  string  $method
+         *      * @param  array   $parameters
+         *      * @return mixed
+         *      *
+         *      * @throws \BadMethodCallException
          *
          * @static 
          */
@@ -2742,12 +2757,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Increment the value of an item in the cache.
+         *      * Increment the value of an item in the cache.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $value
-         * 	 * @return int
+         *      * @param  string  $key
+         *      * @param  mixed   $value
+         *      * @return int
          *
          * @static 
          */
@@ -2757,12 +2772,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Decrement the value of an item in the cache.
+         *      * Decrement the value of an item in the cache.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $value
-         * 	 * @return int
+         *      * @param  string  $key
+         *      * @param  mixed   $value
+         *      * @return int
          *
          * @static 
          */
@@ -2772,10 +2787,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Remove all items from the cache.
+         *      * Remove all items from the cache.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -2785,10 +2800,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the Filesystem instance.
+         *      * Get the Filesystem instance.
          * 
          * *
-         * 	 * @return \Illuminate\Filesystem\Filesystem
+         *      * @return \Illuminate\Filesystem\Filesystem
          *
          * @static 
          */
@@ -2798,10 +2813,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the working directory of the cache.
+         *      * Get the working directory of the cache.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -2811,10 +2826,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the cache key prefix.
+         *      * Get the cache key prefix.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -2829,11 +2844,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the given configuration value exists.
+         *      * Determine if the given configuration value exists.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @return bool
+         *      * @param  string  $key
+         *      * @return bool
          *
          * @static 
          */
@@ -2843,12 +2858,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the specified configuration value.
+         *      * Get the specified configuration value.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return mixed
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return mixed
          *
          * @static 
          */
@@ -2858,12 +2873,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Set a given configuration value.
+         *      * Set a given configuration value.
          * 
          * *
-         * 	 * @param  array|string  $key
-         * 	 * @param  mixed   $value
-         * 	 * @return void
+         *      * @param  array|string  $key
+         *      * @param  mixed   $value
+         *      * @return void
          *
          * @static 
          */
@@ -2873,12 +2888,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Prepend a value onto an array configuration value.
+         *      * Prepend a value onto an array configuration value.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed  $value
-         * 	 * @return void
+         *      * @param  string  $key
+         *      * @param  mixed  $value
+         *      * @return void
          *
          * @static 
          */
@@ -2888,12 +2903,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Push a value onto an array configuration value.
+         *      * Push a value onto an array configuration value.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed  $value
-         * 	 * @return void
+         *      * @param  string  $key
+         *      * @param  mixed  $value
+         *      * @return void
          *
          * @static 
          */
@@ -2903,10 +2918,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get all of the configuration items for the application.
+         *      * Get all of the configuration items for the application.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -2916,11 +2931,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the given configuration option exists.
+         *      * Determine if the given configuration option exists.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @return bool
+         *      * @param  string  $key
+         *      * @return bool
          *
          * @static 
          */
@@ -2930,11 +2945,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a configuration option.
+         *      * Get a configuration option.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @return mixed
+         *      * @param  string  $key
+         *      * @return mixed
          *
          * @static 
          */
@@ -2944,12 +2959,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Set a configuration option.
+         *      * Set a configuration option.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed  $value
-         * 	 * @return void
+         *      * @param  string  $key
+         *      * @param  mixed  $value
+         *      * @return void
          *
          * @static 
          */
@@ -2959,11 +2974,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Unset a configuration option.
+         *      * Unset a configuration option.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @return void
+         *      * @param  string  $key
+         *      * @return void
          *
          * @static 
          */
@@ -2978,17 +2993,17 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new cookie instance.
+         *      * Create a new cookie instance.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  string  $value
-         * 	 * @param  int     $minutes
-         * 	 * @param  string  $path
-         * 	 * @param  string  $domain
-         * 	 * @param  bool    $secure
-         * 	 * @param  bool    $httpOnly
-         * 	 * @return \Symfony\Component\HttpFoundation\Cookie
+         *      * @param  string  $name
+         *      * @param  string  $value
+         *      * @param  int     $minutes
+         *      * @param  string  $path
+         *      * @param  string  $domain
+         *      * @param  bool    $secure
+         *      * @param  bool    $httpOnly
+         *      * @return \Symfony\Component\HttpFoundation\Cookie
          *
          * @static 
          */
@@ -2998,16 +3013,16 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a cookie that lasts "forever" (five years).
+         *      * Create a cookie that lasts "forever" (five years).
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  string  $value
-         * 	 * @param  string  $path
-         * 	 * @param  string  $domain
-         * 	 * @param  bool    $secure
-         * 	 * @param  bool    $httpOnly
-         * 	 * @return \Symfony\Component\HttpFoundation\Cookie
+         *      * @param  string  $name
+         *      * @param  string  $value
+         *      * @param  string  $path
+         *      * @param  string  $domain
+         *      * @param  bool    $secure
+         *      * @param  bool    $httpOnly
+         *      * @return \Symfony\Component\HttpFoundation\Cookie
          *
          * @static 
          */
@@ -3017,13 +3032,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Expire the given cookie.
+         *      * Expire the given cookie.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  string  $path
-         * 	 * @param  string  $domain
-         * 	 * @return \Symfony\Component\HttpFoundation\Cookie
+         *      * @param  string  $name
+         *      * @param  string  $path
+         *      * @param  string  $domain
+         *      * @return \Symfony\Component\HttpFoundation\Cookie
          *
          * @static 
          */
@@ -3033,11 +3048,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if a cookie has been queued.
+         *      * Determine if a cookie has been queued.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @return bool
+         *      * @param  string  $key
+         *      * @return bool
          *
          * @static 
          */
@@ -3047,12 +3062,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a queued cookie instance.
+         *      * Get a queued cookie instance.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return \Symfony\Component\HttpFoundation\Cookie
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return \Symfony\Component\HttpFoundation\Cookie
          *
          * @static 
          */
@@ -3062,11 +3077,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Queue a cookie to send with the next response.
+         *      * Queue a cookie to send with the next response.
          * 
          * *
-         * 	 * @param  mixed
-         * 	 * @return void
+         *      * @param  mixed
+         *      * @return void
          *
          * @static 
          */
@@ -3076,10 +3091,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Remove a cookie from the queue.
+         *      * Remove a cookie from the queue.
          * 
          * *
-         * 	 * @param  string  $name
+         *      * @param  string  $name
          *
          * @static 
          */
@@ -3089,12 +3104,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the default path and domain for the jar.
+         *      * Set the default path and domain for the jar.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @param  string  $domain
-         * 	 * @return $this
+         *      * @param  string  $path
+         *      * @param  string  $domain
+         *      * @return $this
          *
          * @static 
          */
@@ -3104,10 +3119,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the cookies which have been queued for the next request.
+         *      * Get the cookies which have been queued for the next request.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -3122,72 +3137,45 @@ namespace {
         
         /**
          * /**
-         * 	 * Encrypt the given value.
+         *      * Determine if the given key and cipher combination is valid.
          * 
          * *
-         * 	 * @param  string  $value
-         * 	 * @return string
+         *      * @param  string  $key
+         *      * @param  string  $cipher
+         *      * @return bool
+         *
+         * @static 
+         */
+        public static function supported($key, $cipher){
+            return \Illuminate\Encryption\McryptEncrypter::supported($key, $cipher);
+        }
+        
+        /**
+         * /**
+         *      * Encrypt the given value.
+         * 
+         * *
+         *      * @param  string  $value
+         *      * @return string
          *
          * @static 
          */
         public static function encrypt($value){
-            return \Illuminate\Encryption\Encrypter::encrypt($value);
+            return \Illuminate\Encryption\McryptEncrypter::encrypt($value);
         }
         
         /**
          * /**
-         * 	 * Decrypt the given value.
+         *      * Decrypt the given value.
          * 
          * *
-         * 	 * @param  string  $payload
-         * 	 * @return string
+         *      * @param  string  $payload
+         *      * @return string
          *
          * @static 
          */
         public static function decrypt($payload){
-            return \Illuminate\Encryption\Encrypter::decrypt($payload);
-        }
-        
-        /**
-         * /**
-         * 	 * Set the encryption key.
-         * 
-         * *
-         * 	 * @param  string  $key
-         * 	 * @return void
-         *
-         * @static 
-         */
-        public static function setKey($key){
-            return \Illuminate\Encryption\Encrypter::setKey($key);
-        }
-        
-        /**
-         * /**
-         * 	 * Set the encryption cipher.
-         * 
-         * *
-         * 	 * @param  string  $cipher
-         * 	 * @return void
-         *
-         * @static 
-         */
-        public static function setCipher($cipher){
-            return \Illuminate\Encryption\Encrypter::setCipher($cipher);
-        }
-        
-        /**
-         * /**
-         * 	 * Set the encryption mode.
-         * 
-         * *
-         * 	 * @param  string  $mode
-         * 	 * @return void
-         *
-         * @static 
-         */
-        public static function setMode($mode){
-            return \Illuminate\Encryption\Encrypter::setMode($mode);
+            return \Illuminate\Encryption\McryptEncrypter::decrypt($payload);
         }
         
     }
@@ -3197,11 +3185,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a database connection instance.
+         *      * Get a database connection instance.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return \Illuminate\Database\Connection
+         *      * @param  string  $name
+         *      * @return \Illuminate\Database\Connection
          *
          * @static 
          */
@@ -3211,11 +3199,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Disconnect from the given database and remove from local cache.
+         *      * Disconnect from the given database and remove from local cache.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return void
+         *      * @param  string  $name
+         *      * @return void
          *
          * @static 
          */
@@ -3225,11 +3213,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Disconnect from the given database.
+         *      * Disconnect from the given database.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return void
+         *      * @param  string  $name
+         *      * @return void
          *
          * @static 
          */
@@ -3239,11 +3227,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Reconnect to the given database.
+         *      * Reconnect to the given database.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return \Illuminate\Database\Connection
+         *      * @param  string  $name
+         *      * @return \Illuminate\Database\Connection
          *
          * @static 
          */
@@ -3253,10 +3241,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the default connection name.
+         *      * Get the default connection name.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -3266,11 +3254,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the default connection name.
+         *      * Set the default connection name.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return void
+         *      * @param  string  $name
+         *      * @return void
          *
          * @static 
          */
@@ -3280,12 +3268,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register an extension connection resolver.
+         *      * Register an extension connection resolver.
          * 
          * *
-         * 	 * @param  string    $name
-         * 	 * @param  callable  $resolver
-         * 	 * @return void
+         *      * @param  string    $name
+         *      * @param  callable  $resolver
+         *      * @return void
          *
          * @static 
          */
@@ -3295,10 +3283,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Return all of the created connections.
+         *      * Return all of the created connections.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -3416,10 +3404,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the query grammar to the default implementation.
+         *      * Set the query grammar to the default implementation.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -3430,10 +3418,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the schema grammar to the default implementation.
+         *      * Set the schema grammar to the default implementation.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -3444,10 +3432,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the query post processor to the default implementation.
+         *      * Set the query post processor to the default implementation.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -3458,11 +3446,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a new raw query expression.
+         *      * Get a new raw query expression.
          * 
          * *
-         * 	 * @param  mixed  $value
-         * 	 * @return \Illuminate\Database\Query\Expression
+         *      * @param  mixed  $value
+         *      * @return \Illuminate\Database\Query\Expression
          *
          * @static 
          */
@@ -3473,12 +3461,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Run a select statement and return a single result.
+         *      * Run a select statement and return a single result.
          * 
          * *
-         * 	 * @param  string  $query
-         * 	 * @param  array   $bindings
-         * 	 * @return mixed
+         *      * @param  string  $query
+         *      * @param  array   $bindings
+         *      * @return mixed
          *
          * @static 
          */
@@ -3489,12 +3477,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Run a select statement against the database.
+         *      * Run a select statement against the database.
          * 
          * *
-         * 	 * @param  string  $query
-         * 	 * @param  array   $bindings
-         * 	 * @return array
+         *      * @param  string  $query
+         *      * @param  array   $bindings
+         *      * @return array
          *
          * @static 
          */
@@ -3505,13 +3493,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Run a select statement against the database.
+         *      * Run a select statement against the database.
          * 
          * *
-         * 	 * @param  string  $query
-         * 	 * @param  array  $bindings
-         * 	 * @param  bool  $useReadPdo
-         * 	 * @return array
+         *      * @param  string  $query
+         *      * @param  array  $bindings
+         *      * @param  bool  $useReadPdo
+         *      * @return array
          *
          * @static 
          */
@@ -3522,12 +3510,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Run an insert statement against the database.
+         *      * Run an insert statement against the database.
          * 
          * *
-         * 	 * @param  string  $query
-         * 	 * @param  array   $bindings
-         * 	 * @return bool
+         *      * @param  string  $query
+         *      * @param  array   $bindings
+         *      * @return bool
          *
          * @static 
          */
@@ -3538,12 +3526,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Run an update statement against the database.
+         *      * Run an update statement against the database.
          * 
          * *
-         * 	 * @param  string  $query
-         * 	 * @param  array   $bindings
-         * 	 * @return int
+         *      * @param  string  $query
+         *      * @param  array   $bindings
+         *      * @return int
          *
          * @static 
          */
@@ -3554,12 +3542,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Run a delete statement against the database.
+         *      * Run a delete statement against the database.
          * 
          * *
-         * 	 * @param  string  $query
-         * 	 * @param  array   $bindings
-         * 	 * @return int
+         *      * @param  string  $query
+         *      * @param  array   $bindings
+         *      * @return int
          *
          * @static 
          */
@@ -3570,12 +3558,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Execute an SQL statement and return the boolean result.
+         *      * Execute an SQL statement and return the boolean result.
          * 
          * *
-         * 	 * @param  string  $query
-         * 	 * @param  array   $bindings
-         * 	 * @return bool
+         *      * @param  string  $query
+         *      * @param  array   $bindings
+         *      * @return bool
          *
          * @static 
          */
@@ -3586,12 +3574,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Run an SQL statement and get the number of rows affected.
+         *      * Run an SQL statement and get the number of rows affected.
          * 
          * *
-         * 	 * @param  string  $query
-         * 	 * @param  array   $bindings
-         * 	 * @return int
+         *      * @param  string  $query
+         *      * @param  array   $bindings
+         *      * @return int
          *
          * @static 
          */
@@ -3602,11 +3590,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Run a raw, unprepared query against the PDO connection.
+         *      * Run a raw, unprepared query against the PDO connection.
          * 
          * *
-         * 	 * @param  string  $query
-         * 	 * @return bool
+         *      * @param  string  $query
+         *      * @return bool
          *
          * @static 
          */
@@ -3617,11 +3605,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Prepare the query bindings for execution.
+         *      * Prepare the query bindings for execution.
          * 
          * *
-         * 	 * @param  array  $bindings
-         * 	 * @return array
+         *      * @param  array  $bindings
+         *      * @return array
          *
          * @static 
          */
@@ -3632,13 +3620,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Execute a Closure within a transaction.
+         *      * Execute a Closure within a transaction.
          * 
          * *
-         * 	 * @param  \Closure  $callback
-         * 	 * @return mixed
-         * 	 *
-         * 	 * @throws \Exception
+         *      * @param  \Closure  $callback
+         *      * @return mixed
+         *      *
+         *      * @throws \Exception
          *
          * @static 
          */
@@ -3649,10 +3637,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Start a new database transaction.
+         *      * Start a new database transaction.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -3663,10 +3651,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Commit the active database transaction.
+         *      * Commit the active database transaction.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -3677,10 +3665,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Rollback the active database transaction.
+         *      * Rollback the active database transaction.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -3691,10 +3679,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the number of active transactions.
+         *      * Get the number of active transactions.
          * 
          * *
-         * 	 * @return int
+         *      * @return int
          *
          * @static 
          */
@@ -3705,11 +3693,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Execute the given callback in "dry run" mode.
+         *      * Execute the given callback in "dry run" mode.
          * 
          * *
-         * 	 * @param  \Closure  $callback
-         * 	 * @return array
+         *      * @param  \Closure  $callback
+         *      * @return array
          *
          * @static 
          */
@@ -3720,13 +3708,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Log a query in the connection's query log.
+         *      * Log a query in the connection's query log.
          * 
          * *
-         * 	 * @param  string  $query
-         * 	 * @param  array   $bindings
-         * 	 * @param  float|null  $time
-         * 	 * @return void
+         *      * @param  string  $query
+         *      * @param  array   $bindings
+         *      * @param  float|null  $time
+         *      * @return void
          *
          * @static 
          */
@@ -3737,11 +3725,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a database query listener with the connection.
+         *      * Register a database query listener with the connection.
          * 
          * *
-         * 	 * @param  \Closure  $callback
-         * 	 * @return void
+         *      * @param  \Closure  $callback
+         *      * @return void
          *
          * @static 
          */
@@ -3752,12 +3740,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a Doctrine Schema Column instance.
+         *      * Get a Doctrine Schema Column instance.
          * 
          * *
-         * 	 * @param  string  $table
-         * 	 * @param  string  $column
-         * 	 * @return \Doctrine\DBAL\Schema\Column
+         *      * @param  string  $table
+         *      * @param  string  $column
+         *      * @return \Doctrine\DBAL\Schema\Column
          *
          * @static 
          */
@@ -3768,10 +3756,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the Doctrine DBAL schema manager for the connection.
+         *      * Get the Doctrine DBAL schema manager for the connection.
          * 
          * *
-         * 	 * @return \Doctrine\DBAL\Schema\AbstractSchemaManager
+         *      * @return \Doctrine\DBAL\Schema\AbstractSchemaManager
          *
          * @static 
          */
@@ -3782,10 +3770,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the Doctrine DBAL database connection instance.
+         *      * Get the Doctrine DBAL database connection instance.
          * 
          * *
-         * 	 * @return \Doctrine\DBAL\Connection
+         *      * @return \Doctrine\DBAL\Connection
          *
          * @static 
          */
@@ -3796,10 +3784,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the current PDO connection.
+         *      * Get the current PDO connection.
          * 
          * *
-         * 	 * @return \PDO
+         *      * @return \PDO
          *
          * @static 
          */
@@ -3810,10 +3798,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the current PDO connection used for reading.
+         *      * Get the current PDO connection used for reading.
          * 
          * *
-         * 	 * @return \PDO
+         *      * @return \PDO
          *
          * @static 
          */
@@ -3824,11 +3812,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the PDO connection.
+         *      * Set the PDO connection.
          * 
          * *
-         * 	 * @param  \PDO|null  $pdo
-         * 	 * @return $this
+         *      * @param  \PDO|null  $pdo
+         *      * @return $this
          *
          * @static 
          */
@@ -3839,11 +3827,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the PDO connection used for reading.
+         *      * Set the PDO connection used for reading.
          * 
          * *
-         * 	 * @param  \PDO|null  $pdo
-         * 	 * @return $this
+         *      * @param  \PDO|null  $pdo
+         *      * @return $this
          *
          * @static 
          */
@@ -3854,11 +3842,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the reconnect instance on the connection.
+         *      * Set the reconnect instance on the connection.
          * 
          * *
-         * 	 * @param  callable  $reconnector
-         * 	 * @return $this
+         *      * @param  callable  $reconnector
+         *      * @return $this
          *
          * @static 
          */
@@ -3869,10 +3857,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the database connection name.
+         *      * Get the database connection name.
          * 
          * *
-         * 	 * @return string|null
+         *      * @return string|null
          *
          * @static 
          */
@@ -3883,11 +3871,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get an option from the configuration options.
+         *      * Get an option from the configuration options.
          * 
          * *
-         * 	 * @param  string  $option
-         * 	 * @return mixed
+         *      * @param  string  $option
+         *      * @return mixed
          *
          * @static 
          */
@@ -3898,10 +3886,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the query grammar used by the connection.
+         *      * Get the query grammar used by the connection.
          * 
          * *
-         * 	 * @return \Illuminate\Database\Query\Grammars\Grammar
+         *      * @return \Illuminate\Database\Query\Grammars\Grammar
          *
          * @static 
          */
@@ -3912,11 +3900,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the query grammar used by the connection.
+         *      * Set the query grammar used by the connection.
          * 
          * *
-         * 	 * @param  \Illuminate\Database\Query\Grammars\Grammar
-         * 	 * @return void
+         *      * @param  \Illuminate\Database\Query\Grammars\Grammar  $grammar
+         *      * @return void
          *
          * @static 
          */
@@ -3927,10 +3915,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the schema grammar used by the connection.
+         *      * Get the schema grammar used by the connection.
          * 
          * *
-         * 	 * @return \Illuminate\Database\Schema\Grammars\Grammar
+         *      * @return \Illuminate\Database\Schema\Grammars\Grammar
          *
          * @static 
          */
@@ -3941,11 +3929,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the schema grammar used by the connection.
+         *      * Set the schema grammar used by the connection.
          * 
          * *
-         * 	 * @param  \Illuminate\Database\Schema\Grammars\Grammar
-         * 	 * @return void
+         *      * @param  \Illuminate\Database\Schema\Grammars\Grammar  $grammar
+         *      * @return void
          *
          * @static 
          */
@@ -3956,10 +3944,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the query post processor used by the connection.
+         *      * Get the query post processor used by the connection.
          * 
          * *
-         * 	 * @return \Illuminate\Database\Query\Processors\Processor
+         *      * @return \Illuminate\Database\Query\Processors\Processor
          *
          * @static 
          */
@@ -3970,11 +3958,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the query post processor used by the connection.
+         *      * Set the query post processor used by the connection.
          * 
          * *
-         * 	 * @param  \Illuminate\Database\Query\Processors\Processor
-         * 	 * @return void
+         *      * @param  \Illuminate\Database\Query\Processors\Processor  $processor
+         *      * @return void
          *
          * @static 
          */
@@ -3985,10 +3973,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the event dispatcher used by the connection.
+         *      * Get the event dispatcher used by the connection.
          * 
          * *
-         * 	 * @return \Illuminate\Contracts\Events\Dispatcher
+         *      * @return \Illuminate\Contracts\Events\Dispatcher
          *
          * @static 
          */
@@ -3999,11 +3987,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the event dispatcher instance on the connection.
+         *      * Set the event dispatcher instance on the connection.
          * 
          * *
-         * 	 * @param  \Illuminate\Contracts\Events\Dispatcher
-         * 	 * @return void
+         *      * @param  \Illuminate\Contracts\Events\Dispatcher  $events
+         *      * @return void
          *
          * @static 
          */
@@ -4014,10 +4002,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the connection in a "dry run".
+         *      * Determine if the connection in a "dry run".
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -4028,10 +4016,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the default fetch mode for the connection.
+         *      * Get the default fetch mode for the connection.
          * 
          * *
-         * 	 * @return int
+         *      * @return int
          *
          * @static 
          */
@@ -4042,11 +4030,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the default fetch mode for the connection.
+         *      * Set the default fetch mode for the connection.
          * 
          * *
-         * 	 * @param  int  $fetchMode
-         * 	 * @return int
+         *      * @param  int  $fetchMode
+         *      * @return int
          *
          * @static 
          */
@@ -4057,10 +4045,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the connection query log.
+         *      * Get the connection query log.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -4071,10 +4059,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Clear the query log.
+         *      * Clear the query log.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -4085,10 +4073,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Enable the query log on the connection.
+         *      * Enable the query log on the connection.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -4099,10 +4087,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Disable the query log on the connection.
+         *      * Disable the query log on the connection.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -4113,10 +4101,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine whether we're logging queries.
+         *      * Determine whether we're logging queries.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -4127,10 +4115,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the name of the connected database.
+         *      * Get the name of the connected database.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -4141,11 +4129,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the name of the connected database.
+         *      * Set the name of the connected database.
          * 
          * *
-         * 	 * @param  string  $database
-         * 	 * @return string
+         *      * @param  string  $database
+         *      * @return string
          *
          * @static 
          */
@@ -4156,10 +4144,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the table prefix for the connection.
+         *      * Get the table prefix for the connection.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -4170,11 +4158,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the table prefix in use by the connection.
+         *      * Set the table prefix in use by the connection.
          * 
          * *
-         * 	 * @param  string  $prefix
-         * 	 * @return void
+         *      * @param  string  $prefix
+         *      * @return void
          *
          * @static 
          */
@@ -4185,11 +4173,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the table prefix and return the grammar.
+         *      * Set the table prefix and return the grammar.
          * 
          * *
-         * 	 * @param  \Illuminate\Database\Grammar  $grammar
-         * 	 * @return \Illuminate\Database\Grammar
+         *      * @param  \Illuminate\Database\Grammar  $grammar
+         *      * @return \Illuminate\Database\Grammar
          *
          * @static 
          */
@@ -4205,12 +4193,27 @@ namespace {
         
         /**
          * /**
-         * 	 * Find a model by its primary key.
+         *      * Find a model by its primary key.
          * 
          * *
-         * 	 * @param  array  $ids
-         * 	 * @param  array  $columns
-         * 	 * @return \Illuminate\Database\Eloquent\Collection
+         *      * @param  mixed  $id
+         *      * @param  array  $columns
+         *      * @return \Illuminate\Database\Eloquent\Model|\Illuminate\Database\Eloquent\Collection|null
+         *
+         * @static 
+         */
+        public static function find($id, $columns = array()){
+            return \Illuminate\Database\Eloquent\Builder::find($id, $columns);
+        }
+        
+        /**
+         * /**
+         *      * Find a model by its primary key.
+         * 
+         * *
+         *      * @param  array  $ids
+         *      * @param  array  $columns
+         *      * @return \Illuminate\Database\Eloquent\Collection
          *
          * @static 
          */
@@ -4220,14 +4223,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Find a model by its primary key or throw an exception.
+         *      * Find a model by its primary key or throw an exception.
          * 
          * *
-         * 	 * @param  mixed  $id
-         * 	 * @param  array  $columns
-         * 	 * @return \Illuminate\Database\Eloquent\Model|\Illuminate\Database\Eloquent\Collection
-         * 	 *
-         * 	 * @throws \Illuminate\Database\Eloquent\ModelNotFoundException
+         *      * @param  mixed  $id
+         *      * @param  array  $columns
+         *      * @return \Illuminate\Database\Eloquent\Model|\Illuminate\Database\Eloquent\Collection
+         *      *
+         *      * @throws \Illuminate\Database\Eloquent\ModelNotFoundException
          *
          * @static 
          */
@@ -4237,11 +4240,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Execute the query and get the first result.
+         *      * Execute the query and get the first result.
          * 
          * *
-         * 	 * @param  array  $columns
-         * 	 * @return \Illuminate\Database\Eloquent\Model|static|null
+         *      * @param  array  $columns
+         *      * @return \Illuminate\Database\Eloquent\Model|static|null
          *
          * @static 
          */
@@ -4251,13 +4254,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Execute the query and get the first result or throw an exception.
+         *      * Execute the query and get the first result or throw an exception.
          * 
          * *
-         * 	 * @param  array  $columns
-         * 	 * @return \Illuminate\Database\Eloquent\Model|static
-         * 	 *
-         * 	 * @throws \Illuminate\Database\Eloquent\ModelNotFoundException
+         *      * @param  array  $columns
+         *      * @return \Illuminate\Database\Eloquent\Model|static
+         *      *
+         *      * @throws \Illuminate\Database\Eloquent\ModelNotFoundException
          *
          * @static 
          */
@@ -4267,11 +4270,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Execute the query as a "select" statement.
+         *      * Execute the query as a "select" statement.
          * 
          * *
-         * 	 * @param  array  $columns
-         * 	 * @return \Illuminate\Database\Eloquent\Collection|static[]
+         *      * @param  array  $columns
+         *      * @return \Illuminate\Database\Eloquent\Collection|static[]
          *
          * @static 
          */
@@ -4281,11 +4284,29 @@ namespace {
         
         /**
          * /**
-         * 	 * Pluck a single column from the database.
+         *      * Get a single column's value from the first result of a query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @return mixed
+         *      * @param  string  $column
+         *      * @return mixed
+         *
+         * @static 
+         */
+        public static function value($column){
+            return \Illuminate\Database\Eloquent\Builder::value($column);
+        }
+        
+        /**
+         * /**
+         *      * Get a single column's value from the first result of a query.
+         * 
+         * *
+         *      * This is an alias for the "value" method.
+         *      *
+         *      * @param  string  $column
+         *      * @return mixed
+         *      *
+         *      * @deprecated since version 5.1.
          *
          * @static 
          */
@@ -4295,12 +4316,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Chunk the results of the query.
+         *      * Chunk the results of the query.
          * 
          * *
-         * 	 * @param  int  $count
-         * 	 * @param  callable  $callback
-         * 	 * @return void
+         *      * @param  int  $count
+         *      * @param  callable  $callback
+         *      * @return void
          *
          * @static 
          */
@@ -4310,12 +4331,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get an array with the values of a given column.
+         *      * Get an array with the values of a given column.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  string  $key
-         * 	 * @return array
+         *      * @param  string  $column
+         *      * @param  string  $key
+         *      * @return \Illuminate\Support\Collection
          *
          * @static 
          */
@@ -4325,41 +4346,43 @@ namespace {
         
         /**
          * /**
-         * 	 * Paginate the given query.
+         *      * Paginate the given query.
          * 
          * *
-         * 	 * @param  int  $perPage
-         * 	 * @param  array  $columns
-         * 	 * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
+         *      * @param  int  $perPage
+         *      * @param  array  $columns
+         *      * @param  string  $pageName
+         *      * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
          *
          * @static 
          */
-        public static function paginate($perPage = null, $columns = array()){
-            return \Illuminate\Database\Eloquent\Builder::paginate($perPage, $columns);
+        public static function paginate($perPage = null, $columns = array(), $pageName = 'page'){
+            return \Illuminate\Database\Eloquent\Builder::paginate($perPage, $columns, $pageName);
         }
         
         /**
          * /**
-         * 	 * Paginate the given query into a simple paginator.
+         *      * Paginate the given query into a simple paginator.
          * 
          * *
-         * 	 * @param  int  $perPage
-         * 	 * @param  array  $columns
-         * 	 * @return \Illuminate\Contracts\Pagination\Paginator
+         *      * @param  int  $perPage
+         *      * @param  array  $columns
+         *      * @param  string  $pageName
+         *      * @return \Illuminate\Contracts\Pagination\Paginator
          *
          * @static 
          */
-        public static function simplePaginate($perPage = null, $columns = array()){
-            return \Illuminate\Database\Eloquent\Builder::simplePaginate($perPage, $columns);
+        public static function simplePaginate($perPage = null, $columns = array(), $pageName = 'page'){
+            return \Illuminate\Database\Eloquent\Builder::simplePaginate($perPage, $columns, $pageName);
         }
         
         /**
          * /**
-         * 	 * Register a replacement for the default delete function.
+         *      * Register a replacement for the default delete function.
          * 
          * *
-         * 	 * @param  \Closure  $callback
-         * 	 * @return void
+         *      * @param  \Closure  $callback
+         *      * @return void
          *
          * @static 
          */
@@ -4369,11 +4392,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the hydrated models without eager loading.
+         *      * Get the hydrated models without eager loading.
          * 
          * *
-         * 	 * @param  array  $columns
-         * 	 * @return \Illuminate\Database\Eloquent\Model[]
+         *      * @param  array  $columns
+         *      * @return \Illuminate\Database\Eloquent\Model[]
          *
          * @static 
          */
@@ -4383,11 +4406,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Eager load the relationships for the models.
+         *      * Eager load the relationships for the models.
          * 
          * *
-         * 	 * @param  array  $models
-         * 	 * @return array
+         *      * @param  array  $models
+         *      * @return array
          *
          * @static 
          */
@@ -4397,14 +4420,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a basic where clause to the query.
+         *      * Add a basic where clause to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  string  $operator
-         * 	 * @param  mixed   $value
-         * 	 * @param  string  $boolean
-         * 	 * @return $this
+         *      * @param  string  $column
+         *      * @param  string  $operator
+         *      * @param  mixed   $value
+         *      * @param  string  $boolean
+         *      * @return $this
          *
          * @static 
          */
@@ -4414,13 +4437,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Add an "or where" clause to the query.
+         *      * Add an "or where" clause to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  string  $operator
-         * 	 * @param  mixed   $value
-         * 	 * @return \Illuminate\Database\Eloquent\Builder|static
+         *      * @param  string  $column
+         *      * @param  string  $operator
+         *      * @param  mixed   $value
+         *      * @return \Illuminate\Database\Eloquent\Builder|static
          *
          * @static 
          */
@@ -4430,15 +4453,15 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a relationship count condition to the query.
+         *      * Add a relationship count condition to the query.
          * 
          * *
-         * 	 * @param  string  $relation
-         * 	 * @param  string  $operator
-         * 	 * @param  int     $count
-         * 	 * @param  string  $boolean
-         * 	 * @param  \Closure|null  $callback
-         * 	 * @return \Illuminate\Database\Eloquent\Builder|static
+         *      * @param  string  $relation
+         *      * @param  string  $operator
+         *      * @param  int     $count
+         *      * @param  string  $boolean
+         *      * @param  \Closure|null  $callback
+         *      * @return \Illuminate\Database\Eloquent\Builder|static
          *
          * @static 
          */
@@ -4448,13 +4471,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a relationship count condition to the query.
+         *      * Add a relationship count condition to the query.
          * 
          * *
-         * 	 * @param  string  $relation
-         * 	 * @param  string  $boolean
-         * 	 * @param  \Closure|null  $callback
-         * 	 * @return \Illuminate\Database\Eloquent\Builder|static
+         *      * @param  string  $relation
+         *      * @param  string  $boolean
+         *      * @param  \Closure|null  $callback
+         *      * @return \Illuminate\Database\Eloquent\Builder|static
          *
          * @static 
          */
@@ -4464,14 +4487,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a relationship count condition to the query with where clauses.
+         *      * Add a relationship count condition to the query with where clauses.
          * 
          * *
-         * 	 * @param  string    $relation
-         * 	 * @param  \Closure  $callback
-         * 	 * @param  string    $operator
-         * 	 * @param  int       $count
-         * 	 * @return \Illuminate\Database\Eloquent\Builder|static
+         *      * @param  string    $relation
+         *      * @param  \Closure  $callback
+         *      * @param  string    $operator
+         *      * @param  int       $count
+         *      * @return \Illuminate\Database\Eloquent\Builder|static
          *
          * @static 
          */
@@ -4481,12 +4504,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a relationship count condition to the query with where clauses.
+         *      * Add a relationship count condition to the query with where clauses.
          * 
          * *
-         * 	 * @param  string  $relation
-         * 	 * @param  \Closure|null  $callback
-         * 	 * @return \Illuminate\Database\Eloquent\Builder|static
+         *      * @param  string  $relation
+         *      * @param  \Closure|null  $callback
+         *      * @return \Illuminate\Database\Eloquent\Builder|static
          *
          * @static 
          */
@@ -4496,13 +4519,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a relationship count condition to the query with an "or".
+         *      * Add a relationship count condition to the query with an "or".
          * 
          * *
-         * 	 * @param  string  $relation
-         * 	 * @param  string  $operator
-         * 	 * @param  int     $count
-         * 	 * @return \Illuminate\Database\Eloquent\Builder|static
+         *      * @param  string  $relation
+         *      * @param  string  $operator
+         *      * @param  int     $count
+         *      * @return \Illuminate\Database\Eloquent\Builder|static
          *
          * @static 
          */
@@ -4512,14 +4535,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a relationship count condition to the query with where clauses and an "or".
+         *      * Add a relationship count condition to the query with where clauses and an "or".
          * 
          * *
-         * 	 * @param  string    $relation
-         * 	 * @param  \Closure  $callback
-         * 	 * @param  string    $operator
-         * 	 * @param  int       $count
-         * 	 * @return \Illuminate\Database\Eloquent\Builder|static
+         *      * @param  string    $relation
+         *      * @param  \Closure  $callback
+         *      * @param  string    $operator
+         *      * @param  int       $count
+         *      * @return \Illuminate\Database\Eloquent\Builder|static
          *
          * @static 
          */
@@ -4529,10 +4552,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the underlying query builder instance.
+         *      * Get the underlying query builder instance.
          * 
          * *
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -4542,11 +4565,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the underlying query builder instance.
+         *      * Set the underlying query builder instance.
          * 
          * *
-         * 	 * @param  \Illuminate\Database\Query\Builder  $query
-         * 	 * @return $this
+         *      * @param  \Illuminate\Database\Query\Builder  $query
+         *      * @return $this
          *
          * @static 
          */
@@ -4556,10 +4579,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the relationships being eagerly loaded.
+         *      * Get the relationships being eagerly loaded.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -4569,11 +4592,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the relationships being eagerly loaded.
+         *      * Set the relationships being eagerly loaded.
          * 
          * *
-         * 	 * @param  array  $eagerLoad
-         * 	 * @return $this
+         *      * @param  array  $eagerLoad
+         *      * @return $this
          *
          * @static 
          */
@@ -4583,10 +4606,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the model instance being queried.
+         *      * Get the model instance being queried.
          * 
          * *
-         * 	 * @return \Illuminate\Database\Eloquent\Model
+         *      * @return \Illuminate\Database\Eloquent\Model
          *
          * @static 
          */
@@ -4596,11 +4619,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set a model instance for the model being queried.
+         *      * Set a model instance for the model being queried.
          * 
          * *
-         * 	 * @param  \Illuminate\Database\Eloquent\Model  $model
-         * 	 * @return $this
+         *      * @param  \Illuminate\Database\Eloquent\Model  $model
+         *      * @return $this
          *
          * @static 
          */
@@ -4610,12 +4633,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Extend the builder with a given callback.
+         *      * Extend the builder with a given callback.
          * 
          * *
-         * 	 * @param  string    $name
-         * 	 * @param  \Closure  $callback
-         * 	 * @return void
+         *      * @param  string    $name
+         *      * @param  \Closure  $callback
+         *      * @return void
          *
          * @static 
          */
@@ -4625,11 +4648,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the given macro by name.
+         *      * Get the given macro by name.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return \Closure
+         *      * @param  string  $name
+         *      * @return \Closure
          *
          * @static 
          */
@@ -4639,11 +4662,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the columns to be selected.
+         *      * Set the columns to be selected.
          * 
          * *
-         * 	 * @param  array  $columns
-         * 	 * @return $this
+         *      * @param  array  $columns
+         *      * @return $this
          *
          * @static 
          */
@@ -4653,12 +4676,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a new "raw" select expression to the query.
+         *      * Add a new "raw" select expression to the query.
          * 
          * *
-         * 	 * @param  string  $expression
-         * 	 * @param  array   $bindings
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $expression
+         *      * @param  array   $bindings
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -4668,12 +4691,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a subselect expression to the query.
+         *      * Add a subselect expression to the query.
          * 
          * *
-         * 	 * @param  \Closure|\Illuminate\Database\Query\Builder|string $query
-         * 	 * @param  string  $as
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  \Closure|\Illuminate\Database\Query\Builder|string $query
+         *      * @param  string  $as
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -4683,11 +4706,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a new select column to the query.
+         *      * Add a new select column to the query.
          * 
          * *
-         * 	 * @param  mixed  $column
-         * 	 * @return $this
+         *      * @param  mixed  $column
+         *      * @return $this
          *
          * @static 
          */
@@ -4697,10 +4720,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Force the query to only return distinct results.
+         *      * Force the query to only return distinct results.
          * 
          * *
-         * 	 * @return $this
+         *      * @return $this
          *
          * @static 
          */
@@ -4710,11 +4733,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the table which the query is targeting.
+         *      * Set the table which the query is targeting.
          * 
          * *
-         * 	 * @param  string  $table
-         * 	 * @return $this
+         *      * @param  string  $table
+         *      * @return $this
          *
          * @static 
          */
@@ -4724,16 +4747,16 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a join clause to the query.
+         *      * Add a join clause to the query.
          * 
          * *
-         * 	 * @param  string  $table
-         * 	 * @param  string  $one
-         * 	 * @param  string  $operator
-         * 	 * @param  string  $two
-         * 	 * @param  string  $type
-         * 	 * @param  bool    $where
-         * 	 * @return $this
+         *      * @param  string  $table
+         *      * @param  string  $one
+         *      * @param  string  $operator
+         *      * @param  string  $two
+         *      * @param  string  $type
+         *      * @param  bool    $where
+         *      * @return $this
          *
          * @static 
          */
@@ -4743,15 +4766,15 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a "join where" clause to the query.
+         *      * Add a "join where" clause to the query.
          * 
          * *
-         * 	 * @param  string  $table
-         * 	 * @param  string  $one
-         * 	 * @param  string  $operator
-         * 	 * @param  string  $two
-         * 	 * @param  string  $type
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $table
+         *      * @param  string  $one
+         *      * @param  string  $operator
+         *      * @param  string  $two
+         *      * @param  string  $type
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -4761,14 +4784,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a left join to the query.
+         *      * Add a left join to the query.
          * 
          * *
-         * 	 * @param  string  $table
-         * 	 * @param  string  $first
-         * 	 * @param  string  $operator
-         * 	 * @param  string  $second
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $table
+         *      * @param  string  $first
+         *      * @param  string  $operator
+         *      * @param  string  $second
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -4778,14 +4801,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a "join where" clause to the query.
+         *      * Add a "join where" clause to the query.
          * 
          * *
-         * 	 * @param  string  $table
-         * 	 * @param  string  $one
-         * 	 * @param  string  $operator
-         * 	 * @param  string  $two
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $table
+         *      * @param  string  $one
+         *      * @param  string  $operator
+         *      * @param  string  $two
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -4795,14 +4818,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a right join to the query.
+         *      * Add a right join to the query.
          * 
          * *
-         * 	 * @param  string  $table
-         * 	 * @param  string  $first
-         * 	 * @param  string  $operator
-         * 	 * @param  string  $second
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $table
+         *      * @param  string  $first
+         *      * @param  string  $operator
+         *      * @param  string  $second
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -4812,14 +4835,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a "right join where" clause to the query.
+         *      * Add a "right join where" clause to the query.
          * 
          * *
-         * 	 * @param  string  $table
-         * 	 * @param  string  $one
-         * 	 * @param  string  $operator
-         * 	 * @param  string  $two
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $table
+         *      * @param  string  $one
+         *      * @param  string  $operator
+         *      * @param  string  $two
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -4829,13 +4852,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a raw where clause to the query.
+         *      * Add a raw where clause to the query.
          * 
          * *
-         * 	 * @param  string  $sql
-         * 	 * @param  array   $bindings
-         * 	 * @param  string  $boolean
-         * 	 * @return $this
+         *      * @param  string  $sql
+         *      * @param  array   $bindings
+         *      * @param  string  $boolean
+         *      * @return $this
          *
          * @static 
          */
@@ -4845,12 +4868,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a raw or where clause to the query.
+         *      * Add a raw or where clause to the query.
          * 
          * *
-         * 	 * @param  string  $sql
-         * 	 * @param  array   $bindings
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $sql
+         *      * @param  array   $bindings
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -4860,14 +4883,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a where between statement to the query.
+         *      * Add a where between statement to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  array   $values
-         * 	 * @param  string  $boolean
-         * 	 * @param  bool  $not
-         * 	 * @return $this
+         *      * @param  string  $column
+         *      * @param  array   $values
+         *      * @param  string  $boolean
+         *      * @param  bool  $not
+         *      * @return $this
          *
          * @static 
          */
@@ -4877,12 +4900,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add an or where between statement to the query.
+         *      * Add an or where between statement to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  array   $values
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $column
+         *      * @param  array   $values
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -4892,13 +4915,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a where not between statement to the query.
+         *      * Add a where not between statement to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  array   $values
-         * 	 * @param  string  $boolean
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $column
+         *      * @param  array   $values
+         *      * @param  string  $boolean
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -4908,12 +4931,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add an or where not between statement to the query.
+         *      * Add an or where not between statement to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  array   $values
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $column
+         *      * @param  array   $values
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -4923,12 +4946,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a nested where statement to the query.
+         *      * Add a nested where statement to the query.
          * 
          * *
-         * 	 * @param  \Closure $callback
-         * 	 * @param  string   $boolean
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  \Closure $callback
+         *      * @param  string   $boolean
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -4938,12 +4961,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add another query builder as a nested where to the query builder.
+         *      * Add another query builder as a nested where to the query builder.
          * 
          * *
-         * 	 * @param  \Illuminate\Database\Query\Builder|static $query
-         * 	 * @param  string  $boolean
-         * 	 * @return $this
+         *      * @param  \Illuminate\Database\Query\Builder|static $query
+         *      * @param  string  $boolean
+         *      * @return $this
          *
          * @static 
          */
@@ -4953,13 +4976,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Add an exists clause to the query.
+         *      * Add an exists clause to the query.
          * 
          * *
-         * 	 * @param  \Closure $callback
-         * 	 * @param  string   $boolean
-         * 	 * @param  bool     $not
-         * 	 * @return $this
+         *      * @param  \Closure $callback
+         *      * @param  string   $boolean
+         *      * @param  bool     $not
+         *      * @return $this
          *
          * @static 
          */
@@ -4969,12 +4992,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add an or exists clause to the query.
+         *      * Add an or exists clause to the query.
          * 
          * *
-         * 	 * @param  \Closure $callback
-         * 	 * @param  bool     $not
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  \Closure $callback
+         *      * @param  bool     $not
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -4984,12 +5007,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a where not exists clause to the query.
+         *      * Add a where not exists clause to the query.
          * 
          * *
-         * 	 * @param  \Closure $callback
-         * 	 * @param  string   $boolean
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  \Closure $callback
+         *      * @param  string   $boolean
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -4999,11 +5022,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a where not exists clause to the query.
+         *      * Add a where not exists clause to the query.
          * 
          * *
-         * 	 * @param  \Closure  $callback
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  \Closure  $callback
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5013,14 +5036,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a "where in" clause to the query.
+         *      * Add a "where in" clause to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  mixed   $values
-         * 	 * @param  string  $boolean
-         * 	 * @param  bool    $not
-         * 	 * @return $this
+         *      * @param  string  $column
+         *      * @param  mixed   $values
+         *      * @param  string  $boolean
+         *      * @param  bool    $not
+         *      * @return $this
          *
          * @static 
          */
@@ -5030,12 +5053,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add an "or where in" clause to the query.
+         *      * Add an "or where in" clause to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  mixed   $values
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $column
+         *      * @param  mixed   $values
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5045,13 +5068,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a "where not in" clause to the query.
+         *      * Add a "where not in" clause to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  mixed   $values
-         * 	 * @param  string  $boolean
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $column
+         *      * @param  mixed   $values
+         *      * @param  string  $boolean
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5061,12 +5084,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add an "or where not in" clause to the query.
+         *      * Add an "or where not in" clause to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  mixed   $values
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $column
+         *      * @param  mixed   $values
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5076,13 +5099,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a "where null" clause to the query.
+         *      * Add a "where null" clause to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  string  $boolean
-         * 	 * @param  bool    $not
-         * 	 * @return $this
+         *      * @param  string  $column
+         *      * @param  string  $boolean
+         *      * @param  bool    $not
+         *      * @return $this
          *
          * @static 
          */
@@ -5092,11 +5115,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Add an "or where null" clause to the query.
+         *      * Add an "or where null" clause to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $column
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5106,12 +5129,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a "where not null" clause to the query.
+         *      * Add a "where not null" clause to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  string  $boolean
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $column
+         *      * @param  string  $boolean
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5121,11 +5144,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Add an "or where not null" clause to the query.
+         *      * Add an "or where not null" clause to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $column
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5135,14 +5158,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a "where date" statement to the query.
+         *      * Add a "where date" statement to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  string   $operator
-         * 	 * @param  int   $value
-         * 	 * @param  string   $boolean
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $column
+         *      * @param  string   $operator
+         *      * @param  int   $value
+         *      * @param  string   $boolean
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5152,14 +5175,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a "where day" statement to the query.
+         *      * Add a "where day" statement to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  string   $operator
-         * 	 * @param  int   $value
-         * 	 * @param  string   $boolean
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $column
+         *      * @param  string   $operator
+         *      * @param  int   $value
+         *      * @param  string   $boolean
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5169,14 +5192,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a "where month" statement to the query.
+         *      * Add a "where month" statement to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  string   $operator
-         * 	 * @param  int   $value
-         * 	 * @param  string   $boolean
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $column
+         *      * @param  string   $operator
+         *      * @param  int   $value
+         *      * @param  string   $boolean
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5186,14 +5209,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a "where year" statement to the query.
+         *      * Add a "where year" statement to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  string   $operator
-         * 	 * @param  int   $value
-         * 	 * @param  string   $boolean
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $column
+         *      * @param  string   $operator
+         *      * @param  int   $value
+         *      * @param  string   $boolean
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5203,12 +5226,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Handles dynamic "where" clauses to the query.
+         *      * Handles dynamic "where" clauses to the query.
          * 
          * *
-         * 	 * @param  string  $method
-         * 	 * @param  string  $parameters
-         * 	 * @return $this
+         *      * @param  string  $method
+         *      * @param  string  $parameters
+         *      * @return $this
          *
          * @static 
          */
@@ -5218,11 +5241,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a "group by" clause to the query.
+         *      * Add a "group by" clause to the query.
          * 
          * *
-         * 	 * @param  array|string  $column,...
-         * 	 * @return $this
+         *      * @param  array|string  $column,...
+         *      * @return $this
          *
          * @static 
          */
@@ -5232,14 +5255,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a "having" clause to the query.
+         *      * Add a "having" clause to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  string  $operator
-         * 	 * @param  string  $value
-         * 	 * @param  string  $boolean
-         * 	 * @return $this
+         *      * @param  string  $column
+         *      * @param  string  $operator
+         *      * @param  string  $value
+         *      * @param  string  $boolean
+         *      * @return $this
          *
          * @static 
          */
@@ -5249,13 +5272,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a "or having" clause to the query.
+         *      * Add a "or having" clause to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  string  $operator
-         * 	 * @param  string  $value
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $column
+         *      * @param  string  $operator
+         *      * @param  string  $value
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5265,13 +5288,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a raw having clause to the query.
+         *      * Add a raw having clause to the query.
          * 
          * *
-         * 	 * @param  string  $sql
-         * 	 * @param  array   $bindings
-         * 	 * @param  string  $boolean
-         * 	 * @return $this
+         *      * @param  string  $sql
+         *      * @param  array   $bindings
+         *      * @param  string  $boolean
+         *      * @return $this
          *
          * @static 
          */
@@ -5281,12 +5304,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a raw or having clause to the query.
+         *      * Add a raw or having clause to the query.
          * 
          * *
-         * 	 * @param  string  $sql
-         * 	 * @param  array   $bindings
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $sql
+         *      * @param  array   $bindings
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5296,12 +5319,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add an "order by" clause to the query.
+         *      * Add an "order by" clause to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  string  $direction
-         * 	 * @return $this
+         *      * @param  string  $column
+         *      * @param  string  $direction
+         *      * @return $this
          *
          * @static 
          */
@@ -5311,11 +5334,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Add an "order by" clause for a timestamp to the query.
+         *      * Add an "order by" clause for a timestamp to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $column
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5325,11 +5348,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Add an "order by" clause for a timestamp to the query.
+         *      * Add an "order by" clause for a timestamp to the query.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  string  $column
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5339,12 +5362,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a raw "order by" clause to the query.
+         *      * Add a raw "order by" clause to the query.
          * 
          * *
-         * 	 * @param  string  $sql
-         * 	 * @param  array  $bindings
-         * 	 * @return $this
+         *      * @param  string  $sql
+         *      * @param  array  $bindings
+         *      * @return $this
          *
          * @static 
          */
@@ -5354,11 +5377,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the "offset" value of the query.
+         *      * Set the "offset" value of the query.
          * 
          * *
-         * 	 * @param  int  $value
-         * 	 * @return $this
+         *      * @param  int  $value
+         *      * @return $this
          *
          * @static 
          */
@@ -5368,11 +5391,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Alias to set the "offset" value of the query.
+         *      * Alias to set the "offset" value of the query.
          * 
          * *
-         * 	 * @param  int  $value
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  int  $value
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5382,11 +5405,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the "limit" value of the query.
+         *      * Set the "limit" value of the query.
          * 
          * *
-         * 	 * @param  int  $value
-         * 	 * @return $this
+         *      * @param  int  $value
+         *      * @return $this
          *
          * @static 
          */
@@ -5396,11 +5419,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Alias to set the "limit" value of the query.
+         *      * Alias to set the "limit" value of the query.
          * 
          * *
-         * 	 * @param  int  $value
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  int  $value
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5410,12 +5433,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the limit and offset for a given page.
+         *      * Set the limit and offset for a given page.
          * 
          * *
-         * 	 * @param  int  $page
-         * 	 * @param  int  $perPage
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  int  $page
+         *      * @param  int  $perPage
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5425,12 +5448,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a union statement to the query.
+         *      * Add a union statement to the query.
          * 
          * *
-         * 	 * @param  \Illuminate\Database\Query\Builder|\Closure  $query
-         * 	 * @param  bool  $all
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  \Illuminate\Database\Query\Builder|\Closure  $query
+         *      * @param  bool  $all
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5440,11 +5463,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a union all statement to the query.
+         *      * Add a union all statement to the query.
          * 
          * *
-         * 	 * @param  \Illuminate\Database\Query\Builder|\Closure  $query
-         * 	 * @return \Illuminate\Database\Query\Builder|static
+         *      * @param  \Illuminate\Database\Query\Builder|\Closure  $query
+         *      * @return \Illuminate\Database\Query\Builder|static
          *
          * @static 
          */
@@ -5454,11 +5477,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Lock the selected rows in the table.
+         *      * Lock the selected rows in the table.
          * 
          * *
-         * 	 * @param  bool  $value
-         * 	 * @return $this
+         *      * @param  bool  $value
+         *      * @return $this
          *
          * @static 
          */
@@ -5468,10 +5491,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Lock the selected rows in the table for updating.
+         *      * Lock the selected rows in the table for updating.
          * 
          * *
-         * 	 * @return \Illuminate\Database\Query\Builder
+         *      * @return \Illuminate\Database\Query\Builder
          *
          * @static 
          */
@@ -5481,10 +5504,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Share lock the selected rows in the table.
+         *      * Share lock the selected rows in the table.
          * 
          * *
-         * 	 * @return \Illuminate\Database\Query\Builder
+         *      * @return \Illuminate\Database\Query\Builder
          *
          * @static 
          */
@@ -5494,10 +5517,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the SQL representation of the query.
+         *      * Get the SQL representation of the query.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -5507,11 +5530,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Execute the query as a fresh "select" statement.
+         *      * Execute the query as a fresh "select" statement.
          * 
          * *
-         * 	 * @param  array  $columns
-         * 	 * @return array|static[]
+         *      * @param  array  $columns
+         *      * @return array|static[]
          *
          * @static 
          */
@@ -5521,11 +5544,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the count of the total records for the paginator.
+         *      * Get the count of the total records for the paginator.
          * 
          * *
-         * 	 * @param  array  $columns
-         * 	 * @return int
+         *      * @param  array  $columns
+         *      * @return int
          *
          * @static 
          */
@@ -5535,12 +5558,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Concatenate values of a given column as a string.
+         *      * Concatenate values of a given column as a string.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @param  string  $glue
-         * 	 * @return string
+         *      * @param  string  $column
+         *      * @param  string  $glue
+         *      * @return string
          *
          * @static 
          */
@@ -5550,10 +5573,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if any rows exist for the current query.
+         *      * Determine if any rows exist for the current query.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -5563,11 +5586,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve the "count" result of the query.
+         *      * Retrieve the "count" result of the query.
          * 
          * *
-         * 	 * @param  string  $columns
-         * 	 * @return int
+         *      * @param  string  $columns
+         *      * @return int
          *
          * @static 
          */
@@ -5577,11 +5600,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve the minimum value of a given column.
+         *      * Retrieve the minimum value of a given column.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @return float|int
+         *      * @param  string  $column
+         *      * @return float|int
          *
          * @static 
          */
@@ -5591,11 +5614,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve the maximum value of a given column.
+         *      * Retrieve the maximum value of a given column.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @return float|int
+         *      * @param  string  $column
+         *      * @return float|int
          *
          * @static 
          */
@@ -5605,11 +5628,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve the sum of the values of a given column.
+         *      * Retrieve the sum of the values of a given column.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @return float|int
+         *      * @param  string  $column
+         *      * @return float|int
          *
          * @static 
          */
@@ -5619,11 +5642,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve the average of the values of a given column.
+         *      * Retrieve the average of the values of a given column.
          * 
          * *
-         * 	 * @param  string  $column
-         * 	 * @return float|int
+         *      * @param  string  $column
+         *      * @return float|int
          *
          * @static 
          */
@@ -5633,12 +5656,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Execute an aggregate function on the database.
+         *      * Execute an aggregate function on the database.
          * 
          * *
-         * 	 * @param  string  $function
-         * 	 * @param  array   $columns
-         * 	 * @return float|int
+         *      * @param  string  $function
+         *      * @param  array   $columns
+         *      * @return float|int
          *
          * @static 
          */
@@ -5648,11 +5671,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Insert a new record into the database.
+         *      * Insert a new record into the database.
          * 
          * *
-         * 	 * @param  array  $values
-         * 	 * @return bool
+         *      * @param  array  $values
+         *      * @return bool
          *
          * @static 
          */
@@ -5662,12 +5685,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Insert a new record and get the value of the primary key.
+         *      * Insert a new record and get the value of the primary key.
          * 
          * *
-         * 	 * @param  array   $values
-         * 	 * @param  string  $sequence
-         * 	 * @return int
+         *      * @param  array   $values
+         *      * @param  string  $sequence
+         *      * @return int
          *
          * @static 
          */
@@ -5677,10 +5700,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Run a truncate statement on the table.
+         *      * Run a truncate statement on the table.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -5690,12 +5713,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Merge an array of where clauses and bindings.
+         *      * Merge an array of where clauses and bindings.
          * 
          * *
-         * 	 * @param  array  $wheres
-         * 	 * @param  array  $bindings
-         * 	 * @return void
+         *      * @param  array  $wheres
+         *      * @param  array  $bindings
+         *      * @return void
          *
          * @static 
          */
@@ -5705,11 +5728,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a raw database expression.
+         *      * Create a raw database expression.
          * 
          * *
-         * 	 * @param  mixed  $value
-         * 	 * @return \Illuminate\Database\Query\Expression
+         *      * @param  mixed  $value
+         *      * @return \Illuminate\Database\Query\Expression
          *
          * @static 
          */
@@ -5719,10 +5742,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the current query value bindings in a flattened array.
+         *      * Get the current query value bindings in a flattened array.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -5732,10 +5755,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the raw array of bindings.
+         *      * Get the raw array of bindings.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -5745,14 +5768,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the bindings on the query builder.
+         *      * Set the bindings on the query builder.
          * 
          * *
-         * 	 * @param  array   $bindings
-         * 	 * @param  string  $type
-         * 	 * @return $this
-         * 	 *
-         * 	 * @throws \InvalidArgumentException
+         *      * @param  array   $bindings
+         *      * @param  string  $type
+         *      * @return $this
+         *      *
+         *      * @throws \InvalidArgumentException
          *
          * @static 
          */
@@ -5762,14 +5785,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a binding to the query.
+         *      * Add a binding to the query.
          * 
          * *
-         * 	 * @param  mixed   $value
-         * 	 * @param  string  $type
-         * 	 * @return $this
-         * 	 *
-         * 	 * @throws \InvalidArgumentException
+         *      * @param  mixed   $value
+         *      * @param  string  $type
+         *      * @return $this
+         *      *
+         *      * @throws \InvalidArgumentException
          *
          * @static 
          */
@@ -5779,11 +5802,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Merge an array of bindings into our bindings.
+         *      * Merge an array of bindings into our bindings.
          * 
          * *
-         * 	 * @param  \Illuminate\Database\Query\Builder  $query
-         * 	 * @return $this
+         *      * @param  \Illuminate\Database\Query\Builder  $query
+         *      * @return $this
          *
          * @static 
          */
@@ -5793,10 +5816,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the database query processor instance.
+         *      * Get the database query processor instance.
          * 
          * *
-         * 	 * @return \Illuminate\Database\Query\Processors\Processor
+         *      * @return \Illuminate\Database\Query\Processors\Processor
          *
          * @static 
          */
@@ -5806,10 +5829,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the query grammar instance.
+         *      * Get the query grammar instance.
          * 
          * *
-         * 	 * @return \Illuminate\Database\Grammar
+         *      * @return \Illuminate\Database\Query\Grammars\Grammar
          *
          * @static 
          */
@@ -5819,10 +5842,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Use the write pdo for query.
+         *      * Use the write pdo for query.
          * 
          * *
-         * 	 * @return $this
+         *      * @return $this
          *
          * @static 
          */
@@ -5837,13 +5860,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Register an event listener with the dispatcher.
+         *      * Register an event listener with the dispatcher.
          * 
          * *
-         * 	 * @param  string|array  $events
-         * 	 * @param  mixed   $listener
-         * 	 * @param  int     $priority
-         * 	 * @return void
+         *      * @param  string|array  $events
+         *      * @param  mixed  $listener
+         *      * @param  int  $priority
+         *      * @return void
          *
          * @static 
          */
@@ -5853,11 +5876,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if a given event has listeners.
+         *      * Determine if a given event has listeners.
          * 
          * *
-         * 	 * @param  string  $eventName
-         * 	 * @return bool
+         *      * @param  string  $eventName
+         *      * @return bool
          *
          * @static 
          */
@@ -5867,12 +5890,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register an event and payload to be fired later.
+         *      * Register an event and payload to be fired later.
          * 
          * *
-         * 	 * @param  string  $event
-         * 	 * @param  array   $payload
-         * 	 * @return void
+         *      * @param  string  $event
+         *      * @param  array  $payload
+         *      * @return void
          *
          * @static 
          */
@@ -5882,11 +5905,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Register an event subscriber with the dispatcher.
+         *      * Register an event subscriber with the dispatcher.
          * 
          * *
-         * 	 * @param  object|string  $subscriber
-         * 	 * @return void
+         *      * @param  object|string  $subscriber
+         *      * @return void
          *
          * @static 
          */
@@ -5896,12 +5919,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Fire an event until the first non-null response is returned.
+         *      * Fire an event until the first non-null response is returned.
          * 
          * *
-         * 	 * @param  string  $event
-         * 	 * @param  array   $payload
-         * 	 * @return mixed
+         *      * @param  string|object  $event
+         *      * @param  array  $payload
+         *      * @return mixed
          *
          * @static 
          */
@@ -5911,11 +5934,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Flush a set of pushed events.
+         *      * Flush a set of pushed events.
          * 
          * *
-         * 	 * @param  string  $event
-         * 	 * @return void
+         *      * @param  string  $event
+         *      * @return void
          *
          * @static 
          */
@@ -5925,10 +5948,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the event that is currently firing.
+         *      * Get the event that is currently firing.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -5938,13 +5961,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Fire an event and call the listeners.
+         *      * Fire an event and call the listeners.
          * 
          * *
-         * 	 * @param  string|object  $event
-         * 	 * @param  mixed   $payload
-         * 	 * @param  bool    $halt
-         * 	 * @return array|null
+         *      * @param  string|object  $event
+         *      * @param  mixed  $payload
+         *      * @param  bool  $halt
+         *      * @return array|null
          *
          * @static 
          */
@@ -5954,11 +5977,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get all of the listeners for a given event name.
+         *      * Get all of the listeners for a given event name.
          * 
          * *
-         * 	 * @param  string  $eventName
-         * 	 * @return array
+         *      * @param  string  $eventName
+         *      * @return array
          *
          * @static 
          */
@@ -5968,11 +5991,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Register an event listener with the dispatcher.
+         *      * Register an event listener with the dispatcher.
          * 
          * *
-         * 	 * @param  mixed   $listener
-         * 	 * @return mixed
+         *      * @param  mixed  $listener
+         *      * @return mixed
          *
          * @static 
          */
@@ -5982,11 +6005,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a class based listener using the IoC container.
+         *      * Create a class based listener using the IoC container.
          * 
          * *
-         * 	 * @param  mixed    $listener
-         * 	 * @return \Closure
+         *      * @param  mixed  $listener
+         *      * @return \Closure
          *
          * @static 
          */
@@ -5996,11 +6019,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Remove a set of listeners from the dispatcher.
+         *      * Remove a set of listeners from the dispatcher.
          * 
          * *
-         * 	 * @param  string  $event
-         * 	 * @return void
+         *      * @param  string  $event
+         *      * @return void
          *
          * @static 
          */
@@ -6010,10 +6033,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Forget all of the pushed listeners.
+         *      * Forget all of the pushed listeners.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -6023,11 +6046,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the queue resolver implementation.
+         *      * Set the queue resolver implementation.
          * 
          * *
-         * 	 * @param  callable  $resolver
-         * 	 * @return $this
+         *      * @param  callable  $resolver
+         *      * @return $this
          *
          * @static 
          */
@@ -6042,11 +6065,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if a file exists.
+         *      * Determine if a file exists.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @return bool
+         *      * @param  string  $path
+         *      * @return bool
          *
          * @static 
          */
@@ -6056,13 +6079,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the contents of a file.
+         *      * Get the contents of a file.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @return string
-         * 	 *
-         * 	 * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+         *      * @param  string  $path
+         *      * @return string
+         *      *
+         *      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
          *
          * @static 
          */
@@ -6072,13 +6095,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the returned value of a file.
+         *      * Get the returned value of a file.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @return mixed
-         * 	 *
-         * 	 * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+         *      * @param  string  $path
+         *      * @return mixed
+         *      *
+         *      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
          *
          * @static 
          */
@@ -6088,11 +6111,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Require the given file once.
+         *      * Require the given file once.
          * 
          * *
-         * 	 * @param  string  $file
-         * 	 * @return mixed
+         *      * @param  string  $file
+         *      * @return mixed
          *
          * @static 
          */
@@ -6102,13 +6125,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Write the contents of a file.
+         *      * Write the contents of a file.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @param  string  $contents
-         * 	 * @param  bool  $lock
-         * 	 * @return int
+         *      * @param  string  $path
+         *      * @param  string  $contents
+         *      * @param  bool  $lock
+         *      * @return int
          *
          * @static 
          */
@@ -6118,12 +6141,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Prepend to a file.
+         *      * Prepend to a file.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @param  string  $data
-         * 	 * @return int
+         *      * @param  string  $path
+         *      * @param  string  $data
+         *      * @return int
          *
          * @static 
          */
@@ -6133,12 +6156,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Append to a file.
+         *      * Append to a file.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @param  string  $data
-         * 	 * @return int
+         *      * @param  string  $path
+         *      * @param  string  $data
+         *      * @return int
          *
          * @static 
          */
@@ -6148,11 +6171,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Delete the file at a given path.
+         *      * Delete the file at a given path.
          * 
          * *
-         * 	 * @param  string|array  $paths
-         * 	 * @return bool
+         *      * @param  string|array  $paths
+         *      * @return bool
          *
          * @static 
          */
@@ -6162,12 +6185,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Move a file to a new location.
+         *      * Move a file to a new location.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @param  string  $target
-         * 	 * @return bool
+         *      * @param  string  $path
+         *      * @param  string  $target
+         *      * @return bool
          *
          * @static 
          */
@@ -6177,12 +6200,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Copy a file to a new location.
+         *      * Copy a file to a new location.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @param  string  $target
-         * 	 * @return bool
+         *      * @param  string  $path
+         *      * @param  string  $target
+         *      * @return bool
          *
          * @static 
          */
@@ -6192,11 +6215,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Extract the file name from a file path.
+         *      * Extract the file name from a file path.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @return string
+         *      * @param  string  $path
+         *      * @return string
          *
          * @static 
          */
@@ -6206,11 +6229,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Extract the file extension from a file path.
+         *      * Extract the file extension from a file path.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @return string
+         *      * @param  string  $path
+         *      * @return string
          *
          * @static 
          */
@@ -6220,11 +6243,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the file type of a given file.
+         *      * Get the file type of a given file.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @return string
+         *      * @param  string  $path
+         *      * @return string
          *
          * @static 
          */
@@ -6234,11 +6257,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the mime-type of a given file.
+         *      * Get the mime-type of a given file.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @return string|false
+         *      * @param  string  $path
+         *      * @return string|false
          *
          * @static 
          */
@@ -6248,11 +6271,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the file size of a given file.
+         *      * Get the file size of a given file.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @return int
+         *      * @param  string  $path
+         *      * @return int
          *
          * @static 
          */
@@ -6262,11 +6285,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the file's last modification time.
+         *      * Get the file's last modification time.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @return int
+         *      * @param  string  $path
+         *      * @return int
          *
          * @static 
          */
@@ -6276,11 +6299,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the given path is a directory.
+         *      * Determine if the given path is a directory.
          * 
          * *
-         * 	 * @param  string  $directory
-         * 	 * @return bool
+         *      * @param  string  $directory
+         *      * @return bool
          *
          * @static 
          */
@@ -6290,11 +6313,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the given path is writable.
+         *      * Determine if the given path is writable.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @return bool
+         *      * @param  string  $path
+         *      * @return bool
          *
          * @static 
          */
@@ -6304,11 +6327,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the given path is a file.
+         *      * Determine if the given path is a file.
          * 
          * *
-         * 	 * @param  string  $file
-         * 	 * @return bool
+         *      * @param  string  $file
+         *      * @return bool
          *
          * @static 
          */
@@ -6318,12 +6341,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Find path names matching a given pattern.
+         *      * Find path names matching a given pattern.
          * 
          * *
-         * 	 * @param  string  $pattern
-         * 	 * @param  int     $flags
-         * 	 * @return array
+         *      * @param  string  $pattern
+         *      * @param  int     $flags
+         *      * @return array
          *
          * @static 
          */
@@ -6333,11 +6356,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get an array of all files in a directory.
+         *      * Get an array of all files in a directory.
          * 
          * *
-         * 	 * @param  string  $directory
-         * 	 * @return array
+         *      * @param  string  $directory
+         *      * @return array
          *
          * @static 
          */
@@ -6347,11 +6370,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get all of the files from the given directory (recursive).
+         *      * Get all of the files from the given directory (recursive).
          * 
          * *
-         * 	 * @param  string  $directory
-         * 	 * @return array
+         *      * @param  string  $directory
+         *      * @return array
          *
          * @static 
          */
@@ -6361,11 +6384,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get all of the directories within a given directory.
+         *      * Get all of the directories within a given directory.
          * 
          * *
-         * 	 * @param  string  $directory
-         * 	 * @return array
+         *      * @param  string  $directory
+         *      * @return array
          *
          * @static 
          */
@@ -6375,14 +6398,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a directory.
+         *      * Create a directory.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @param  int     $mode
-         * 	 * @param  bool    $recursive
-         * 	 * @param  bool    $force
-         * 	 * @return bool
+         *      * @param  string  $path
+         *      * @param  int     $mode
+         *      * @param  bool    $recursive
+         *      * @param  bool    $force
+         *      * @return bool
          *
          * @static 
          */
@@ -6392,13 +6415,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Copy a directory from one location to another.
+         *      * Copy a directory from one location to another.
          * 
          * *
-         * 	 * @param  string  $directory
-         * 	 * @param  string  $destination
-         * 	 * @param  int     $options
-         * 	 * @return bool
+         *      * @param  string  $directory
+         *      * @param  string  $destination
+         *      * @param  int     $options
+         *      * @return bool
          *
          * @static 
          */
@@ -6408,14 +6431,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Recursively delete a directory.
+         *      * Recursively delete a directory.
          * 
          * *
-         * 	 * The directory itself may be optionally preserved.
-         * 	 *
-         * 	 * @param  string  $directory
-         * 	 * @param  bool    $preserve
-         * 	 * @return bool
+         *      * The directory itself may be optionally preserved.
+         *      *
+         *      * @param  string  $directory
+         *      * @param  bool    $preserve
+         *      * @return bool
          *
          * @static 
          */
@@ -6425,11 +6448,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Empty the specified directory of all files and folders.
+         *      * Empty the specified directory of all files and folders.
          * 
          * *
-         * 	 * @param  string  $directory
-         * 	 * @return bool
+         *      * @param  string  $directory
+         *      * @return bool
          *
          * @static 
          */
@@ -6439,12 +6462,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a custom macro.
+         *      * Register a custom macro.
          * 
          * *
-         * 	 * @param  string    $name
-         * 	 * @param  callable  $macro
-         * 	 * @return void
+         *      * @param  string    $name
+         *      * @param  callable  $macro
+         *      * @return void
          *
          * @static 
          */
@@ -6454,11 +6477,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Checks if macro is registered.
+         *      * Checks if macro is registered.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return bool
+         *      * @param  string  $name
+         *      * @return bool
          *
          * @static 
          */
@@ -6473,14 +6496,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Hash the given value.
+         *      * Hash the given value.
          * 
          * *
-         * 	 * @param  string  $value
-         * 	 * @param  array   $options
-         * 	 * @return string
-         * 	 *
-         * 	 * @throws \RuntimeException
+         *      * @param  string  $value
+         *      * @param  array   $options
+         *      * @return string
+         *      *
+         *      * @throws \RuntimeException
          *
          * @static 
          */
@@ -6490,13 +6513,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Check the given plain value against a hash.
+         *      * Check the given plain value against a hash.
          * 
          * *
-         * 	 * @param  string  $value
-         * 	 * @param  string  $hashedValue
-         * 	 * @param  array   $options
-         * 	 * @return bool
+         *      * @param  string  $value
+         *      * @param  string  $hashedValue
+         *      * @param  array   $options
+         *      * @return bool
          *
          * @static 
          */
@@ -6506,12 +6529,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Check if the given hash has been hashed using the given options.
+         *      * Check if the given hash has been hashed using the given options.
          * 
          * *
-         * 	 * @param  string  $hashedValue
-         * 	 * @param  array   $options
-         * 	 * @return bool
+         *      * @param  string  $hashedValue
+         *      * @param  array   $options
+         *      * @return bool
          *
          * @static 
          */
@@ -6521,11 +6544,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the default password work factor.
+         *      * Set the default password work factor.
          * 
          * *
-         * 	 * @param  int  $rounds
-         * 	 * @return $this
+         *      * @param  int  $rounds
+         *      * @return $this
          *
          * @static 
          */
@@ -6540,10 +6563,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new Illuminate HTTP request from server variables.
+         *      * Create a new Illuminate HTTP request from server variables.
          * 
          * *
-         * 	 * @return static
+         *      * @return static
          *
          * @static 
          */
@@ -6553,10 +6576,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Return the Request instance.
+         *      * Return the Request instance.
          * 
          * *
-         * 	 * @return $this
+         *      * @return $this
          *
          * @static 
          */
@@ -6566,10 +6589,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the request method.
+         *      * Get the request method.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -6579,10 +6602,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the root URL for the application.
+         *      * Get the root URL for the application.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -6592,10 +6615,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the URL (no query string) for the request.
+         *      * Get the URL (no query string) for the request.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -6605,10 +6628,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the full URL for the request.
+         *      * Get the full URL for the request.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -6618,10 +6641,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the current path info for the request.
+         *      * Get the current path info for the request.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -6631,10 +6654,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the current encoded path info for the request.
+         *      * Get the current encoded path info for the request.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -6644,12 +6667,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a segment from the URI (1 based index).
+         *      * Get a segment from the URI (1 based index).
          * 
          * *
-         * 	 * @param  int  $index
-         * 	 * @param  mixed  $default
-         * 	 * @return string
+         *      * @param  int  $index
+         *      * @param  mixed  $default
+         *      * @return string
          *
          * @static 
          */
@@ -6659,10 +6682,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get all of the segments for the request path.
+         *      * Get all of the segments for the request path.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -6672,11 +6695,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the current request URI matches a pattern.
+         *      * Determine if the current request URI matches a pattern.
          * 
          * *
-         * 	 * @param  mixed  string
-         * 	 * @return bool
+         *      * @param  mixed  string
+         *      * @return bool
          *
          * @static 
          */
@@ -6686,10 +6709,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the request is the result of an AJAX call.
+         *      * Determine if the request is the result of an AJAX call.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -6699,10 +6722,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the request is the result of an PJAX call.
+         *      * Determine if the request is the result of an PJAX call.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -6712,10 +6735,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the request is over HTTPS.
+         *      * Determine if the request is over HTTPS.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -6725,10 +6748,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Returns the client IP address.
+         *      * Returns the client IP address.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -6738,10 +6761,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Returns the client IP addresses.
+         *      * Returns the client IP addresses.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -6751,11 +6774,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the request contains a given input item key.
+         *      * Determine if the request contains a given input item key.
          * 
          * *
-         * 	 * @param  string|array  $key
-         * 	 * @return bool
+         *      * @param  string|array  $key
+         *      * @return bool
          *
          * @static 
          */
@@ -6765,11 +6788,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the request contains a non-empty value for an input item.
+         *      * Determine if the request contains a non-empty value for an input item.
          * 
          * *
-         * 	 * @param  string|array  $key
-         * 	 * @return bool
+         *      * @param  string|array  $key
+         *      * @return bool
          *
          * @static 
          */
@@ -6779,10 +6802,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get all of the input and files for the request.
+         *      * Get all of the input and files for the request.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -6792,12 +6815,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve an input item from the request.
+         *      * Retrieve an input item from the request.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return string|array
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return string|array
          *
          * @static 
          */
@@ -6807,11 +6830,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a subset of the items from the input data.
+         *      * Get a subset of the items from the input data.
          * 
          * *
-         * 	 * @param  array  $keys
-         * 	 * @return array
+         *      * @param  array  $keys
+         *      * @return array
          *
          * @static 
          */
@@ -6821,11 +6844,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get all of the input except for a specified array of items.
+         *      * Get all of the input except for a specified array of items.
          * 
          * *
-         * 	 * @param  array  $keys
-         * 	 * @return array
+         *      * @param  array  $keys
+         *      * @return array
          *
          * @static 
          */
@@ -6835,12 +6858,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve a query string item from the request.
+         *      * Retrieve a query string item from the request.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return string|array
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return string|array
          *
          * @static 
          */
@@ -6850,11 +6873,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if a cookie is set on the request.
+         *      * Determine if a cookie is set on the request.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @return bool
+         *      * @param  string  $key
+         *      * @return bool
          *
          * @static 
          */
@@ -6864,12 +6887,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve a cookie from the request.
+         *      * Retrieve a cookie from the request.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return string|array
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return string|array
          *
          * @static 
          */
@@ -6879,12 +6902,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve a file from the request.
+         *      * Retrieve a file from the request.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return \Symfony\Component\HttpFoundation\File\UploadedFile|array
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return \Symfony\Component\HttpFoundation\File\UploadedFile|array
          *
          * @static 
          */
@@ -6894,11 +6917,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the uploaded data contains a file.
+         *      * Determine if the uploaded data contains a file.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @return bool
+         *      * @param  string  $key
+         *      * @return bool
          *
          * @static 
          */
@@ -6908,12 +6931,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve a header from the request.
+         *      * Retrieve a header from the request.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return string|array
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return string|array
          *
          * @static 
          */
@@ -6923,12 +6946,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve a server variable from the request.
+         *      * Retrieve a server variable from the request.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return string|array
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return string|array
          *
          * @static 
          */
@@ -6938,12 +6961,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve an old input item.
+         *      * Retrieve an old input item.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return mixed
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return mixed
          *
          * @static 
          */
@@ -6953,12 +6976,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Flash the input for the current request to the session.
+         *      * Flash the input for the current request to the session.
          * 
          * *
-         * 	 * @param  string  $filter
-         * 	 * @param  array   $keys
-         * 	 * @return void
+         *      * @param  string  $filter
+         *      * @param  array   $keys
+         *      * @return void
          *
          * @static 
          */
@@ -6968,11 +6991,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Flash only some of the input to the session.
+         *      * Flash only some of the input to the session.
          * 
          * *
-         * 	 * @param  mixed  string
-         * 	 * @return void
+         *      * @param  mixed  string
+         *      * @return void
          *
          * @static 
          */
@@ -6982,11 +7005,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Flash only some of the input to the session.
+         *      * Flash only some of the input to the session.
          * 
          * *
-         * 	 * @param  mixed  string
-         * 	 * @return void
+         *      * @param  mixed  string
+         *      * @return void
          *
          * @static 
          */
@@ -6996,10 +7019,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Flush all of the old input from the session.
+         *      * Flush all of the old input from the session.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -7009,11 +7032,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Merge new input into the current request's input array.
+         *      * Merge new input into the current request's input array.
          * 
          * *
-         * 	 * @param  array  $input
-         * 	 * @return void
+         *      * @param  array  $input
+         *      * @return void
          *
          * @static 
          */
@@ -7023,11 +7046,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Replace the input for the current request.
+         *      * Replace the input for the current request.
          * 
          * *
-         * 	 * @param  array  $input
-         * 	 * @return void
+         *      * @param  array  $input
+         *      * @return void
          *
          * @static 
          */
@@ -7037,12 +7060,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the JSON payload for the request.
+         *      * Get the JSON payload for the request.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return mixed
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return mixed
          *
          * @static 
          */
@@ -7052,10 +7075,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the request is sending JSON.
+         *      * Determine if the request is sending JSON.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -7065,10 +7088,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the current request is asking for JSON in return.
+         *      * Determine if the current request is asking for JSON in return.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -7078,11 +7101,51 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the data format expected in the response.
+         *      * Determines whether the current requests accepts a given content type.
          * 
          * *
-         * 	 * @param  string  $default
-         * 	 * @return string
+         *      * @param  string|array  $contentTypes
+         *      * @return bool
+         *
+         * @static 
+         */
+        public static function accepts($contentTypes){
+            return \Illuminate\Http\Request::accepts($contentTypes);
+        }
+        
+        /**
+         * /**
+         *      * Determines whether a request accepts JSON.
+         * 
+         * *
+         *      * @return bool
+         *
+         * @static 
+         */
+        public static function acceptsJson(){
+            return \Illuminate\Http\Request::acceptsJson();
+        }
+        
+        /**
+         * /**
+         *      * Determines whether a request accepts HTML.
+         * 
+         * *
+         *      * @return bool
+         *
+         * @static 
+         */
+        public static function acceptsHtml(){
+            return \Illuminate\Http\Request::acceptsHtml();
+        }
+        
+        /**
+         * /**
+         *      * Get the data format expected in the response.
+         * 
+         * *
+         *      * @param  string  $default
+         *      * @return string
          *
          * @static 
          */
@@ -7092,11 +7155,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Create an Illuminate request from a Symfony instance.
+         *      * Create an Illuminate request from a Symfony instance.
          * 
          * *
-         * 	 * @param  \Symfony\Component\HttpFoundation\Request  $request
-         * 	 * @return \Illuminate\Http\Request
+         *      * @param  \Symfony\Component\HttpFoundation\Request  $request
+         *      * @return \Illuminate\Http\Request
          *
          * @static 
          */
@@ -7106,7 +7169,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Clones a request and overrides some of its parameters.
          * 
          * *
@@ -7129,12 +7192,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the session associated with the request.
+         *      * Get the session associated with the request.
          * 
          * *
-         * 	 * @return \Illuminate\Session\Store
-         * 	 *
-         * 	 * @throws \RuntimeException
+         *      * @return \Illuminate\Session\Store
+         *      *
+         *      * @throws \RuntimeException
          *
          * @static 
          */
@@ -7144,10 +7207,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the user making the request.
+         *      * Get the user making the request.
          * 
          * *
-         * 	 * @return mixed
+         *      * @return mixed
          *
          * @static 
          */
@@ -7157,10 +7220,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the route handling the request.
+         *      * Get the route handling the request.
          * 
          * *
-         * 	 * @return \Illuminate\Routing\Route|null
+         *      * @return \Illuminate\Routing\Route|null
          *
          * @static 
          */
@@ -7170,10 +7233,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the user resolver callback.
+         *      * Get the user resolver callback.
          * 
          * *
-         * 	 * @return \Closure
+         *      * @return \Closure
          *
          * @static 
          */
@@ -7183,11 +7246,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the user resolver callback.
+         *      * Set the user resolver callback.
          * 
          * *
-         * 	 * @param  \Closure  $callback
-         * 	 * @return $this
+         *      * @param  \Closure  $callback
+         *      * @return $this
          *
          * @static 
          */
@@ -7197,10 +7260,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the route resolver callback.
+         *      * Get the route resolver callback.
          * 
          * *
-         * 	 * @return \Closure
+         *      * @return \Closure
          *
          * @static 
          */
@@ -7210,11 +7273,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the route resolver callback.
+         *      * Set the route resolver callback.
          * 
          * *
-         * 	 * @param  \Closure  $callback
-         * 	 * @return $this
+         *      * @param  \Closure  $callback
+         *      * @return $this
          *
          * @static 
          */
@@ -7224,11 +7287,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the given offset exists.
+         *      * Determine if the given offset exists.
          * 
          * *
-         * 	 * @param  string  $offset
-         * 	 * @return bool
+         *      * @param  string  $offset
+         *      * @return bool
          *
          * @static 
          */
@@ -7238,11 +7301,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the value at the given offset.
+         *      * Get the value at the given offset.
          * 
          * *
-         * 	 * @param  string  $offset
-         * 	 * @return mixed
+         *      * @param  string  $offset
+         *      * @return mixed
          *
          * @static 
          */
@@ -7252,12 +7315,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the value at the given offset.
+         *      * Set the value at the given offset.
          * 
          * *
-         * 	 * @param  string  $offset
-         * 	 * @param  mixed  $value
-         * 	 * @return void
+         *      * @param  string  $offset
+         *      * @param  mixed  $value
+         *      * @return void
          *
          * @static 
          */
@@ -7267,11 +7330,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Remove the value at the given offset.
+         *      * Remove the value at the given offset.
          * 
          * *
-         * 	 * @param  string  $offset
-         * 	 * @return void
+         *      * @param  string  $offset
+         *      * @return void
          *
          * @static 
          */
@@ -7942,6 +8005,34 @@ namespace {
         public static function getUriForPath($path){
             //Method inherited from \Symfony\Component\HttpFoundation\Request            
             return \Illuminate\Http\Request::getUriForPath($path);
+        }
+        
+        /**
+         * /**
+         *      * Returns the path as relative reference from the current Request path.
+         * 
+         * *
+         *      * Only the URIs path component (no schema, host etc.) is relevant and must be given.
+         *      * Both paths must be absolute and not contain relative parts.
+         *      * Relative URLs from one resource to another are useful when generating self-contained downloadable document archives.
+         *      * Furthermore, they can be used to reduce the link size in documents.
+         *      *
+         *      * Example target paths, given a base path of "/a/b/c/d":
+         *      * - "/a/b/c/d"     -> ""
+         *      * - "/a/b/c/"      -> "./"
+         *      * - "/a/b/"        -> "../"
+         *      * - "/a/b/c/other" -> "other"
+         *      * - "/a/x/y"       -> "../../x/y"
+         *      *
+         *      * @param string $path The target path
+         *      *
+         *      * @return string The relative target path
+         *
+         * @static 
+         */
+        public static function getRelativeUriForPath($path){
+            //Method inherited from \Symfony\Component\HttpFoundation\Request            
+            return \Illuminate\Http\Request::getRelativeUriForPath($path);
         }
         
         /**
@@ -8429,12 +8520,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if a translation exists.
+         *      * Determine if a translation exists.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  string  $locale
-         * 	 * @return bool
+         *      * @param  string  $key
+         *      * @param  string  $locale
+         *      * @return bool
          *
          * @static 
          */
@@ -8444,13 +8535,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the translation for the given key.
+         *      * Get the translation for the given key.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  array   $replace
-         * 	 * @param  string  $locale
-         * 	 * @return string
+         *      * @param  string  $key
+         *      * @param  array   $replace
+         *      * @param  string  $locale
+         *      * @return string
          *
          * @static 
          */
@@ -8460,14 +8551,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a translation according to an integer value.
+         *      * Get a translation according to an integer value.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  int     $number
-         * 	 * @param  array   $replace
-         * 	 * @param  string  $locale
-         * 	 * @return string
+         *      * @param  string  $key
+         *      * @param  int     $number
+         *      * @param  array   $replace
+         *      * @param  string  $locale
+         *      * @return string
          *
          * @static 
          */
@@ -8477,14 +8568,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the translation for a given key.
+         *      * Get the translation for a given key.
          * 
          * *
-         * 	 * @param  string  $id
-         * 	 * @param  array   $parameters
-         * 	 * @param  string  $domain
-         * 	 * @param  string  $locale
-         * 	 * @return string
+         *      * @param  string  $id
+         *      * @param  array   $parameters
+         *      * @param  string  $domain
+         *      * @param  string  $locale
+         *      * @return string
          *
          * @static 
          */
@@ -8494,15 +8585,15 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a translation according to an integer value.
+         *      * Get a translation according to an integer value.
          * 
          * *
-         * 	 * @param  string  $id
-         * 	 * @param  int     $number
-         * 	 * @param  array   $parameters
-         * 	 * @param  string  $domain
-         * 	 * @param  string  $locale
-         * 	 * @return string
+         *      * @param  string  $id
+         *      * @param  int     $number
+         *      * @param  array   $parameters
+         *      * @param  string  $domain
+         *      * @param  string  $locale
+         *      * @return string
          *
          * @static 
          */
@@ -8512,13 +8603,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Load the specified language group.
+         *      * Load the specified language group.
          * 
          * *
-         * 	 * @param  string  $namespace
-         * 	 * @param  string  $group
-         * 	 * @param  string  $locale
-         * 	 * @return void
+         *      * @param  string  $namespace
+         *      * @param  string  $group
+         *      * @param  string  $locale
+         *      * @return void
          *
          * @static 
          */
@@ -8528,12 +8619,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a new namespace to the loader.
+         *      * Add a new namespace to the loader.
          * 
          * *
-         * 	 * @param  string  $namespace
-         * 	 * @param  string  $hint
-         * 	 * @return void
+         *      * @param  string  $namespace
+         *      * @param  string  $hint
+         *      * @return void
          *
          * @static 
          */
@@ -8543,11 +8634,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Parse a key into namespace, group, and item.
+         *      * Parse a key into namespace, group, and item.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @return array
+         *      * @param  string  $key
+         *      * @return array
          *
          * @static 
          */
@@ -8557,10 +8648,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the message selector instance.
+         *      * Get the message selector instance.
          * 
          * *
-         * 	 * @return \Symfony\Component\Translation\MessageSelector
+         *      * @return \Symfony\Component\Translation\MessageSelector
          *
          * @static 
          */
@@ -8570,11 +8661,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the message selector instance.
+         *      * Set the message selector instance.
          * 
          * *
-         * 	 * @param  \Symfony\Component\Translation\MessageSelector  $selector
-         * 	 * @return void
+         *      * @param  \Symfony\Component\Translation\MessageSelector  $selector
+         *      * @return void
          *
          * @static 
          */
@@ -8584,10 +8675,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the language line loader implementation.
+         *      * Get the language line loader implementation.
          * 
          * *
-         * 	 * @return \Illuminate\Translation\LoaderInterface
+         *      * @return \Illuminate\Translation\LoaderInterface
          *
          * @static 
          */
@@ -8597,10 +8688,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the default locale being used.
+         *      * Get the default locale being used.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -8610,10 +8701,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the default locale being used.
+         *      * Get the default locale being used.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -8623,11 +8714,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the default locale.
+         *      * Set the default locale.
          * 
          * *
-         * 	 * @param  string  $locale
-         * 	 * @return void
+         *      * @param  string  $locale
+         *      * @return void
          *
          * @static 
          */
@@ -8637,10 +8728,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the fallback locale being used.
+         *      * Get the fallback locale being used.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -8650,11 +8741,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the fallback locale being used.
+         *      * Set the fallback locale being used.
          * 
          * *
-         * 	 * @param  string  $fallback
-         * 	 * @return void
+         *      * @param  string  $fallback
+         *      * @return void
          *
          * @static 
          */
@@ -8664,12 +8755,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the parsed value of a key.
+         *      * Set the parsed value of a key.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  array   $parsed
-         * 	 * @return void
+         *      * @param  string  $key
+         *      * @param  array   $parsed
+         *      * @return void
          *
          * @static 
          */
@@ -8805,13 +8896,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Log a message to the logs.
+         *      * Log a message to the logs.
          * 
          * *
-         * 	 * @param  string  $level
-         * 	 * @param  string  $message
-         * 	 * @param  array  $context
-         * 	 * @return void
+         *      * @param  string  $level
+         *      * @param  string  $message
+         *      * @param  array  $context
+         *      * @return void
          *
          * @static 
          */
@@ -8821,13 +8912,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Dynamically pass log calls into the writer.
+         *      * Dynamically pass log calls into the writer.
          * 
          * *
-         * 	 * @param  string  $level
-         * 	 * @param  string  $message
-         * 	 * @param  array  $context
-         * 	 * @return void
+         *      * @param  string  $level
+         *      * @param  string  $message
+         *      * @param  array  $context
+         *      * @return void
          *
          * @static 
          */
@@ -8837,12 +8928,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a file log handler.
+         *      * Register a file log handler.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @param  string  $level
-         * 	 * @return void
+         *      * @param  string  $path
+         *      * @param  string  $level
+         *      * @return void
          *
          * @static 
          */
@@ -8852,13 +8943,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a daily file log handler.
+         *      * Register a daily file log handler.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @param  int     $days
-         * 	 * @param  string  $level
-         * 	 * @return void
+         *      * @param  string  $path
+         *      * @param  int     $days
+         *      * @param  string  $level
+         *      * @return void
          *
          * @static 
          */
@@ -8868,12 +8959,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a Syslog handler.
+         *      * Register a Syslog handler.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  string  $level
-         * 	 * @return void
+         *      * @param  string  $name
+         *      * @param  string  $level
+         *      * @return void
          *
          * @static 
          */
@@ -8883,12 +8974,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register an error_log handler.
+         *      * Register an error_log handler.
          * 
          * *
-         * 	 * @param  string  $level
-         * 	 * @param  int  $messageType
-         * 	 * @return void
+         *      * @param  string  $level
+         *      * @param  int  $messageType
+         *      * @return void
          *
          * @static 
          */
@@ -8898,13 +8989,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a new callback handler for when a log event is triggered.
+         *      * Register a new callback handler for when a log event is triggered.
          * 
          * *
-         * 	 * @param  \Closure  $callback
-         * 	 * @return void
-         * 	 *
-         * 	 * @throws \RuntimeException
+         *      * @param  \Closure  $callback
+         *      * @return void
+         *      *
+         *      * @throws \RuntimeException
          *
          * @static 
          */
@@ -8914,10 +9005,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the underlying Monolog instance.
+         *      * Get the underlying Monolog instance.
          * 
          * *
-         * 	 * @return \Monolog\Logger
+         *      * @return \Monolog\Logger
          *
          * @static 
          */
@@ -8927,10 +9018,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the event dispatcher instance.
+         *      * Get the event dispatcher instance.
          * 
          * *
-         * 	 * @return \Illuminate\Contracts\Events\Dispatcher
+         *      * @return \Illuminate\Contracts\Events\Dispatcher
          *
          * @static 
          */
@@ -8940,11 +9031,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the event dispatcher instance.
+         *      * Set the event dispatcher instance.
          * 
          * *
-         * 	 * @param  \Illuminate\Contracts\Events\Dispatcher  $dispatcher
-         * 	 * @return void
+         *      * @param  \Illuminate\Contracts\Events\Dispatcher  $dispatcher
+         *      * @return void
          *
          * @static 
          */
@@ -8959,12 +9050,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the global from address and name.
+         *      * Set the global from address and name.
          * 
          * *
-         * 	 * @param  string  $address
-         * 	 * @param  string  $name
-         * 	 * @return void
+         *      * @param  string  $address
+         *      * @param  string|null  $name
+         *      * @return void
          *
          * @static 
          */
@@ -8974,12 +9065,27 @@ namespace {
         
         /**
          * /**
-         * 	 * Send a new message when only a raw text part.
+         *      * Set the global to address and name.
          * 
          * *
-         * 	 * @param  string  $text
-         * 	 * @param  mixed   $callback
-         * 	 * @return int
+         *      * @param  string  $address
+         *      * @param  string|null  $name
+         *      * @return void
+         *
+         * @static 
+         */
+        public static function alwaysTo($address, $name = null){
+            return \Illuminate\Mail\Mailer::alwaysTo($address, $name);
+        }
+        
+        /**
+         * /**
+         *      * Send a new message when only a raw text part.
+         * 
+         * *
+         *      * @param  string  $text
+         *      * @param  mixed  $callback
+         *      * @return int
          *
          * @static 
          */
@@ -8989,13 +9095,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Send a new message when only a plain part.
+         *      * Send a new message when only a plain part.
          * 
          * *
-         * 	 * @param  string  $view
-         * 	 * @param  array   $data
-         * 	 * @param  mixed   $callback
-         * 	 * @return int
+         *      * @param  string  $view
+         *      * @param  array  $data
+         *      * @param  mixed  $callback
+         *      * @return int
          *
          * @static 
          */
@@ -9005,13 +9111,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Send a new message using a view.
+         *      * Send a new message using a view.
          * 
          * *
-         * 	 * @param  string|array  $view
-         * 	 * @param  array  $data
-         * 	 * @param  \Closure|string  $callback
-         * 	 * @return mixed
+         *      * @param  string|array  $view
+         *      * @param  array  $data
+         *      * @param  \Closure|string  $callback
+         *      * @return mixed
          *
          * @static 
          */
@@ -9021,14 +9127,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Queue a new e-mail message for sending.
+         *      * Queue a new e-mail message for sending.
          * 
          * *
-         * 	 * @param  string|array  $view
-         * 	 * @param  array   $data
-         * 	 * @param  \Closure|string  $callback
-         * 	 * @param  string  $queue
-         * 	 * @return mixed
+         *      * @param  string|array  $view
+         *      * @param  array  $data
+         *      * @param  \Closure|string  $callback
+         *      * @param  string|null  $queue
+         *      * @return mixed
          *
          * @static 
          */
@@ -9038,14 +9144,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Queue a new e-mail message for sending on the given queue.
+         *      * Queue a new e-mail message for sending on the given queue.
          * 
          * *
-         * 	 * @param  string  $queue
-         * 	 * @param  string|array  $view
-         * 	 * @param  array   $data
-         * 	 * @param  \Closure|string  $callback
-         * 	 * @return mixed
+         *      * @param  string  $queue
+         *      * @param  string|array  $view
+         *      * @param  array  $data
+         *      * @param  \Closure|string  $callback
+         *      * @return mixed
          *
          * @static 
          */
@@ -9055,15 +9161,15 @@ namespace {
         
         /**
          * /**
-         * 	 * Queue a new e-mail message for sending after (n) seconds.
+         *      * Queue a new e-mail message for sending after (n) seconds.
          * 
          * *
-         * 	 * @param  int  $delay
-         * 	 * @param  string|array  $view
-         * 	 * @param  array  $data
-         * 	 * @param  \Closure|string  $callback
-         * 	 * @param  string  $queue
-         * 	 * @return mixed
+         *      * @param  int  $delay
+         *      * @param  string|array  $view
+         *      * @param  array  $data
+         *      * @param  \Closure|string  $callback
+         *      * @param  string|null  $queue
+         *      * @return mixed
          *
          * @static 
          */
@@ -9073,15 +9179,15 @@ namespace {
         
         /**
          * /**
-         * 	 * Queue a new e-mail message for sending after (n) seconds on the given queue.
+         *      * Queue a new e-mail message for sending after (n) seconds on the given queue.
          * 
          * *
-         * 	 * @param  string  $queue
-         * 	 * @param  int  $delay
-         * 	 * @param  string|array  $view
-         * 	 * @param  array  $data
-         * 	 * @param  \Closure|string  $callback
-         * 	 * @return mixed
+         *      * @param  string  $queue
+         *      * @param  int  $delay
+         *      * @param  string|array  $view
+         *      * @param  array  $data
+         *      * @param  \Closure|string  $callback
+         *      * @return mixed
          *
          * @static 
          */
@@ -9091,12 +9197,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Handle a queued e-mail message job.
+         *      * Handle a queued e-mail message job.
          * 
          * *
-         * 	 * @param  \Illuminate\Contracts\Queue\Job  $job
-         * 	 * @param  array  $data
-         * 	 * @return void
+         *      * @param  \Illuminate\Contracts\Queue\Job  $job
+         *      * @param  array  $data
+         *      * @return void
          *
          * @static 
          */
@@ -9106,11 +9212,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Tell the mailer to not really send messages.
+         *      * Tell the mailer to not really send messages.
          * 
          * *
-         * 	 * @param  bool  $value
-         * 	 * @return void
+         *      * @param  bool  $value
+         *      * @return void
          *
          * @static 
          */
@@ -9120,10 +9226,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Check if the mailer is pretending to send messages.
+         *      * Check if the mailer is pretending to send messages.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -9133,10 +9239,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the view factory instance.
+         *      * Get the view factory instance.
          * 
          * *
-         * 	 * @return \Illuminate\Contracts\View\Factory
+         *      * @return \Illuminate\Contracts\View\Factory
          *
          * @static 
          */
@@ -9146,10 +9252,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the Swift Mailer instance.
+         *      * Get the Swift Mailer instance.
          * 
          * *
-         * 	 * @return \Swift_Mailer
+         *      * @return \Swift_Mailer
          *
          * @static 
          */
@@ -9159,10 +9265,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the array of failed recipients.
+         *      * Get the array of failed recipients.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -9172,11 +9278,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the Swift Mailer instance.
+         *      * Set the Swift Mailer instance.
          * 
          * *
-         * 	 * @param  \Swift_Mailer  $swift
-         * 	 * @return void
+         *      * @param  \Swift_Mailer  $swift
+         *      * @return void
          *
          * @static 
          */
@@ -9186,11 +9292,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the log writer instance.
+         *      * Set the log writer instance.
          * 
          * *
-         * 	 * @param  \Psr\Log\LoggerInterface  $logger
-         * 	 * @return $this
+         *      * @param  \Psr\Log\LoggerInterface  $logger
+         *      * @return $this
          *
          * @static 
          */
@@ -9200,11 +9306,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the queue manager instance.
+         *      * Set the queue manager instance.
          * 
          * *
-         * 	 * @param  \Illuminate\Contracts\Queue\Queue  $queue
-         * 	 * @return $this
+         *      * @param  \Illuminate\Contracts\Queue\Queue  $queue
+         *      * @return $this
          *
          * @static 
          */
@@ -9214,11 +9320,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the IoC container instance.
+         *      * Set the IoC container instance.
          * 
          * *
-         * 	 * @param  \Illuminate\Contracts\Container\Container  $container
-         * 	 * @return void
+         *      * @param  \Illuminate\Contracts\Container\Container  $container
+         *      * @return void
          *
          * @static 
          */
@@ -9233,12 +9339,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Send a password reset link to a user.
+         *      * Send a password reset link to a user.
          * 
          * *
-         * 	 * @param  array  $credentials
-         * 	 * @param  \Closure|null  $callback
-         * 	 * @return string
+         *      * @param  array  $credentials
+         *      * @param  \Closure|null  $callback
+         *      * @return string
          *
          * @static 
          */
@@ -9248,13 +9354,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Send the password reset link via e-mail.
+         *      * Send the password reset link via e-mail.
          * 
          * *
-         * 	 * @param  \Illuminate\Contracts\Auth\CanResetPassword  $user
-         * 	 * @param  string  $token
-         * 	 * @param  \Closure|null  $callback
-         * 	 * @return int
+         *      * @param  \Illuminate\Contracts\Auth\CanResetPassword  $user
+         *      * @param  string  $token
+         *      * @param  \Closure|null  $callback
+         *      * @return int
          *
          * @static 
          */
@@ -9264,12 +9370,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Reset the password for the given token.
+         *      * Reset the password for the given token.
          * 
          * *
-         * 	 * @param  array  $credentials
-         * 	 * @param  \Closure  $callback
-         * 	 * @return mixed
+         *      * @param  array  $credentials
+         *      * @param  \Closure  $callback
+         *      * @return mixed
          *
          * @static 
          */
@@ -9279,11 +9385,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set a custom password validator.
+         *      * Set a custom password validator.
          * 
          * *
-         * 	 * @param  \Closure  $callback
-         * 	 * @return void
+         *      * @param  \Closure  $callback
+         *      * @return void
          *
          * @static 
          */
@@ -9293,11 +9399,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the passwords match for the request.
+         *      * Determine if the passwords match for the request.
          * 
          * *
-         * 	 * @param  array  $credentials
-         * 	 * @return bool
+         *      * @param  array  $credentials
+         *      * @return bool
          *
          * @static 
          */
@@ -9307,13 +9413,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the user for the given credentials.
+         *      * Get the user for the given credentials.
          * 
          * *
-         * 	 * @param  array  $credentials
-         * 	 * @return \Illuminate\Contracts\Auth\CanResetPassword
-         * 	 *
-         * 	 * @throws \UnexpectedValueException
+         *      * @param  array  $credentials
+         *      * @return \Illuminate\Contracts\Auth\CanResetPassword
+         *      *
+         *      * @throws \UnexpectedValueException
          *
          * @static 
          */
@@ -9328,11 +9434,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Register an event listener for the daemon queue loop.
+         *      * Register an event listener for the daemon queue loop.
          * 
          * *
-         * 	 * @param  mixed  $callback
-         * 	 * @return void
+         *      * @param  mixed  $callback
+         *      * @return void
          *
          * @static 
          */
@@ -9342,11 +9448,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Register an event listener for the failed job event.
+         *      * Register an event listener for the failed job event.
          * 
          * *
-         * 	 * @param  mixed  $callback
-         * 	 * @return void
+         *      * @param  mixed  $callback
+         *      * @return void
          *
          * @static 
          */
@@ -9356,11 +9462,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Register an event listener for the daemon queue stopping.
+         *      * Register an event listener for the daemon queue stopping.
          * 
          * *
-         * 	 * @param  mixed  $callback
-         * 	 * @return void
+         *      * @param  mixed  $callback
+         *      * @return void
          *
          * @static 
          */
@@ -9370,11 +9476,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the driver is connected.
+         *      * Determine if the driver is connected.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return bool
+         *      * @param  string  $name
+         *      * @return bool
          *
          * @static 
          */
@@ -9384,11 +9490,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Resolve a queue connection instance.
+         *      * Resolve a queue connection instance.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return \Illuminate\Contracts\Queue\Queue
+         *      * @param  string  $name
+         *      * @return \Illuminate\Contracts\Queue\Queue
          *
          * @static 
          */
@@ -9398,12 +9504,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a queue connection resolver.
+         *      * Add a queue connection resolver.
          * 
          * *
-         * 	 * @param  string    $driver
-         * 	 * @param  \Closure  $resolver
-         * 	 * @return void
+         *      * @param  string    $driver
+         *      * @param  \Closure  $resolver
+         *      * @return void
          *
          * @static 
          */
@@ -9413,12 +9519,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a queue connection resolver.
+         *      * Add a queue connection resolver.
          * 
          * *
-         * 	 * @param  string    $driver
-         * 	 * @param  \Closure  $resolver
-         * 	 * @return void
+         *      * @param  string    $driver
+         *      * @param  \Closure  $resolver
+         *      * @return void
          *
          * @static 
          */
@@ -9428,10 +9534,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the name of the default queue connection.
+         *      * Get the name of the default queue connection.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -9441,11 +9547,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the name of the default queue connection.
+         *      * Set the name of the default queue connection.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return void
+         *      * @param  string  $name
+         *      * @return void
          *
          * @static 
          */
@@ -9455,11 +9561,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the full name for the given connection.
+         *      * Get the full name for the given connection.
          * 
          * *
-         * 	 * @param  string  $connection
-         * 	 * @return string
+         *      * @param  string  $connection
+         *      * @return string
          *
          * @static 
          */
@@ -9469,10 +9575,10 @@ namespace {
         
         /**
          * /**
-         * 	* Determine if the application is in maintenance mode.
+         *      * Determine if the application is in maintenance mode.
          * 
          * *
-         * 	* @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -9482,14 +9588,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Push a new job onto the queue.
+         *      * Push a new job onto the queue.
          * 
          * *
-         * 	 * @param  string  $job
-         * 	 * @param  mixed   $data
-         * 	 * @param  string  $queue
-         * 	 * @return mixed
-         * 	 * @throws \Exception
+         *      * @param  string  $job
+         *      * @param  mixed   $data
+         *      * @param  string  $queue
+         *      * @return mixed
+         *      * @throws \Exception
          *
          * @static 
          */
@@ -9499,13 +9605,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Push a raw payload onto the queue.
+         *      * Push a raw payload onto the queue.
          * 
          * *
-         * 	 * @param  string  $payload
-         * 	 * @param  string  $queue
-         * 	 * @param  array   $options
-         * 	 * @return mixed
+         *      * @param  string  $payload
+         *      * @param  string  $queue
+         *      * @param  array   $options
+         *      * @return mixed
          *
          * @static 
          */
@@ -9515,14 +9621,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Push a new job onto the queue after a delay.
+         *      * Push a new job onto the queue after a delay.
          * 
          * *
-         * 	 * @param  \DateTime|int  $delay
-         * 	 * @param  string  $job
-         * 	 * @param  mixed   $data
-         * 	 * @param  string  $queue
-         * 	 * @return mixed
+         *      * @param  \DateTime|int  $delay
+         *      * @param  string  $job
+         *      * @param  mixed   $data
+         *      * @param  string  $queue
+         *      * @return mixed
          *
          * @static 
          */
@@ -9532,11 +9638,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Pop the next job off of the queue.
+         *      * Pop the next job off of the queue.
          * 
          * *
-         * 	 * @param  string  $queue
-         * 	 * @return \Illuminate\Contracts\Queue\Job|null
+         *      * @param  string  $queue
+         *      * @return \Illuminate\Contracts\Queue\Job|null
          *
          * @static 
          */
@@ -9546,13 +9652,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Push a new job onto the queue.
+         *      * Push a new job onto the queue.
          * 
          * *
-         * 	 * @param  string  $queue
-         * 	 * @param  string  $job
-         * 	 * @param  mixed   $data
-         * 	 * @return mixed
+         *      * @param  string  $queue
+         *      * @param  string  $job
+         *      * @param  mixed   $data
+         *      * @return mixed
          *
          * @static 
          */
@@ -9563,14 +9669,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Push a new job onto the queue after a delay.
+         *      * Push a new job onto the queue after a delay.
          * 
          * *
-         * 	 * @param  string  $queue
-         * 	 * @param  \DateTime|int  $delay
-         * 	 * @param  string  $job
-         * 	 * @param  mixed   $data
-         * 	 * @return mixed
+         *      * @param  string  $queue
+         *      * @param  \DateTime|int  $delay
+         *      * @param  string  $job
+         *      * @param  mixed   $data
+         *      * @return mixed
          *
          * @static 
          */
@@ -9581,10 +9687,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Marshal a push queue request and fire the job.
+         *      * Marshal a push queue request and fire the job.
          * 
          * *
-         * 	 * @throws \RuntimeException
+         *      * @throws \RuntimeException
+         *      *
+         *      * @deprecated since version 5.1.
          *
          * @static 
          */
@@ -9595,13 +9703,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Push an array of jobs onto the queue.
+         *      * Push an array of jobs onto the queue.
          * 
          * *
-         * 	 * @param  array   $jobs
-         * 	 * @param  mixed   $data
-         * 	 * @param  string  $queue
-         * 	 * @return mixed
+         *      * @param  array   $jobs
+         *      * @param  mixed   $data
+         *      * @param  string  $queue
+         *      * @return mixed
          *
          * @static 
          */
@@ -9612,11 +9720,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the IoC container instance.
+         *      * Set the IoC container instance.
          * 
          * *
-         * 	 * @param  \Illuminate\Container\Container  $container
-         * 	 * @return void
+         *      * @param  \Illuminate\Container\Container  $container
+         *      * @return void
          *
          * @static 
          */
@@ -9627,11 +9735,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the encrypter instance.
+         *      * Set the encrypter instance.
          * 
          * *
-         * 	 * @param  \Illuminate\Contracts\Encryption\Encrypter  $crypt
-         * 	 * @return void
+         *      * @param  \Illuminate\Contracts\Encryption\Encrypter  $crypt
+         *      * @return void
          *
          * @static 
          */
@@ -9647,11 +9755,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new redirect response to the "home" route.
+         *      * Create a new redirect response to the "home" route.
          * 
          * *
-         * 	 * @param  int  $status
-         * 	 * @return \Illuminate\Http\RedirectResponse
+         *      * @param  int  $status
+         *      * @return \Illuminate\Http\RedirectResponse
          *
          * @static 
          */
@@ -9661,12 +9769,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new redirect response to the previous location.
+         *      * Create a new redirect response to the previous location.
          * 
          * *
-         * 	 * @param  int    $status
-         * 	 * @param  array  $headers
-         * 	 * @return \Illuminate\Http\RedirectResponse
+         *      * @param  int    $status
+         *      * @param  array  $headers
+         *      * @return \Illuminate\Http\RedirectResponse
          *
          * @static 
          */
@@ -9676,12 +9784,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new redirect response to the current URI.
+         *      * Create a new redirect response to the current URI.
          * 
          * *
-         * 	 * @param  int    $status
-         * 	 * @param  array  $headers
-         * 	 * @return \Illuminate\Http\RedirectResponse
+         *      * @param  int    $status
+         *      * @param  array  $headers
+         *      * @return \Illuminate\Http\RedirectResponse
          *
          * @static 
          */
@@ -9691,14 +9799,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new redirect response, while putting the current URL in the session.
+         *      * Create a new redirect response, while putting the current URL in the session.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @param  int     $status
-         * 	 * @param  array   $headers
-         * 	 * @param  bool    $secure
-         * 	 * @return \Illuminate\Http\RedirectResponse
+         *      * @param  string  $path
+         *      * @param  int     $status
+         *      * @param  array   $headers
+         *      * @param  bool    $secure
+         *      * @return \Illuminate\Http\RedirectResponse
          *
          * @static 
          */
@@ -9708,14 +9816,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new redirect response to the previously intended location.
+         *      * Create a new redirect response to the previously intended location.
          * 
          * *
-         * 	 * @param  string  $default
-         * 	 * @param  int     $status
-         * 	 * @param  array   $headers
-         * 	 * @param  bool    $secure
-         * 	 * @return \Illuminate\Http\RedirectResponse
+         *      * @param  string  $default
+         *      * @param  int     $status
+         *      * @param  array   $headers
+         *      * @param  bool    $secure
+         *      * @return \Illuminate\Http\RedirectResponse
          *
          * @static 
          */
@@ -9725,14 +9833,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new redirect response to the given path.
+         *      * Create a new redirect response to the given path.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @param  int     $status
-         * 	 * @param  array   $headers
-         * 	 * @param  bool    $secure
-         * 	 * @return \Illuminate\Http\RedirectResponse
+         *      * @param  string  $path
+         *      * @param  int     $status
+         *      * @param  array   $headers
+         *      * @param  bool    $secure
+         *      * @return \Illuminate\Http\RedirectResponse
          *
          * @static 
          */
@@ -9742,13 +9850,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new redirect response to an external URL (no validation).
+         *      * Create a new redirect response to an external URL (no validation).
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @param  int     $status
-         * 	 * @param  array   $headers
-         * 	 * @return \Illuminate\Http\RedirectResponse
+         *      * @param  string  $path
+         *      * @param  int     $status
+         *      * @param  array   $headers
+         *      * @return \Illuminate\Http\RedirectResponse
          *
          * @static 
          */
@@ -9758,13 +9866,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new redirect response to the given HTTPS path.
+         *      * Create a new redirect response to the given HTTPS path.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @param  int     $status
-         * 	 * @param  array   $headers
-         * 	 * @return \Illuminate\Http\RedirectResponse
+         *      * @param  string  $path
+         *      * @param  int     $status
+         *      * @param  array   $headers
+         *      * @return \Illuminate\Http\RedirectResponse
          *
          * @static 
          */
@@ -9774,14 +9882,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new redirect response to a named route.
+         *      * Create a new redirect response to a named route.
          * 
          * *
-         * 	 * @param  string  $route
-         * 	 * @param  array   $parameters
-         * 	 * @param  int     $status
-         * 	 * @param  array   $headers
-         * 	 * @return \Illuminate\Http\RedirectResponse
+         *      * @param  string  $route
+         *      * @param  array   $parameters
+         *      * @param  int     $status
+         *      * @param  array   $headers
+         *      * @return \Illuminate\Http\RedirectResponse
          *
          * @static 
          */
@@ -9791,14 +9899,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new redirect response to a controller action.
+         *      * Create a new redirect response to a controller action.
          * 
          * *
-         * 	 * @param  string  $action
-         * 	 * @param  array   $parameters
-         * 	 * @param  int     $status
-         * 	 * @param  array   $headers
-         * 	 * @return \Illuminate\Http\RedirectResponse
+         *      * @param  string  $action
+         *      * @param  array   $parameters
+         *      * @param  int     $status
+         *      * @param  array   $headers
+         *      * @return \Illuminate\Http\RedirectResponse
          *
          * @static 
          */
@@ -9808,10 +9916,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the URL generator instance.
+         *      * Get the URL generator instance.
          * 
          * *
-         * 	 * @return \Illuminate\Routing\UrlGenerator
+         *      * @return \Illuminate\Routing\UrlGenerator
          *
          * @static 
          */
@@ -9821,11 +9929,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the active session store.
+         *      * Set the active session store.
          * 
          * *
-         * 	 * @param  \Illuminate\Session\Store  $session
-         * 	 * @return void
+         *      * @param  \Illuminate\Session\Store  $session
+         *      * @return void
          *
          * @static 
          */
@@ -9840,10 +9948,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new Illuminate HTTP request from server variables.
+         *      * Create a new Illuminate HTTP request from server variables.
          * 
          * *
-         * 	 * @return static
+         *      * @return static
          *
          * @static 
          */
@@ -9853,10 +9961,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Return the Request instance.
+         *      * Return the Request instance.
          * 
          * *
-         * 	 * @return $this
+         *      * @return $this
          *
          * @static 
          */
@@ -9866,10 +9974,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the request method.
+         *      * Get the request method.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -9879,10 +9987,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the root URL for the application.
+         *      * Get the root URL for the application.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -9892,10 +10000,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the URL (no query string) for the request.
+         *      * Get the URL (no query string) for the request.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -9905,10 +10013,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the full URL for the request.
+         *      * Get the full URL for the request.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -9918,10 +10026,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the current path info for the request.
+         *      * Get the current path info for the request.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -9931,10 +10039,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the current encoded path info for the request.
+         *      * Get the current encoded path info for the request.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -9944,12 +10052,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a segment from the URI (1 based index).
+         *      * Get a segment from the URI (1 based index).
          * 
          * *
-         * 	 * @param  int  $index
-         * 	 * @param  mixed  $default
-         * 	 * @return string
+         *      * @param  int  $index
+         *      * @param  mixed  $default
+         *      * @return string
          *
          * @static 
          */
@@ -9959,10 +10067,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get all of the segments for the request path.
+         *      * Get all of the segments for the request path.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -9972,11 +10080,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the current request URI matches a pattern.
+         *      * Determine if the current request URI matches a pattern.
          * 
          * *
-         * 	 * @param  mixed  string
-         * 	 * @return bool
+         *      * @param  mixed  string
+         *      * @return bool
          *
          * @static 
          */
@@ -9986,10 +10094,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the request is the result of an AJAX call.
+         *      * Determine if the request is the result of an AJAX call.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -9999,10 +10107,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the request is the result of an PJAX call.
+         *      * Determine if the request is the result of an PJAX call.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -10012,10 +10120,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the request is over HTTPS.
+         *      * Determine if the request is over HTTPS.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -10025,10 +10133,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Returns the client IP address.
+         *      * Returns the client IP address.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -10038,10 +10146,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Returns the client IP addresses.
+         *      * Returns the client IP addresses.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -10051,11 +10159,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the request contains a given input item key.
+         *      * Determine if the request contains a given input item key.
          * 
          * *
-         * 	 * @param  string|array  $key
-         * 	 * @return bool
+         *      * @param  string|array  $key
+         *      * @return bool
          *
          * @static 
          */
@@ -10065,11 +10173,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the request contains a non-empty value for an input item.
+         *      * Determine if the request contains a non-empty value for an input item.
          * 
          * *
-         * 	 * @param  string|array  $key
-         * 	 * @return bool
+         *      * @param  string|array  $key
+         *      * @return bool
          *
          * @static 
          */
@@ -10079,10 +10187,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get all of the input and files for the request.
+         *      * Get all of the input and files for the request.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -10092,12 +10200,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve an input item from the request.
+         *      * Retrieve an input item from the request.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return string|array
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return string|array
          *
          * @static 
          */
@@ -10107,11 +10215,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a subset of the items from the input data.
+         *      * Get a subset of the items from the input data.
          * 
          * *
-         * 	 * @param  array  $keys
-         * 	 * @return array
+         *      * @param  array  $keys
+         *      * @return array
          *
          * @static 
          */
@@ -10121,11 +10229,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get all of the input except for a specified array of items.
+         *      * Get all of the input except for a specified array of items.
          * 
          * *
-         * 	 * @param  array  $keys
-         * 	 * @return array
+         *      * @param  array  $keys
+         *      * @return array
          *
          * @static 
          */
@@ -10135,12 +10243,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve a query string item from the request.
+         *      * Retrieve a query string item from the request.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return string|array
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return string|array
          *
          * @static 
          */
@@ -10150,11 +10258,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if a cookie is set on the request.
+         *      * Determine if a cookie is set on the request.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @return bool
+         *      * @param  string  $key
+         *      * @return bool
          *
          * @static 
          */
@@ -10164,12 +10272,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve a cookie from the request.
+         *      * Retrieve a cookie from the request.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return string|array
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return string|array
          *
          * @static 
          */
@@ -10179,12 +10287,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve a file from the request.
+         *      * Retrieve a file from the request.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return \Symfony\Component\HttpFoundation\File\UploadedFile|array
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return \Symfony\Component\HttpFoundation\File\UploadedFile|array
          *
          * @static 
          */
@@ -10194,11 +10302,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the uploaded data contains a file.
+         *      * Determine if the uploaded data contains a file.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @return bool
+         *      * @param  string  $key
+         *      * @return bool
          *
          * @static 
          */
@@ -10208,12 +10316,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve a header from the request.
+         *      * Retrieve a header from the request.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return string|array
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return string|array
          *
          * @static 
          */
@@ -10223,12 +10331,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve a server variable from the request.
+         *      * Retrieve a server variable from the request.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return string|array
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return string|array
          *
          * @static 
          */
@@ -10238,12 +10346,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Retrieve an old input item.
+         *      * Retrieve an old input item.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return mixed
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return mixed
          *
          * @static 
          */
@@ -10253,12 +10361,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Flash the input for the current request to the session.
+         *      * Flash the input for the current request to the session.
          * 
          * *
-         * 	 * @param  string  $filter
-         * 	 * @param  array   $keys
-         * 	 * @return void
+         *      * @param  string  $filter
+         *      * @param  array   $keys
+         *      * @return void
          *
          * @static 
          */
@@ -10268,11 +10376,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Flash only some of the input to the session.
+         *      * Flash only some of the input to the session.
          * 
          * *
-         * 	 * @param  mixed  string
-         * 	 * @return void
+         *      * @param  mixed  string
+         *      * @return void
          *
          * @static 
          */
@@ -10282,11 +10390,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Flash only some of the input to the session.
+         *      * Flash only some of the input to the session.
          * 
          * *
-         * 	 * @param  mixed  string
-         * 	 * @return void
+         *      * @param  mixed  string
+         *      * @return void
          *
          * @static 
          */
@@ -10296,10 +10404,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Flush all of the old input from the session.
+         *      * Flush all of the old input from the session.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -10309,11 +10417,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Merge new input into the current request's input array.
+         *      * Merge new input into the current request's input array.
          * 
          * *
-         * 	 * @param  array  $input
-         * 	 * @return void
+         *      * @param  array  $input
+         *      * @return void
          *
          * @static 
          */
@@ -10323,11 +10431,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Replace the input for the current request.
+         *      * Replace the input for the current request.
          * 
          * *
-         * 	 * @param  array  $input
-         * 	 * @return void
+         *      * @param  array  $input
+         *      * @return void
          *
          * @static 
          */
@@ -10337,12 +10445,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the JSON payload for the request.
+         *      * Get the JSON payload for the request.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return mixed
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return mixed
          *
          * @static 
          */
@@ -10352,10 +10460,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the request is sending JSON.
+         *      * Determine if the request is sending JSON.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -10365,10 +10473,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the current request is asking for JSON in return.
+         *      * Determine if the current request is asking for JSON in return.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -10378,11 +10486,51 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the data format expected in the response.
+         *      * Determines whether the current requests accepts a given content type.
          * 
          * *
-         * 	 * @param  string  $default
-         * 	 * @return string
+         *      * @param  string|array  $contentTypes
+         *      * @return bool
+         *
+         * @static 
+         */
+        public static function accepts($contentTypes){
+            return \Illuminate\Http\Request::accepts($contentTypes);
+        }
+        
+        /**
+         * /**
+         *      * Determines whether a request accepts JSON.
+         * 
+         * *
+         *      * @return bool
+         *
+         * @static 
+         */
+        public static function acceptsJson(){
+            return \Illuminate\Http\Request::acceptsJson();
+        }
+        
+        /**
+         * /**
+         *      * Determines whether a request accepts HTML.
+         * 
+         * *
+         *      * @return bool
+         *
+         * @static 
+         */
+        public static function acceptsHtml(){
+            return \Illuminate\Http\Request::acceptsHtml();
+        }
+        
+        /**
+         * /**
+         *      * Get the data format expected in the response.
+         * 
+         * *
+         *      * @param  string  $default
+         *      * @return string
          *
          * @static 
          */
@@ -10392,11 +10540,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Create an Illuminate request from a Symfony instance.
+         *      * Create an Illuminate request from a Symfony instance.
          * 
          * *
-         * 	 * @param  \Symfony\Component\HttpFoundation\Request  $request
-         * 	 * @return \Illuminate\Http\Request
+         *      * @param  \Symfony\Component\HttpFoundation\Request  $request
+         *      * @return \Illuminate\Http\Request
          *
          * @static 
          */
@@ -10406,7 +10554,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Clones a request and overrides some of its parameters.
          * 
          * *
@@ -10429,12 +10577,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the session associated with the request.
+         *      * Get the session associated with the request.
          * 
          * *
-         * 	 * @return \Illuminate\Session\Store
-         * 	 *
-         * 	 * @throws \RuntimeException
+         *      * @return \Illuminate\Session\Store
+         *      *
+         *      * @throws \RuntimeException
          *
          * @static 
          */
@@ -10444,10 +10592,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the user making the request.
+         *      * Get the user making the request.
          * 
          * *
-         * 	 * @return mixed
+         *      * @return mixed
          *
          * @static 
          */
@@ -10457,10 +10605,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the route handling the request.
+         *      * Get the route handling the request.
          * 
          * *
-         * 	 * @return \Illuminate\Routing\Route|null
+         *      * @return \Illuminate\Routing\Route|null
          *
          * @static 
          */
@@ -10470,10 +10618,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the user resolver callback.
+         *      * Get the user resolver callback.
          * 
          * *
-         * 	 * @return \Closure
+         *      * @return \Closure
          *
          * @static 
          */
@@ -10483,11 +10631,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the user resolver callback.
+         *      * Set the user resolver callback.
          * 
          * *
-         * 	 * @param  \Closure  $callback
-         * 	 * @return $this
+         *      * @param  \Closure  $callback
+         *      * @return $this
          *
          * @static 
          */
@@ -10497,10 +10645,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the route resolver callback.
+         *      * Get the route resolver callback.
          * 
          * *
-         * 	 * @return \Closure
+         *      * @return \Closure
          *
          * @static 
          */
@@ -10510,11 +10658,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the route resolver callback.
+         *      * Set the route resolver callback.
          * 
          * *
-         * 	 * @param  \Closure  $callback
-         * 	 * @return $this
+         *      * @param  \Closure  $callback
+         *      * @return $this
          *
          * @static 
          */
@@ -10524,11 +10672,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the given offset exists.
+         *      * Determine if the given offset exists.
          * 
          * *
-         * 	 * @param  string  $offset
-         * 	 * @return bool
+         *      * @param  string  $offset
+         *      * @return bool
          *
          * @static 
          */
@@ -10538,11 +10686,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the value at the given offset.
+         *      * Get the value at the given offset.
          * 
          * *
-         * 	 * @param  string  $offset
-         * 	 * @return mixed
+         *      * @param  string  $offset
+         *      * @return mixed
          *
          * @static 
          */
@@ -10552,12 +10700,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the value at the given offset.
+         *      * Set the value at the given offset.
          * 
          * *
-         * 	 * @param  string  $offset
-         * 	 * @param  mixed  $value
-         * 	 * @return void
+         *      * @param  string  $offset
+         *      * @param  mixed  $value
+         *      * @return void
          *
          * @static 
          */
@@ -10567,11 +10715,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Remove the value at the given offset.
+         *      * Remove the value at the given offset.
          * 
          * *
-         * 	 * @param  string  $offset
-         * 	 * @return void
+         *      * @param  string  $offset
+         *      * @return void
          *
          * @static 
          */
@@ -11246,6 +11394,34 @@ namespace {
         
         /**
          * /**
+         *      * Returns the path as relative reference from the current Request path.
+         * 
+         * *
+         *      * Only the URIs path component (no schema, host etc.) is relevant and must be given.
+         *      * Both paths must be absolute and not contain relative parts.
+         *      * Relative URLs from one resource to another are useful when generating self-contained downloadable document archives.
+         *      * Furthermore, they can be used to reduce the link size in documents.
+         *      *
+         *      * Example target paths, given a base path of "/a/b/c/d":
+         *      * - "/a/b/c/d"     -> ""
+         *      * - "/a/b/c/"      -> "./"
+         *      * - "/a/b/"        -> "../"
+         *      * - "/a/b/c/other" -> "other"
+         *      * - "/a/x/y"       -> "../../x/y"
+         *      *
+         *      * @param string $path The target path
+         *      *
+         *      * @return string The relative target path
+         *
+         * @static 
+         */
+        public static function getRelativeUriForPath($path){
+            //Method inherited from \Symfony\Component\HttpFoundation\Request            
+            return \Illuminate\Http\Request::getRelativeUriForPath($path);
+        }
+        
+        /**
+         * /**
          *      * Generates the normalized query string for the Request.
          * 
          * *
@@ -11724,13 +11900,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Return a new response from the application.
+         *      * Return a new response from the application.
          * 
          * *
-         * 	 * @param  string  $content
-         * 	 * @param  int     $status
-         * 	 * @param  array   $headers
-         * 	 * @return \Symfony\Component\HttpFoundation\Response
+         *      * @param  string  $content
+         *      * @param  int  $status
+         *      * @param  array  $headers
+         *      * @return \Illuminate\Http\Response
          *
          * @static 
          */
@@ -11740,14 +11916,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Return a new view response from the application.
+         *      * Return a new view response from the application.
          * 
          * *
-         * 	 * @param  string  $view
-         * 	 * @param  array   $data
-         * 	 * @param  int     $status
-         * 	 * @param  array   $headers
-         * 	 * @return \Symfony\Component\HttpFoundation\Response
+         *      * @param  string  $view
+         *      * @param  array  $data
+         *      * @param  int  $status
+         *      * @param  array  $headers
+         *      * @return \Illuminate\Http\Response
          *
          * @static 
          */
@@ -11757,14 +11933,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Return a new JSON response from the application.
+         *      * Return a new JSON response from the application.
          * 
          * *
-         * 	 * @param  string|array  $data
-         * 	 * @param  int    $status
-         * 	 * @param  array  $headers
-         * 	 * @param  int    $options
-         * 	 * @return \Symfony\Component\HttpFoundation\Response
+         *      * @param  string|array  $data
+         *      * @param  int  $status
+         *      * @param  array  $headers
+         *      * @param  int  $options
+         *      * @return \Illuminate\Http\JsonResponse
          *
          * @static 
          */
@@ -11774,15 +11950,15 @@ namespace {
         
         /**
          * /**
-         * 	 * Return a new JSONP response from the application.
+         *      * Return a new JSONP response from the application.
          * 
          * *
-         * 	 * @param  string  $callback
-         * 	 * @param  string|array  $data
-         * 	 * @param  int    $status
-         * 	 * @param  array  $headers
-         * 	 * @param  int    $options
-         * 	 * @return \Symfony\Component\HttpFoundation\Response
+         *      * @param  string  $callback
+         *      * @param  string|array  $data
+         *      * @param  int  $status
+         *      * @param  array  $headers
+         *      * @param  int  $options
+         *      * @return \Illuminate\Http\JsonResponse
          *
          * @static 
          */
@@ -11792,13 +11968,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Return a new streamed response from the application.
+         *      * Return a new streamed response from the application.
          * 
          * *
-         * 	 * @param  \Closure  $callback
-         * 	 * @param  int      $status
-         * 	 * @param  array    $headers
-         * 	 * @return \Symfony\Component\HttpFoundation\StreamedResponse
+         *      * @param  \Closure  $callback
+         *      * @param  int  $status
+         *      * @param  array  $headers
+         *      * @return \Symfony\Component\HttpFoundation\StreamedResponse
          *
          * @static 
          */
@@ -11808,14 +11984,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new file download response.
+         *      * Create a new file download response.
          * 
          * *
-         * 	 * @param  \SplFileInfo|string  $file
-         * 	 * @param  string  $name
-         * 	 * @param  array   $headers
-         * 	 * @param  null|string  $disposition
-         * 	 * @return \Symfony\Component\HttpFoundation\BinaryFileResponse
+         *      * @param  \SplFileInfo|string  $file
+         *      * @param  string  $name
+         *      * @param  array  $headers
+         *      * @param  string|null  $disposition
+         *      * @return \Symfony\Component\HttpFoundation\BinaryFileResponse
          *
          * @static 
          */
@@ -11825,14 +12001,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new redirect response to the given path.
+         *      * Create a new redirect response to the given path.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @param  int     $status
-         * 	 * @param  array   $headers
-         * 	 * @param  bool    $secure
-         * 	 * @return \Symfony\Component\HttpFoundation\Response
+         *      * @param  string  $path
+         *      * @param  int  $status
+         *      * @param  array  $headers
+         *      * @param  bool|null  $secure
+         *      * @return \Illuminate\Http\RedirectResponse
          *
          * @static 
          */
@@ -11842,14 +12018,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new redirect response to a named route.
+         *      * Create a new redirect response to a named route.
          * 
          * *
-         * 	 * @param  string  $route
-         * 	 * @param  array   $parameters
-         * 	 * @param  int     $status
-         * 	 * @param  array   $headers
-         * 	 * @return \Symfony\Component\HttpFoundation\Response
+         *      * @param  string  $route
+         *      * @param  array  $parameters
+         *      * @param  int  $status
+         *      * @param  array  $headers
+         *      * @return \Illuminate\Http\RedirectResponse
          *
          * @static 
          */
@@ -11859,14 +12035,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new redirect response to a controller action.
+         *      * Create a new redirect response to a controller action.
          * 
          * *
-         * 	 * @param  string  $action
-         * 	 * @param  array   $parameters
-         * 	 * @param  int     $status
-         * 	 * @param  array   $headers
-         * 	 * @return \Symfony\Component\HttpFoundation\Response
+         *      * @param  string  $action
+         *      * @param  array  $parameters
+         *      * @param  int  $status
+         *      * @param  array  $headers
+         *      * @return \Illuminate\Http\RedirectResponse
          *
          * @static 
          */
@@ -11876,14 +12052,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new redirect response, while putting the current URL in the session.
+         *      * Create a new redirect response, while putting the current URL in the session.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @param  int     $status
-         * 	 * @param  array   $headers
-         * 	 * @param  bool    $secure
-         * 	 * @return \Symfony\Component\HttpFoundation\Response
+         *      * @param  string  $path
+         *      * @param  int  $status
+         *      * @param  array  $headers
+         *      * @param  bool|null  $secure
+         *      * @return \Illuminate\Http\RedirectResponse
          *
          * @static 
          */
@@ -11893,14 +12069,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new redirect response to the previously intended location.
+         *      * Create a new redirect response to the previously intended location.
          * 
          * *
-         * 	 * @param  string  $default
-         * 	 * @param  int     $status
-         * 	 * @param  array   $headers
-         * 	 * @param  bool    $secure
-         * 	 * @return \Symfony\Component\HttpFoundation\Response
+         *      * @param  string  $default
+         *      * @param  int  $status
+         *      * @param  array  $headers
+         *      * @param  bool|null  $secure
+         *      * @return \Illuminate\Http\RedirectResponse
          *
          * @static 
          */
@@ -11910,12 +12086,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a custom macro.
+         *      * Register a custom macro.
          * 
          * *
-         * 	 * @param  string    $name
-         * 	 * @param  callable  $macro
-         * 	 * @return void
+         *      * @param  string    $name
+         *      * @param  callable  $macro
+         *      * @return void
          *
          * @static 
          */
@@ -11925,11 +12101,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Checks if macro is registered.
+         *      * Checks if macro is registered.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return bool
+         *      * @param  string  $name
+         *      * @return bool
          *
          * @static 
          */
@@ -11944,12 +12120,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a new GET route with the router.
+         *      * Register a new GET route with the router.
          * 
          * *
-         * 	 * @param  string  $uri
-         * 	 * @param  \Closure|array|string  $action
-         * 	 * @return \Illuminate\Routing\Route
+         *      * @param  string  $uri
+         *      * @param  \Closure|array|string  $action
+         *      * @return \Illuminate\Routing\Route
          *
          * @static 
          */
@@ -11959,12 +12135,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a new POST route with the router.
+         *      * Register a new POST route with the router.
          * 
          * *
-         * 	 * @param  string  $uri
-         * 	 * @param  \Closure|array|string  $action
-         * 	 * @return \Illuminate\Routing\Route
+         *      * @param  string  $uri
+         *      * @param  \Closure|array|string  $action
+         *      * @return \Illuminate\Routing\Route
          *
          * @static 
          */
@@ -11974,12 +12150,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a new PUT route with the router.
+         *      * Register a new PUT route with the router.
          * 
          * *
-         * 	 * @param  string  $uri
-         * 	 * @param  \Closure|array|string  $action
-         * 	 * @return \Illuminate\Routing\Route
+         *      * @param  string  $uri
+         *      * @param  \Closure|array|string  $action
+         *      * @return \Illuminate\Routing\Route
          *
          * @static 
          */
@@ -11989,12 +12165,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a new PATCH route with the router.
+         *      * Register a new PATCH route with the router.
          * 
          * *
-         * 	 * @param  string  $uri
-         * 	 * @param  \Closure|array|string  $action
-         * 	 * @return \Illuminate\Routing\Route
+         *      * @param  string  $uri
+         *      * @param  \Closure|array|string  $action
+         *      * @return \Illuminate\Routing\Route
          *
          * @static 
          */
@@ -12004,12 +12180,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a new DELETE route with the router.
+         *      * Register a new DELETE route with the router.
          * 
          * *
-         * 	 * @param  string  $uri
-         * 	 * @param  \Closure|array|string  $action
-         * 	 * @return \Illuminate\Routing\Route
+         *      * @param  string  $uri
+         *      * @param  \Closure|array|string  $action
+         *      * @return \Illuminate\Routing\Route
          *
          * @static 
          */
@@ -12019,12 +12195,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a new OPTIONS route with the router.
+         *      * Register a new OPTIONS route with the router.
          * 
          * *
-         * 	 * @param  string  $uri
-         * 	 * @param  \Closure|array|string  $action
-         * 	 * @return \Illuminate\Routing\Route
+         *      * @param  string  $uri
+         *      * @param  \Closure|array|string  $action
+         *      * @return \Illuminate\Routing\Route
          *
          * @static 
          */
@@ -12034,12 +12210,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a new route responding to all verbs.
+         *      * Register a new route responding to all verbs.
          * 
          * *
-         * 	 * @param  string  $uri
-         * 	 * @param  \Closure|array|string  $action
-         * 	 * @return \Illuminate\Routing\Route
+         *      * @param  string  $uri
+         *      * @param  \Closure|array|string  $action
+         *      * @return \Illuminate\Routing\Route
          *
          * @static 
          */
@@ -12049,13 +12225,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a new route with the given verbs.
+         *      * Register a new route with the given verbs.
          * 
          * *
-         * 	 * @param  array|string  $methods
-         * 	 * @param  string  $uri
-         * 	 * @param  \Closure|array|string  $action
-         * 	 * @return \Illuminate\Routing\Route
+         *      * @param  array|string  $methods
+         *      * @param  string  $uri
+         *      * @param  \Closure|array|string  $action
+         *      * @return \Illuminate\Routing\Route
          *
          * @static 
          */
@@ -12065,11 +12241,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Register an array of controllers with wildcard routing.
+         *      * Register an array of controllers with wildcard routing.
          * 
          * *
-         * 	 * @param  array  $controllers
-         * 	 * @return void
+         *      * @param  array  $controllers
+         *      * @return void
          *
          * @static 
          */
@@ -12079,13 +12255,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Route a controller to a URI with wildcard routing.
+         *      * Route a controller to a URI with wildcard routing.
          * 
          * *
-         * 	 * @param  string  $uri
-         * 	 * @param  string  $controller
-         * 	 * @param  array   $names
-         * 	 * @return void
+         *      * @param  string  $uri
+         *      * @param  string  $controller
+         *      * @param  array   $names
+         *      * @return void
          *
          * @static 
          */
@@ -12095,11 +12271,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Register an array of resource controllers.
+         *      * Register an array of resource controllers.
          * 
          * *
-         * 	 * @param  array  $resources
-         * 	 * @return void
+         *      * @param  array  $resources
+         *      * @return void
          *
          * @static 
          */
@@ -12109,13 +12285,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Route a resource to a controller.
+         *      * Route a resource to a controller.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  string  $controller
-         * 	 * @param  array   $options
-         * 	 * @return void
+         *      * @param  string  $name
+         *      * @param  string  $controller
+         *      * @param  array   $options
+         *      * @return void
          *
          * @static 
          */
@@ -12125,12 +12301,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a route group with shared attributes.
+         *      * Create a route group with shared attributes.
          * 
          * *
-         * 	 * @param  array     $attributes
-         * 	 * @param  \Closure  $callback
-         * 	 * @return void
+         *      * @param  array     $attributes
+         *      * @param  \Closure  $callback
+         *      * @return void
          *
          * @static 
          */
@@ -12140,11 +12316,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Merge the given array with the last group stack.
+         *      * Merge the given array with the last group stack.
          * 
          * *
-         * 	 * @param  array  $new
-         * 	 * @return array
+         *      * @param  array  $new
+         *      * @return array
          *
          * @static 
          */
@@ -12154,12 +12330,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Merge the given group attributes.
+         *      * Merge the given group attributes.
          * 
          * *
-         * 	 * @param  array  $new
-         * 	 * @param  array  $old
-         * 	 * @return array
+         *      * @param  array  $new
+         *      * @param  array  $old
+         *      * @return array
          *
          * @static 
          */
@@ -12169,10 +12345,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the prefix from the last group on the stack.
+         *      * Get the prefix from the last group on the stack.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -12182,11 +12358,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Dispatch the request to the application.
+         *      * Dispatch the request to the application.
          * 
          * *
-         * 	 * @param  \Illuminate\Http\Request  $request
-         * 	 * @return \Illuminate\Http\Response
+         *      * @param  \Illuminate\Http\Request  $request
+         *      * @return \Illuminate\Http\Response
          *
          * @static 
          */
@@ -12196,11 +12372,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Dispatch the request to a route and return the response.
+         *      * Dispatch the request to a route and return the response.
          * 
          * *
-         * 	 * @param  \Illuminate\Http\Request  $request
-         * 	 * @return mixed
+         *      * @param  \Illuminate\Http\Request  $request
+         *      * @return mixed
          *
          * @static 
          */
@@ -12210,11 +12386,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Gather the middleware for the given route.
+         *      * Gather the middleware for the given route.
          * 
          * *
-         * 	 * @param  \Illuminate\Routing\Route  $route
-         * 	 * @return array
+         *      * @param  \Illuminate\Routing\Route  $route
+         *      * @return array
          *
          * @static 
          */
@@ -12224,11 +12400,25 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a route matched event listener.
+         *      * Resolve the middleware name to a class name preserving passed parameters.
          * 
          * *
-         * 	 * @param  string|callable  $callback
-         * 	 * @return void
+         *      * @param $name
+         *      * @return string
+         *
+         * @static 
+         */
+        public static function resolveMiddlewareClassName($name){
+            return \Illuminate\Routing\Router::resolveMiddlewareClassName($name);
+        }
+        
+        /**
+         * /**
+         *      * Register a route matched event listener.
+         * 
+         * *
+         *      * @param  string|callable  $callback
+         *      * @return void
          *
          * @static 
          */
@@ -12238,11 +12428,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a new "before" filter with the router.
+         *      * Register a new "before" filter with the router.
          * 
          * *
-         * 	 * @param  string|callable  $callback
-         * 	 * @return void
+         *      * @param  string|callable  $callback
+         *      * @return void
+         *      *
+         *      * @deprecated since version 5.1.
          *
          * @static 
          */
@@ -12252,11 +12444,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a new "after" filter with the router.
+         *      * Register a new "after" filter with the router.
          * 
          * *
-         * 	 * @param  string|callable  $callback
-         * 	 * @return void
+         *      * @param  string|callable  $callback
+         *      * @return void
+         *      *
+         *      * @deprecated since version 5.1.
          *
          * @static 
          */
@@ -12266,10 +12460,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get all of the defined middleware short-hand names.
+         *      * Get all of the defined middleware short-hand names.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -12279,12 +12473,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a short-hand name for a middleware.
+         *      * Register a short-hand name for a middleware.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  string  $class
-         * 	 * @return $this
+         *      * @param  string  $name
+         *      * @param  string  $class
+         *      * @return $this
          *
          * @static 
          */
@@ -12294,12 +12488,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a new filter with the router.
+         *      * Register a new filter with the router.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  string|callable  $callback
-         * 	 * @return void
+         *      * @param  string  $name
+         *      * @param  string|callable  $callback
+         *      * @return void
+         *      *
+         *      * @deprecated since version 5.1.
          *
          * @static 
          */
@@ -12309,13 +12505,15 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a pattern-based filter with the router.
+         *      * Register a pattern-based filter with the router.
          * 
          * *
-         * 	 * @param  string  $pattern
-         * 	 * @param  string  $name
-         * 	 * @param  array|null  $methods
-         * 	 * @return void
+         *      * @param  string  $pattern
+         *      * @param  string  $name
+         *      * @param  array|null  $methods
+         *      * @return void
+         *      *
+         *      * @deprecated since version 5.1.
          *
          * @static 
          */
@@ -12325,13 +12523,15 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a regular expression based filter with the router.
+         *      * Register a regular expression based filter with the router.
          * 
          * *
-         * 	 * @param  string     $pattern
-         * 	 * @param  string     $name
-         * 	 * @param  array|null $methods
-         * 	 * @return void
+         *      * @param  string     $pattern
+         *      * @param  string     $name
+         *      * @param  array|null $methods
+         *      * @return void
+         *      *
+         *      * @deprecated since version 5.1.
          *
          * @static 
          */
@@ -12341,15 +12541,15 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a model binder for a wildcard.
+         *      * Register a model binder for a wildcard.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  string  $class
-         * 	 * @param  \Closure|null  $callback
-         * 	 * @return void
-         * 	 *
-         * 	 * @throws NotFoundHttpException
+         *      * @param  string  $key
+         *      * @param  string  $class
+         *      * @param  \Closure|null  $callback
+         *      * @return void
+         *      *
+         *      * @throws NotFoundHttpException
          *
          * @static 
          */
@@ -12359,12 +12559,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a new route parameter binder.
+         *      * Add a new route parameter binder.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  string|callable  $binder
-         * 	 * @return void
+         *      * @param  string  $key
+         *      * @param  string|callable  $binder
+         *      * @return void
          *
          * @static 
          */
@@ -12374,11 +12574,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a class based binding using the IoC container.
+         *      * Create a class based binding using the IoC container.
          * 
          * *
-         * 	 * @param  string    $binding
-         * 	 * @return \Closure
+         *      * @param  string    $binding
+         *      * @return \Closure
          *
          * @static 
          */
@@ -12388,12 +12588,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Set a global where pattern on all routes.
+         *      * Set a global where pattern on all routes.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  string  $pattern
-         * 	 * @return void
+         *      * @param  string  $key
+         *      * @param  string  $pattern
+         *      * @return void
          *
          * @static 
          */
@@ -12403,11 +12603,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set a group of global where patterns on all routes.
+         *      * Set a group of global where patterns on all routes.
          * 
          * *
-         * 	 * @param  array  $patterns
-         * 	 * @return void
+         *      * @param  array  $patterns
+         *      * @return void
          *
          * @static 
          */
@@ -12417,12 +12617,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Call the given route's before filters.
+         *      * Call the given route's before filters.
          * 
          * *
-         * 	 * @param  \Illuminate\Routing\Route  $route
-         * 	 * @param  \Illuminate\Http\Request  $request
-         * 	 * @return mixed
+         *      * @param  \Illuminate\Routing\Route  $route
+         *      * @param  \Illuminate\Http\Request  $request
+         *      * @return mixed
          *
          * @static 
          */
@@ -12432,11 +12632,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Find the patterned filters matching a request.
+         *      * Find the patterned filters matching a request.
          * 
          * *
-         * 	 * @param  \Illuminate\Http\Request  $request
-         * 	 * @return array
+         *      * @param  \Illuminate\Http\Request  $request
+         *      * @return array
+         *      *
+         *      * @deprecated since version 5.1.
          *
          * @static 
          */
@@ -12446,13 +12648,15 @@ namespace {
         
         /**
          * /**
-         * 	 * Call the given route's after filters.
+         *      * Call the given route's after filters.
          * 
          * *
-         * 	 * @param  \Illuminate\Routing\Route  $route
-         * 	 * @param  \Illuminate\Http\Request  $request
-         * 	 * @param  \Illuminate\Http\Response  $response
-         * 	 * @return mixed
+         *      * @param  \Illuminate\Routing\Route  $route
+         *      * @param  \Illuminate\Http\Request  $request
+         *      * @param  \Illuminate\Http\Response  $response
+         *      * @return mixed
+         *      *
+         *      * @deprecated since version 5.1.
          *
          * @static 
          */
@@ -12462,15 +12666,17 @@ namespace {
         
         /**
          * /**
-         * 	 * Call the given route filter.
+         *      * Call the given route filter.
          * 
          * *
-         * 	 * @param  string  $filter
-         * 	 * @param  array  $parameters
-         * 	 * @param  \Illuminate\Routing\Route  $route
-         * 	 * @param  \Illuminate\Http\Request  $request
-         * 	 * @param  \Illuminate\Http\Response|null $response
-         * 	 * @return mixed
+         *      * @param  string  $filter
+         *      * @param  array  $parameters
+         *      * @param  \Illuminate\Routing\Route  $route
+         *      * @param  \Illuminate\Http\Request  $request
+         *      * @param  \Illuminate\Http\Response|null $response
+         *      * @return mixed
+         *      *
+         *      * @deprecated since version 5.1.
          *
          * @static 
          */
@@ -12480,10 +12686,25 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the router currently has a group stack.
+         *      * Create a response instance from the given value.
          * 
          * *
-         * 	 * @return bool
+         *      * @param  \Symfony\Component\HttpFoundation\Request  $request
+         *      * @param  mixed  $response
+         *      * @return \Illuminate\Http\Response
+         *
+         * @static 
+         */
+        public static function prepareResponse($request, $response){
+            return \Illuminate\Routing\Router::prepareResponse($request, $response);
+        }
+        
+        /**
+         * /**
+         *      * Determine if the router currently has a group stack.
+         * 
+         * *
+         *      * @return bool
          *
          * @static 
          */
@@ -12493,10 +12714,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the current group stack for the router.
+         *      * Get the current group stack for the router.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -12506,12 +12727,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a route parameter for the current route.
+         *      * Get a route parameter for the current route.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  string  $default
-         * 	 * @return mixed
+         *      * @param  string  $key
+         *      * @param  string  $default
+         *      * @return mixed
          *
          * @static 
          */
@@ -12521,10 +12742,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the currently dispatched route instance.
+         *      * Get the currently dispatched route instance.
          * 
          * *
-         * 	 * @return \Illuminate\Routing\Route
+         *      * @return \Illuminate\Routing\Route
          *
          * @static 
          */
@@ -12534,10 +12755,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the currently dispatched route instance.
+         *      * Get the currently dispatched route instance.
          * 
          * *
-         * 	 * @return \Illuminate\Routing\Route
+         *      * @return \Illuminate\Routing\Route
          *
          * @static 
          */
@@ -12547,11 +12768,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Check if a route with the given name exists.
+         *      * Check if a route with the given name exists.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return bool
+         *      * @param  string  $name
+         *      * @return bool
          *
          * @static 
          */
@@ -12561,10 +12782,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the current route name.
+         *      * Get the current route name.
          * 
          * *
-         * 	 * @return string|null
+         *      * @return string|null
          *
          * @static 
          */
@@ -12574,11 +12795,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Alias for the "currentRouteNamed" method.
+         *      * Alias for the "currentRouteNamed" method.
          * 
          * *
-         * 	 * @param  mixed  string
-         * 	 * @return bool
+         *      * @param  mixed  string
+         *      * @return bool
          *
          * @static 
          */
@@ -12588,11 +12809,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the current route matches a given name.
+         *      * Determine if the current route matches a given name.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return bool
+         *      * @param  string  $name
+         *      * @return bool
          *
          * @static 
          */
@@ -12602,10 +12823,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the current route action.
+         *      * Get the current route action.
          * 
          * *
-         * 	 * @return string|null
+         *      * @return string|null
          *
          * @static 
          */
@@ -12615,11 +12836,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Alias for the "currentRouteUses" method.
+         *      * Alias for the "currentRouteUses" method.
          * 
          * *
-         * 	 * @param  mixed  string
-         * 	 * @return bool
+         *      * @param  mixed  string
+         *      * @return bool
          *
          * @static 
          */
@@ -12629,11 +12850,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the current route action matches a given action.
+         *      * Determine if the current route action matches a given action.
          * 
          * *
-         * 	 * @param  string  $action
-         * 	 * @return bool
+         *      * @param  string  $action
+         *      * @return bool
          *
          * @static 
          */
@@ -12643,10 +12864,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the request currently being dispatched.
+         *      * Get the request currently being dispatched.
          * 
          * *
-         * 	 * @return \Illuminate\Http\Request
+         *      * @return \Illuminate\Http\Request
          *
          * @static 
          */
@@ -12656,10 +12877,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the underlying route collection.
+         *      * Get the underlying route collection.
          * 
          * *
-         * 	 * @return \Illuminate\Routing\RouteCollection
+         *      * @return \Illuminate\Routing\RouteCollection
          *
          * @static 
          */
@@ -12669,11 +12890,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the route collection instance.
+         *      * Set the route collection instance.
          * 
          * *
-         * 	 * @param  \Illuminate\Routing\RouteCollection  $routes
-         * 	 * @return void
+         *      * @param  \Illuminate\Routing\RouteCollection  $routes
+         *      * @return void
          *
          * @static 
          */
@@ -12683,10 +12904,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the global "where" patterns.
+         *      * Get the global "where" patterns.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -12696,12 +12917,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a custom macro.
+         *      * Register a custom macro.
          * 
          * *
-         * 	 * @param  string    $name
-         * 	 * @param  callable  $macro
-         * 	 * @return void
+         *      * @param  string    $name
+         *      * @param  callable  $macro
+         *      * @return void
          *
          * @static 
          */
@@ -12711,11 +12932,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Checks if macro is registered.
+         *      * Checks if macro is registered.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return bool
+         *      * @param  string  $name
+         *      * @return bool
          *
          * @static 
          */
@@ -12817,12 +13038,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the given table has a given column.
+         *      * Determine if the given table has a given column.
          * 
          * *
-         * 	 * @param  string  $table
-         * 	 * @param  string  $column
-         * 	 * @return bool
+         *      * @param  string  $table
+         *      * @param  string  $column
+         *      * @return bool
          *
          * @static 
          */
@@ -12833,12 +13054,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the given table has given columns.
+         *      * Determine if the given table has given columns.
          * 
          * *
-         * 	 * @param  string  $table
-         * 	 * @param  array   $columns
-         * 	 * @return bool
+         *      * @param  string  $table
+         *      * @param  array   $columns
+         *      * @return bool
          *
          * @static 
          */
@@ -12849,11 +13070,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the column listing for a given table.
+         *      * Get the column listing for a given table.
          * 
          * *
-         * 	 * @param  string  $table
-         * 	 * @return array
+         *      * @param  string  $table
+         *      * @return array
          *
          * @static 
          */
@@ -12864,11 +13085,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Drop a table from the schema if it exists.
+         *      * Drop a table from the schema if it exists.
          * 
          * *
-         * 	 * @param  string  $table
-         * 	 * @return \Illuminate\Database\Schema\Blueprint
+         *      * @param  string  $table
+         *      * @return \Illuminate\Database\Schema\Blueprint
          *
          * @static 
          */
@@ -12879,12 +13100,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Rename a table on the schema.
+         *      * Rename a table on the schema.
          * 
          * *
-         * 	 * @param  string  $from
-         * 	 * @param  string  $to
-         * 	 * @return \Illuminate\Database\Schema\Blueprint
+         *      * @param  string  $from
+         *      * @param  string  $to
+         *      * @return \Illuminate\Database\Schema\Blueprint
          *
          * @static 
          */
@@ -12895,10 +13116,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the database connection instance.
+         *      * Get the database connection instance.
          * 
          * *
-         * 	 * @return \Illuminate\Database\Connection
+         *      * @return \Illuminate\Database\Connection
          *
          * @static 
          */
@@ -12909,11 +13130,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the database connection instance.
+         *      * Set the database connection instance.
          * 
          * *
-         * 	 * @param  \Illuminate\Database\Connection
-         * 	 * @return $this
+         *      * @param  \Illuminate\Database\Connection  $connection
+         *      * @return $this
          *
          * @static 
          */
@@ -12924,11 +13145,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the Schema Blueprint resolver callback.
+         *      * Set the Schema Blueprint resolver callback.
          * 
          * *
-         * 	 * @param  \Closure  $resolver
-         * 	 * @return void
+         *      * @param  \Closure  $resolver
+         *      * @return void
          *
          * @static 
          */
@@ -12944,10 +13165,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the session configuration.
+         *      * Get the session configuration.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -12957,10 +13178,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the default session driver name.
+         *      * Get the default session driver name.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -12970,11 +13191,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the default session driver name.
+         *      * Set the default session driver name.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return void
+         *      * @param  string  $name
+         *      * @return void
          *
          * @static 
          */
@@ -12984,11 +13205,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a driver instance.
+         *      * Get a driver instance.
          * 
          * *
-         * 	 * @param  string  $driver
-         * 	 * @return mixed
+         *      * @param  string  $driver
+         *      * @return mixed
          *
          * @static 
          */
@@ -12999,12 +13220,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a custom driver creator Closure.
+         *      * Register a custom driver creator Closure.
          * 
          * *
-         * 	 * @param  string    $driver
-         * 	 * @param  \Closure  $callback
-         * 	 * @return $this
+         *      * @param  string    $driver
+         *      * @param  \Closure  $callback
+         *      * @return $this
          *
          * @static 
          */
@@ -13015,10 +13236,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get all of the created "drivers".
+         *      * Get all of the created "drivers".
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -13029,7 +13250,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Starts the session storage.
          * 
          * *
@@ -13047,7 +13268,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Returns the session ID.
          * 
          * *
@@ -13063,7 +13284,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Sets the session ID.
          * 
          * *
@@ -13079,11 +13300,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if this is a valid session ID.
+         *      * Determine if this is a valid session ID.
          * 
          * *
-         * 	 * @param  string  $id
-         * 	 * @return bool
+         *      * @param  string  $id
+         *      * @return bool
          *
          * @static 
          */
@@ -13093,7 +13314,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Returns the session name.
          * 
          * *
@@ -13109,7 +13330,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Sets the session name.
          * 
          * *
@@ -13125,7 +13346,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Invalidates the current session.
          * 
          * *
@@ -13149,7 +13370,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Migrates the current session to a new session id while maintaining all
          *      * session attributes.
          * 
@@ -13172,11 +13393,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Generate a new session identifier.
+         *      * Generate a new session identifier.
          * 
          * *
-         * 	 * @param  bool  $destroy
-         * 	 * @return bool
+         *      * @param  bool  $destroy
+         *      * @return bool
          *
          * @static 
          */
@@ -13186,7 +13407,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Force the session to be saved and closed.
          * 
          * *
@@ -13202,10 +13423,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Age the flash data for the session.
+         *      * Age the flash data for the session.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -13215,7 +13436,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Checks if an attribute is defined.
          * 
          * *
@@ -13233,7 +13454,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Returns an attribute.
          * 
          * *
@@ -13252,12 +13473,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the value of a given key and then forget it.
+         *      * Get the value of a given key and then forget it.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  string  $default
-         * 	 * @return mixed
+         *      * @param  string  $key
+         *      * @param  string  $default
+         *      * @return mixed
          *
          * @static 
          */
@@ -13267,11 +13488,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the session contains old input.
+         *      * Determine if the session contains old input.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @return bool
+         *      * @param  string  $key
+         *      * @return bool
          *
          * @static 
          */
@@ -13281,12 +13502,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the requested item from the flashed input array.
+         *      * Get the requested item from the flashed input array.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return mixed
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return mixed
          *
          * @static 
          */
@@ -13296,7 +13517,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Sets an attribute.
          * 
          * *
@@ -13313,12 +13534,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Put a key / value pair or array of key / value pairs in the session.
+         *      * Put a key / value pair or array of key / value pairs in the session.
          * 
          * *
-         * 	 * @param  string|array  $key
-         * 	 * @param  mixed|null  	 $value
-         * 	 * @return void
+         *      * @param  string|array  $key
+         *      * @param  mixed|null       $value
+         *      * @return void
          *
          * @static 
          */
@@ -13328,12 +13549,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Push a value onto a session array.
+         *      * Push a value onto a session array.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $value
-         * 	 * @return void
+         *      * @param  string  $key
+         *      * @param  mixed   $value
+         *      * @return void
          *
          * @static 
          */
@@ -13343,12 +13564,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Flash a key / value pair to the session.
+         *      * Flash a key / value pair to the session.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $value
-         * 	 * @return void
+         *      * @param  string  $key
+         *      * @param  mixed   $value
+         *      * @return void
          *
          * @static 
          */
@@ -13358,11 +13579,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Flash an input array to the session.
+         *      * Flash an input array to the session.
          * 
          * *
-         * 	 * @param  array  $value
-         * 	 * @return void
+         *      * @param  array  $value
+         *      * @return void
          *
          * @static 
          */
@@ -13372,10 +13593,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Reflash all of the session flash data.
+         *      * Reflash all of the session flash data.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -13385,11 +13606,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Reflash a subset of the current flash data.
+         *      * Reflash a subset of the current flash data.
          * 
          * *
-         * 	 * @param  array|mixed  $keys
-         * 	 * @return void
+         *      * @param  array|mixed  $keys
+         *      * @return void
          *
          * @static 
          */
@@ -13399,7 +13620,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Returns attributes.
          * 
          * *
@@ -13415,7 +13636,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Sets attributes.
          * 
          * *
@@ -13429,7 +13650,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Removes an attribute.
          * 
          * *
@@ -13447,11 +13668,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Remove an item from the session.
+         *      * Remove an item from the session.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @return void
+         *      * @param  string  $key
+         *      * @return void
          *
          * @static 
          */
@@ -13461,7 +13682,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Clears all attributes.
          * 
          * *
@@ -13475,10 +13696,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Remove all of the items from the session.
+         *      * Remove all of the items from the session.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -13488,7 +13709,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Checks if the session was started.
          * 
          * *
@@ -13502,7 +13723,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Registers a SessionBagInterface with the session.
          * 
          * *
@@ -13516,7 +13737,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Gets a bag instance by name.
          * 
          * *
@@ -13532,7 +13753,7 @@ namespace {
         
         /**
          * /**
-         * 	 * /**
+         *      * /**
          *      * Gets session meta.
          * 
          * *
@@ -13546,11 +13767,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the raw bag data array for a given bag.
+         *      * Get the raw bag data array for a given bag.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return array
+         *      * @param  string  $name
+         *      * @return array
          *
          * @static 
          */
@@ -13560,10 +13781,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the CSRF token value.
+         *      * Get the CSRF token value.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -13573,10 +13794,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the CSRF token value.
+         *      * Get the CSRF token value.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -13586,10 +13807,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Regenerate the CSRF token value.
+         *      * Regenerate the CSRF token value.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -13599,10 +13820,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the previous URL from the session.
+         *      * Get the previous URL from the session.
          * 
          * *
-         * 	 * @return string|null
+         *      * @return string|null
          *
          * @static 
          */
@@ -13612,11 +13833,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the "previous" URL in the session.
+         *      * Set the "previous" URL in the session.
          * 
          * *
-         * 	 * @param  string  $url
-         * 	 * @return void
+         *      * @param  string  $url
+         *      * @return void
          *
          * @static 
          */
@@ -13626,11 +13847,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the existence of the session on the handler if applicable.
+         *      * Set the existence of the session on the handler if applicable.
          * 
          * *
-         * 	 * @param  bool  $value
-         * 	 * @return void
+         *      * @param  bool  $value
+         *      * @return void
          *
          * @static 
          */
@@ -13640,10 +13861,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the underlying session handler implementation.
+         *      * Get the underlying session handler implementation.
          * 
          * *
-         * 	 * @return \SessionHandlerInterface
+         *      * @return \SessionHandlerInterface
          *
          * @static 
          */
@@ -13653,10 +13874,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the session handler needs a request.
+         *      * Determine if the session handler needs a request.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -13666,11 +13887,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the request on the handler instance.
+         *      * Set the request on the handler instance.
          * 
          * *
-         * 	 * @param  \Symfony\Component\HttpFoundation\Request  $request
-         * 	 * @return void
+         *      * @param  \Symfony\Component\HttpFoundation\Request  $request
+         *      * @return void
          *
          * @static 
          */
@@ -13685,11 +13906,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a filesystem instance.
+         *      * Get a filesystem instance.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return \Illuminate\Contracts\Filesystem\Filesystem
+         *      * @param  string  $name
+         *      * @return \Illuminate\Contracts\Filesystem\Filesystem
          *
          * @static 
          */
@@ -13699,11 +13920,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a filesystem instance.
+         *      * Get a filesystem instance.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return \Illuminate\Contracts\Filesystem\Filesystem
+         *      * @param  string  $name
+         *      * @return \Illuminate\Contracts\Filesystem\Filesystem
          *
          * @static 
          */
@@ -13713,11 +13934,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Create an instance of the local driver.
+         *      * Create an instance of the local driver.
          * 
          * *
-         * 	 * @param  array  $config
-         * 	 * @return \Illuminate\Contracts\Filesystem\Filesystem
+         *      * @param  array  $config
+         *      * @return \Illuminate\Contracts\Filesystem\Filesystem
          *
          * @static 
          */
@@ -13727,11 +13948,25 @@ namespace {
         
         /**
          * /**
-         * 	 * Create an instance of the Amazon S3 driver.
+         *      * Create an instance of the ftp driver.
          * 
          * *
-         * 	 * @param  array  $config
-         * 	 * @return \Illuminate\Contracts\Filesystem\Cloud
+         *      * @param  array  $config
+         *      * @return \Illuminate\Contracts\Filesystem\Filesystem
+         *
+         * @static 
+         */
+        public static function createFtpDriver($config){
+            return \Illuminate\Filesystem\FilesystemManager::createFtpDriver($config);
+        }
+        
+        /**
+         * /**
+         *      * Create an instance of the Amazon S3 driver.
+         * 
+         * *
+         *      * @param  array  $config
+         *      * @return \Illuminate\Contracts\Filesystem\Cloud
          *
          * @static 
          */
@@ -13741,11 +13976,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Create an instance of the Rackspace driver.
+         *      * Create an instance of the Rackspace driver.
          * 
          * *
-         * 	 * @param  array  $config
-         * 	 * @return \Illuminate\Contracts\Filesystem\Cloud
+         *      * @param  array  $config
+         *      * @return \Illuminate\Contracts\Filesystem\Cloud
          *
          * @static 
          */
@@ -13755,10 +13990,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the default driver name.
+         *      * Get the default driver name.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -13768,12 +14003,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a custom driver creator Closure.
+         *      * Register a custom driver creator Closure.
          * 
          * *
-         * 	 * @param  string    $driver
-         * 	 * @param  \Closure  $callback
-         * 	 * @return $this
+         *      * @param  string    $driver
+         *      * @param  \Closure  $callback
+         *      * @return $this
          *
          * @static 
          */
@@ -13788,10 +14023,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the full URL for the current request.
+         *      * Get the full URL for the current request.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -13801,10 +14036,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the current URL for the request.
+         *      * Get the current URL for the request.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -13814,10 +14049,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the URL for the previous request.
+         *      * Get the URL for the previous request.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -13827,13 +14062,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Generate a absolute URL to the given path.
+         *      * Generate a absolute URL to the given path.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @param  mixed  $extra
-         * 	 * @param  bool|null  $secure
-         * 	 * @return string
+         *      * @param  string  $path
+         *      * @param  mixed  $extra
+         *      * @param  bool|null  $secure
+         *      * @return string
          *
          * @static 
          */
@@ -13843,12 +14078,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Generate a secure, absolute URL to the given path.
+         *      * Generate a secure, absolute URL to the given path.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @param  array   $parameters
-         * 	 * @return string
+         *      * @param  string  $path
+         *      * @param  array   $parameters
+         *      * @return string
          *
          * @static 
          */
@@ -13858,12 +14093,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Generate a URL to an application asset.
+         *      * Generate a URL to an application asset.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @param  bool|null  $secure
-         * 	 * @return string
+         *      * @param  string  $path
+         *      * @param  bool|null  $secure
+         *      * @return string
          *
          * @static 
          */
@@ -13873,11 +14108,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Generate a URL to a secure asset.
+         *      * Generate a URL to a secure asset.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @return string
+         *      * @param  string  $path
+         *      * @return string
          *
          * @static 
          */
@@ -13887,11 +14122,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Force the schema for URLs.
+         *      * Force the schema for URLs.
          * 
          * *
-         * 	 * @param  string  $schema
-         * 	 * @return void
+         *      * @param  string  $schema
+         *      * @return void
          *
          * @static 
          */
@@ -13901,15 +14136,15 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the URL to a named route.
+         *      * Get the URL to a named route.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  mixed   $parameters
-         * 	 * @param  bool  $absolute
-         * 	 * @return string
-         * 	 *
-         * 	 * @throws \InvalidArgumentException
+         *      * @param  string  $name
+         *      * @param  mixed   $parameters
+         *      * @param  bool  $absolute
+         *      * @return string
+         *      *
+         *      * @throws \InvalidArgumentException
          *
          * @static 
          */
@@ -13919,15 +14154,15 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the URL to a controller action.
+         *      * Get the URL to a controller action.
          * 
          * *
-         * 	 * @param  string  $action
-         * 	 * @param  mixed   $parameters
-         * 	 * @param  bool    $absolute
-         * 	 * @return string
-         * 	 *
-         * 	 * @throws \InvalidArgumentException
+         *      * @param  string  $action
+         *      * @param  mixed   $parameters
+         *      * @param  bool    $absolute
+         *      * @return string
+         *      *
+         *      * @throws \InvalidArgumentException
          *
          * @static 
          */
@@ -13937,11 +14172,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the forced root URL.
+         *      * Set the forced root URL.
          * 
          * *
-         * 	 * @param  string  $root
-         * 	 * @return void
+         *      * @param  string  $root
+         *      * @return void
          *
          * @static 
          */
@@ -13951,11 +14186,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the given path is a valid URL.
+         *      * Determine if the given path is a valid URL.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @return bool
+         *      * @param  string  $path
+         *      * @return bool
          *
          * @static 
          */
@@ -13965,10 +14200,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the request instance.
+         *      * Get the request instance.
          * 
          * *
-         * 	 * @return \Symfony\Component\HttpFoundation\Request
+         *      * @return \Symfony\Component\HttpFoundation\Request
          *
          * @static 
          */
@@ -13978,11 +14213,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the current request instance.
+         *      * Set the current request instance.
          * 
          * *
-         * 	 * @param  \Illuminate\Http\Request  $request
-         * 	 * @return void
+         *      * @param  \Illuminate\Http\Request  $request
+         *      * @return void
          *
          * @static 
          */
@@ -13992,11 +14227,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the route collection.
+         *      * Set the route collection.
          * 
          * *
-         * 	 * @param  \Illuminate\Routing\RouteCollection  $routes
-         * 	 * @return $this
+         *      * @param  \Illuminate\Routing\RouteCollection  $routes
+         *      * @return $this
          *
          * @static 
          */
@@ -14006,11 +14241,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the session resolver for the generator.
+         *      * Set the session resolver for the generator.
          * 
          * *
-         * 	 * @param  callable  $sessionResolver
-         * 	 * @return $this
+         *      * @param  callable  $sessionResolver
+         *      * @return $this
          *
          * @static 
          */
@@ -14020,11 +14255,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the root controller namespace.
+         *      * Set the root controller namespace.
          * 
          * *
-         * 	 * @param  string  $rootNamespace
-         * 	 * @return $this
+         *      * @param  string  $rootNamespace
+         *      * @return $this
          *
          * @static 
          */
@@ -14039,14 +14274,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new Validator instance.
+         *      * Create a new Validator instance.
          * 
          * *
-         * 	 * @param  array  $data
-         * 	 * @param  array  $rules
-         * 	 * @param  array  $messages
-         * 	 * @param  array  $customAttributes
-         * 	 * @return \Illuminate\Validation\Validator
+         *      * @param  array  $data
+         *      * @param  array  $rules
+         *      * @param  array  $messages
+         *      * @param  array  $customAttributes
+         *      * @return \Illuminate\Validation\Validator
          *
          * @static 
          */
@@ -14056,13 +14291,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a custom validator extension.
+         *      * Register a custom validator extension.
          * 
          * *
-         * 	 * @param  string  $rule
-         * 	 * @param  \Closure|string  $extension
-         * 	 * @param  string  $message
-         * 	 * @return void
+         *      * @param  string  $rule
+         *      * @param  \Closure|string  $extension
+         *      * @param  string  $message
+         *      * @return void
          *
          * @static 
          */
@@ -14072,13 +14307,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a custom implicit validator extension.
+         *      * Register a custom implicit validator extension.
          * 
          * *
-         * 	 * @param  string   $rule
-         * 	 * @param  \Closure|string  $extension
-         * 	 * @param  string  $message
-         * 	 * @return void
+         *      * @param  string   $rule
+         *      * @param  \Closure|string  $extension
+         *      * @param  string  $message
+         *      * @return void
          *
          * @static 
          */
@@ -14088,12 +14323,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a custom implicit validator message replacer.
+         *      * Register a custom implicit validator message replacer.
          * 
          * *
-         * 	 * @param  string   $rule
-         * 	 * @param  \Closure|string  $replacer
-         * 	 * @return void
+         *      * @param  string   $rule
+         *      * @param  \Closure|string  $replacer
+         *      * @return void
          *
          * @static 
          */
@@ -14103,11 +14338,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the Validator instance resolver.
+         *      * Set the Validator instance resolver.
          * 
          * *
-         * 	 * @param  \Closure  $resolver
-         * 	 * @return void
+         *      * @param  \Closure  $resolver
+         *      * @return void
          *
          * @static 
          */
@@ -14117,10 +14352,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the Translator implementation.
+         *      * Get the Translator implementation.
          * 
          * *
-         * 	 * @return \Symfony\Component\Translation\TranslatorInterface
+         *      * @return \Symfony\Component\Translation\TranslatorInterface
          *
          * @static 
          */
@@ -14130,10 +14365,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the Presence Verifier implementation.
+         *      * Get the Presence Verifier implementation.
          * 
          * *
-         * 	 * @return \Illuminate\Validation\PresenceVerifierInterface
+         *      * @return \Illuminate\Validation\PresenceVerifierInterface
          *
          * @static 
          */
@@ -14143,11 +14378,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the Presence Verifier implementation.
+         *      * Set the Presence Verifier implementation.
          * 
          * *
-         * 	 * @param  \Illuminate\Validation\PresenceVerifierInterface  $presenceVerifier
-         * 	 * @return void
+         *      * @param  \Illuminate\Validation\PresenceVerifierInterface  $presenceVerifier
+         *      * @return void
          *
          * @static 
          */
@@ -14162,13 +14397,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the evaluated view contents for the given view.
+         *      * Get the evaluated view contents for the given view.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @param  array   $data
-         * 	 * @param  array   $mergeData
-         * 	 * @return \Illuminate\View\View
+         *      * @param  string  $path
+         *      * @param  array   $data
+         *      * @param  array   $mergeData
+         *      * @return \Illuminate\View\View
          *
          * @static 
          */
@@ -14178,13 +14413,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the evaluated view contents for the given view.
+         *      * Get the evaluated view contents for the given view.
          * 
          * *
-         * 	 * @param  string  $view
-         * 	 * @param  array   $data
-         * 	 * @param  array   $mergeData
-         * 	 * @return \Illuminate\View\View
+         *      * @param  string  $view
+         *      * @param  array   $data
+         *      * @param  array   $mergeData
+         *      * @return \Illuminate\View\View
          *
          * @static 
          */
@@ -14194,12 +14429,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the evaluated view contents for a named view.
+         *      * Get the evaluated view contents for a named view.
          * 
          * *
-         * 	 * @param  string  $view
-         * 	 * @param  mixed   $data
-         * 	 * @return \Illuminate\View\View
+         *      * @param  string  $view
+         *      * @param  mixed   $data
+         *      * @return \Illuminate\View\View
          *
          * @static 
          */
@@ -14209,12 +14444,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a named view.
+         *      * Register a named view.
          * 
          * *
-         * 	 * @param  string  $view
-         * 	 * @param  string  $name
-         * 	 * @return void
+         *      * @param  string  $view
+         *      * @param  string  $name
+         *      * @return void
          *
          * @static 
          */
@@ -14224,12 +14459,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add an alias for a view.
+         *      * Add an alias for a view.
          * 
          * *
-         * 	 * @param  string  $view
-         * 	 * @param  string  $alias
-         * 	 * @return void
+         *      * @param  string  $view
+         *      * @param  string  $alias
+         *      * @return void
          *
          * @static 
          */
@@ -14239,11 +14474,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if a given view exists.
+         *      * Determine if a given view exists.
          * 
          * *
-         * 	 * @param  string  $view
-         * 	 * @return bool
+         *      * @param  string  $view
+         *      * @return bool
          *
          * @static 
          */
@@ -14253,14 +14488,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the rendered contents of a partial from a loop.
+         *      * Get the rendered contents of a partial from a loop.
          * 
          * *
-         * 	 * @param  string  $view
-         * 	 * @param  array   $data
-         * 	 * @param  string  $iterator
-         * 	 * @param  string  $empty
-         * 	 * @return string
+         *      * @param  string  $view
+         *      * @param  array   $data
+         *      * @param  string  $iterator
+         *      * @param  string  $empty
+         *      * @return string
          *
          * @static 
          */
@@ -14270,13 +14505,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the appropriate view engine for the given path.
+         *      * Get the appropriate view engine for the given path.
          * 
          * *
-         * 	 * @param  string  $path
-         * 	 * @return \Illuminate\View\Engines\EngineInterface
-         * 	 *
-         * 	 * @throws \InvalidArgumentException
+         *      * @param  string  $path
+         *      * @return \Illuminate\View\Engines\EngineInterface
+         *      *
+         *      * @throws \InvalidArgumentException
          *
          * @static 
          */
@@ -14286,12 +14521,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a piece of shared data to the environment.
+         *      * Add a piece of shared data to the environment.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $value
-         * 	 * @return void
+         *      * @param  string  $key
+         *      * @param  mixed   $value
+         *      * @return void
          *
          * @static 
          */
@@ -14301,12 +14536,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a view creator event.
+         *      * Register a view creator event.
          * 
          * *
-         * 	 * @param  array|string     $views
-         * 	 * @param  \Closure|string  $callback
-         * 	 * @return array
+         *      * @param  array|string     $views
+         *      * @param  \Closure|string  $callback
+         *      * @return array
          *
          * @static 
          */
@@ -14316,11 +14551,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Register multiple view composers via an array.
+         *      * Register multiple view composers via an array.
          * 
          * *
-         * 	 * @param  array  $composers
-         * 	 * @return array
+         *      * @param  array  $composers
+         *      * @return array
          *
          * @static 
          */
@@ -14330,13 +14565,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a view composer event.
+         *      * Register a view composer event.
          * 
          * *
-         * 	 * @param  array|string  $views
-         * 	 * @param  \Closure|string  $callback
-         * 	 * @param  int|null  $priority
-         * 	 * @return array
+         *      * @param  array|string  $views
+         *      * @param  \Closure|string  $callback
+         *      * @param  int|null  $priority
+         *      * @return array
          *
          * @static 
          */
@@ -14346,11 +14581,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Call the composer for a given view.
+         *      * Call the composer for a given view.
          * 
          * *
-         * 	 * @param  \Illuminate\View\View  $view
-         * 	 * @return void
+         *      * @param  \Illuminate\View\View  $view
+         *      * @return void
          *
          * @static 
          */
@@ -14360,11 +14595,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Call the creator for a given view.
+         *      * Call the creator for a given view.
          * 
          * *
-         * 	 * @param  \Illuminate\View\View  $view
-         * 	 * @return void
+         *      * @param  \Illuminate\View\View  $view
+         *      * @return void
          *
          * @static 
          */
@@ -14374,12 +14609,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Start injecting content into a section.
+         *      * Start injecting content into a section.
          * 
          * *
-         * 	 * @param  string  $section
-         * 	 * @param  string  $content
-         * 	 * @return void
+         *      * @param  string  $section
+         *      * @param  string  $content
+         *      * @return void
          *
          * @static 
          */
@@ -14389,12 +14624,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Inject inline content into a section.
+         *      * Inject inline content into a section.
          * 
          * *
-         * 	 * @param  string  $section
-         * 	 * @param  string  $content
-         * 	 * @return void
+         *      * @param  string  $section
+         *      * @param  string  $content
+         *      * @return void
          *
          * @static 
          */
@@ -14404,10 +14639,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Stop injecting content into a section and return its contents.
+         *      * Stop injecting content into a section and return its contents.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -14417,11 +14652,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Stop injecting content into a section.
+         *      * Stop injecting content into a section.
          * 
          * *
-         * 	 * @param  bool  $overwrite
-         * 	 * @return string
+         *      * @param  bool  $overwrite
+         *      * @return string
          *
          * @static 
          */
@@ -14431,10 +14666,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Stop injecting content into a section and append it.
+         *      * Stop injecting content into a section and append it.
          * 
          * *
-         * 	 * @return string
+         *      * @return string
          *
          * @static 
          */
@@ -14444,12 +14679,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the string contents of a section.
+         *      * Get the string contents of a section.
          * 
          * *
-         * 	 * @param  string  $section
-         * 	 * @param  string  $default
-         * 	 * @return string
+         *      * @param  string  $section
+         *      * @param  string  $default
+         *      * @return string
          *
          * @static 
          */
@@ -14459,10 +14694,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Flush all of the section contents.
+         *      * Flush all of the section contents.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -14472,10 +14707,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Flush all of the section contents if done rendering.
+         *      * Flush all of the section contents if done rendering.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -14485,10 +14720,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Increment the rendering counter.
+         *      * Increment the rendering counter.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -14498,10 +14733,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Decrement the rendering counter.
+         *      * Decrement the rendering counter.
          * 
          * *
-         * 	 * @return void
+         *      * @return void
          *
          * @static 
          */
@@ -14511,10 +14746,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Check if there are no active render operations.
+         *      * Check if there are no active render operations.
          * 
          * *
-         * 	 * @return bool
+         *      * @return bool
          *
          * @static 
          */
@@ -14524,11 +14759,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a location to the array of view locations.
+         *      * Add a location to the array of view locations.
          * 
          * *
-         * 	 * @param  string  $location
-         * 	 * @return void
+         *      * @param  string  $location
+         *      * @return void
          *
          * @static 
          */
@@ -14538,12 +14773,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Add a new namespace to the loader.
+         *      * Add a new namespace to the loader.
          * 
          * *
-         * 	 * @param  string  $namespace
-         * 	 * @param  string|array  $hints
-         * 	 * @return void
+         *      * @param  string  $namespace
+         *      * @param  string|array  $hints
+         *      * @return void
          *
          * @static 
          */
@@ -14553,12 +14788,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Prepend a new namespace to the loader.
+         *      * Prepend a new namespace to the loader.
          * 
          * *
-         * 	 * @param  string  $namespace
-         * 	 * @param  string|array  $hints
-         * 	 * @return void
+         *      * @param  string  $namespace
+         *      * @param  string|array  $hints
+         *      * @return void
          *
          * @static 
          */
@@ -14568,13 +14803,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a valid view extension and its engine.
+         *      * Register a valid view extension and its engine.
          * 
          * *
-         * 	 * @param  string    $extension
-         * 	 * @param  string    $engine
-         * 	 * @param  \Closure  $resolver
-         * 	 * @return void
+         *      * @param  string    $extension
+         *      * @param  string    $engine
+         *      * @param  \Closure  $resolver
+         *      * @return void
          *
          * @static 
          */
@@ -14584,10 +14819,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the extension to engine bindings.
+         *      * Get the extension to engine bindings.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -14597,10 +14832,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the engine resolver instance.
+         *      * Get the engine resolver instance.
          * 
          * *
-         * 	 * @return \Illuminate\View\Engines\EngineResolver
+         *      * @return \Illuminate\View\Engines\EngineResolver
          *
          * @static 
          */
@@ -14610,10 +14845,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the view finder instance.
+         *      * Get the view finder instance.
          * 
          * *
-         * 	 * @return \Illuminate\View\ViewFinderInterface
+         *      * @return \Illuminate\View\ViewFinderInterface
          *
          * @static 
          */
@@ -14623,11 +14858,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the view finder instance.
+         *      * Set the view finder instance.
          * 
          * *
-         * 	 * @param  \Illuminate\View\ViewFinderInterface  $finder
-         * 	 * @return void
+         *      * @param  \Illuminate\View\ViewFinderInterface  $finder
+         *      * @return void
          *
          * @static 
          */
@@ -14637,10 +14872,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the event dispatcher instance.
+         *      * Get the event dispatcher instance.
          * 
          * *
-         * 	 * @return \Illuminate\Contracts\Events\Dispatcher
+         *      * @return \Illuminate\Contracts\Events\Dispatcher
          *
          * @static 
          */
@@ -14650,11 +14885,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the event dispatcher instance.
+         *      * Set the event dispatcher instance.
          * 
          * *
-         * 	 * @param  \Illuminate\Contracts\Events\Dispatcher
-         * 	 * @return void
+         *      * @param  \Illuminate\Contracts\Events\Dispatcher  $events
+         *      * @return void
          *
          * @static 
          */
@@ -14664,10 +14899,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the IoC container instance.
+         *      * Get the IoC container instance.
          * 
          * *
-         * 	 * @return \Illuminate\Contracts\Container\Container
+         *      * @return \Illuminate\Contracts\Container\Container
          *
          * @static 
          */
@@ -14677,11 +14912,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the IoC container instance.
+         *      * Set the IoC container instance.
          * 
          * *
-         * 	 * @param  \Illuminate\Contracts\Container\Container  $container
-         * 	 * @return void
+         *      * @param  \Illuminate\Contracts\Container\Container  $container
+         *      * @return void
          *
          * @static 
          */
@@ -14691,12 +14926,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get an item from the shared data.
+         *      * Get an item from the shared data.
          * 
          * *
-         * 	 * @param  string  $key
-         * 	 * @param  mixed   $default
-         * 	 * @return mixed
+         *      * @param  string  $key
+         *      * @param  mixed   $default
+         *      * @return mixed
          *
          * @static 
          */
@@ -14706,10 +14941,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get all of the shared data for the environment.
+         *      * Get all of the shared data for the environment.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -14719,11 +14954,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Check if section exists.
+         *      * Check if section exists.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return bool
+         *      * @param  string  $name
+         *      * @return bool
          *
          * @static 
          */
@@ -14733,10 +14968,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the entire array of sections.
+         *      * Get the entire array of sections.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -14746,10 +14981,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get all of the registered named views in environment.
+         *      * Get all of the registered named views in environment.
          * 
          * *
-         * 	 * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -15381,12 +15616,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a custom macro.
+         *      * Register a custom macro.
          * 
          * *
-         * 	 * @param  string    $name
-         * 	 * @param  callable  $macro
-         * 	 * @return void
+         *      * @param  string    $name
+         *      * @param  callable  $macro
+         *      * @return void
          *
          * @static 
          */
@@ -15396,11 +15631,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Checks if macro is registered.
+         *      * Checks if macro is registered.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return bool
+         *      * @param  string  $name
+         *      * @return bool
          *
          * @static 
          */
@@ -15727,12 +15962,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Register a custom macro.
+         *      * Register a custom macro.
          * 
          * *
-         * 	 * @param  string    $name
-         * 	 * @param  callable  $macro
-         * 	 * @return void
+         *      * @param  string    $name
+         *      * @param  callable  $macro
+         *      * @return void
          *
          * @static 
          */
@@ -15742,11 +15977,11 @@ namespace {
         
         /**
          * /**
-         * 	 * Checks if macro is registered.
+         *      * Checks if macro is registered.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return bool
+         *      * @param  string  $name
+         *      * @return bool
          *
          * @static 
          */
