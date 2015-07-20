@@ -17,10 +17,6 @@ class Regular extends Model
 		"notes"
 	];
 
-	public static $rules = [
-	    "name" => "required"
-	];
-
     public function status()
     {
         return $this->hasMany('App\Qa\Entities\Status');

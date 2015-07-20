@@ -18,9 +18,4 @@ class StatusSvn extends Model
         "svn_id",
     ];
 
-    public static $rules = [
-        "status_id" => "required",
-        "svn_id" => "required"
-    ];
-
 }

@@ -19,11 +19,6 @@ class Status extends Model
         "notes"
     ];
 
-    public static $rules = [
-        "site_id" => "required",
-        "version_id" => "required",
-    ];
-
     public function site()
     {
         return $this->belongsTo('App\Qa\Entities\Site');

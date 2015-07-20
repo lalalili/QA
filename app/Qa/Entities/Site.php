@@ -19,11 +19,6 @@ class Site extends \Eloquent
 		"is_active"
 	];
 
-	public static $rules = [
-	    "name" => "required",
-		"is_active" => "required|boolean"
-	];
-
     public function status()
     {
         return $this->hasMany('App\Qa\Entities\Status');

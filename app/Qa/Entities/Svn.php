@@ -18,10 +18,6 @@ class Svn extends Model
         "notes"
     ];
 
-    public static $rules = [
-        "name" => "required"
-    ];
-
     public function status()
     {
         return $this->belongsToMany('App\Qa\Entities\Status');

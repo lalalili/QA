@@ -41,3 +41,21 @@ Route::controller('version', 'VersionController');
 
 Route::get('company', 'CompanyController@index');
 
+Route::get('mail_test', function()
+{
+    // 傳送給郵件view的變數資料
+    $template_data = array(
+        'name'=> 'James'
+    );
+    // 收件者資料
+    $userinfo = array(
+        'email'=>'james_liang@migocorp.com',
+        'subject'=>'歡迎使用 Laravel Mail!'
+    );
+    // 寄送郵件，使用use方法將資料從外部傳送給匿名函式使用
+    Mail::send('emails.test', $template_data, function($message) use ($userinfo)
+    {
+        $message->to($userinfo['email'])->subject($userinfo['subject']);
+    });
+    echo '完成寄送!!';
+});

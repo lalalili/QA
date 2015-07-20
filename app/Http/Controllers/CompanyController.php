@@ -11,6 +11,7 @@ use Redirect;
 use Request;
 use Session;
 use Validator;
+use DB;
 
 
 class CompanyController extends Controller
@@ -65,13 +66,16 @@ class CompanyController extends Controller
                 //Flash::overlay('success', 'Upload successfully');
                 $file = public_path() . '/' . $destinationPath . '/' . $fileName;
                 //dd($file);
-                $upload = Excel::load($file, function ($reader) {
+                $uploads = Excel::load($file, function ($reader) {
                 })->get()->toArray();
                 //dd($data);
                 Company::truncate();
-                Company::insert($upload);
+                foreach ($uploads as $upload) {
+                    Company::create($upload);
+                }
+                //Company::insert($upload);
                 //Flash::overlay('上傳成功','Info');
-                $datas = Company::all();
+                $datas = Company::orderBy('site', 'asc')->get();
                 return view('company', compact('datas'));
             } else {
                 // sending back with error message.

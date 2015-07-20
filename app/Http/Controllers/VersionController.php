@@ -181,7 +181,7 @@ class VersionController extends Controller
 
         $grid = DataGrid::source(new Svn());
         $grid->add('id', 'ID', true)->style("width:100px");
-        $grid->add('name', 'SVN', true);
+        $grid->add('name', 'SVN');
         $grid->add('notes', 'Notes');
         $grid->edit('/version/svn', 'Edit', 'show|modify');
         $grid->orderBy('name', 'asc');
@@ -200,9 +200,9 @@ class VersionController extends Controller
         $edit->add('name', 'Name', 'text')->rule('required');
         $edit->add('notes', 'Notes', 'text');
 
-        $grid = DataGrid::source(new Regular());
+        $grid = DataGrid::source(new Svn());
         $grid->add('id', 'ID', true)->style("width:100px");
-        $grid->add('name', 'SVN', true);
+        $grid->add('name', 'SVN');
         $grid->add('notes', 'Notes');
         $grid->edit('/version/detail', 'Edit', 'show|modify');
         $grid->orderBy('name', 'asc');
