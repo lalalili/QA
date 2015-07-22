@@ -24,7 +24,7 @@ class CompanyController extends Controller
      */
     public function index()
     {
-        $datas = Company::all();
+        $datas = Company::orderBy('site', 'asc')->get();
         return view('company', compact('datas'));
     }
 
@@ -73,10 +73,11 @@ class CompanyController extends Controller
                 foreach ($uploads as $upload) {
                     Company::create($upload);
                 }
+                unlink($file);
                 //Company::insert($upload);
                 //Flash::overlay('上傳成功','Info');
                 $datas = Company::orderBy('site', 'asc')->get();
-                return view('company', compact('datas'));
+                return view('company',compact('datas'));
             } else {
                 // sending back with error message.
                 Flash::overlay('請上傳正確檔案', '警告');
