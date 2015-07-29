@@ -1,0 +1,101 @@
+@extends('app')
+
+@section('content')
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="row">
+            <form role="form" action="{{url('/member')}}" method="POST">
+                <div class="form-group">
+                    <div class="col-lg-1">
+                        <label>Server</label>
+                        <select name="Server" class="form-control">
+                            <option value="CN" {{ isset($cn) ? 'selected=selected' : '' }}>CN</option>
+                            <option value="TW" {{ isset($tw) ? 'selected="selected' : '' }}>TW</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-2">
+                        <label>ShopID: (zhoushanxm)</label>
+                        <input name="ShopID" class="form-control" placeholder="" value="{{ $ShopID }}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-3">
+                        <label>會員編號: (2216000327773)</label>
+                        <input name="MemberID" class="form-control" placeholder="" value="{{ $MemberID }}">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <label>狀態： {{ $status }}</label>
+
+                    <div>
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <button class="btn btn-default" type="submit">Query</button>
+                        <button class="btn btn-default" type="reset">Reset</button>
+                    </div>
+                    <div><h1></h1></div>
+                </div>
+            </form>
+            @include('flash::message')
+
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="panel panel-new">
+                    <div class="panel-heading"> 會員資料</div>
+                    <div class="panel-body">
+                        <pre>
+                        {{ var_dump($Member) }}
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="panel panel-new">
+                        <div class="panel-heading"> 資料缺失一覽</div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                    <tr>
+                                        <th>屬性</th>
+                                        <th>筆數</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>會員總數</td>
+                                        <td>{{ $Count }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>姓名缺失</td>
+                                        <td>{{ $countMemberName }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>性別缺失</td>
+                                        <td>{{ $countGender }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>生日缺失</td>
+                                        <td>{{ $countBirthday }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>手機缺失</td>
+                                        <td>{{ $countCellphone }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>電子郵件缺失</td>
+                                        <td>{{ $countEmail }}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+@endsection

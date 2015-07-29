@@ -47,6 +47,7 @@ class CompanyController extends Controller
     {
         $file = array('upload' => Request::file('upload'));
         $rules = array('upload' => 'required',);
+        //dd(Request::file('upload'));
         $validator = Validator::make($file, $rules);
         if ($validator->fails()) {
             // send back to the page with the input data and errors

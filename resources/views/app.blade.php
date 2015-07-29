@@ -43,7 +43,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
     <div class="navbar-header">
-        <a class="navbar-brand" href="{{url('/')}}">QA Admin v4.0.0</a>
+        <a class="navbar-brand" href="{{url('/')}}">QA Admin</a>
     </div>
     <!-- /.navbar-header -->
 
@@ -126,6 +126,9 @@
                         </li>
                         <li>
                             <a href="{{url('/company')}}">公司列表</a>
+                        </li>
+                        <li>
+                            <a href="{{url('/member')}}">會員查詢</a>
                         </li>
                     </ul>
                 <li class="active">

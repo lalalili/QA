@@ -43,7 +43,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="panel panel-new">
-                    <div class="panel-heading"> StoreID</div>
+                    <div class="panel-heading"> 會員資料</div>
                     <div class="panel-body">
                         {{ $StoreID }}
                     </div>

@@ -20,6 +20,9 @@ Route::get('diy', 'DIYReportController@index');
 Route::post('diy', 'DIYReportController@query');
 Route::get('store', 'StoreController@index');
 Route::post('store', 'StoreController@query');
+Route::get('company', 'CompanyController@index');
+Route::get('member', 'MemberController@index');
+Route::post('member', 'MemberController@query');
 Route::get('system', 'StaticController@system');
 
 Route::group(['prefix' => 'api'], function () {
@@ -39,7 +42,6 @@ Route::group(['middleware' => 'auth'],function () {
 
 Route::controller('version', 'VersionController');
 
-Route::get('company', 'CompanyController@index');
 
 Route::get('mail_test', function()
 {
