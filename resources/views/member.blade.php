@@ -54,7 +54,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="panel panel-new">
-                        <div class="panel-heading"> 資料缺失一覽</div>
+                        <div class="panel-heading"> 全公司缺失資料總覽</div>
                         <div class="panel-body">
                             <div class="table-responsive">
                                 <table class="table table-striped table-bordered table-hover">
@@ -62,32 +62,39 @@
                                     <tr>
                                         <th>屬性</th>
                                         <th>筆數</th>
+                                        <th>比例</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
                                         <td>會員總數</td>
                                         <td>{{ $Count }}</td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td>姓名缺失</td>
                                         <td>{{ $countMemberName }}</td>
+                                        <td>{{ $percentMemberName }} %</td>
                                     </tr>
                                     <tr>
                                         <td>性別缺失</td>
                                         <td>{{ $countGender }}</td>
+                                        <td>{{ $percentGender }} %</td>
                                     </tr>
                                     <tr>
                                         <td>生日缺失</td>
                                         <td>{{ $countBirthday }}</td>
+                                        <td>{{ $percentBirthday }} %</td>
                                     </tr>
                                     <tr>
                                         <td>手機缺失</td>
                                         <td>{{ $countCellphone }}</td>
+                                        <td>{{ $percentCellphone }} %</td>
                                     </tr>
                                     <tr>
                                         <td>電子郵件缺失</td>
                                         <td>{{ $countEmail }}</td>
+                                        <td>{{ $percentEmail }} %</td>
                                     </tr>
                                     </tbody>
                                 </table>
