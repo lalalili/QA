@@ -16,43 +16,50 @@ class StoreController extends Controller
 
     public function index()
     {
-        $queryServer = Session::pull('queryServer');
-        $queryShopID = Session::pull('queryShopID');
-        $queryStoreName = Session::pull('queryStoreName');
-        if (count('$queryShopID') <> '0') {
-            $Server = $queryServer;
-            $ShopID = $queryShopID;
-            $StoreName = $queryStoreName;
-            $status = '查無資料';
-        } else {
-            $Server = 'CN';
-            $ShopID = '';
-            $StoreName = '';
-            $status = '預設值';
-        }
+//        $queryServer = Session::pull('queryServer');
+//        $queryShopID = Session::pull('queryShopID');
+//        $queryStoreName = Session::pull('queryStoreName');
+//        //dd(count('$queryShopID'));
+//        if (count('$queryShopID') <> '0') {
+//            $Server = $queryServer;
+//            //dd($Server);
+//            $ShopID = $queryShopID;
+//            $StoreName = $queryStoreName;
+//            $status = '查無資料';
+//        } else {
+//            $Server = 'CN';
+//            $ShopID = '';
+//            $StoreName = '';
+//            $status = '預設值';
+//        }
 
-        $Store = new Store;
-        $Stores = DB::connection('mongocn_store')->table($Store->collection)->where('ShopID', 'grandpacific')->where('StoreName', '黄金')->get();
-        //dd($Stores);
-        foreach ($Stores as $Store) {
-            //dd($Store['ShopID']);
-        }
-        if ($Store['Category3'] == '-999') {
-            $StoreID = $Store['ShopID'] . '^' . $Store['Category1'] . '^' . $Store['Category2'] . '^' . $Store['StoreID'];
-        } elseif ($Store['Category2'] == '-999') {
-            $StoreID = $Store['ShopID'] . '^' . $Store['Category1'] . '^' . $Store['Category3'] . '^' . $Store['StoreID'];
-        } elseif ($Store['Category1'] == '-999') {
-            $StoreID = $Store['ShopID'] . '^' . $Store['Category2'] . '^' . $Store['Category3'] . '^' . $Store['StoreID'];
-        } else {
-            $StoreID = $Store['ShopID'] . '^' . $Store['Category1'] . '^' . $Store['Category2'] . '^' . $Store['Category3'] . '^' . $Store['StoreID'];
-        }
-        if($Server =='CN'){
-            $cn = 'CN';
-            return view('store', compact('StoreID', 'ShopID', 'StoreName', 'status', 'cn'));
-        }else{
-            $tw = 'TW';
-            return view('store', compact('StoreID', 'ShopID', 'StoreName', 'status', 'tw'));
-        }
+//        $Store = new Store;
+//        $Stores = DB::connection('mongocn_store')->table($Store->collection)->where('ShopID', 'grandpacific')->where('StoreName', '黄金')->get();
+//        //dd($Stores);
+//        foreach ($Stores as $Store) {
+//            //dd($Store['ShopID']);
+//        }
+//        if ($Store['Category3'] == '-999') {
+//            $StoreID = $Store['ShopID'] . '^' . $Store['Category1'] . '^' . $Store['Category2'] . '^' . $Store['StoreID'];
+//        } elseif ($Store['Category2'] == '-999') {
+//            $StoreID = $Store['ShopID'] . '^' . $Store['Category1'] . '^' . $Store['Category3'] . '^' . $Store['StoreID'];
+//        } elseif ($Store['Category1'] == '-999') {
+//            $StoreID = $Store['ShopID'] . '^' . $Store['Category2'] . '^' . $Store['Category3'] . '^' . $Store['StoreID'];
+//        } else {
+//            $StoreID = $Store['ShopID'] . '^' . $Store['Category1'] . '^' . $Store['Category2'] . '^' . $Store['Category3'] . '^' . $Store['StoreID'];
+//        }
+//        if($Server =='CN'){
+//            $cn = 'CN';
+//            return view('store', compact('StoreID', 'ShopID', 'StoreName', 'status', 'cn'));
+//        }else{
+//            $tw = 'TW';
+//            return view('store', compact('StoreID', 'ShopID', 'StoreName', 'status', 'tw'));
+//        }
+        $StoreID = '';
+        $ShopID = '';
+        $StoreName = '';
+        $status = '';
+        return view('store', compact('StoreID', 'ShopID', 'StoreName', 'status'));
 
     }
 

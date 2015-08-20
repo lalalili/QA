@@ -72,29 +72,34 @@
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <td>姓名缺失</td>
+                                        <td>姓名(MemberName)缺失</td>
                                         <td>{{ $countMemberName }}</td>
                                         <td>{{ $percentMemberName }} %</td>
                                     </tr>
                                     <tr>
-                                        <td>性別缺失</td>
+                                        <td>性別(Gender)缺失</td>
                                         <td>{{ $countGender }}</td>
                                         <td>{{ $percentGender }} %</td>
                                     </tr>
                                     <tr>
-                                        <td>生日缺失</td>
+                                        <td>生日(Birthday)缺失</td>
                                         <td>{{ $countBirthday }}</td>
                                         <td>{{ $percentBirthday }} %</td>
                                     </tr>
                                     <tr>
-                                        <td>手機缺失</td>
+                                        <td>手機(Cellphone)缺失</td>
                                         <td>{{ $countCellphone }}</td>
                                         <td>{{ $percentCellphone }} %</td>
                                     </tr>
                                     <tr>
-                                        <td>電子郵件缺失</td>
+                                        <td>電子郵件(Email)缺失</td>
                                         <td>{{ $countEmail }}</td>
                                         <td>{{ $percentEmail }} %</td>
+                                    </tr>
+                                    <tr>
+                                        <td>身分證號(UID)缺失</td>
+                                        <td>{{ $countID }}</td>
+                                        <td>{{ $percentID }} %</td>
                                     </tr>
                                     </tbody>
                                 </table>
