@@ -69,10 +69,10 @@ class DIYReportController extends Controller
         }
         if ($Server == 'CN') {
             $cn = 'CN';
-            return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'display', 'cn'))->with('diy', new DIYReportController);
+            return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'display', 'cn', 'DIYReports', 'KPIAlerts'))->with('diy', new DIYReportController);
         } else {
             $tw = 'TW';
-            return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'display', 'tw'))->with('diy', new DIYReportController);
+            return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'display', 'tw', 'DIYReports', 'KPIAlerts'))->with('diy', new DIYReportController);
         }
 
     }
@@ -154,10 +154,10 @@ class DIYReportController extends Controller
         }
         if ($Server == 'CN') {
             $cn = 'CN';
-            return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'cn'))->with('diy', new DIYReportController);
+            return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'cn', 'DIYReports', 'KPIAlerts'))->with('diy', new DIYReportController);
         } else {
             $tw = 'TW';
-            return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'tw'))->with('diy', new DIYReportController);
+            return view('diy', compact('report', 'alert', 'StoreID', 'PeriodType', 'CalDate', 'status', 'tw',  'DIYReports', 'KPIAlerts'))->with('diy', new DIYReportController);
         }
     }
 

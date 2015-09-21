@@ -93,14 +93,23 @@ class StoreController extends Controller
             return Redirect::to('/store');
         }
         foreach ($Stores as $Store) {
-            //dd($Stores['ShopID');
+            //dd($Store);
         }
-        if ($Store['Category3'] == '-999') {
-            $StoreID = $Store['ShopID'] . '^' . $Store['Category1'] . '^' . $Store['Category2'] . '^' . $Store['StoreID'];
-        } elseif ($Store['Category2'] == '-999') {
-            $StoreID = $Store['ShopID'] . '^' . $Store['Category1'] . '^' . $Store['Category3'] . '^' . $Store['StoreID'];
+        //dd($Store);
+        if ($Store['Category1'] == '-999'& $Store['Category2'] == '-999' & $Store['Category3'] == '-999') {
+            $StoreID = $Store['ShopID']  . '^' . $Store['StoreID'];
+        } elseif ($Store['Category1'] == '-999'& $Store['Category2'] == '-999') {
+            $StoreID = $Store['ShopID'] . '^' . $Store['Category3']   . '^' . $Store['StoreID'];
+        } elseif ($Store['Category1'] == '-999'& $Store['Category3'] == '-999') {
+            $StoreID = $Store['ShopID'] . '^' . $Store['Category2']   . '^' . $Store['StoreID'];
+        } elseif ($Store['Category2'] == '-999'& $Store['Category3'] == '-999') {
+            $StoreID = $Store['ShopID'] . '^' . $Store['Category1']   . '^' . $Store['StoreID'];
         } elseif ($Store['Category1'] == '-999') {
             $StoreID = $Store['ShopID'] . '^' . $Store['Category2'] . '^' . $Store['Category3'] . '^' . $Store['StoreID'];
+        } elseif ($Store['Category2'] == '-999') {
+            $StoreID = $Store['ShopID'] . '^' . $Store['Category1'] . '^' . $Store['Category3'] . '^' . $Store['StoreID'];
+        } elseif ($Store['Category3'] == '-999') {
+            $StoreID = $Store['ShopID'] . '^' . $Store['Category1'] . '^' . $Store['Category2'] . '^' . $Store['StoreID'];
         } else {
             $StoreID = $Store['ShopID'] . '^' . $Store['Category1'] . '^' . $Store['Category2'] . '^' . $Store['Category3'] . '^' . $Store['StoreID'];
         }
