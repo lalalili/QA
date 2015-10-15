@@ -30,7 +30,7 @@
 
     {!! Rapyd::styles() !!}
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+            <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -150,6 +150,9 @@
                     <a href="http://mantis.migosoft.com" target="_blank"><i class="fa fa-bug fa-fw"></i> Mantis</a>
                 </li>
                 <li>
+                    <a href="support.migocorp.com:8080" target="_blank"><i class="fa fa-bug fa-fw"></i> Jira</a>
+                </li>
+                <li>
                     <a href="http://kb.migosoft.com/doku.php?id=main" target="_blank"><i
                                 class="fa fa-pencil-square-o fa-fw"></i> 知識庫</a>
                 </li>
@@ -171,7 +174,7 @@
     <!-- /.navbar-static-side -->
 </nav>
 @yield('content')
-<!-- jQuery Version .env.11.0 -->
+        <!-- jQuery Version .env.11.0 -->
 <script src="{{ asset('/js/jquery-1.11.0.js') }}"></script>
 
 <!-- Bootstrap Core JavaScript -->
