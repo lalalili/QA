@@ -150,7 +150,7 @@
                     <a href="http://mantis.migosoft.com" target="_blank"><i class="fa fa-bug fa-fw"></i> Mantis</a>
                 </li>
                 <li>
-                    <a href="support.migocorp.com:8080" target="_blank"><i class="fa fa-bug fa-fw"></i> Jira</a>
+                    <a href="http://support.migocorp.com:8080" target="_blank"><i class="fa fa-usd fa-fw"></i> Jira</a>
                 </li>
                 <li>
                     <a href="http://kb.migosoft.com/doku.php?id=main" target="_blank"><i
