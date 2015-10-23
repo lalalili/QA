@@ -139,3 +139,15 @@ function startBEST13() {
 function stopBEST13() {
     location.href = "http://qa.migosoft.com/bat/stop_best13.bat";
 }
+function pauseETL() {
+    location.href = "http://qa.migosoft.com/bat/pause_etl.bat";
+}
+function continueETL() {
+    location.href = "http://qa.migosoft.com/bat/continue_etl.bat";
+}
+function startETL() {
+    location.href = "http://qa.migosoft.com/bat/start_etl.bat";
+}
+function stopETL() {
+    location.href = "http://qa.migosoft.com/bat/stop_etl.bat";
+}

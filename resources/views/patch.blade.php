@@ -114,14 +114,14 @@
                                     <td><button type="button" class="btn btn-danger" onclick="stopSM4()">Stop</button></td>
                                     <td><button type="button" class="btn btn-success" onclick="startSM4()">Start</button></td>
                                 </tr>
-                                <tr>
-                                    <td><h4>4</h4></td>
-                                    <td><h4>SM5</h4></td>
-                                    <td><button type="button" class="btn btn-warning" onclick="pauseSM5()">Pause</button></td>
-                                    <td><button type="button" class="btn btn-primary" onclick="continueSM5()">Continue</button></td>
-                                    <td><button type="button" class="btn btn-danger" onclick="stopSM5()">Stop</button></td>
-                                    <td><button type="button" class="btn btn-success" onclick="startSM5()">Start</button></td>
-                                </tr>
+                                {{--<tr>--}}
+                                    {{--<td><h4>4</h4></td>--}}
+                                    {{--<td><h4>SM5</h4></td>--}}
+                                    {{--<td><button type="button" class="btn btn-warning" onclick="pauseSM5()">Pause</button></td>--}}
+                                    {{--<td><button type="button" class="btn btn-primary" onclick="continueSM5()">Continue</button></td>--}}
+                                    {{--<td><button type="button" class="btn btn-danger" onclick="stopSM5()">Stop</button></td>--}}
+                                    {{--<td><button type="button" class="btn btn-success" onclick="startSM5()">Start</button></td>--}}
+                                {{--</tr>--}}
                                 </tbody>
                             </table>
                         </div>
@@ -161,12 +161,20 @@
                                 </tr>
                                 <tr>
                                     <td><h4>2</h4></td>
-                                    <td><h4>SM3</h4></td>
-                                    <td><button type="button" class="btn btn-warning" onclick="pauseSM3()">Pause</button></td>
-                                    <td><button type="button" class="btn btn-primary" onclick="continueSM3()">Continue</button></td>
-                                    <td><button type="button" class="btn btn-danger" onclick="stopSM3()">Stop</button></td>
-                                    <td><button type="button" class="btn btn-success" onclick="startSM3()">Start</button></td>
+                                    <td><h4>ETL</h4></td>
+                                    <td><button type="button" class="btn btn-warning" onclick="pauseETL()">Pause</button></td>
+                                    <td><button type="button" class="btn btn-primary" onclick="continueETL()">Continue</button></td>
+                                    <td><button type="button" class="btn btn-danger" onclick="stopETL()">Stop</button></td>
+                                    <td><button type="button" class="btn btn-success" onclick="startETL()">Start</button></td>
                                 </tr>
+                                {{--<tr>--}}
+                                    {{--<td><h4>2</h4></td>--}}
+                                    {{--<td><h4>SM3</h4></td>--}}
+                                    {{--<td><button type="button" class="btn btn-warning" onclick="pauseSM3()">Pause</button></td>--}}
+                                    {{--<td><button type="button" class="btn btn-primary" onclick="continueSM3()">Continue</button></td>--}}
+                                    {{--<td><button type="button" class="btn btn-danger" onclick="stopSM3()">Stop</button></td>--}}
+                                    {{--<td><button type="button" class="btn btn-success" onclick="startSM3()">Start</button></td>--}}
+                                {{--</tr>--}}
                                 <tr>
                                     <td><h4>3</h4></td>
                                     <td><h4>Best13</h4></td>

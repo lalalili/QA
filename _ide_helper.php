@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.1.2 (LTS) on 2015-06-22.
+ * Generated for Laravel 5.1.20 (LTS) on 2015-10-23.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -227,6 +227,33 @@ namespace {
          */
         public static function useStoragePath($path){
             return \Illuminate\Foundation\Application::useStoragePath($path);
+        }
+        
+        /**
+         * /**
+         *      * Get the path to the environment file directory.
+         * 
+         * *
+         *      * @return string
+         *
+         * @static 
+         */
+        public static function environmentPath(){
+            return \Illuminate\Foundation\Application::environmentPath();
+        }
+        
+        /**
+         * /**
+         *      * Set the directory for the environment file.
+         * 
+         * *
+         *      * @param  string  $path
+         *      * @return $this
+         *
+         * @static 
+         */
+        public static function useEnvironmentPath($path){
+            return \Illuminate\Foundation\Application::useEnvironmentPath($path);
         }
         
         /**
@@ -517,6 +544,19 @@ namespace {
          */
         public static function handle($request, $type = 1, $catch = true){
             return \Illuminate\Foundation\Application::handle($request, $type, $catch);
+        }
+        
+        /**
+         * /**
+         *      * Determine if middleware has been disabled for the application.
+         * 
+         * *
+         *      * @return bool
+         *
+         * @static 
+         */
+        public static function shouldSkipMiddleware(){
+            return \Illuminate\Foundation\Application::shouldSkipMiddleware();
         }
         
         /**
@@ -901,6 +941,7 @@ namespace {
          *      * @param  string  $concrete
          *      * @param  string  $abstract
          *      * @param  \Closure|string  $implementation
+         *      * @return void
          *
          * @static 
          */
@@ -931,7 +972,7 @@ namespace {
          *      * Register a shared binding in the container.
          * 
          * *
-         *      * @param  string  $abstract
+         *      * @param  string|array  $abstract
          *      * @param  \Closure|string|null  $concrete
          *      * @return void
          *
@@ -1419,7 +1460,7 @@ namespace {
         
         /**
          * /**
-         *      * Bootstrap the application for HTTP requests.
+         *      * Bootstrap the application for artisan commands.
          * 
          * *
          *      * @return void
@@ -2007,10 +2048,10 @@ namespace {
         
         /**
          * /**
-         *     * Get the extensions used by the compiler.
+         *      * Get the extensions used by the compiler.
          * 
          * *
-         *     * @return array
+         *      * @return array
          *
          * @static 
          */
@@ -2049,10 +2090,23 @@ namespace {
         
         /**
          * /**
-         *     * Gets the raw tags used by the compiler.
+         *      * Get the list of custom directives.
          * 
          * *
-         *     * @return array
+         *      * @return array
+         *
+         * @static 
+         */
+        public static function getCustomDirectives(){
+            return \Illuminate\View\Compilers\BladeCompiler::getCustomDirectives();
+        }
+        
+        /**
+         * /**
+         *      * Gets the raw tags used by the compiler.
+         * 
+         * *
+         *      * @return array
          *
          * @static 
          */
@@ -3095,6 +3149,7 @@ namespace {
          * 
          * *
          *      * @param  string  $name
+         *      * @return void
          *
          * @static 
          */
@@ -3446,6 +3501,20 @@ namespace {
         
         /**
          * /**
+         *      * Get a new query builder instance.
+         * 
+         * *
+         *      * @return \Illuminate\Database\Query\Builder
+         *
+         * @static 
+         */
+        public static function query(){
+            //Method inherited from \Illuminate\Database\Connection            
+            return \Jenssegers\Mongodb\Connection::query();
+        }
+        
+        /**
+         * /**
          *      * Get a new raw query expression.
          * 
          * *
@@ -3626,7 +3695,7 @@ namespace {
          *      * @param  \Closure  $callback
          *      * @return mixed
          *      *
-         *      * @throws \Exception
+         *      * @throws \Throwable
          *
          * @static 
          */
@@ -3736,6 +3805,19 @@ namespace {
         public static function listen($callback){
             //Method inherited from \Illuminate\Database\Connection            
             return \Jenssegers\Mongodb\Connection::listen($callback);
+        }
+        
+        /**
+         * /**
+         *      * Is Doctrine available?
+         *      *
+         *      * @return bool
+         *
+         * @static 
+         */
+        public static function isDoctrineAvailable(){
+            //Method inherited from \Illuminate\Database\Connection            
+            return \Jenssegers\Mongodb\Connection::isDoctrineAvailable();
         }
         
         /**
@@ -4352,12 +4434,15 @@ namespace {
          *      * @param  int  $perPage
          *      * @param  array  $columns
          *      * @param  string  $pageName
+         *      * @param  int|null  $page
          *      * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
+         *      *
+         *      * @throws \InvalidArgumentException
          *
          * @static 
          */
-        public static function paginate($perPage = null, $columns = array(), $pageName = 'page'){
-            return \Illuminate\Database\Eloquent\Builder::paginate($perPage, $columns, $pageName);
+        public static function paginate($perPage = null, $columns = array(), $pageName = 'page', $page = null){
+            return \Illuminate\Database\Eloquent\Builder::paginate($perPage, $columns, $pageName, $page);
         }
         
         /**
@@ -4665,7 +4750,7 @@ namespace {
          *      * Set the columns to be selected.
          * 
          * *
-         *      * @param  array  $columns
+         *      * @param  array|mixed  $columns
          *      * @return $this
          *
          * @static 
@@ -4709,7 +4794,7 @@ namespace {
          *      * Add a new select column to the query.
          * 
          * *
-         *      * @param  mixed  $column
+         *      * @param  array|mixed  $column
          *      * @return $this
          *
          * @static 
@@ -5535,6 +5620,8 @@ namespace {
          * *
          *      * @param  array  $columns
          *      * @return array|static[]
+         *      *
+         *      * @deprecated since version 5.1. Use get instead.
          *
          * @static 
          */
@@ -5567,7 +5654,7 @@ namespace {
          *
          * @static 
          */
-        public static function implode($column, $glue = null){
+        public static function implode($column, $glue = ''){
             return \Illuminate\Database\Query\Builder::implode($column, $glue);
         }
         
@@ -5652,6 +5739,20 @@ namespace {
          */
         public static function avg($column){
             return \Illuminate\Database\Query\Builder::avg($column);
+        }
+        
+        /**
+         * /**
+         *      * Alias for the "avg" method.
+         * 
+         * *
+         *      * @param  string  $column
+         *      * @return float|int
+         *
+         * @static 
+         */
+        public static function average($column){
+            return \Illuminate\Database\Query\Builder::average($column);
         }
         
         /**
@@ -5851,6 +5952,37 @@ namespace {
          */
         public static function useWritePdo(){
             return \Illuminate\Database\Query\Builder::useWritePdo();
+        }
+        
+        /**
+         * /**
+         *      * Checks if macro is registered.
+         * 
+         * *
+         *      * @param  string  $name
+         *      * @return bool
+         *
+         * @static 
+         */
+        public static function hasMacro($name){
+            return \Illuminate\Database\Query\Builder::hasMacro($name);
+        }
+        
+        /**
+         * /**
+         *      * Dynamically handle calls to the class.
+         * 
+         * *
+         *      * @param  string  $method
+         *      * @param  array   $parameters
+         *      * @return mixed
+         *      *
+         *      * @throws \BadMethodCallException
+         *
+         * @static 
+         */
+        public static function macroCall($method, $parameters){
+            return \Illuminate\Database\Query\Builder::macroCall($method, $parameters);
         }
         
     }
@@ -6847,7 +6979,7 @@ namespace {
          *      * Get all of the input except for a specified array of items.
          * 
          * *
-         *      * @param  array  $keys
+         *      * @param  array|mixed  $keys
          *      * @return array
          *
          * @static 
@@ -6994,7 +7126,7 @@ namespace {
          *      * Flash only some of the input to the session.
          * 
          * *
-         *      * @param  mixed  string
+         *      * @param  array|mixed  $keys
          *      * @return void
          *
          * @static 
@@ -7008,7 +7140,7 @@ namespace {
          *      * Flash only some of the input to the session.
          * 
          * *
-         *      * @param  mixed  string
+         *      * @param  array|mixed  $keys
          *      * @return void
          *
          * @static 
@@ -7075,6 +7207,21 @@ namespace {
         
         /**
          * /**
+         *      * Determine if the given content types match.
+         * 
+         * *
+         *      * @param  string  $actual
+         *      * @param  string  $type
+         *      * @return bool
+         *
+         * @static 
+         */
+        public static function matchesType($actual, $type){
+            return \Illuminate\Http\Request::matchesType($actual, $type);
+        }
+        
+        /**
+         * /**
          *      * Determine if the request is sending JSON.
          * 
          * *
@@ -7111,6 +7258,20 @@ namespace {
          */
         public static function accepts($contentTypes){
             return \Illuminate\Http\Request::accepts($contentTypes);
+        }
+        
+        /**
+         * /**
+         *      * Return the most suitable content type from the given array based on content negotiation.
+         * 
+         * *
+         *      * @param  string|array  $contentTypes
+         *      * @return string|null
+         *
+         * @static 
+         */
+        public static function prefers($contentTypes){
+            return \Illuminate\Http\Request::prefers($contentTypes);
         }
         
         /**
@@ -7223,12 +7384,14 @@ namespace {
          *      * Get the route handling the request.
          * 
          * *
-         *      * @return \Illuminate\Routing\Route|null
+         *      * @param string|null $param
+         *      *
+         *      * @return object|string
          *
          * @static 
          */
-        public static function route(){
-            return \Illuminate\Http\Request::route();
+        public static function route($param = null){
+            return \Illuminate\Http\Request::route($param);
         }
         
         /**
@@ -7349,13 +7512,13 @@ namespace {
          * *
          *      * This method also re-initializes all properties.
          *      *
-         *      * @param array  $query      The GET parameters
-         *      * @param array  $request    The POST parameters
-         *      * @param array  $attributes The request attributes (parameters parsed from the PATH_INFO, ...)
-         *      * @param array  $cookies    The COOKIE parameters
-         *      * @param array  $files      The FILES parameters
-         *      * @param array  $server     The SERVER parameters
-         *      * @param string $content    The raw body data
+         *      * @param array           $query      The GET parameters
+         *      * @param array           $request    The POST parameters
+         *      * @param array           $attributes The request attributes (parameters parsed from the PATH_INFO, ...)
+         *      * @param array           $cookies    The COOKIE parameters
+         *      * @param array           $files      The FILES parameters
+         *      * @param array           $server     The SERVER parameters
+         *      * @param string|resource $content    The raw body data
          *      *
          *      * @api
          *
@@ -9155,6 +9318,25 @@ namespace {
          *
          * @static 
          */
+        public static function onQueue($queue, $view, $data, $callback){
+            return \Illuminate\Mail\Mailer::onQueue($queue, $view, $data, $callback);
+        }
+        
+        /**
+         * /**
+         *      * Queue a new e-mail message for sending on the given queue.
+         * 
+         * *
+         *      * This method didn't match rest of framework's "onQueue" phrasing. Added "onQueue".
+         *      *
+         *      * @param  string  $queue
+         *      * @param  string|array  $view
+         *      * @param  array  $data
+         *      * @param  \Closure|string  $callback
+         *      * @return mixed
+         *
+         * @static 
+         */
         public static function queueOn($queue, $view, $data, $callback){
             return \Illuminate\Mail\Mailer::queueOn($queue, $view, $data, $callback);
         }
@@ -9434,6 +9616,20 @@ namespace {
         
         /**
          * /**
+         *      * Register an event listener for the after job event.
+         * 
+         * *
+         *      * @param  mixed  $callback
+         *      * @return void
+         *
+         * @static 
+         */
+        public static function after($callback){
+            return \Illuminate\Queue\QueueManager::after($callback);
+        }
+        
+        /**
+         * /**
          *      * Register an event listener for the daemon queue loop.
          * 
          * *
@@ -9595,7 +9791,7 @@ namespace {
          *      * @param  mixed   $data
          *      * @param  string  $queue
          *      * @return mixed
-         *      * @throws \Exception
+         *      * @throws \Throwable
          *
          * @static 
          */
@@ -10232,7 +10428,7 @@ namespace {
          *      * Get all of the input except for a specified array of items.
          * 
          * *
-         *      * @param  array  $keys
+         *      * @param  array|mixed  $keys
          *      * @return array
          *
          * @static 
@@ -10379,7 +10575,7 @@ namespace {
          *      * Flash only some of the input to the session.
          * 
          * *
-         *      * @param  mixed  string
+         *      * @param  array|mixed  $keys
          *      * @return void
          *
          * @static 
@@ -10393,7 +10589,7 @@ namespace {
          *      * Flash only some of the input to the session.
          * 
          * *
-         *      * @param  mixed  string
+         *      * @param  array|mixed  $keys
          *      * @return void
          *
          * @static 
@@ -10460,6 +10656,21 @@ namespace {
         
         /**
          * /**
+         *      * Determine if the given content types match.
+         * 
+         * *
+         *      * @param  string  $actual
+         *      * @param  string  $type
+         *      * @return bool
+         *
+         * @static 
+         */
+        public static function matchesType($actual, $type){
+            return \Illuminate\Http\Request::matchesType($actual, $type);
+        }
+        
+        /**
+         * /**
          *      * Determine if the request is sending JSON.
          * 
          * *
@@ -10496,6 +10707,20 @@ namespace {
          */
         public static function accepts($contentTypes){
             return \Illuminate\Http\Request::accepts($contentTypes);
+        }
+        
+        /**
+         * /**
+         *      * Return the most suitable content type from the given array based on content negotiation.
+         * 
+         * *
+         *      * @param  string|array  $contentTypes
+         *      * @return string|null
+         *
+         * @static 
+         */
+        public static function prefers($contentTypes){
+            return \Illuminate\Http\Request::prefers($contentTypes);
         }
         
         /**
@@ -10608,12 +10833,14 @@ namespace {
          *      * Get the route handling the request.
          * 
          * *
-         *      * @return \Illuminate\Routing\Route|null
+         *      * @param string|null $param
+         *      *
+         *      * @return object|string
          *
          * @static 
          */
-        public static function route(){
-            return \Illuminate\Http\Request::route();
+        public static function route($param = null){
+            return \Illuminate\Http\Request::route($param);
         }
         
         /**
@@ -10734,13 +10961,13 @@ namespace {
          * *
          *      * This method also re-initializes all properties.
          *      *
-         *      * @param array  $query      The GET parameters
-         *      * @param array  $request    The POST parameters
-         *      * @param array  $attributes The request attributes (parameters parsed from the PATH_INFO, ...)
-         *      * @param array  $cookies    The COOKIE parameters
-         *      * @param array  $files      The FILES parameters
-         *      * @param array  $server     The SERVER parameters
-         *      * @param string $content    The raw body data
+         *      * @param array           $query      The GET parameters
+         *      * @param array           $request    The POST parameters
+         *      * @param array           $attributes The request attributes (parameters parsed from the PATH_INFO, ...)
+         *      * @param array           $cookies    The COOKIE parameters
+         *      * @param array           $files      The FILES parameters
+         *      * @param array           $server     The SERVER parameters
+         *      * @param string|resource $content    The raw body data
          *      *
          *      * @api
          *
@@ -12403,7 +12630,7 @@ namespace {
          *      * Resolve the middleware name to a class name preserving passed parameters.
          * 
          * *
-         *      * @param $name
+         *      * @param  string  $name
          *      * @return string
          *
          * @static 
@@ -12549,7 +12776,7 @@ namespace {
          *      * @param  \Closure|null  $callback
          *      * @return void
          *      *
-         *      * @throws NotFoundHttpException
+         *      * @throws \Symfony\Component\HttpKernel\Exception\NotFoundHttpException
          *
          * @static 
          */
@@ -12951,6 +13178,36 @@ namespace {
         
         /**
          * /**
+         *      * Determine if the given table has a given column.
+         * 
+         * *
+         *      * @param  string  $table
+         *      * @param  string  $column
+         *      * @return bool
+         *
+         * @static 
+         */
+        public static function hasColumn($table, $column){
+            return \Jenssegers\Mongodb\Schema\Builder::hasColumn($table, $column);
+        }
+        
+        /**
+         * /**
+         *      * Determine if the given table has given columns.
+         * 
+         * *
+         *      * @param  string  $table
+         *      * @param  array   $columns
+         *      * @return bool
+         *
+         * @static 
+         */
+        public static function hasColumns($table, $columns){
+            return \Jenssegers\Mongodb\Schema\Builder::hasColumns($table, $columns);
+        }
+        
+        /**
+         * /**
          *      * Determine if the given collection exists.
          * 
          * *
@@ -13034,38 +13291,6 @@ namespace {
          */
         public static function drop($collection){
             return \Jenssegers\Mongodb\Schema\Builder::drop($collection);
-        }
-        
-        /**
-         * /**
-         *      * Determine if the given table has a given column.
-         * 
-         * *
-         *      * @param  string  $table
-         *      * @param  string  $column
-         *      * @return bool
-         *
-         * @static 
-         */
-        public static function hasColumn($table, $column){
-            //Method inherited from \Illuminate\Database\Schema\Builder            
-            return \Jenssegers\Mongodb\Schema\Builder::hasColumn($table, $column);
-        }
-        
-        /**
-         * /**
-         *      * Determine if the given table has given columns.
-         * 
-         * *
-         *      * @param  string  $table
-         *      * @param  array   $columns
-         *      * @return bool
-         *
-         * @static 
-         */
-        public static function hasColumns($table, $columns){
-            //Method inherited from \Illuminate\Database\Schema\Builder            
-            return \Jenssegers\Mongodb\Schema\Builder::hasColumns($table, $columns);
         }
         
         /**
@@ -14062,7 +14287,7 @@ namespace {
         
         /**
          * /**
-         *      * Generate a absolute URL to the given path.
+         *      * Generate an absolute URL to the given path.
          * 
          * *
          *      * @param  string  $path
@@ -14104,6 +14329,22 @@ namespace {
          */
         public static function asset($path, $secure = null){
             return \Illuminate\Routing\UrlGenerator::asset($path, $secure);
+        }
+        
+        /**
+         * /**
+         *      * Generate a URL to an asset from a custom root domain such as CDN, etc.
+         * 
+         * *
+         *      * @param  string  $root
+         *      * @param  string  $path
+         *      * @param  bool|null  $secure
+         *      * @return string
+         *
+         * @static 
+         */
+        public static function assetFrom($root, $path, $secure = null){
+            return \Illuminate\Routing\UrlGenerator::assetFrom($root, $path, $secure);
         }
         
         /**
@@ -14419,7 +14660,7 @@ namespace {
          *      * @param  string  $view
          *      * @param  array   $data
          *      * @param  array   $mergeData
-         *      * @return \Illuminate\View\View
+         *      * @return \Illuminate\Contracts\View\View
          *
          * @static 
          */
@@ -14524,9 +14765,9 @@ namespace {
          *      * Add a piece of shared data to the environment.
          * 
          * *
-         *      * @param  string  $key
-         *      * @param  mixed   $value
-         *      * @return void
+         *      * @param  array|string  $key
+         *      * @param  mixed  $value
+         *      * @return mixed
          *
          * @static 
          */
@@ -15107,11 +15348,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Open up a new HTML form.
+         *    * Open up a new HTML form.
          * 
          * *
-         * 	 * @param  array   $options
-         * 	 * @return string
+         *    * @param  array $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15121,12 +15363,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a new model based form builder.
+         *    * Create a new model based form builder.
          * 
          * *
-         * 	 * @param  mixed  $model
-         * 	 * @param  array  $options
-         * 	 * @return string
+         *    * @param  mixed $model
+         *    * @param  array $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15136,11 +15379,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the model instance on the form builder.
+         *    * Set the model instance on the form builder.
          * 
          * *
-         * 	 * @param  mixed  $model
-         * 	 * @return void
+         *    * @param  mixed $model
+         *    *
+         *    * @return void
          *
          * @static 
          */
@@ -15150,10 +15394,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Close the current form.
+         *    * Close the current form.
          * 
          * *
-         * 	 * @return string
+         *    * @return string
          *
          * @static 
          */
@@ -15163,10 +15407,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Generate a hidden field with the current CSRF token.
+         *    * Generate a hidden field with the current CSRF token.
          * 
          * *
-         * 	 * @return string
+         *    * @return string
          *
          * @static 
          */
@@ -15176,13 +15420,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a form label element.
+         *    * Create a form label element.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  string  $value
-         * 	 * @param  array   $options
-         * 	 * @return string
+         *    * @param  string $name
+         *    * @param  string $value
+         *    * @param  array  $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15192,14 +15437,15 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a form input field.
+         *    * Create a form input field.
          * 
          * *
-         * 	 * @param  string  $type
-         * 	 * @param  string  $name
-         * 	 * @param  string  $value
-         * 	 * @param  array   $options
-         * 	 * @return string
+         *    * @param  string $type
+         *    * @param  string $name
+         *    * @param  string $value
+         *    * @param  array  $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15209,13 +15455,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a text input field.
+         *    * Create a text input field.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  string  $value
-         * 	 * @param  array   $options
-         * 	 * @return string
+         *    * @param  string $name
+         *    * @param  string $value
+         *    * @param  array  $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15225,12 +15472,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a password input field.
+         *    * Create a password input field.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  array   $options
-         * 	 * @return string
+         *    * @param  string $name
+         *    * @param  array  $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15240,13 +15488,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a hidden input field.
+         *    * Create a hidden input field.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  string  $value
-         * 	 * @param  array   $options
-         * 	 * @return string
+         *    * @param  string $name
+         *    * @param  string $value
+         *    * @param  array  $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15256,13 +15505,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create an e-mail input field.
+         *    * Create an e-mail input field.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  string  $value
-         * 	 * @param  array   $options
-         * 	 * @return string
+         *    * @param  string $name
+         *    * @param  string $value
+         *    * @param  array  $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15272,13 +15522,31 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a number input field.
+         *    * Create a tel input field.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  string  $value
-         * 	 * @param  array   $options
-         * 	 * @return string
+         *    * @param  string $name
+         *    * @param  string $value
+         *    * @param  array  $options
+         *    *
+         *    * @return string
+         *
+         * @static 
+         */
+        public static function tel($name, $value = null, $options = array()){
+            return \Collective\Html\FormBuilder::tel($name, $value, $options);
+        }
+        
+        /**
+         * /**
+         *    * Create a number input field.
+         * 
+         * *
+         *    * @param  string $name
+         *    * @param  string $value
+         *    * @param  array  $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15288,13 +15556,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a date input field.
+         *    * Create a date input field.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  string  $value
-         * 	 * @param  array   $options
-         * 	 * @return string
+         *    * @param  string $name
+         *    * @param  string $value
+         *    * @param  array  $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15304,13 +15573,31 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a url input field.
+         *    * Create a time input field.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  string  $value
-         * 	 * @param  array   $options
-         * 	 * @return string
+         *    * @param  string $name
+         *    * @param  string $value
+         *    * @param  array  $options
+         *    *
+         *    * @return string
+         *
+         * @static 
+         */
+        public static function time($name, $value = null, $options = array()){
+            return \Collective\Html\FormBuilder::time($name, $value, $options);
+        }
+        
+        /**
+         * /**
+         *    * Create a url input field.
+         * 
+         * *
+         *    * @param  string $name
+         *    * @param  string $value
+         *    * @param  array  $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15320,12 +15607,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a file input field.
+         *    * Create a file input field.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  array   $options
-         * 	 * @return string
+         *    * @param  string $name
+         *    * @param  array  $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15335,13 +15623,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a textarea input field.
+         *    * Create a textarea input field.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  string  $value
-         * 	 * @param  array   $options
-         * 	 * @return string
+         *    * @param  string $name
+         *    * @param  string $value
+         *    * @param  array  $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15351,14 +15640,15 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a select box field.
+         *    * Create a select box field.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  array   $list
-         * 	 * @param  string  $selected
-         * 	 * @param  array   $options
-         * 	 * @return string
+         *    * @param  string $name
+         *    * @param  array  $list
+         *    * @param  string $selected
+         *    * @param  array  $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15368,15 +15658,16 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a select range field.
+         *    * Create a select range field.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  string  $begin
-         * 	 * @param  string  $end
-         * 	 * @param  string  $selected
-         * 	 * @param  array   $options
-         * 	 * @return string
+         *    * @param  string $name
+         *    * @param  string $begin
+         *    * @param  string $end
+         *    * @param  string $selected
+         *    * @param  array  $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15386,15 +15677,16 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a select year field.
+         *    * Create a select year field.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  string  $begin
-         * 	 * @param  string  $end
-         * 	 * @param  string  $selected
-         * 	 * @param  array   $options
-         * 	 * @return string
+         *    * @param  string $name
+         *    * @param  string $begin
+         *    * @param  string $end
+         *    * @param  string $selected
+         *    * @param  array  $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15404,14 +15696,15 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a select month field.
+         *    * Create a select month field.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  string  $selected
-         * 	 * @param  array   $options
-         * 	 * @param  string  $format
-         * 	 * @return string
+         *    * @param  string $name
+         *    * @param  string $selected
+         *    * @param  array  $options
+         *    * @param  string $format
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15421,13 +15714,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the select option for the given value.
+         *    * Get the select option for the given value.
          * 
          * *
-         * 	 * @param  string  $display
-         * 	 * @param  string  $value
-         * 	 * @param  string  $selected
-         * 	 * @return string
+         *    * @param  string $display
+         *    * @param  string $value
+         *    * @param  string $selected
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15437,14 +15731,15 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a checkbox input field.
+         *    * Create a checkbox input field.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  mixed   $value
-         * 	 * @param  bool    $checked
-         * 	 * @param  array   $options
-         * 	 * @return string
+         *    * @param  string $name
+         *    * @param  mixed  $value
+         *    * @param  bool   $checked
+         *    * @param  array  $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15454,14 +15749,15 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a radio button input field.
+         *    * Create a radio button input field.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  mixed   $value
-         * 	 * @param  bool    $checked
-         * 	 * @param  array   $options
-         * 	 * @return string
+         *    * @param  string $name
+         *    * @param  mixed  $value
+         *    * @param  bool   $checked
+         *    * @param  array  $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15471,12 +15767,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a HTML reset input element.
+         *    * Create a HTML reset input element.
          * 
          * *
-         * 	 * @param  string  $value
-         * 	 * @param  array   $attributes
-         * 	 * @return string
+         *    * @param  string $value
+         *    * @param  array  $attributes
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15486,13 +15783,14 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a HTML image input element.
+         *    * Create a HTML image input element.
          * 
          * *
-         * 	 * @param  string  $url
-         * 	 * @param  string  $name
-         * 	 * @param  array   $attributes
-         * 	 * @return string
+         *    * @param  string $url
+         *    * @param  string $name
+         *    * @param  array  $attributes
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15502,12 +15800,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a submit button element.
+         *    * Create a submit button element.
          * 
          * *
-         * 	 * @param  string  $value
-         * 	 * @param  array   $options
-         * 	 * @return string
+         *    * @param  string $value
+         *    * @param  array  $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15517,12 +15816,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Create a button element.
+         *    * Create a button element.
          * 
          * *
-         * 	 * @param  string  $value
-         * 	 * @param  array   $options
-         * 	 * @return string
+         *    * @param  string $value
+         *    * @param  array  $options
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15532,12 +15832,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the ID attribute for a field name.
+         *    * Get the ID attribute for a field name.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  array   $attributes
-         * 	 * @return string
+         *    * @param  string $name
+         *    * @param  array  $attributes
+         *    *
+         *    * @return string
          *
          * @static 
          */
@@ -15547,12 +15848,13 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the value that should be assigned to the field.
+         *    * Get the value that should be assigned to the field.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @param  string  $value
-         * 	 * @return mixed
+         *    * @param  string $name
+         *    * @param  string $value
+         *    *
+         *    * @return mixed
          *
          * @static 
          */
@@ -15562,11 +15864,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Get a value from the session's old input.
+         *    * Get a value from the session's old input.
          * 
          * *
-         * 	 * @param  string  $name
-         * 	 * @return mixed
+         *    * @param  string $name
+         *    *
+         *    * @return mixed
          *
          * @static 
          */
@@ -15576,10 +15879,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Determine if the old input is empty.
+         *    * Determine if the old input is empty.
          * 
          * *
-         * 	 * @return bool
+         *    * @return bool
          *
          * @static 
          */
@@ -15589,10 +15892,10 @@ namespace {
         
         /**
          * /**
-         * 	 * Get the session store implementation.
+         *    * Get the session store implementation.
          * 
          * *
-         * 	 * @return  \Illuminate\Session\Store  $session
+         *    * @return  \Illuminate\Session\Store  $session
          *
          * @static 
          */
@@ -15602,11 +15905,12 @@ namespace {
         
         /**
          * /**
-         * 	 * Set the session store implementation.
+         *    * Set the session store implementation.
          * 
          * *
-         * 	 * @param  \Illuminate\Session\Store  $session
-         * 	 * @return $this
+         *    * @param  \Illuminate\Session\Store $session
+         *    *
+         *    * @return $this
          *
          * @static 
          */
