@@ -122,6 +122,11 @@
                                     {{--<td><button type="button" class="btn btn-danger" onclick="stopSM5()">Stop</button></td>--}}
                                     {{--<td><button type="button" class="btn btn-success" onclick="startSM5()">Start</button></td>--}}
                                 {{--</tr>--}}
+                                {{--<tr>--}}
+                                <td><h4>DI1</h4></td>
+                                <td><h4>CN</h4></td>
+                                <td><button type="button" class="btn btn-success" onclick="startDICN()">Start</button></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>

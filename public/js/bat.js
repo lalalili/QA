@@ -151,3 +151,6 @@ function startETL() {
 function stopETL() {
     location.href = "http://qa.migosoft.com/bat/stop_etl.bat";
 }
+function startDICN() {
+    location.href = "http://qa.migosoft.com/bat/start_dicn.bat";
+}
