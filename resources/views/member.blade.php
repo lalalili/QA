@@ -101,6 +101,11 @@
                                         <td>{{ $countID }}</td>
                                         <td>{{ $percentID }} %</td>
                                     </tr>
+                                    <tr>
+                                        <td>Wechat(OpenID)缺失</td>
+                                        <td>{{ $countOpenID }}</td>
+                                        <td>{{ $percentOpenID }} %</td>
+                                    </tr>
                                     </tbody>
                                 </table>
                             </div>
