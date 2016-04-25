@@ -112,7 +112,7 @@
                     <a href="{{url('/patch')}}"><i class="fa fa-check-square-o fa-fw"></i> Patch Test</a>
                 </li>
                 <li>
-                    <a href="http://faq.migosoft.com" target="_blank"><i class="fa fa-question-circle-o fa-fw" aria-hidden="true"></i>
+                    <a href="http://faq.migosoft.com" target="_blank"><i class="fa fa-question-circle-o" aria-hidden="true"></i>
                         FAQ</a>
                 </li>
                 <li>
