@@ -111,26 +111,31 @@
                 <li>
                     <a href="{{url('/patch')}}"><i class="fa fa-check-square-o fa-fw"></i> Patch Test</a>
                 </li>
-                <li class="active">
+                <li>
+                    <a href="http://faq.migosoft.com" target="_blank"><i class="fa fa-question-circle-o fa-fw"></i>
+                        FAQ</a>
+                </li>
+                <li>
                     <a href="#">
                         <i class="fa fa-bar-chart fa-fw"></i>
-                        Mongo通
+                        Mongo通(不通)
                         <span class="fa arrow"></span>
                     </a>
-                    <ul class="nav nav-second-level collapse in" style="">
-                        <li>
-                            <a href="{{url('/diy')}}">指標</a>
-                        </li>
-                        <li>
-                            <a href="{{url('/store')}}">門店</a>
-                        </li>
-                        <li>
-                            <a href="{{url('/company')}}">公司列表</a>
-                        </li>
-                        <li>
-                            <a href="{{url('/member')}}">會員查詢</a>
-                        </li>
-                    </ul>
+                    {{--<ul class="nav nav-second-level collapse in" style="">--}}
+                    {{--<li>--}}
+                    {{--<a href="{{url('/diy')}}">指標</a>--}}
+                    {{--</li>--}}
+                    {{--<li>--}}
+                    {{--<a href="{{url('/store')}}">門店</a>--}}
+                    {{--</li>--}}
+                    {{--<li>--}}
+                    {{--<a href="{{url('/company')}}">公司列表</a>--}}
+                    {{--</li>--}}
+                    {{--<li>--}}
+                    {{--<a href="{{url('/member')}}">會員查詢</a>--}}
+                    {{--</li>--}}
+                    {{--</ul>--}}
+                </li>
                 <li class="active">
                     <a href="#">
                         <i class="fa fa-trello fa-fw"></i>
