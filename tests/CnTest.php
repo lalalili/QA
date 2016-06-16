@@ -210,14 +210,18 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
         fwrite(STDERR, print_r($assert, true));
         fwrite(STDERR, $assert . "\n");
-        $this->assertNotEquals(' ', $assert);
+        try {
+            $this->assertNotEquals(' ', $assert);;
+        } catch (PHPUnit_Framework_AssertionFailedError $e) {
+            array_push($this->verificationErrors, $e->__toString());
+        }
         sleep(3);
         $this->byXPath("(//button[@type='button'])[3]")->click();
         sleep(3);
         $this->byLinkText("登出")->click();
     }
 
-    public function testAblejeans()
+    public function test_blejeans()
     {
         $this->currentWindow()->maximize();
         $this->url("/auth/");
@@ -240,24 +244,29 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         $this->url('https://di.' . $this->url . '/app/#/');
         sleep(10);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();;
-        $this->assertNotEquals(' ', $assert);
+        try {
+            $this->assertNotEquals(' ', $assert);
+        } catch (PHPUnit_Framework_AssertionFailedError $e) {
+            $assert = array('Assert Fail');
+            array_push($assert, $e->__toString());
+        }
         sleep(3);
         $this->byXPath("(//button[@type='button'])[3]")->click();
         sleep(3);
         $this->byLinkText("登出")->click();
         sleep(3);
-        $this->url("http://" . $this->qaurl . '/test/setcount/?count=' . $this->id);
-        sleep(3);
+        $this->url('http://' . $this->qaurl . '/test/setcount/?count=' . $this->id);
+        sleep(10);
 
     }
-
-
-    public function testMigo()
+    
+    public function test_migo()
     {
-        $this->url("http://" . $this->qaurl . '/test/getcount/');
+        $this->url('http://' . $this->qaurl . '/test/getcount/');
         sleep(3);
         $count = $this->byCssSelector("body")->text();
-        fwrite(STDERR, "\n" . $count);
+        fwrite(STDERR, "\n" . ++$count);
+        fwrite(STDERR, $count);
         $this->currentWindow()->maximize();
         $this->url("/auth/");
         sleep(10);
@@ -273,22 +282,72 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         sleep(3);
         $this->byXPath("//div[3]/div/div[2]/div[2]/div/a")->click();
         sleep(3);
-        $this->byCssSelector("a[name=\"" . $this->json_a['data'][++$$count]['company_id'] . "\"] > span.company-name")->click();
+        $this->byCssSelector("a[name=\"" . $this->json_a['data'][$count]['company_id'] . "\"] > span.company-name")->click();
         sleep(3);
         $this->byCssSelector("button.close")->click();
         sleep(3);
         $this->url('https://di.' . $this->url . '/app/#/');
         sleep(10);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
-        $this->assertNotEquals(' ', $assert);
+        try {
+            $this->assertNotEquals(' ', $assert);
+        } catch (PHPUnit_Framework_AssertionFailedError $e) {
+            $assert = array('Assert Fail');
+            array_push($assert, $e->__toString());
+        }
         sleep(3);
         $this->byXPath("(//button[@type='button'])[3]")->click();
         sleep(3);
         $this->byLinkText("登出")->click();
         sleep(3);
         fwrite(STDERR, $count);
-        $this->url("http://" . $qaurl . '/test/setcount/?count=' . $count);
+        $this->url('http://' . $this->qaurl . '/test/setcount/?count=' . $count);
+        sleep(10);
+    }
+
+    public function test_migochaoshi()
+    {
+        $this->url("http://" . $this->qaurl . '/test/getcount/');
         sleep(3);
+        $count = $this->byCssSelector("body")->text();
+        fwrite(STDERR, "\n" . ++$count);
+        fwrite(STDERR, $count);
+        $this->currentWindow()->maximize();
+        $this->url("/auth/");
+        sleep(10);
+        $this->byCssSelector("input[id=companyName]")->value("migo");
+        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
+        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byXPath("//input[@value='登入']")->click();
+        sleep(10);
+
+        if ($this->byLinkText("确认")->displayed()) {
+            $this->byLinkText("确认")->click();
+        }
+        sleep(3);
+        $this->byXPath("//div[3]/div/div[2]/div[2]/div/a")->click();
+        sleep(3);
+        $this->byCssSelector("a[name=\"" . $this->json_a['data'][$count]['company_id'] . "\"] > span.company-name")->click();
+        sleep(3);
+        $this->byCssSelector("button.close")->click();
+        sleep(3);
+        $this->url('https://di.' . $this->url . '/app/#/');
+        sleep(10);
+        $assert = $this->byCssSelector("div.revenue-value > span")->text();
+        try {
+            $this->assertNotEquals(' ', $assert);
+        } catch (PHPUnit_Framework_AssertionFailedError $e) {
+            $assert = array('Assert Fail');
+            array_push($assert, $e->__toString());
+        }
+        sleep(3);
+        $this->byXPath("(//button[@type='button'])[3]")->click();
+        sleep(3);
+        $this->byLinkText("登出")->click();
+        sleep(3);
+        fwrite(STDERR, $count, true);
+        $this->url('http://' . $this->qaurl . '/test/setcount/?count=' . $count);
+        sleep(10);
     }
 
 }

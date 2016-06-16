@@ -19,6 +19,7 @@ class TestController extends Controller
     public function setCount(Request $request)
     {
         $count = $request->input('count');
+        DB::connection('mysql')->table('tests')->truncate();
         $test = new Test;
         $test->count = $count;
         $test->save();
