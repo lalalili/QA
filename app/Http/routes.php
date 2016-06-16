@@ -65,4 +65,7 @@ Route::get('mail_test', function()
 Route::group(['prefix' => 'test'], function () {
     Route::get('getcount', 'TestController@getCount');
     Route::get('setcount', 'TestController@setCount');
+    Route::get('getreport', 'ReportController@getReport');
+    Route::get('setreport', 'ReportController@setReport');
+    Route::get('resetreport', 'ReportController@resetReport');
 });

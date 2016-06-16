@@ -246,20 +246,25 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         $assert = $this->byCssSelector("div.revenue-value > span")->text();;
         try {
             $this->assertNotEquals(' ', $assert);
+            throw new PHPUnit_Framework_AssertionFailedError("Success");
         } catch (PHPUnit_Framework_AssertionFailedError $e) {
-            $assert = array('Assert Fail');
-            array_push($assert, $e->__toString());
+            $this->save($e->toString());
         }
-        sleep(3);
-        $this->byXPath("(//button[@type='button'])[3]")->click();
-        sleep(3);
-        $this->byLinkText("登出")->click();
-        sleep(3);
-        $this->url('http://' . $this->qaurl . '/test/setcount/?count=' . $this->id);
-        sleep(10);
-
     }
-    
+
+    public function save($the_string)
+    {
+        if (strstr($the_string, "Success")) {
+            $this->url('http://' . $this->qaurl . '/test/setreport?company=' . $this->json_a['data'][$this->id]['company_name'] . '&result=PASS');
+            sleep(3);
+            $this->url('http://' . $this->qaurl . '/test/setcount/?count=' . $this->id);
+        } else {
+            $this->url('http://' . $this->qaurl . '/test/setreport?company=' . $this->json_a['data'][$this->id]['company_name'] . '&result=FAIL');
+            sleep(3);
+            $this->url('http://' . $this->qaurl . '/test/setcount/?count=' . $this->id);
+        }
+    }
+
     public function test_migo()
     {
         $this->url('http://' . $this->qaurl . '/test/getcount/');
@@ -291,18 +296,10 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
         try {
             $this->assertNotEquals(' ', $assert);
+            throw new PHPUnit_Framework_AssertionFailedError("Success");
         } catch (PHPUnit_Framework_AssertionFailedError $e) {
-            $assert = array('Assert Fail');
-            array_push($assert, $e->__toString());
+            $this->save($e->toString());
         }
-        sleep(3);
-        $this->byXPath("(//button[@type='button'])[3]")->click();
-        sleep(3);
-        $this->byLinkText("登出")->click();
-        sleep(3);
-        fwrite(STDERR, $count);
-        $this->url('http://' . $this->qaurl . '/test/setcount/?count=' . $count);
-        sleep(10);
     }
 
     public function test_migochaoshi()
@@ -336,19 +333,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
         try {
             $this->assertNotEquals(' ', $assert);
+            throw new PHPUnit_Framework_AssertionFailedError("Success");
         } catch (PHPUnit_Framework_AssertionFailedError $e) {
-            $assert = array('Assert Fail');
-            array_push($assert, $e->__toString());
+            $this->save($e->toString());
         }
-        sleep(3);
-        $this->byXPath("(//button[@type='button'])[3]")->click();
-        sleep(3);
-        $this->byLinkText("登出")->click();
-        sleep(3);
-        fwrite(STDERR, $count, true);
-        $this->url('http://' . $this->qaurl . '/test/setcount/?count=' . $count);
-        sleep(10);
     }
-
 }
-
