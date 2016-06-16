@@ -61,3 +61,8 @@ Route::get('mail_test', function()
     });
     echo '完成寄送!!';
 });
+
+Route::group(['prefix' => 'test'], function () {
+    Route::get('getcount', 'TestController@getCount');
+    Route::get('setcount', 'TestController@setCount');
+});

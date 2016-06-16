@@ -12,7 +12,7 @@ class CreateStatusSvnTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('status_svn', function(Blueprint $table)
+		Schema::connection('mysql')->create('status_svn', function(Blueprint $table)
 		{
 			$table->increments('id');
             $table->unsignedInteger('status_id');
@@ -28,7 +28,7 @@ class CreateStatusSvnTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('status_svn');
+		Schema::connection('mysql')->drop('status_svn');
 	}
 
 }

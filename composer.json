@@ -15,10 +15,11 @@
     "barryvdh/laravel-ide-helper": "^2.0",
     "mitulgolakiya/laravel-api-generator": "1.3.*",
     "LaravelCollective/html": "^5.0",
-    "maatwebsite/excel": "~2.0.0"
+    "maatwebsite/excel": "~2.0.0",
+    "phpunit/phpunit": "~4.5",
+    "phpunit/phpunit-selenium": "~1.4"
   },
   "require-dev": {
-    "phpunit/phpunit": "~4.0",
     "phpspec/phpspec": "~2.1"
   },
   "autoload": {
