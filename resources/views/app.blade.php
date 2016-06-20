@@ -116,6 +116,9 @@
                                                                          aria-hidden="true"></i> FAQ</a>
                 </li>
                 <li>
+                    <a href="{{url('/test/report')}}"><i class="fa fa-bar-chart fa-fw"></i> DI自動測試報告</a>
+                </li>
+                <li>
                     <a href="#">
                         <i class="fa fa-bar-chart fa-fw"></i>
                         Mongo不通!

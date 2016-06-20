@@ -19,6 +19,7 @@ class ReportController extends Controller
 
     public function setReport(Request $request)
     {
+        $company = $request->input('server');
         $company = $request->input('company');
         $result = $request->input('result');
         $test = new Report;
@@ -30,5 +31,11 @@ class ReportController extends Controller
     public function resetReport()
     {
         DB::connection('mysql')->table('reports')->truncate();
+    }
+
+    public function showReport()
+    {
+        $reports = Report::all();
+        return view('test.report',compact('reports'));
     }
 }

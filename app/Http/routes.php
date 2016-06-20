@@ -68,4 +68,5 @@ Route::group(['prefix' => 'test'], function () {
     Route::get('getreport', 'ReportController@getReport');
     Route::get('setreport', 'ReportController@setReport');
     Route::get('resetreport', 'ReportController@resetReport');
+    Route::get('report', 'ReportController@showReport');
 });

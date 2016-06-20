@@ -3,7 +3,7 @@
 
 class CnTest extends PHPUnit_Extensions_Selenium2TestCase
 {
-    protected $json_a;
+    protected $json_a, $count;
     protected $id = 0;
     protected $qaurl = 'qa.migosoft.com';
     protected $url = 'cn.migoapp.com';
@@ -188,23 +188,23 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
     public function xtest_assert()
     {
         $this->currentWindow()->maximize();
-        $this->url("/auth/");
-        sleep(3);
+        $this->url('https://sysmgr.' . $this->url . '/auth/');
+        sleep(5);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
         $this->byCssSelector("input[id=password]")->value("admin156*");
         $this->byXPath("//input[@value='登入']")->click();
-        sleep(3);
+        sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
             $this->byLinkText("确认")->click();
         }
-        sleep(3);
-        $this->byXPath("//div[3]/div/div[2]/div[2]/div/a")->click();
-        sleep(3);
+        sleep(5);
+        $this->byXPath("//div[3]/div/div[2]/div[2]/div/a/i")->click();
+        sleep(5);
         $this->byCssSelector("a[name=\"5\"] > span.company-name")->click();
-        sleep(3);
+        sleep(5);
         $this->byCssSelector("button.close")->click();
-        sleep(3);
+        sleep(5);
         $this->url("https://di.cn.migoapp.com/app/#/");
         sleep(10);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -215,34 +215,53 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         } catch (PHPUnit_Framework_AssertionFailedError $e) {
             array_push($this->verificationErrors, $e->__toString());
         }
-        sleep(3);
+        sleep(5);
         $this->byXPath("(//button[@type='button'])[3]")->click();
-        sleep(3);
+        sleep(5);
         $this->byLinkText("登出")->click();
     }
 
-    public function test_blejeans()
+    public function test_ablejeans()
     {
+        $this->count = $this->id;
+        $this->url('http://' . $this->qaurl . '/test/resetreport/');
         $this->currentWindow()->maximize();
-        $this->url("/auth/");
-        sleep(10);
+        sleep(5);
+        $this->url('http://' . $this->qaurl . '/test/setcount/?count=0');
+        sleep(5);
+        $this->url('https://sysmgr.' . $this->url . '/auth/');
+        $this->waitUntil(function () {
+            if ($this->byXPath("//input[@value='登入']")->displayed()) {
+                return true;
+            }
+        }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
         $this->byCssSelector("input[id=password]")->value("admin156*");
         $this->byXPath("//input[@value='登入']")->click();
-        sleep(3);
+        sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
             $this->byLinkText("确认")->click();
         }
-        sleep(10);
-        $this->byXPath("//div[3]/div/div[2]/div[2]/div/a")->click();
-        sleep(3);
-        $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->id]['company_id'] . "\"] > span.company-name")->click();
-        sleep(3);
+        sleep(5);
+        $this->url('https://sysmgr.' . $this->url . '/auth/#/market');
+        $this->waitUntil(function () {
+            if ($this->byXPath("//div[3]/div/div[2]/div[2]/div/a/i")->displayed()) {
+                return true;
+            }
+        }, 60000);
+        $this->byXPath("//div[3]/div/div[2]/div[2]/div/a/i")->click();
+        sleep(5);
+        $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
+        sleep(5);
         $this->byCssSelector("button.close")->click();
-        sleep(3);
+        sleep(5);
         $this->url('https://di.' . $this->url . '/app/#/');
-        sleep(10);
+        $this->waitUntil(function () {
+            if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
+                return true;
+            }
+        }, 60000);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();;
         try {
             $this->assertNotEquals(' ', $assert);
@@ -255,44 +274,59 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
     public function save($the_string)
     {
         if (strstr($the_string, "Success")) {
-            $this->url('http://' . $this->qaurl . '/test/setreport?company=' . $this->json_a['data'][$this->id]['company_name'] . '&result=PASS');
-            sleep(3);
-            $this->url('http://' . $this->qaurl . '/test/setcount/?count=' . $this->id);
+            $this->url('http://' . $this->qaurl . '/test/setreport?company=' . $this->json_a['data'][$this->count]['company_name'] . '&result=PASS&server=CN');
+            sleep(5);
+            $this->url('http://' . $this->qaurl . '/test/setcount/?count=' . $this->count);
+            sleep(5);
         } else {
-            $this->url('http://' . $this->qaurl . '/test/setreport?company=' . $this->json_a['data'][$this->id]['company_name'] . '&result=FAIL');
-            sleep(3);
-            $this->url('http://' . $this->qaurl . '/test/setcount/?count=' . $this->id);
+            $this->url('http://' . $this->qaurl . '/test/setreport?company=' . $this->json_a['data'][$this->count]['company_name'] . '&result=FAIL&server=CN');
+            sleep(5);
+            $this->url('http://' . $this->qaurl . '/test/setcount/?count=' . $this->count);
+            sleep(5);
         }
     }
 
     public function test_migo()
     {
         $this->url('http://' . $this->qaurl . '/test/getcount/');
-        sleep(3);
-        $count = $this->byCssSelector("body")->text();
-        fwrite(STDERR, "\n" . ++$count);
-        fwrite(STDERR, $count);
         $this->currentWindow()->maximize();
-        $this->url("/auth/");
-        sleep(10);
+        sleep(5);
+        $this->count = $this->byCssSelector("body")->text();
+        fwrite(STDERR, "\n" . ++$this->count);
+        fwrite(STDERR, $this->count);
+        $this->url('https://sysmgr.' . $this->url . '/auth/');
+        $this->waitUntil(function () {
+            if ($this->byXPath("//input[@value='登入']")->displayed()) {
+                return true;
+            }
+        }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
         $this->byCssSelector("input[id=password]")->value("admin156*");
         $this->byXPath("//input[@value='登入']")->click();
-        sleep(10);
-
+        sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
             $this->byLinkText("确认")->click();
         }
-        sleep(3);
-        $this->byXPath("//div[3]/div/div[2]/div[2]/div/a")->click();
-        sleep(3);
-        $this->byCssSelector("a[name=\"" . $this->json_a['data'][$count]['company_id'] . "\"] > span.company-name")->click();
-        sleep(3);
+        sleep(5);
+        $this->url('https://sysmgr.' . $this->url . '/auth/#/market');
+        $this->waitUntil(function () {
+            if ($this->byXPath("//div[3]/div/div[2]/div[2]/div/a/i")->displayed()) {
+                return true;
+            }
+        }, 60000);
+        $this->byXPath("//div[3]/div/div[2]/div[2]/div/a/i")->click();
+        sleep(5);
+        $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
+        sleep(5);
         $this->byCssSelector("button.close")->click();
-        sleep(3);
+        sleep(5);
         $this->url('https://di.' . $this->url . '/app/#/');
-        sleep(10);
+        $this->waitUntil(function () {
+            if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
+                return true;
+            }
+        }, 60000);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
         try {
             $this->assertNotEquals(' ', $assert);
@@ -304,32 +338,145 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
 
     public function test_migochaoshi()
     {
-        $this->url("http://" . $this->qaurl . '/test/getcount/');
-        sleep(3);
-        $count = $this->byCssSelector("body")->text();
-        fwrite(STDERR, "\n" . ++$count);
-        fwrite(STDERR, $count);
+        $this->url('http://' . $this->qaurl . '/test/getcount/');
         $this->currentWindow()->maximize();
-        $this->url("/auth/");
-        sleep(10);
+        sleep(5);
+        $this->count = $this->byCssSelector("body")->text();
+        fwrite(STDERR, "\n" . ++$this->count);
+        fwrite(STDERR, $this->count);
+        $this->url('https://sysmgr.' . $this->url . '/auth/');
+        $this->waitUntil(function () {
+            if ($this->byXPath("//input[@value='登入']")->displayed()) {
+                return true;
+            }
+        }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
         $this->byCssSelector("input[id=password]")->value("admin156*");
         $this->byXPath("//input[@value='登入']")->click();
-        sleep(10);
-
+        sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
             $this->byLinkText("确认")->click();
         }
-        sleep(3);
-        $this->byXPath("//div[3]/div/div[2]/div[2]/div/a")->click();
-        sleep(3);
-        $this->byCssSelector("a[name=\"" . $this->json_a['data'][$count]['company_id'] . "\"] > span.company-name")->click();
-        sleep(3);
+        sleep(5);
+        $this->url('https://sysmgr.' . $this->url . '/auth/#/market');
+        $this->waitUntil(function () {
+            if ($this->byXPath("//div[3]/div/div[2]/div[2]/div/a/i")->displayed()) {
+                return true;
+            }
+        }, 60000);
+        $this->byXPath("//div[3]/div/div[2]/div[2]/div/a/i")->click();
+        sleep(5);
+        $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
+        sleep(5);
         $this->byCssSelector("button.close")->click();
-        sleep(3);
+        sleep(5);
         $this->url('https://di.' . $this->url . '/app/#/');
-        sleep(10);
+        $this->waitUntil(function () {
+            if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
+                return true;
+            }
+        }, 60000);
+        $assert = $this->byCssSelector("div.revenue-value > span")->text();
+        try {
+            $this->assertNotEquals(' ', $assert);
+            throw new PHPUnit_Framework_AssertionFailedError("Success");
+        } catch (PHPUnit_Framework_AssertionFailedError $e) {
+            $this->save($e->toString());
+        }
+    }
+
+    public function test_migofashion()
+    {
+        $this->url('http://' . $this->qaurl . '/test/getcount/');
+        $this->currentWindow()->maximize();
+        sleep(5);
+        $this->count = $this->byCssSelector("body")->text();
+        fwrite(STDERR, "\n" . ++$this->count);
+        fwrite(STDERR, $this->count);
+        $this->url('https://sysmgr.' . $this->url . '/auth/');
+        $this->waitUntil(function () {
+            if ($this->byXPath("//input[@value='登入']")->displayed()) {
+                return true;
+            }
+        }, 60000);
+        $this->byCssSelector("input[id=companyName]")->value("migo");
+        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
+        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byXPath("//input[@value='登入']")->click();
+        sleep(5);
+        if ($this->byLinkText("确认")->displayed()) {
+            $this->byLinkText("确认")->click();
+        }
+        sleep(5);
+        $this->url('https://sysmgr.' . $this->url . '/auth/#/market');
+        $this->waitUntil(function () {
+            if ($this->byXPath("//div[3]/div/div[2]/div[2]/div/a/i")->displayed()) {
+                return true;
+            }
+        }, 60000);
+        $this->byXPath("//div[3]/div/div[2]/div[2]/div/a/i")->click();
+        sleep(5);
+        $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
+        sleep(5);
+        $this->byCssSelector("button.close")->click();
+        sleep(5);
+        $this->url('https://di.' . $this->url . '/app/#/');
+        $this->waitUntil(function () {
+            if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
+                return true;
+            }
+        }, 60000);
+        $assert = $this->byCssSelector("div.revenue-value > span")->text();
+        try {
+            $this->assertNotEquals(' ', $assert);
+            throw new PHPUnit_Framework_AssertionFailedError("Success");
+        } catch (PHPUnit_Framework_AssertionFailedError $e) {
+            $this->save($e->toString());
+        }
+    }
+
+    public function test_ordifen()
+    {
+        $this->url('http://' . $this->qaurl . '/test/getcount/');
+        $this->currentWindow()->maximize();
+        sleep(5);
+        $this->count = $this->byCssSelector("body")->text();
+        fwrite(STDERR, "\n" . ++$this->count);
+        fwrite(STDERR, $this->count);
+        $this->url('https://sysmgr.' . $this->url . '/auth/');
+        $this->waitUntil(function () {
+            if ($this->byXPath("//input[@value='登入']")->displayed()) {
+                return true;
+            }
+        }, 60000);
+        $this->byCssSelector("input[id=companyName]")->value("migo");
+        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
+        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byXPath("//input[@value='登入']")->click();
+        sleep(5);
+        if ($this->byLinkText("确认")->displayed()) {
+            $this->byLinkText("确认")->click();
+        }
+        sleep(5);
+        $this->url('https://sysmgr.' . $this->url . '/auth/#/market');
+        $this->waitUntil(function () {
+            if ($this->byXPath("//div[3]/div/div[2]/div[2]/div/a/i")->displayed()) {
+                return true;
+            }
+        }, 60000);
+        $this->byXPath("//div[3]/div/div[2]/div[2]/div/a/i")->click();
+        sleep(5);
+        $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
+        sleep(5);
+        $this->byCssSelector("button.close")->click();
+        sleep(5);
+        $this->url('https://di.' . $this->url . '/app/#/');
+        $this->waitUntil(function () {
+            if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
+                return true;
+            }
+        }, 60000);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
         try {
             $this->assertNotEquals(' ', $assert);
