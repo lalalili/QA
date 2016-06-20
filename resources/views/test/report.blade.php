@@ -27,11 +27,11 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach($reports as $report)
+                                    @foreach( $reports  as $report)
                                         <tr>
-                                            <td><h4>$report->company</h4></td>
-                                            <td><h4>$report->result</h4></td>
-                                            <td><h4>$report->note1</h4></td>
+                                            <td><h4>{{ $report->company }}</h4></td>
+                                            <td><h4>{{ $report->result }}</h4></td>
+                                            <td><h4>{{ $report->note1 }}</h4></td>
                                         </tr>
                                     @endforeach
                                     </tbody>
