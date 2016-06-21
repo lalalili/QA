@@ -31,14 +31,22 @@ class ReportController extends Controller
         $test->save();
     }
 
-    public function resetReport()
+    public function resetReport(Request $request)
     {
-        DB::connection('mysql')->table('reports')->truncate();
+        if ($request->input('server') == 'TW') {
+            DB::connection('mysql')->table('reports')->where('server', 'TW')->delete();
+        } else if ($request->input('server') == 'CN') {
+            DB::connection('mysql')->table('reports')->where('server', 'CN')->delete();
+        } else {
+            return 'wrong server';
+        }
+        
     }
 
     public function showReport()
     {
-        $reports = Report::all();
-        return view('test.report',compact('reports'));
+        $tw_reports = Report::where('server', 'TW')->get();
+        $cn_reports = Report::where('server', 'CN')->get();
+        return view('test.report',compact('tw_reports', 'cn_reports'));
     }
 }
