@@ -29,6 +29,7 @@
                                     <tbody>
                                     @foreach( $reports  as $report)
                                         <tr>
+                                            <td><h4>{{ $report->server }}</h4></td>
                                             <td><h4>{{ $report->company }}</h4></td>
                                             <td><h4>{{ $report->result }}</h4></td>
                                             <td><h4>{{ $report->note1 }}</h4></td>

@@ -22,6 +22,7 @@ class ReportController extends Controller
         $company = $request->input('server');
         $company = $request->input('company');
         $result = $request->input('result');
+        $note1 = $request->input('note1');
         $test = new Report;
         $test->company = $company;
         $test->result = $result;
