@@ -5,9 +5,10 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
 {
     protected $json_a, $count;
     protected $id = 0;
-    protected $qaurl = 'qa.com';
-//    protected $qaurl = 'qa.migosoft.com';
+//    protected $qaurl = 'qa.com';
+    protected $qaurl = 'qa.migosoft.com';
     protected $url = 'cn.migoapp.com';
+    protected $company_name;
 
     public static function browsers()
     {
@@ -28,7 +29,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
     {
         $this->setBrowserUrl('https://sysmgr.' . $this->url);
         $json = '{
-            "data": [
+                 "data": [
           {
             "company_id": 5,
             "company_name": "AbleJeans"
@@ -162,6 +163,10 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             "company_name": "西单商场 (xidan)"
           },
           {
+            "company_id": 3058,
+            "company_name": "新煮意餐饮 (xinzhuyi)"
+          },
+          {
             "company_id": 1031,
             "company_name": "亚博松 (yabosong)"
           },
@@ -180,7 +185,8 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
           {
             "company_id": 1011,
             "company_name": "舟山新茂 (ZhouShanXM)"
-          }]
+          }
+        ]
         }';
 
         $this->json_a = json_decode($json, true);
@@ -222,6 +228,17 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         $this->byLinkText("登出")->click();
     }
 
+    public function save($the_string)
+    {
+        if (strstr($the_string, "Success")) {
+            $this->url('http://' . $this->qaurl . '/test/setreport?company=' . $this->json_a['data'][$this->count]['company_name'] . '&result=PASS&server=CN&note1=' . $the_string . '&note2=' . $this->json_a['data'][$this->count]['company_id'].'&note3='.$this->company_name);
+            sleep(5);
+        } else {
+            $this->url('http://' . $this->qaurl . '/test/setreport?company=' . $this->json_a['data'][$this->count]['company_name'] . '&result=FAIL&server=CN&note1=' . $the_string. '&note2=' . $this->json_a['data'][$this->count]['company_id'].'&note3='.$this->company_name);
+            sleep(5);
+        }
+    }
+
     public function test_ablejeans()
     {
         $this->count = $this->id;
@@ -254,6 +271,8 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector('a.btn-sm.btn-change-company')->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
+        //fwrite(STDERR, 'company_name = '.$this->company_name);
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -271,17 +290,6 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             throw new PHPUnit_Framework_AssertionFailedError("Success");
         } catch (PHPUnit_Framework_AssertionFailedError $e) {
             $this->save($e->toString());
-        }
-    }
-
-    public function save($the_string)
-    {
-        if (strstr($the_string, "Success")) {
-            $this->url('http://' . $this->qaurl . '/test/setreport?company=' . $this->json_a['data'][$this->count]['company_name'] . '&result=PASS&server=CN&note1=' . $the_string);
-            sleep(5);
-        } else {
-            $this->url('http://' . $this->qaurl . '/test/setreport?company=' . $this->json_a['data'][$this->count]['company_name'] . '&result=FAIL&server=CN&note1=' . $the_string);
-            sleep(5);
         }
     }
 
@@ -320,6 +328,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -375,6 +384,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -430,6 +440,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -485,6 +496,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -540,6 +552,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -595,6 +608,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -650,6 +664,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -705,6 +720,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -760,6 +776,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -815,6 +832,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -870,6 +888,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -925,6 +944,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -980,6 +1000,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -1035,6 +1056,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -1090,6 +1112,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -1145,6 +1168,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -1200,6 +1224,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -1255,6 +1280,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -1310,6 +1336,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -1365,6 +1392,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -1420,6 +1448,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -1475,6 +1504,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -1530,6 +1560,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -1585,6 +1616,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -1640,6 +1672,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -1695,6 +1728,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -1750,6 +1784,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -1805,6 +1840,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -1860,6 +1896,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -1915,6 +1952,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -1970,6 +2008,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -2025,6 +2064,63 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
+        $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
+        sleep(5);
+        $this->byCssSelector("button.close")->click();
+        sleep(5);
+        $this->url('https://di.' . $this->url . '/app/#/');
+        $this->waitUntil(function () {
+            if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
+                return true;
+            }
+        }, 60000);
+        sleep(5);
+        $assert = $this->byCssSelector("div.revenue-value > span")->text();
+        try {
+            $this->assertNotEquals(' ', $assert);
+            throw new PHPUnit_Framework_AssertionFailedError("Success");
+        } catch (PHPUnit_Framework_AssertionFailedError $e) {
+            $this->save($e->toString());
+        }
+    }
+
+    public function test_xinzhuyi()
+    {
+        $this->url('http://' . $this->qaurl . '/test/getcount/');
+        $this->currentWindow()->maximize();
+        sleep(5);
+        $this->count = $this->byCssSelector("body")->text();
+        fwrite(STDERR, "\n" . ++$this->count);
+        fwrite(STDERR, $this->count);
+        sleep(5);
+        $this->url('http://' . $this->qaurl . '/test/setcount/?count=' . $this->count);
+        sleep(5);
+        $this->url('https://sysmgr.' . $this->url . '/auth/');
+        $this->waitUntil(function () {
+            if ($this->byXPath("//input[@value='登入']")->displayed()) {
+                return true;
+            }
+        }, 60000);
+        $this->byCssSelector("input[id=companyName]")->value("migo");
+        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
+        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byXPath("//input[@value='登入']")->click();
+        sleep(5);
+        if ($this->byLinkText("确认")->displayed()) {
+            $this->byLinkText("确认")->click();
+        }
+        sleep(5);
+        $this->url('https://sysmgr.' . $this->url . '/auth/#/market');
+        sleep(5);
+        $this->waitUntil(function () {
+            if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
+                return true;
+            }
+        }, 60000);
+        $this->byCssSelector("i.icon-migo-icon-change-company")->click();
+        sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -2080,6 +2176,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -2135,6 +2232,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -2190,6 +2288,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -2245,6 +2344,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();
@@ -2300,6 +2400,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
+        $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
         sleep(5);
         $this->byCssSelector("button.close")->click();

@@ -24,15 +24,17 @@
                                         <th>Company</th>
                                         <th>Result</th>
                                         <th>Note1</th>
+                                        <th>UI</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     @foreach( $tw_reports  as $tw_report)
                                         <tr>
-                                            <td>{{ $tw_report->server }}</td>
+                                            <td>{{ $tw_report->note2 }}</td>
                                             <td>{{ $tw_report->company }}</td>
                                             <td>{{ $tw_report->result }}</td>
                                             <td>{{ $tw_report->note1 }}</td>
+                                            <td>{{ $tw_report->note3 }}</td>
                                         </tr>
                                     @endforeach
                                     </tbody>
@@ -59,15 +61,17 @@
                                         <th>Company</th>
                                         <th>Result</th>
                                         <th>Note1</th>
+                                        <th>UI</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     @foreach( $cn_reports  as $cn_report)
                                         <tr>
-                                            <td>{{ $cn_report->server }}</td>
+                                            <td>{{ $cn_report->note2 }}</td>
                                             <td>{{ $cn_report->company }}</td>
                                             <td>{{ $cn_report->result }}</td>
                                             <td>{{ $cn_report->note1 }}</td>
+                                            <td>{{ $cn_report->note3 }}</td>
                                         </tr>
                                     @endforeach
                                     </tbody>
