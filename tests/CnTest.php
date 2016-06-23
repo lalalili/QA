@@ -228,17 +228,6 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         $this->byLinkText("登出")->click();
     }
 
-    public function save($the_string)
-    {
-        if (strstr($the_string, "Success")) {
-            $this->url('http://' . $this->qaurl . '/test/setreport?company=' . $this->json_a['data'][$this->count]['company_name'] . '&result=PASS&server=CN&note1=' . $the_string . '&note2=' . $this->json_a['data'][$this->count]['company_id'].'&note3='.$this->company_name);
-            sleep(5);
-        } else {
-            $this->url('http://' . $this->qaurl . '/test/setreport?company=' . $this->json_a['data'][$this->count]['company_name'] . '&result=FAIL&server=CN&note1=' . $the_string. '&note2=' . $this->json_a['data'][$this->count]['company_id'].'&note3='.$this->company_name);
-            sleep(5);
-        }
-    }
-
     public function test_ablejeans()
     {
         $this->count = $this->id;
@@ -290,6 +279,17 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             throw new PHPUnit_Framework_AssertionFailedError("Success");
         } catch (PHPUnit_Framework_AssertionFailedError $e) {
             $this->save($e->toString());
+        }
+    }
+
+    public function save($the_string)
+    {
+        if (strstr($the_string, "Success")) {
+            $this->url('http://' . $this->qaurl . '/test/setreport?company=' . $this->json_a['data'][$this->count]['company_name'] . '&result=PASS&server=CN&note1=' . $the_string . '&note2=' . $this->json_a['data'][$this->count]['company_id'] . '&note3=' . $this->company_name);
+            sleep(5);
+        } else {
+            $this->url('http://' . $this->qaurl . '/test/setreport?company=' . $this->json_a['data'][$this->count]['company_name'] . '&result=FAIL&server=CN&note1=' . $the_string . '&note2=' . $this->json_a['data'][$this->count]['company_id'] . '&note3=' . $this->company_name);
+            sleep(5);
         }
     }
 
@@ -2411,7 +2411,7 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
                 return true;
             }
         }, 60000);
-        sleep(5);
+        sleep(10);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
         try {
             $this->assertNotEquals(' ', $assert);

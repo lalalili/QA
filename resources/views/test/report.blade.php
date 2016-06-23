@@ -12,7 +12,7 @@
                 <div class="col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            TW Report
+                            TW Report  ( updated_at：{{ $tw_last->updated_at}} )
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -49,7 +49,7 @@
                 <div class="col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            CN Report
+                            CN Report ( updated_at：{{ $cn_first->updated_at }} )
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">

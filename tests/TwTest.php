@@ -228,10 +228,10 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
     public function save($the_string)
     {
         if (strstr($the_string, "Success")) {
-            $this->url('http://' . $this->qaurl . '/test/setreport?company=' . $this->json_a['data'][$this->count]['company_name'] . '&result=PASS&server=TW&note1=' . $the_string. '&note2=' . $this->json_a['data'][$this->count]['company_id'].'&note3='.$this->company_name);
+            $this->url('http://' . $this->qaurl . '/test/setreport?company=' . $this->json_a['data'][$this->count]['company_name'] . '&result=PASS&server=TW&note1=' . $the_string . '&note2=' . $this->json_a['data'][$this->count]['company_id'] . '&note3=' . $this->company_name);
             sleep(5);
         } else {
-            $this->url('http://' . $this->qaurl . '/test/setreport?company=' . $this->json_a['data'][$this->count]['company_name'] . '&result=FAIL&server=TW&note1=' . $the_string. '&note2=' . $this->json_a['data'][$this->count]['company_id'].'&note3='.$this->company_name);
+            $this->url('http://' . $this->qaurl . '/test/setreport?company=' . $this->json_a['data'][$this->count]['company_name'] . '&result=FAIL&server=TW&note1=' . $the_string . '&note2=' . $this->json_a['data'][$this->count]['company_id'] . '&note3=' . $this->company_name);
             sleep(5);
         }
     }
@@ -394,7 +394,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
                 return true;
             }
         }, 60000);
-        sleep(5);
+        sleep(10);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
         try {
             $this->assertNotEquals(' ', $assert);

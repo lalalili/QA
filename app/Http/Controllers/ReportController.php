@@ -51,6 +51,9 @@ class ReportController extends Controller
     {
         $tw_reports = Report::where('server', 'TW')->get();
         $cn_reports = Report::where('server', 'CN')->get();
-        return view('test.report',compact('tw_reports', 'cn_reports'));
+        $tw_last	 = Report::where('server', 'TW')->orderBy('updated_at', 'desc')->first();
+        $cn_first	 = Report::where('server', 'CN')->orderBy('updated_at', 'asc')->first();
+        //dd(Report::where('server', 'CN')->orderBy('updated_at', 'asc')->first()->updated_at);
+        return view('test.report',compact('tw_reports', 'cn_reports', 'tw_last', 'cn_first'));
     }
 }
