@@ -12,7 +12,8 @@
                 <div class="col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            TW Report  ( updated_at：{{ $tw_last->updated_at}} )
+                            TW Report  ( updated_at：{{ $tw_last->updated_at}} )<br>
+                            Known Error：MIGO, kg, memoriki, newbalancewifi, niceday, 86shop, shopping99
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -49,7 +50,8 @@
                 <div class="col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            CN Report ( updated_at：{{ $cn_first->updated_at }} )
+                            CN Report ( updated_at：{{ $cn_first->updated_at }} )<br>
+                            Known Error：MIGO, jlj
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">

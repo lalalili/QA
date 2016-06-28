@@ -150,10 +150,10 @@ return [
         'Jenssegers\Mongodb\MongodbServiceProvider',
         'Collective\Html\HtmlServiceProvider',
         'Laracasts\Flash\FlashServiceProvider',
-        'Mitul\Generator\GeneratorServiceProvider',
         'Zofe\Rapyd\RapydServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
         'Maatwebsite\Excel\ExcelServiceProvider',
+        'Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider',
     ],
 
     /*

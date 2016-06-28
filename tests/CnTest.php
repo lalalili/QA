@@ -233,9 +233,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         $this->count = $this->id;
         $this->url('http://' . $this->qaurl . '/test/resetreport/?server=CN');
         $this->currentWindow()->maximize();
-        sleep(5);
+        sleep(15);
         $this->url('http://' . $this->qaurl . '/test/setcount/?count=0');
-        sleep(5);
+        sleep(15);
         $this->url('https://sysmgr.' . $this->url . '/auth/');
         $this->waitUntil(function () {
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
@@ -246,13 +246,13 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
         $this->byCssSelector("input[id=password]")->value("admin156*");
         $this->byXPath("//input[@value='登入']")->click();
-        sleep(5);
+        sleep(15);
         if ($this->byLinkText("确认")->displayed()) {
             $this->byLinkText("确认")->click();
         }
-        sleep(5);
+        sleep(15);
         $this->url('https://sysmgr.' . $this->url . '/auth/#/market');
-        sleep(5);
+        sleep(15);
         $this->waitUntil(function () {
             if ($this->byCssSelector('a.btn-sm.btn-change-company')->displayed()) {
                 return true;
@@ -263,16 +263,16 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         $this->company_name = $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->text();
         //fwrite(STDERR, 'company_name = '.$this->company_name);
         $this->byCssSelector("a[name=\"" . $this->json_a['data'][$this->count]['company_id'] . "\"] > span.company-name")->click();
-        sleep(5);
+        sleep(15);
         $this->byCssSelector("button.close")->click();
-        sleep(5);
+        sleep(15);
         $this->url('https://di.' . $this->url . '/app/#/');
         $this->waitUntil(function () {
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
         }, 60000);
-        sleep(5);
+        sleep(15);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();;
         try {
             $this->assertNotEquals(' ', $assert);
