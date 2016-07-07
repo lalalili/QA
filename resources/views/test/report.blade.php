@@ -12,7 +12,7 @@
                 <div class="col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            TW Report  ( updated_at：{{ $tw_last->updated_at}} )<br>
+                            TW Report ( updated_at：{{ $tw_last->updated_at}} )<br>
                             Known Error：MIGO, kg, memoriki, newbalancewifi, niceday, 86shop, shopping99
                         </div>
                         <!-- /.panel-heading -->
@@ -29,7 +29,7 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach( $tw_reports  as $tw_report)
+                                    @forelse( $tw_reports  as $tw_report)
                                         <tr>
                                             <td>{{ $tw_report->note2 }}</td>
                                             <td>{{ $tw_report->company }}</td>
@@ -37,7 +37,8 @@
                                             <td>{{ $tw_report->note1 }}</td>
                                             <td>{{ $tw_report->note3 }}</td>
                                         </tr>
-                                    @endforeach
+                                    @empty
+                                    @endforelse
                                     </tbody>
                                 </table>
                             </div>
@@ -67,7 +68,7 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach( $cn_reports  as $cn_report)
+                                    @forelse( $cn_reports  as $cn_report)
                                         <tr>
                                             <td>{{ $cn_report->note2 }}</td>
                                             <td>{{ $cn_report->company }}</td>
@@ -75,7 +76,8 @@
                                             <td>{{ $cn_report->note1 }}</td>
                                             <td>{{ $cn_report->note3 }}</td>
                                         </tr>
-                                    @endforeach
+                                    @empty
+                                    @endforelse
                                     </tbody>
                                 </table>
                             </div>

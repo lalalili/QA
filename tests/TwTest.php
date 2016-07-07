@@ -185,12 +185,13 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
         $this->byCssSelector("input[id=password]")->value("admin156*");
         $this->byXPath("//input[@value='登入']")->click();
-        sleep(15);
+        sleep(25);
         if ($this->byLinkText("確認")->displayed()) {
             $this->byLinkText("確認")->click();
         }
@@ -201,6 +202,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector('a.btn-sm.btn-change-company')->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector('a.btn-sm.btn-change-company')->click();
         sleep(15);
@@ -214,6 +216,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(15);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();;
@@ -252,6 +255,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -268,6 +272,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -281,6 +286,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -308,6 +314,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -324,6 +331,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -337,6 +345,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -364,6 +373,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -380,6 +390,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -393,6 +404,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(10);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -420,6 +432,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -435,6 +448,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -448,6 +462,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -475,6 +490,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -490,6 +506,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -503,6 +520,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -530,6 +548,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -545,6 +564,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -558,6 +578,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -585,6 +606,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -600,6 +622,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -613,6 +636,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -640,6 +664,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -655,6 +680,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -668,6 +694,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -695,6 +722,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -710,6 +738,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -723,6 +752,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -750,6 +780,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -765,6 +796,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -778,6 +810,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -805,6 +838,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -820,6 +854,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -833,6 +868,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -860,6 +896,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -875,6 +912,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -888,6 +926,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -915,6 +954,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -930,6 +970,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -943,6 +984,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -970,6 +1012,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -985,6 +1028,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -998,6 +1042,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -1025,6 +1070,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -1040,6 +1086,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -1053,6 +1100,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -1080,6 +1128,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -1095,6 +1144,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -1108,6 +1158,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -1135,6 +1186,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -1150,6 +1202,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -1163,6 +1216,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -1190,6 +1244,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -1205,6 +1260,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -1218,6 +1274,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -1245,6 +1302,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -1260,6 +1318,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -1273,6 +1332,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -1300,6 +1360,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -1315,6 +1376,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -1328,6 +1390,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -1355,6 +1418,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -1370,6 +1434,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -1383,6 +1448,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -1410,6 +1476,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -1425,6 +1492,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -1438,6 +1506,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -1465,6 +1534,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -1480,6 +1550,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -1493,6 +1564,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -1520,6 +1592,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -1535,6 +1608,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -1548,6 +1622,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -1575,6 +1650,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -1590,6 +1666,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -1603,6 +1680,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -1630,6 +1708,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -1645,6 +1724,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -1658,6 +1738,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -1685,6 +1766,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -1700,6 +1782,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -1713,6 +1796,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -1740,6 +1824,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -1755,6 +1840,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -1768,6 +1854,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -1795,6 +1882,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -1810,6 +1898,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -1823,6 +1912,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -1850,6 +1940,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -1865,6 +1956,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -1878,6 +1970,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -1905,6 +1998,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -1920,6 +2014,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -1933,6 +2028,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -1960,6 +2056,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -1975,6 +2072,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -1988,6 +2086,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
@@ -2015,6 +2114,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byXPath("//input[@value='登入']")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("input[id=companyName]")->value("migo");
         $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
@@ -2030,6 +2130,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("i.icon-migo-icon-change-company")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         $this->byCssSelector("i.icon-migo-icon-change-company")->click();
         sleep(5);
@@ -2043,6 +2144,7 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
             if ($this->byCssSelector("div.revenue-value > span")->displayed()) {
                 return true;
             }
+            return null;
         }, 60000);
         sleep(5);
         $assert = $this->byCssSelector("div.revenue-value > span")->text();
