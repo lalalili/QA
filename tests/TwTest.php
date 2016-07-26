@@ -31,16 +31,16 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
         $json = '{
                     "data": [
           {
-            "company_id": 1026,
-            "company_name": "amai (amai)"
-          },
-          {
             "company_id": 1,
             "company_name": "CRM領導者 -> MIGO功典資訊"
           },
           {
             "company_id": 2,
             "company_name": "Kuan-Guang Supermarket"
+          },
+          {
+            "company_id": 1026,
+            "company_name": "amai (amai)"
           },
           {
             "company_id": 1040,

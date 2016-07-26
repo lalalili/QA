@@ -185,6 +185,14 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
           {
             "company_id": 1011,
             "company_name": "舟山新茂 (ZhouShanXM)"
+          },
+          {
+            "company_id": 3065,
+            "company_name": "惠友超市 (huiyou)"
+          },
+          {
+            "company_id": 3067,
+            "company_name": "埃克斯咖啡 (aix)"
           }
         ]
         }';

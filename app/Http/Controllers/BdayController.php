@@ -37,7 +37,7 @@ class BdayController extends Controller {
 
 	public function anyEdit()
 	{
-        if (Input::get('do_delete')==1) return  "not the first";
+//        if (Input::get('do_delete')==1) return  "not the first";
 
         $edit = DataEdit::source(new Bday);
         $edit->link("/bday/list","Back", "BL")->back();
