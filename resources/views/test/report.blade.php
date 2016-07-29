@@ -12,7 +12,11 @@
                 <div class="col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            TW Report ( updated_at：{{ $tw_last->updated_at}} )<br>
+                            @if (is_null($tw_last))
+                                TW Report ( updated_at： )<br>
+                            @else
+                                TW Report ( updated_at：{{ $tw_last->updated_at}} )<br>
+                            @endif
                             Known Error：MIGO, kg, newbalancewifi, niceday, 86shop, shopping99
                         </div>
                         <!-- /.panel-heading -->
@@ -51,7 +55,11 @@
                 <div class="col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
+                            @if (is_null($cn_first))
+                                CN Report ( updated_at： )<br>
+                            @else
                             CN Report ( updated_at：{{ $cn_first->updated_at }} )<br>
+                            @endif
                             Known Error：MIGO
                         </div>
                         <!-- /.panel-heading -->
