@@ -28,9 +28,9 @@
 
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
-    {!! Rapyd::styles() !!}
+{!! Rapyd::styles() !!}
 
-            <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -106,46 +106,46 @@
         <div class="sidebar-nav navbar-collapse">
             <ul class="nav" id="side-menu">
                 <li>
-                    <a href="{{url('/version/list')}}"><i class="fa fa-server fa-fw"></i> Patch Status</a>
-                </li>
-                <li>
-                    <a href="{{url('/patch')}}"><i class="fa fa-check-square-o fa-fw"></i> Patch Test</a>
-                </li>
-                <li>
-                    <a href="http://faq.migosoft.com" target="_blank"><i class="fa fa-pencil-square-o"
-                                                                         aria-hidden="true"></i> FAQ</a>
-                </li>
-                <li>
-                    <a href="{{url('/test/report')}}"><i class="fa fa-bar-chart fa-fw"></i> DI自動測試報告</a>
-                </li>
-                <li>
                     <a href="#">
-                        <i class="fa fa-bar-chart fa-fw"></i>
-                        Mongo不通!
+                        <i></i>
+                        FAE
                         <span class="fa arrow"></span>
                     </a>
-                    {{--<ul class="nav nav-second-level collapse in" style="">--}}
-                    {{--<li>--}}
-                    {{--<a href="{{url('/diy')}}">指標</a>--}}
-                    {{--</li>--}}
-                    {{--<li>--}}
-                    {{--<a href="{{url('/store')}}">門店</a>--}}
-                    {{--</li>--}}
-                    {{--<li>--}}
-                    {{--<a href="{{url('/company')}}">公司列表</a>--}}
-                    {{--</li>--}}
-                    {{--<li>--}}
-                    {{--<a href="{{url('/member')}}">會員查詢</a>--}}
-                    {{--</li>--}}
-                    {{--</ul>--}}
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="{{url('/version/list')}}"><i class="fa fa-server fa-fw"></i> Patch Status</a>
+                        </li>
+                        <li>
+                            <a href="{{url('/patch')}}"><i class="fa fa-check-square-o fa-fw"></i> Patch Test</a>
+                        </li>
+                        <li>
+                            <a href="http://faq.migosoft.com" target="_blank"><i class="fa fa-pencil-square-o"
+                                                                                 aria-hidden="true"></i> FAQ</a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="active">
+                <li>
                     <a href="#">
-                        <i class="fa fa-trello fa-fw"></i>
+                        <i></i>
+                        QA
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="{{url('/test/report')}}"><i class="fa fa-bar-chart fa-fw"></i> DI自動測試</a>
+                        </li>
+                        {{--<li>--}}
+                            {{--<a href="{{url('/task')}}"><i class="fa fa-bar-chart fa-fw"></i> BackOffice</a>--}}
+                        {{--</li>--}}
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i></i>
                         Trello
                         <span class="fa arrow"></span>
                     </a>
-                    <ul class="nav nav-second-level collapse in" style="">
+                    <ul class="nav nav-second-level" style="">
                         <li>
                             <a href="https://trello.com/b/MSh6I9n4/fae-qa" target="_blank">QA</a>
                         </li>
@@ -153,28 +153,74 @@
                             <a href="https://trello.com/b/JTbgJOQW/-" target="_blank">店客通</a>
                         </li>
                     </ul>
-                <li>
-                <li>
-                    <a href="http://mantis.migosoft.com" target="_blank"><i class="fa fa-bug fa-fw"></i> Mantis</a>
                 </li>
                 <li>
-                    <a href="http://support.migocorp.com:8080" target="_blank"><i class="fa fa-usd fa-fw"></i> Jira</a>
+                    <a href="http://support.migocorp.com:8080" target="_blank"><i></i> Jira</a>
                 </li>
                 <li>
-                    <a href="http://kb.migosoft.com/doku.php?id=main" target="_blank"><i
-                                class="fa fa-pencil-square-o fa-fw"></i> 知識庫</a>
-                </li>
+                    <a href="#">
+                        <i></i>
+                        備份
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level" style="">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-fw"></i>
+                                Vue
+                                <span class="fa arrow"></span>
+                            </a>
+                            <ul class="nav nav-third-level" style="">
+                                <li>
+                                    <a href="{{url('/task')}}"> BackOffice</a>
+                                </li>
+                                <li>
+                                    <a href="{{url('/vue')}}"> Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://kb.migosoft.com/doku.php?id=main" target="_blank"><i
+                                        class="fa fa-pencil-square-o fa-fw"></i> 知識庫</a>
+                        </li>
+                        <li>
+                            <a href="http://mantis.migosoft.com" target="_blank"><i class="fa fa-bug fa-fw"></i> Mantis</a>
+                        </li>
+                        <li>
+                            <a href="https://www.dropbox.com/s/wsmazkbvgpk6a3c/ProjectX.docx?dl=0" target="_blank"><i
+                                        class="fa fa-dropbox fa-fw"></i> ProjectX</a>
+                        </li>
+                        <li>
+                            <a href="http://laravel.tw/docs/5.1/" target="_blank"><i
+                                        class="fa fa-user-secret fa-fw"></i>
+                                Laravel</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-bar-chart fa-fw"></i>
+                                Mongo
+                                <span class="fa arrow"></span>
+                            </a>
+                            <ul class="nav nav-third-level" style="">
+                                <li>
+                                    <a href="{{url('/diy')}}">指標</a>
+                                </li>
+                                <li>
+                                    <a href="{{url('/store')}}">門店</a>
+                                </li>
+                                <li>
+                                    <a href="{{url('/company')}}">公司列表</a>
+                                </li>
+                                <li>
+                                    <a href="{{url('/member')}}">會員查詢</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="{{url('/system')}}"><i class="fa fa-wrench fa-fw"></i> QA Log</a>
+                        </li>
+                    </ul>
                 <li>
-                    <a href="https://www.dropbox.com/s/wsmazkbvgpk6a3c/ProjectX.docx?dl=0" target="_blank"><i
-                                class="fa fa-dropbox fa-fw"></i> ProjectX</a>
-                </li>
-                <li>
-                    <a href="http://laravel.tw/docs/5.0/queries" target="_blank"><i class="fa fa-user-secret fa-fw"></i>
-                        Laravel</a>
-                </li>
-                <li>
-                    <a href="{{url('/system')}}"><i class="fa fa-wrench fa-fw"></i> QA Log</a>
-                </li>
             </ul>
         </div>
         <!-- /.sidebar-collapse -->
@@ -182,7 +228,7 @@
     <!-- /.navbar-static-side -->
 </nav>
 @yield('content')
-        <!-- jQuery Version .env.11.0 -->
+<!-- jQuery Version .env.11.0 -->
 <script src="{{ asset('/js/jquery-1.11.0.js') }}"></script>
 
 <!-- Bootstrap Core JavaScript -->
@@ -190,6 +236,10 @@
 
 <!-- Metis Menu Plugin JavaScript -->
 <script src="{{ asset('/js/plugins/metisMenu/metisMenu.min.js') }}"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js"></script>
+<script src="{{ asset('js/task.js')}}" charset="utf-8"></script>
+
 
 <!-- Custom Theme JavaScript -->
 <script src="{{ asset('/js/sb-admin-2.js') }}"></script>

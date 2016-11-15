@@ -18,6 +18,8 @@
     "rap2hpoutre/laravel-log-viewer": "^0.7.0"
   },
   "require-dev": {
+    "fzaninotto/faker": "~1.4",
+    "mockery/mockery": "0.9.*",
     "phpspec/phpspec": "~2.1",
     "phpunit/phpunit": "~4.8",
     "phpunit/phpunit-selenium": "~2.0.0"

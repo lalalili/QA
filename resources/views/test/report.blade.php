@@ -17,7 +17,7 @@
                             @else
                                 TW Report ( updated_at：{{ $tw_last->updated_at}} )<br>
                             @endif
-                            Known Error：MIGO, kg, newbalancewifi, niceday, 86shop, shopping99
+                            Known Error：MIGO, kg, newbalancewifi, niceday, 86shop
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">

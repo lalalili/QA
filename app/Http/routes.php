@@ -10,7 +10,9 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+Route::get('vue', function () {
+    return view('vue.index');
+});
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 Route::get('/', [
     'as' => 'version', 'uses' => 'VersionController@anyList'
@@ -24,6 +26,8 @@ Route::get('company', 'CompanyController@index');
 Route::get('member', 'MemberController@index');
 Route::post('member', 'MemberController@query');
 Route::get('system', 'StaticController@system');
+Route::get('task', 'TaskController@index');
+Route::get('api/tasks', 'TaskController@api');
 
 Route::group(['prefix' => 'api'], function () {
     Route::get('alert', 'DIYReportController@alert');
