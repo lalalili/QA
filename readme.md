@@ -31,14 +31,16 @@ listen on 127.0.0.1:4444
 
 >https://github.com/lalalili/QA
 
+安裝測試所需套件
+```sh
+cd \<diy>\
+
+composer install
+```
+
 將下列路徑加入Path
 
 >\<diy>\vendor\bin
-
-安裝測試所需套件
-```sh
-composer install
-```
 
 執行測試
 ```sh
