@@ -6,6 +6,7 @@
 /node_modules
 /bootstrap/compiled.php
 .env
+.bak
 #.env.*.php
 #.env.php
 

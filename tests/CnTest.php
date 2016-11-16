@@ -7,8 +7,12 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
     protected $id = 0;
 //    protected $qaurl = 'qa.com';
     protected $qaurl = 'qa.migosoft.com';
-    protected $url = 'cn.migoapp.com';
     protected $company_name;
+    
+    protected $url = 'cn.migoapp.com';
+    protected $company  = 'migo';
+    protected $user= 'migotp_jamesliang';
+    protected $password= 'admin156*';
 
     public static function browsers()
     {
@@ -241,9 +245,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
         $this->currentWindow()->maximize();
         $this->url('https://sysmgr.' . $this->url . '/auth/');
         sleep(5);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -298,9 +302,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company);
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -357,9 +361,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -416,9 +420,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -475,9 +479,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -535,9 +539,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -594,9 +598,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
 //            }
 //            return null;
 //        }, 60000);
-//        $this->byCssSelector("input[id=companyName]")->value("migo");
-//        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-//        $this->byCssSelector("input[id=password]")->value("admin156*");
+//        $this->byCssSelector("input[id=companyName]")->value($this->company );
+//        $this->byCssSelector("input[id=account]")->value($this->user);
+//        $this->byCssSelector("input[id=password]")->value($this->password);
 //        $this->byXPath("//input[@value='登入']")->click();
 //        sleep(5);
 //        if ($this->byLinkText("确认")->displayed()) {
@@ -653,9 +657,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -712,9 +716,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -771,9 +775,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -830,9 +834,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -889,9 +893,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -948,9 +952,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -1007,9 +1011,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -1066,9 +1070,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -1125,9 +1129,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -1184,9 +1188,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
 //            }
 //            return null;
 //        }, 60000);
-//        $this->byCssSelector("input[id=companyName]")->value("migo");
-//        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-//        $this->byCssSelector("input[id=password]")->value("admin156*");
+//        $this->byCssSelector("input[id=companyName]")->value($this->company );
+//        $this->byCssSelector("input[id=account]")->value($this->user);
+//        $this->byCssSelector("input[id=password]")->value($this->password);
 //        $this->byXPath("//input[@value='登入']")->click();
 //        sleep(5);
 //        if ($this->byLinkText("确认")->displayed()) {
@@ -1243,9 +1247,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -1302,9 +1306,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -1361,9 +1365,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -1420,9 +1424,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -1479,9 +1483,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -1538,9 +1542,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -1597,9 +1601,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -1656,9 +1660,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -1715,9 +1719,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -1774,9 +1778,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -1833,9 +1837,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -1892,9 +1896,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -1951,9 +1955,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -2010,9 +2014,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -2069,9 +2073,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -2128,9 +2132,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -2187,9 +2191,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -2246,9 +2250,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -2305,9 +2309,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -2364,9 +2368,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -2423,9 +2427,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -2482,9 +2486,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -2541,9 +2545,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -2600,9 +2604,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -2659,9 +2663,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -2718,9 +2722,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -2777,9 +2781,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -2836,9 +2840,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -2895,9 +2899,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -2954,9 +2958,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -3013,9 +3017,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -3072,9 +3076,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -3131,9 +3135,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -3190,9 +3194,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -3249,9 +3253,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
@@ -3308,9 +3312,9 @@ class CnTest extends PHPUnit_Extensions_Selenium2TestCase
             }
             return null;
         }, 60000);
-        $this->byCssSelector("input[id=companyName]")->value("migo");
-        $this->byCssSelector("input[id=account]")->value("migotp_jamesliang");
-        $this->byCssSelector("input[id=password]")->value("admin156*");
+        $this->byCssSelector("input[id=companyName]")->value($this->company );
+        $this->byCssSelector("input[id=account]")->value($this->user);
+        $this->byCssSelector("input[id=password]")->value($this->password);
         $this->byXPath("//input[@value='登入']")->click();
         sleep(5);
         if ($this->byLinkText("确认")->displayed()) {
