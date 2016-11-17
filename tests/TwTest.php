@@ -8,9 +8,9 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
 //    protected $qaurl = 'qa.com';
     protected $qaurl = 'qa.migosoft.com';
     protected $company_name;
-    
+
     protected $url = '';
-    protected $company = '';
+    protected $company  = '';
     protected $user= '';
     protected $password= '';
 
@@ -18,8 +18,8 @@ class TwTest extends PHPUnit_Extensions_Selenium2TestCase
     {
         return array(
             array(
-//                'host'                => '127.0.0.1',
-                'host'        => '10.0.2.211',
+                'host'        => '127.0.0.1',
+//                'host'        => '10.0.2.211',
                 'port'        => 4444,
                 'browser'     => 'chrome test browser',
                 'browserName' => 'chrome',
